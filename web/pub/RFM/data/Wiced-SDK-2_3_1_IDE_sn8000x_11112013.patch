@@ -1,0 +1,2713 @@
+Index: WICED-SDK_2.3.1/Wiced/Platform/SN8000x/SN8000x.mk
+diff -u nul WICED-SDK_2.3.1/Wiced/Platform/SN8000x/SN8000x.mk:1.1.14.1
+--- nul	Tue Nov 12 15:50:03 2013
++++ WICED-SDK_2.3.1/Wiced/Platform/SN8000x/SN8000x.mk	Tue Nov 12 15:50:03 2013
+@@ -0,0 +1,85 @@
++#
++# Copyright 2012, Broadcom Corporation
++# All Rights Reserved.
++#
++# This is UNPUBLISHED PROPRIETARY SOURCE CODE of Broadcom Corporation;
++# the contents of this file may not be disclosed to third parties, copied
++# or duplicated in any form, in whole or in part, without the prior
++# written permission of Broadcom Corporation.
++#
++
++NAME := Platform_SN8000x
++
++$(NAME)_SOURCES := ../SN8000x/read_wifi_firmware.c \
++                   platform.c
++
++CHIP       := 43362a2
++HOST_MICRO := stm32f2x
++HOST_ARCH  := ARM_Cortex_M3
++
++
++ifndef USES_BOOTLOADER_OTA
++USES_BOOTLOADER_OTA :=1
++endif
++
++# Define default RTOS, bus, and network stack.
++ifndef RTOS
++RTOS:=ThreadX
++COMPONENTS += ThreadX
++endif
++
++ifndef BUS
++BUS:=SDIO
++endif
++
++ifndef NETWORK
++NETWORK:=NetX_Duo
++COMPONENTS += NetX_Duo
++endif
++
++GLOBAL_INCLUDES  := . \
++					../SN8000x \
++                    ../include \
++                    ../../../include/platforms/SN8000x
++
++
++$(NAME)_COMPONENTS := common/ARM_Cortex_M3/STM32F2xx \
++                      common/GCC
++
++$(NAME)_LINK_FILES :=
++
++# HSE_VALUE = STM32 crystal frequency = 16MHz (needed to make UART work correctly)
++GLOBAL_DEFINES += HSE_VALUE=16000000
++GLOBAL_DEFINES += CPU_CLOCK_HZ=120000000
++GLOBAL_DEFINES += APP_NAME=$$(SLASH_QUOTE)$(APP)$$(SLASH_QUOTE)
++GLOBAL_DEFINES += PLATFORM_STM32_VOLTAGE_2V7_TO_3V6
++#disable watchdog for debugging
++#GLOBAL_DEFINES += WICED_DISABLE_WATCHDOG
++GLOBAL_DEFINES += WICED_LS_SOURCE=0x2
++ifeq ($(BUS),SDIO)
++WIFI_IMAGE_DOWNLOAD := direct
++else
++ifeq ($(BUS),SPI)
++WIFI_IMAGE_DOWNLOAD := buffered
++endif
++endif
++
++PRE_APP_BUILDS := generated_mac_address.txt
++
++ifneq ($(APP),bootloader)
++ifneq ($(MAIN_COMPONENT_PROCESSING),1)
++$(info ******************************************************************************** )
++$(info The target Wi-Fi MAC address is defined in <Wiced-SDK>/generated_mac_address.txt )
++$(info Ensure each target device has a unique address!                                  )
++$(info ******************************************************************************** )
++endif
++endif
++
++# uncomment for non-bootloader apps to avoid adding a DCT
++# NODCT := 1 
++
++# Uncomment these lines to enable malloc debug.and checking
++#GLOBAL_DEFINES += MALLOC_DEBUG
++#WICED_LDFLAGS += -Wl,--wrap,malloc -Wl,--wrap,realloc -Wl,--wrap,calloc -Wl,--wrap,free
++
++# GLOBAL_DEFINES += STOP_MODE_SUPPORT PRINTF_BLOCKING
+Index: WICED-SDK_2.3.1/Wiced/Platform/SN8000x/platform.c
+diff -u nul WICED-SDK_2.3.1/Wiced/Platform/SN8000x/platform.c:1.1.14.1
+--- nul	Tue Nov 12 15:50:03 2013
++++ WICED-SDK_2.3.1/Wiced/Platform/SN8000x/platform.c	Tue Nov 12 15:50:03 2013
+@@ -0,0 +1,248 @@
++/*
++ * Copyright 2012, Broadcom Corporation
++ * All Rights Reserved.
++ *
++ * This is UNPUBLISHED PROPRIETARY SOURCE CODE of Broadcom Corporation;
++ * the contents of this file may not be disclosed to third parties, copied
++ * or duplicated in any form, in whole or in part, without the prior
++ * written permission of Broadcom Corporation.
++ */
++
++/** @file
++ *
++ */
++#include "platform.h"
++#include "wiced_platform.h"
++#include "gpio_irq.h"
++#include "watchdog.h"
++#include "stdio.h"
++#include "string.h"
++#include "wwd_assert.h"
++#include "stm32f2xx_platform.h"
++#include "platform_common_config.h"
++#include "Platform/wwd_platform_interface.h"
++
++/******************************************************
++ *                      Macros
++ ******************************************************/
++
++/******************************************************
++ *                    Constants
++ ******************************************************/
++
++/******************************************************
++ *                   Enumerations
++ ******************************************************/
++
++/******************************************************
++ *                 Type Definitions
++ ******************************************************/
++
++/******************************************************
++ *                    Structures
++ ******************************************************/
++
++/******************************************************
++ *               Function Declarations
++ ******************************************************/
++
++/******************************************************
++ *               Variables Definitions
++ ******************************************************/
++
++/* This table maps STM32 pins to GPIO definitions on the schematic
++ * A full pin definition is provided in <WICED-SDK>/include/platforms/BCM943362WCD4/platform.h
++ */
++const platform_pin_mapping_t gpio_mapping[] =
++{
++    [WICED_GPIO_1]  = {GPIOA,  0,  RCC_AHB1Periph_GPIOA},
++    [WICED_GPIO_2]  = {GPIOA,  1,  RCC_AHB1Periph_GPIOA}, //ST15
++    [WICED_GPIO_3]  = {GPIOA,  2,  RCC_AHB1Periph_GPIOA}, //ST16
++    [WICED_GPIO_4]  = {GPIOA,  3,  RCC_AHB1Periph_GPIOA}, //ST17
++    [WICED_GPIO_5]  = {GPIOA,  4,  RCC_AHB1Periph_GPIOA}, //serial flash CS
++    [WICED_GPIO_6]  = {GPIOA,  5,  RCC_AHB1Periph_GPIOA}, //serial flash CLK
++    [WICED_GPIO_7]  = {GPIOA,  6,  RCC_AHB1Periph_GPIOA}, //serial flash MISO
++    [WICED_GPIO_8]  = {GPIOA,  7,  RCC_AHB1Periph_GPIOA}, //serial flash MOSI
++    [WICED_GPIO_9]  = {GPIOA,  9,  RCC_AHB1Periph_GPIOA}, //UART1 TX
++    [WICED_GPIO_10] = {GPIOA, 10,  RCC_AHB1Periph_GPIOA}, //UART1 RX
++    [WICED_GPIO_11] = {GPIOB,  6,  RCC_AHB1Periph_GPIOB}, //ST58
++    [WICED_GPIO_12] = {GPIOB,  7,  RCC_AHB1Periph_GPIOB}, //ST59
++    [WICED_GPIO_13] = {GPIOA, 13,  RCC_AHB1Periph_GPIOA},
++    [WICED_GPIO_14] = {GPIOA, 14,  RCC_AHB1Periph_GPIOA},
++    [WICED_GPIO_15] = {GPIOA, 15,  RCC_AHB1Periph_GPIOA},
++    [WICED_GPIO_16] = {GPIOB,  3,  RCC_AHB1Periph_GPIOB},
++    [WICED_GPIO_17] = {GPIOB,  4,  RCC_AHB1Periph_GPIOB},
++    [WICED_GPIO_18] = {GPIOA,  8,  RCC_AHB1Periph_GPIOA}, //ST41
++    [WICED_GPIO_19] = {GPIOA, 11,  RCC_AHB1Periph_GPIOA}, //UART1 CTS
++    [WICED_GPIO_20] = {GPIOA, 12,  RCC_AHB1Periph_GPIOA}, //UART1 RTS
++    [WICED_GPIO_21] = {GPIOB,  5,  RCC_AHB1Periph_GPIOB}, //ST57
++    [WICED_GPIO_22] = {GPIOB,  8,  RCC_AHB1Periph_GPIOB}, //ST61
++    [WICED_GPIO_23] = {GPIOB,  9,  RCC_AHB1Periph_GPIOB}, //ST62
++    [WICED_GPIO_24] = {GPIOB, 10,  RCC_AHB1Periph_GPIOB}, //ST29
++    [WICED_GPIO_25] = {GPIOB, 11,  RCC_AHB1Periph_GPIOB}, //ST30
++    [WICED_GPIO_26] = {GPIOB, 12,  RCC_AHB1Periph_GPIOB}, //ST33
++    [WICED_GPIO_27] = {GPIOB, 13,  RCC_AHB1Periph_GPIOB}, //ST34
++    [WICED_GPIO_28] = {GPIOB, 14,  RCC_AHB1Periph_GPIOB}, //ST35
++    [WICED_GPIO_29] = {GPIOB, 15,  RCC_AHB1Periph_GPIOB}, //ST36
++    [WICED_GPIO_30] = {GPIOC,  6,  RCC_AHB1Periph_GPIOC}, //ST37
++    [WICED_GPIO_31] = {GPIOC,  7,  RCC_AHB1Periph_GPIOC}, //ST38
++    [WICED_GPIO_32] = {GPIOC, 13,  RCC_AHB1Periph_GPIOC}, //ST02
++};
++
++
++/*
++ * Possible compile time inputs:
++ * - Set which ADC peripheral to use for each ADC. All on one ADC allows sequential conversion on all inputs. All on separate ADCs allows concurrent conversion.
++ */
++/* TODO : These need fixing */
++const platform_adc_mapping_t adc_mapping[] =
++{
++    [WICED_ADC_1] = {ADC1, ADC_Channel_1, RCC_APB2Periph_ADC1, 1, (platform_pin_mapping_t*)&gpio_mapping[WICED_GPIO_2]},
++    [WICED_ADC_2] = {ADC1, ADC_Channel_2, RCC_APB2Periph_ADC1, 1, (platform_pin_mapping_t*)&gpio_mapping[WICED_GPIO_3]},
++    [WICED_ADC_3] = {ADC1, ADC_Channel_3, RCC_APB2Periph_ADC1, 1, (platform_pin_mapping_t*)&gpio_mapping[WICED_GPIO_4]},
++};
++
++
++/* PWM mappings */
++const platform_pwm_mapping_t pwm_mappings[] =
++{
++    [WICED_PWM_1]  = {TIM4, 1, RCC_APB1Periph_TIM4, GPIO_AF_TIM4, (platform_pin_mapping_t*)&gpio_mapping[WICED_GPIO_11]},
++    [WICED_PWM_2]  = {TIM4, 2, RCC_APB1Periph_TIM4, GPIO_AF_TIM4, (platform_pin_mapping_t*)&gpio_mapping[WICED_GPIO_12]},
++    [WICED_PWM_3]  = {TIM2, 2, RCC_APB1Periph_TIM2, GPIO_AF_TIM2, (platform_pin_mapping_t*)&gpio_mapping[WICED_GPIO_2]},  /* or TIM5/Ch2                       */
++    [WICED_PWM_4]  = {TIM2, 3, RCC_APB1Periph_TIM2, GPIO_AF_TIM2, (platform_pin_mapping_t*)&gpio_mapping[WICED_GPIO_3]},  /* or TIM5/Ch3, TIM9/Ch1             */
++    [WICED_PWM_5]  = {TIM2, 4, RCC_APB1Periph_TIM2, GPIO_AF_TIM2, (platform_pin_mapping_t*)&gpio_mapping[WICED_GPIO_4]},  /* or TIM5/Ch4, TIM9/Ch2             */
++    [WICED_PWM_6]  = {TIM2, 1, RCC_APB1Periph_TIM2, GPIO_AF_TIM2, (platform_pin_mapping_t*)&gpio_mapping[WICED_GPIO_6]},  /* or TIM2_CH1_ETR, TIM8/Ch1N        */
++    [WICED_PWM_7]  = {TIM3, 1, RCC_APB1Periph_TIM3, GPIO_AF_TIM3, (platform_pin_mapping_t*)&gpio_mapping[WICED_GPIO_7]},  /* or TIM1_BKIN, TIM8_BKIN, TIM13/Ch1*/
++    [WICED_PWM_8]  = {TIM3, 2, RCC_APB1Periph_TIM3, GPIO_AF_TIM3, (platform_pin_mapping_t*)&gpio_mapping[WICED_GPIO_8]},  /* or TIM8/Ch1N, TIM14/Ch1           */
++    [WICED_PWM_9]  = {TIM5, 2, RCC_APB1Periph_TIM5, GPIO_AF_TIM5, (platform_pin_mapping_t*)&gpio_mapping[WICED_GPIO_2]},  /* or TIM2/Ch2                       */
++    /* TODO: fill in the other options here ... */
++};
++
++const platform_spi_mapping_t spi_mapping[] =
++{
++    [WICED_SPI_1]  =
++    {
++        .spi_regs              = SPI1,
++        .gpio_af               = GPIO_AF_SPI1,
++        .peripheral_clock_reg  = RCC_APB2Periph_SPI1,
++        .peripheral_clock_func = RCC_APB2PeriphClockCmd,
++        .pin_mosi              = &gpio_mapping[WICED_GPIO_8],
++        .pin_miso              = &gpio_mapping[WICED_GPIO_7],
++        .pin_clock             = &gpio_mapping[WICED_GPIO_6],
++        .tx_dma_stream         = DMA2_Stream5,
++        .rx_dma_stream         = DMA2_Stream0,
++        .tx_dma_channel        = DMA_Channel_3,
++        .rx_dma_channel        = DMA_Channel_3,
++        .tx_dma_stream_number  = 5,
++        .rx_dma_stream_number  = 0
++    }
++};
++
++const platform_uart_mapping_t uart_mapping[] =
++{
++    [WICED_UART_1] =
++    {
++        .usart                        = USART1,
++        .gpio_af                      = GPIO_AF_USART1,
++        .pin_tx                       = &gpio_mapping[WICED_GPIO_9],
++        .pin_rx                       = &gpio_mapping[WICED_GPIO_10],
++        .pin_cts                      = NULL,
++        .pin_rts                      = NULL,
++        .usart_peripheral_clock       = RCC_APB2Periph_USART1,
++        .usart_peripheral_clock_func  = RCC_APB2PeriphClockCmd,
++        .usart_irq                    = USART1_IRQn,
++        .tx_dma                       = DMA2,
++        .tx_dma_stream                = DMA2_Stream7,
++        .tx_dma_channel               = DMA_Channel_4,
++        .tx_dma_peripheral_clock      = RCC_AHB1Periph_DMA2,
++        .tx_dma_peripheral_clock_func = RCC_AHB1PeriphClockCmd,
++        .tx_dma_irq                   = DMA2_Stream7_IRQn,
++        .rx_dma                       = DMA2,
++        .rx_dma_stream                = DMA2_Stream2,
++        .rx_dma_channel               = DMA_Channel_4,
++        .rx_dma_peripheral_clock      = RCC_AHB1Periph_DMA2,
++        .rx_dma_peripheral_clock_func = RCC_AHB1PeriphClockCmd,
++        .rx_dma_irq                   = DMA2_Stream2_IRQn
++    },
++    [WICED_UART_2] =
++    {
++        .usart                        = USART2,
++        .gpio_af                      = GPIO_AF_USART2,
++        .pin_tx                       = &gpio_mapping[WICED_GPIO_3],
++        .pin_rx                       = &gpio_mapping[WICED_GPIO_4],
++        .pin_cts                      = &gpio_mapping[WICED_GPIO_1],
++        .pin_rts                      = &gpio_mapping[WICED_GPIO_2],
++        .usart_peripheral_clock       = RCC_APB1Periph_USART2,
++        .usart_peripheral_clock_func  = RCC_APB1PeriphClockCmd,
++        .usart_irq                    = USART2_IRQn,
++        .tx_dma                       = DMA1,
++        .tx_dma_stream                = DMA1_Stream6,
++        .tx_dma_channel               = DMA_Channel_4,
++        .tx_dma_peripheral_clock      = RCC_AHB1Periph_DMA1,
++        .tx_dma_peripheral_clock_func = RCC_AHB1PeriphClockCmd,
++        .tx_dma_irq                   = DMA1_Stream6_IRQn,
++        .rx_dma                       = DMA1,
++        .rx_dma_stream                = DMA1_Stream5,
++        .rx_dma_channel               = DMA_Channel_4,
++        .rx_dma_peripheral_clock      = RCC_AHB1Periph_DMA1,
++        .rx_dma_peripheral_clock_func = RCC_AHB1PeriphClockCmd,
++        .rx_dma_irq                   = DMA1_Stream5_IRQn
++    },
++};
++
++/******************************************************
++ *               Function Definitions
++ ******************************************************/
++wiced_spi_device_t wiced_spi_flash =
++{
++	.port        = WICED_SPI_1,
++	.chip_select = WICED_SPI_FLASH_CS,
++	.speed       = 1000000,
++	.mode        = (SPI_CLOCK_FALLING_EDGE | SPI_CLOCK_IDLE_HIGH | SPI_NO_DMA | SPI_MSB_FIRST),
++	.bits        = 8
++};
++
++wiced_result_t wiced_platform_init( void )
++{
++    WPRINT_PLATFORM_INFO( ("\r\nPlatform " PLATFORM " initialised\r\n") );
++
++    if ( WICED_TRUE == watchdog_check_last_reset() )
++    {
++        WPRINT_PLATFORM_ERROR(("WARNING: Watchdog reset occured previously. Please see watchdog.c for debugging instructions.\r\n"));
++    }
++
++    return WICED_SUCCESS;
++}
++
++void init_platform( void )
++{
++    /* Initialise LEDs and turn off by default */
++
++    /* Initialise buttons to input by default */
++}
++
++void host_platform_reset_wifi( wiced_bool_t reset_asserted )
++{
++    if ( reset_asserted == WICED_TRUE )
++    {
++        GPIO_ResetBits( WL_RESET_BANK, WL_RESET_PIN );
++    }
++    else
++    {
++        GPIO_SetBits( WL_RESET_BANK, WL_RESET_PIN );
++    }
++}
++
++void host_platform_power_wifi( wiced_bool_t power_enabled )
++{
++    //return;
++
++    if ( power_enabled == WICED_FALSE )
++    {
++        GPIO_ResetBits( WL_REG_ON_BANK, WL_REG_ON_PIN );
++    }
++    else
++    {
++        GPIO_SetBits( WL_REG_ON_BANK, WL_REG_ON_PIN );
++    }
++}
+Index: WICED-SDK_2.3.1/Wiced/Platform/SN8000x/platform_common_config.h
+diff -u nul WICED-SDK_2.3.1/Wiced/Platform/SN8000x/platform_common_config.h:1.1.14.1
+--- nul	Tue Nov 12 15:50:03 2013
++++ WICED-SDK_2.3.1/Wiced/Platform/SN8000x/platform_common_config.h	Tue Nov 12 15:50:03 2013
+@@ -0,0 +1,118 @@
++/*
++ * Copyright 2012, Broadcom Corporation
++ * All Rights Reserved.
++ *
++ * This is UNPUBLISHED PROPRIETARY SOURCE CODE of Broadcom Corporation;
++ * the contents of this file may not be disclosed to third parties, copied
++ * or duplicated in any form, in whole or in part, without the prior
++ * written permission of Broadcom Corporation.
++ */
++#pragma once
++
++/******************************************************
++ *                      Macros
++ ******************************************************/
++
++/******************************************************
++ *                    Constants
++ ******************************************************/
++
++#define SPI_BUS_CLOCK_BANK      GPIOB
++#define SPI_BUS_MISO_BANK       GPIOB
++#define SPI_BUS_MOSI_BANK       GPIOB
++#define SPI_BUS_CS_BANK         GPIOC
++#define SPI_IRQ_BANK            GPIOC
++#define SPI_BUS_CLOCK_BANK_CLK  RCC_AHB1Periph_GPIOB
++#define SPI_BUS_MISO_BANK_CLK   RCC_AHB1Periph_GPIOB
++#define SPI_BUS_MOSI_BANK_CLK   RCC_AHB1Periph_GPIOB
++#define SPI_BUS_CS_BANK_CLK     RCC_AHB1Periph_GPIOC
++#define SPI_IRQ_CLK             RCC_AHB1Periph_GPIOC
++#define SPI_BUS_CLOCK_PIN       13
++#define SPI_BUS_MISO_PIN        14
++#define SPI_BUS_MOSI_PIN        15
++#define SPI_BUS_CS_PIN          11
++#define SPI_IRQ_PIN             9
++
++#define SDIO_OOB_IRQ_BANK       GPIOB
++#define SDIO_CLK_BANK           GPIOC
++#define SDIO_CMD_BANK           GPIOD
++#define SDIO_D0_BANK            GPIOC
++#define SDIO_D1_BANK            GPIOC
++#define SDIO_D2_BANK            GPIOC
++#define SDIO_D3_BANK            GPIOC
++#define SDIO_OOB_IRQ_BANK_CLK   RCC_AHB1Periph_GPIOB
++#define SDIO_CLK_BANK_CLK       RCC_AHB1Periph_GPIOC
++#define SDIO_CMD_BANK_CLK       RCC_AHB1Periph_GPIOD
++#define SDIO_D0_BANK_CLK        RCC_AHB1Periph_GPIOC
++#define SDIO_D1_BANK_CLK        RCC_AHB1Periph_GPIOC
++#define SDIO_D2_BANK_CLK        RCC_AHB1Periph_GPIOC
++#define SDIO_D3_BANK_CLK        RCC_AHB1Periph_GPIOC
++#define SDIO_OOB_IRQ_PIN        0
++#define SDIO_CLK_PIN            12
++#define SDIO_CMD_PIN            2
++#define SDIO_D0_PIN             8
++#define SDIO_D1_PIN             9
++#define SDIO_D2_PIN             10
++#define SDIO_D3_PIN             11
++
++#define WL_GPIO0_BANK          GPIOB
++#define WL_GPIO0_PIN           0
++#define WL_GPIO0_BANK_CLK      RCC_AHB1Periph_GPIOB
++#define WL_GPIO1_BANK          GPIOB
++#define WL_GPIO1_PIN           1//9
++#define WL_GPIO1_BANK_CLK      RCC_AHB1Periph_GPIOB
++
++#define WL_REG_ON_BANK         GPIOC
++#define WL_REG_ON_PIN          GPIO_Pin_2
++#define WL_REG_ON_BANK_CLK     RCC_AHB1Periph_GPIOC
++
++#define WL_RESET_BANK          GPIOC
++#define WL_RESET_PIN           GPIO_Pin_1
++#define WL_RESET_BANK_CLK      RCC_AHB1Periph_GPIOC
++
++#define STDIO_USART                    USART1
++#define STDIO_TX_PIN                   GPIO_Pin_9
++#define STDIO_RX_PIN                   GPIO_Pin_10
++#define STDIO_TX_PINSOURCE             GPIO_PinSource9
++#define STDIO_RX_PINSOURCE             GPIO_PinSource10
++#define STDIO_TX_BANK                  GPIOA
++#define STDIO_RX_BANK                  GPIOA
++#define STDIO_TX_BANK_CLK              RCC_AHB1Periph_GPIOA
++#define STDIO_RX_BANK_CLK              RCC_AHB1Periph_GPIOA
++#define STDIO_GPIO_ALTERNATE_FUNCTION  GPIO_AF_USART1
++#define STDIO_TX_GPIO_PERIPH_CLOCK     RCC_AHB1Periph_GPIOA
++#define STDIO_RX_GPIO_PERIPH_CLOCK     RCC_AHB1Periph_GPIOA
++#define STDIO_IRQ_CHANNEL              37
++#define STDIO_PERIPH_CLOCK             RCC_APB2Periph_USART1
++#define STDIO_CLOCK_CMD                RCC_APB2PeriphClockCmd
++#define STDIO_TX_CLK_CMD               RCC_AHB1PeriphClockCmd
++#define STDIO_RX_CLK_CMD               RCC_AHB1PeriphClockCmd
++
++/*  Bootloader LED D1 */
++
++ /* Bootloader Button S1 */
++
++/* The number of UART interfaces this hardware platform has */
++#define NUMBER_OF_UART_INTERFACES  2
++
++#define STDIO_UART       WICED_UART_1
++
++/******************************************************
++ *                   Enumerations
++ ******************************************************/
++
++/******************************************************
++ *                 Type Definitions
++ ******************************************************/
++
++/******************************************************
++ *                    Structures
++ ******************************************************/
++
++/******************************************************
++ *                 Global Variables
++ ******************************************************/
++
++/******************************************************
++ *               Function Declarations
++ ******************************************************/
+Index: WICED-SDK_2.3.1/Wiced/Platform/SN8000x/platform_internal_gpio.h
+diff -u nul WICED-SDK_2.3.1/Wiced/Platform/SN8000x/platform_internal_gpio.h:1.1.14.1
+--- nul	Tue Nov 12 15:50:03 2013
++++ WICED-SDK_2.3.1/Wiced/Platform/SN8000x/platform_internal_gpio.h	Tue Nov 12 15:50:03 2013
+@@ -0,0 +1,55 @@
++/*
++ * Copyright 2013, Broadcom Corporation
++ * All Rights Reserved.
++ *
++ * This is UNPUBLISHED PROPRIETARY SOURCE CODE of Broadcom Corporation;
++ * the contents of this file may not be disclosed to third parties, copied
++ * or duplicated in any form, in whole or in part, without the prior
++ * written permission of Broadcom Corporation.
++ */
++#pragma once
++
++#include "platform.h"
++
++/******************************************************
++ *                      Macros
++ ******************************************************/
++
++/******************************************************
++ *                    Constants
++ ******************************************************/
++
++#define WLAN_POWERSAVE_CLOCK_FREQUENCY 32768 /* 32768Hz        */
++#define WLAN_POWERSAVE_CLOCK_DUTY_CYCLE   50 /* 50% duty-cycle */
++
++/******************************************************
++ *                   Enumerations
++ ******************************************************/
++
++/* These are internal module connections only */
++typedef enum
++{
++    WICED_GPIO_WLAN_POWERSAVE_CLOCK = WICED_GPIO_MAX
++} wiced_extended_gpio_t;
++
++typedef enum
++{
++    WICED_PWM_WLAN_POWERSAVE_CLOCK = WICED_PWM_MAX
++} wiced_extended_pwm_t;
++
++/******************************************************
++ *                 Type Definitions
++ ******************************************************/
++
++/******************************************************
++ *                    Structures
++ ******************************************************/
++
++/******************************************************
++ *                 Global Variables
++ ******************************************************/
++
++/******************************************************
++ *               Function Declarations
++ ******************************************************/
++
+Index: WICED-SDK_2.3.1/Wiced/Platform/SN8000x/read_wifi_firmware.c
+diff -u nul WICED-SDK_2.3.1/Wiced/Platform/SN8000x/read_wifi_firmware.c:1.1.14.1
+--- nul	Tue Nov 12 15:50:03 2013
++++ WICED-SDK_2.3.1/Wiced/Platform/SN8000x/read_wifi_firmware.c	Tue Nov 12 15:50:03 2013
+@@ -0,0 +1,106 @@
++#include "internal/wifi_image/wwd_wifi_image_interface.h"
++
++#ifdef OTA_UPGRADE
++#include <stdio.h>
++#include "Platform/wwd_platform_interface.h"
++#include "platform.h"
++#include "bootloader_app.h"
++#include "wifi_nvram_image.h"
++#include "wwd_assert.h"
++
++#ifndef MIN
++#define MIN(a,b) (((a) < (b))?(a):(b))
++#endif
++
++#endif /* ifdef OTA_UPGRADE */
++
++
++
++
++#ifndef OTA_UPGRADE
++
++
++
++uint32_t host_platform_read_wifi_firmware( uint32_t offset, /*@out@*/wiced_buffer_t* buffer )
++{
++    return host_platform_read_memory_wifi_firmware( offset, buffer );
++}
++
++uint32_t host_platform_read_wifi_nvram( uint32_t offset, /*@out@*/wiced_buffer_t* buffer )
++{
++    return host_platform_read_memory_wifi_nvram( offset, buffer );
++}
++
++uint32_t host_platform_variable_size( void )
++{
++    return host_platform_memory_wifi_nvram_size( );
++}
++
++
++
++#else
++
++uint32_t host_platform_read_wifi_firmware( uint32_t offset, /*@out@*/ wiced_buffer_t* buffer )
++{
++    uint32_t buffer_size = 512;
++    uint8_t* packet;
++    wiced_result_t result;
++    uint32_t read_size;
++
++    do
++    {
++        result = host_buffer_get( buffer, WICED_NETWORK_TX, (unsigned short) ( buffer_size + sizeof(wiced_buffer_header_t) ), WICED_FALSE );
++    } while ( ( result == WICED_BUFFER_UNAVAILABLE_PERMANENT ) &&
++              ( ( buffer_size >>= 1 ) > 1 ) );
++
++    if ( result != WICED_SUCCESS )
++    {
++        WPRINT_PLATFORM_ERROR(("Fatal error: host_platform_read_firmware cannot allocate buffer"));
++        return 0;
++    }
++    packet = (uint8_t*) host_buffer_get_current_piece_data_pointer( *buffer );
++
++    if ( 0 != bootloader_api->platform_read_wifi_firmware( offset, packet + sizeof(wiced_buffer_header_t), host_buffer_get_current_piece_size(*buffer)-sizeof(wiced_buffer_header_t), &read_size ) )
++    {
++        return 0;
++    }
++
++    return read_size;
++}
++
++uint32_t host_platform_read_wifi_nvram( uint32_t offset, /*@out@*/ wiced_buffer_t* buffer )
++{
++    uint32_t buffer_size = 512;
++    uint8_t* packet;
++    wiced_result_t result;
++
++    do
++    {
++        result = host_buffer_get( buffer, WICED_NETWORK_TX, (unsigned short) ( buffer_size + sizeof(wiced_buffer_header_t) ), WICED_FALSE );
++    } while ( ( result == WICED_BUFFER_UNAVAILABLE_PERMANENT ) &&
++              ( ( buffer_size >>= 1 ) > 1 ) );
++    if ( result != WICED_SUCCESS )
++    {
++        WPRINT_PLATFORM_ERROR(("Fatal error: host_platform_read_variables cannot allocate buffer"));
++        return 0;
++    }
++    packet = (uint8_t*) host_buffer_get_current_piece_data_pointer( *buffer );
++
++    buffer_size = MIN(host_buffer_get_current_piece_size(*buffer)-sizeof(wiced_buffer_header_t), (sizeof(wifi_nvram_image) - offset));
++    memcpy( packet + sizeof(wiced_buffer_header_t), &wifi_nvram_image[offset], buffer_size );
++
++    return buffer_size;
++}
++
++
++uint32_t host_platform_variable_size( void )
++{
++    return sizeof(wifi_nvram_image);
++}
++
++
++/* dummy firmware array - needed to keep the bootloader app header happy*/
++const unsigned char wifi_firmware_image[1] = { 0x00 };
++const unsigned long wifi_firmware_image_size = (unsigned long) sizeof(wifi_firmware_image);
++
++#endif /* ifdef OTA_UPGRADE */
+Index: WICED-SDK_2.3.1/Wiced/Platform/SN8000x/wifi_nvram_image.h
+diff -u nul WICED-SDK_2.3.1/Wiced/Platform/SN8000x/wifi_nvram_image.h:1.1.14.1
+--- nul	Tue Nov 12 15:50:03 2013
++++ WICED-SDK_2.3.1/Wiced/Platform/SN8000x/wifi_nvram_image.h	Tue Nov 12 15:50:03 2013
+@@ -0,0 +1,77 @@
++/*
++ * Copyright 2012, Broadcom Corporation
++ * All Rights Reserved.
++ *
++ * This is UNPUBLISHED PROPRIETARY SOURCE CODE of Broadcom Corporation;
++ * the contents of this file may not be disclosed to third parties, copied
++ * or duplicated in any form, in whole or in part, without the prior
++ * written permission of Broadcom Corporation.
++ */
++
++/** @file
++ *  NVRAM variables for the BCM43362 on the SN8200 board
++ */
++
++#ifndef INCLUDED_VARIABLE_IMAGE_H_
++#define INCLUDED_VARIABLE_IMAGE_H_
++
++#include <string.h>
++#include <stdint.h>
++
++
++/**
++ * Character array of NVRAM image
++ */
++
++static const char wifi_nvram_image[] =
++       "manfid=0x2d0"                                                      "\x00"
++       "prodid=0x4336"                                                      "\x00"
++       "vendid=0x14e4"                                                     "\x00"
++       "devid=0x4343"                                                      "\x00"
++       "boardtype=0x0598"                                                  "\x00"
++       "boardrev=0x1207"                                                   "\x00"
++       "boardnum=777"                                                      "\x00"
++       "xtalfreq=26000"                                                    "\x00"
++       "clkreq_conf=1"							   "\x00"
++       "boardflags=0xa00"                                                  "\x00"
++       "sromrev=3"                                                         "\x00"
++       "wl0id=0x431b"                                                      "\x00"
++       "macaddr=00:90:4c:07:71:12"                                         "\x00"
++       "aa2g=1"                                                            "\x00"
++       "ag0=2"                                                             "\x00"
++       "maxp2ga0=78"                                                       "\x00"
++       "ofdm2gpo=0x54321111"                                               "\x00"
++       "mcs2gpo0=0x4444"                                                   "\x00"
++       "mcs2gpo1=0x8765"                                                   "\x00"
++       "pa0b0=0x14B8"                                                        "\x00"
++       "pa0b1=0xFD5C"                                                        "\x00"
++       "pa0b2=0xFF27"                                                        "\x00"
++       "pa0itssit=62"                                                      "\x00"
++       "pa1itssit=62"                                                      "\x00"
++       "cck2gpo=0"							   "\x00"
++       "cckPwrOffset=0"                                                    "\x00"
++       "cckdigfilttype=22"                                                    "\x00"
++       "ccode=0"                                                           "\x00"
++       "rssismf2g=0xa"                                                     "\x00"
++       "rssismc2g=0x3"                                                     "\x00"
++       "rssisav2g=0x7"                                                     "\x00"
++       "rfreg033=0x19"                                                    "\x00"
++       "rfreg033_cck=0x1f"                                                    "\x00"
++       "triso2g=1"                                                        "\x00"
++       "noise_cal_enable_2g=0"                                             "\x00"
++       "pacalidx2g=10"                                                    "\x00"
++       "swctrlmap_2g=0x0c050c05,0x0a030a03,0x0a030a03,0x0,0x1ff"      "\x00"
++       "RAW1=4a 0b ff ff 20 04 d0 02 62 a9"        "\x00"
++	   "logen_mode=0x0,0x2,0x1b,0x0,0x1b"           "\x00"
++       "noise_cal_po_2g=2"                                                "\x00"
++       "noise_cal_dbg.fab.3=1"                                            "\x00"
++       "noise_cal_high_gain.fab.3=76"                                     "\x00"
++       "noise_cal_nf_substract_val.fab.3=356"                             "\x00"
++       "noise_cal_po_2g.fab.3=4"                                          "\x00"
++        "\x00\x00";
++
++#else /* ifndef INCLUDED_VARIABLE_IMAGE_H_ */
++
++#error Variable image included twice
++
++#endif /* ifndef INCLUDED_VARIABLE_IMAGE_H_ */
+Index: WICED-SDK_2.3.1/Wiced/Platform/SN8000xUFL/SN8000xUFL.mk
+diff -u nul WICED-SDK_2.3.1/Wiced/Platform/SN8000xUFL/SN8000xUFL.mk:1.1.20.1
+--- nul	Tue Nov 12 15:50:03 2013
++++ WICED-SDK_2.3.1/Wiced/Platform/SN8000xUFL/SN8000xUFL.mk	Tue Nov 12 15:50:03 2013
+@@ -0,0 +1,85 @@
++#
++# Copyright 2012, Broadcom Corporation
++# All Rights Reserved.
++#
++# This is UNPUBLISHED PROPRIETARY SOURCE CODE of Broadcom Corporation;
++# the contents of this file may not be disclosed to third parties, copied
++# or duplicated in any form, in whole or in part, without the prior
++# written permission of Broadcom Corporation.
++#
++
++NAME := Platform_SN8000xUFL
++
++$(NAME)_SOURCES := ../SN8000xUFL/read_wifi_firmware.c \
++                   platform.c
++
++CHIP       := 43362a2
++HOST_MICRO := stm32f2x
++HOST_ARCH  := ARM_Cortex_M3
++
++
++ifndef USES_BOOTLOADER_OTA
++USES_BOOTLOADER_OTA :=1
++endif
++
++# Define default RTOS, bus, and network stack.
++ifndef RTOS
++RTOS:=ThreadX
++COMPONENTS += ThreadX
++endif
++
++ifndef BUS
++BUS:=SDIO
++endif
++
++ifndef NETWORK
++NETWORK:=NetX_Duo
++COMPONENTS += NetX_Duo
++endif
++
++GLOBAL_INCLUDES  := . \
++					../SN8000xUFL \
++                    ../include \
++                    ../../../include/platforms/SN8000xUFL
++
++
++$(NAME)_COMPONENTS := common/ARM_Cortex_M3/STM32F2xx \
++                      common/GCC
++
++$(NAME)_LINK_FILES :=
++
++# HSE_VALUE = STM32 crystal frequency = 16MHz (needed to make UART work correctly)
++GLOBAL_DEFINES += HSE_VALUE=16000000
++GLOBAL_DEFINES += CPU_CLOCK_HZ=120000000
++GLOBAL_DEFINES += APP_NAME=$$(SLASH_QUOTE)$(APP)$$(SLASH_QUOTE)
++GLOBAL_DEFINES += PLATFORM_STM32_VOLTAGE_2V7_TO_3V6
++#disable watchdog for debugging
++#GLOBAL_DEFINES += WICED_DISABLE_WATCHDOG
++GLOBAL_DEFINES += WICED_LS_SOURCE=0x2
++ifeq ($(BUS),SDIO)
++WIFI_IMAGE_DOWNLOAD := direct
++else
++ifeq ($(BUS),SPI)
++WIFI_IMAGE_DOWNLOAD := buffered
++endif
++endif
++
++PRE_APP_BUILDS := generated_mac_address.txt
++
++ifneq ($(APP),bootloader)
++ifneq ($(MAIN_COMPONENT_PROCESSING),1)
++$(info ******************************************************************************** )
++$(info The target Wi-Fi MAC address is defined in <Wiced-SDK>/generated_mac_address.txt )
++$(info Ensure each target device has a unique address!                                  )
++$(info ******************************************************************************** )
++endif
++endif
++
++# uncomment for non-bootloader apps to avoid adding a DCT
++# NODCT := 1 
++
++# Uncomment these lines to enable malloc debug.and checking
++#GLOBAL_DEFINES += MALLOC_DEBUG
++#WICED_LDFLAGS += -Wl,--wrap,malloc -Wl,--wrap,realloc -Wl,--wrap,calloc -Wl,--wrap,free
++
++# GLOBAL_DEFINES += STOP_MODE_SUPPORT PRINTF_BLOCKING
+Index: WICED-SDK_2.3.1/Wiced/Platform/SN8000xUFL/platform.c
+diff -u nul WICED-SDK_2.3.1/Wiced/Platform/SN8000xUFL/platform.c:1.2.8.1
+--- nul	Tue Nov 12 15:50:03 2013
++++ WICED-SDK_2.3.1/Wiced/Platform/SN8000xUFL/platform.c	Tue Nov 12 15:50:03 2013
+@@ -0,0 +1,246 @@
++/*
++ * Copyright 2012, Broadcom Corporation
++ * All Rights Reserved.
++ *
++ * This is UNPUBLISHED PROPRIETARY SOURCE CODE of Broadcom Corporation;
++ * the contents of this file may not be disclosed to third parties, copied
++ * or duplicated in any form, in whole or in part, without the prior
++ * written permission of Broadcom Corporation.
++ */
++
++/** @file
++ *
++ */
++#include "platform.h"
++#include "wiced_platform.h"
++#include "gpio_irq.h"
++#include "watchdog.h"
++#include "stdio.h"
++#include "string.h"
++#include "wwd_assert.h"
++#include "stm32f2xx_platform.h"
++#include "platform_common_config.h"
++#include "Platform/wwd_platform_interface.h"
++
++/******************************************************
++ *                      Macros
++ ******************************************************/
++
++/******************************************************
++ *                    Constants
++ ******************************************************/
++
++/******************************************************
++ *                   Enumerations
++ ******************************************************/
++
++/******************************************************
++ *                 Type Definitions
++ ******************************************************/
++
++/******************************************************
++ *                    Structures
++ ******************************************************/
++
++/******************************************************
++ *               Function Declarations
++ ******************************************************/
++
++/******************************************************
++ *               Variables Definitions
++ ******************************************************/
++
++/* This table maps STM32 pins to GPIO definitions on the schematic
++ * A full pin definition is provided in <WICED-SDK>/include/platforms/BCM943362WCD4/platform.h
++ */
++const platform_pin_mapping_t gpio_mapping[] =
++{
++    [WICED_GPIO_1]  = {GPIOA,  0,  RCC_AHB1Periph_GPIOA},
++    [WICED_GPIO_2]  = {GPIOA,  1,  RCC_AHB1Periph_GPIOA}, //ST15
++    [WICED_GPIO_3]  = {GPIOA,  2,  RCC_AHB1Periph_GPIOA}, //ST16
++    [WICED_GPIO_4]  = {GPIOA,  3,  RCC_AHB1Periph_GPIOA}, //ST17
++    [WICED_GPIO_5]  = {GPIOA,  4,  RCC_AHB1Periph_GPIOA}, //serial flash CS
++    [WICED_GPIO_6]  = {GPIOA,  5,  RCC_AHB1Periph_GPIOA}, //serial flash CLK
++    [WICED_GPIO_7]  = {GPIOA,  6,  RCC_AHB1Periph_GPIOA}, //serial flash MISO
++    [WICED_GPIO_8]  = {GPIOA,  7,  RCC_AHB1Periph_GPIOA}, //serial flash MOSI
++    [WICED_GPIO_9]  = {GPIOA,  9,  RCC_AHB1Periph_GPIOA}, //UART1 TX
++    [WICED_GPIO_10] = {GPIOA, 10,  RCC_AHB1Periph_GPIOA}, //UART1 RX
++    [WICED_GPIO_11] = {GPIOB,  6,  RCC_AHB1Periph_GPIOB}, //ST58
++    [WICED_GPIO_12] = {GPIOB,  7,  RCC_AHB1Periph_GPIOB}, //ST59
++    [WICED_GPIO_13] = {GPIOA, 13,  RCC_AHB1Periph_GPIOA},
++    [WICED_GPIO_14] = {GPIOA, 14,  RCC_AHB1Periph_GPIOA},
++    [WICED_GPIO_15] = {GPIOA, 15,  RCC_AHB1Periph_GPIOA},
++    [WICED_GPIO_16] = {GPIOB,  3,  RCC_AHB1Periph_GPIOB},
++    [WICED_GPIO_17] = {GPIOB,  4,  RCC_AHB1Periph_GPIOB},
++    [WICED_GPIO_18] = {GPIOA,  8,  RCC_AHB1Periph_GPIOA}, //ST41
++    [WICED_GPIO_19] = {GPIOA, 11,  RCC_AHB1Periph_GPIOA}, //UART1 CTS
++    [WICED_GPIO_20] = {GPIOA, 12,  RCC_AHB1Periph_GPIOA}, //UART1 RTS
++    [WICED_GPIO_21] = {GPIOB,  5,  RCC_AHB1Periph_GPIOB}, //ST57
++    [WICED_GPIO_22] = {GPIOB,  8,  RCC_AHB1Periph_GPIOB}, //ST61
++    [WICED_GPIO_23] = {GPIOB,  9,  RCC_AHB1Periph_GPIOB}, //ST62
++    [WICED_GPIO_24] = {GPIOB, 10,  RCC_AHB1Periph_GPIOB}, //ST29
++    [WICED_GPIO_25] = {GPIOB, 11,  RCC_AHB1Periph_GPIOB}, //ST30
++    [WICED_GPIO_26] = {GPIOB, 12,  RCC_AHB1Periph_GPIOB}, //ST33
++    [WICED_GPIO_27] = {GPIOB, 13,  RCC_AHB1Periph_GPIOB}, //ST34
++    [WICED_GPIO_28] = {GPIOB, 14,  RCC_AHB1Periph_GPIOB}, //ST35
++    [WICED_GPIO_29] = {GPIOB, 15,  RCC_AHB1Periph_GPIOB}, //ST36
++    [WICED_GPIO_30] = {GPIOC,  6,  RCC_AHB1Periph_GPIOC}, //ST37
++    [WICED_GPIO_31] = {GPIOC,  7,  RCC_AHB1Periph_GPIOC}, //ST38
++    [WICED_GPIO_32] = {GPIOC, 13,  RCC_AHB1Periph_GPIOC}, //ST02
++};
++
++
++/*
++ * Possible compile time inputs:
++ * - Set which ADC peripheral to use for each ADC. All on one ADC allows sequential conversion on all inputs. All on separate ADCs allows concurrent conversion.
++ */
++/* TODO : These need fixing */
++const platform_adc_mapping_t adc_mapping[] =
++{
++    [WICED_ADC_1] = {ADC1, ADC_Channel_1, RCC_APB2Periph_ADC1, 1, (platform_pin_mapping_t*)&gpio_mapping[WICED_GPIO_2]},
++    [WICED_ADC_2] = {ADC1, ADC_Channel_2, RCC_APB2Periph_ADC1, 1, (platform_pin_mapping_t*)&gpio_mapping[WICED_GPIO_3]},
++    [WICED_ADC_3] = {ADC1, ADC_Channel_3, RCC_APB2Periph_ADC1, 1, (platform_pin_mapping_t*)&gpio_mapping[WICED_GPIO_4]},
++};
++
++
++/* PWM mappings */
++const platform_pwm_mapping_t pwm_mappings[] =
++{
++    [WICED_PWM_1]  = {TIM4, 1, RCC_APB1Periph_TIM4, GPIO_AF_TIM4, (platform_pin_mapping_t*)&gpio_mapping[WICED_GPIO_11]},
++    [WICED_PWM_2]  = {TIM4, 2, RCC_APB1Periph_TIM4, GPIO_AF_TIM4, (platform_pin_mapping_t*)&gpio_mapping[WICED_GPIO_12]},
++    [WICED_PWM_3]  = {TIM2, 2, RCC_APB1Periph_TIM2, GPIO_AF_TIM2, (platform_pin_mapping_t*)&gpio_mapping[WICED_GPIO_2]},  /* or TIM5/Ch2                       */
++    [WICED_PWM_4]  = {TIM2, 3, RCC_APB1Periph_TIM2, GPIO_AF_TIM2, (platform_pin_mapping_t*)&gpio_mapping[WICED_GPIO_3]},  /* or TIM5/Ch3, TIM9/Ch1             */
++    [WICED_PWM_5]  = {TIM2, 4, RCC_APB1Periph_TIM2, GPIO_AF_TIM2, (platform_pin_mapping_t*)&gpio_mapping[WICED_GPIO_4]},  /* or TIM5/Ch4, TIM9/Ch2             */
++    [WICED_PWM_6]  = {TIM2, 1, RCC_APB1Periph_TIM2, GPIO_AF_TIM2, (platform_pin_mapping_t*)&gpio_mapping[WICED_GPIO_6]},  /* or TIM2_CH1_ETR, TIM8/Ch1N        */
++    [WICED_PWM_7]  = {TIM3, 1, RCC_APB1Periph_TIM3, GPIO_AF_TIM3, (platform_pin_mapping_t*)&gpio_mapping[WICED_GPIO_7]},  /* or TIM1_BKIN, TIM8_BKIN, TIM13/Ch1*/
++    [WICED_PWM_8]  = {TIM3, 2, RCC_APB1Periph_TIM3, GPIO_AF_TIM3, (platform_pin_mapping_t*)&gpio_mapping[WICED_GPIO_8]},  /* or TIM8/Ch1N, TIM14/Ch1           */
++    [WICED_PWM_9]  = {TIM5, 2, RCC_APB1Periph_TIM5, GPIO_AF_TIM5, (platform_pin_mapping_t*)&gpio_mapping[WICED_GPIO_2]},  /* or TIM2/Ch2                       */
++    /* TODO: fill in the other options here ... */
++};
++
++const platform_spi_mapping_t spi_mapping[] =
++{
++    [WICED_SPI_1]  =
++    {
++        .spi_regs              = SPI1,
++        .gpio_af               = GPIO_AF_SPI1,
++        .peripheral_clock_reg  = RCC_APB2Periph_SPI1,
++        .peripheral_clock_func = RCC_APB2PeriphClockCmd,
++        .pin_mosi              = &gpio_mapping[WICED_GPIO_8],
++        .pin_miso              = &gpio_mapping[WICED_GPIO_7],
++        .pin_clock             = &gpio_mapping[WICED_GPIO_6],
++        .tx_dma_stream         = DMA2_Stream5,
++        .rx_dma_stream         = DMA2_Stream0,
++        .tx_dma_channel        = DMA_Channel_3,
++        .rx_dma_channel        = DMA_Channel_3,
++        .tx_dma_stream_number  = 5,
++        .rx_dma_stream_number  = 0
++    }
++};
++
++const platform_uart_mapping_t uart_mapping[] =
++{
++    [WICED_UART_1] =
++    {
++        .usart                        = USART1,
++        .gpio_af                      = GPIO_AF_USART1,
++        .pin_tx                       = &gpio_mapping[WICED_GPIO_9],
++        .pin_rx                       = &gpio_mapping[WICED_GPIO_10],
++        .pin_cts                      = NULL,
++        .pin_rts                      = NULL,
++        .usart_peripheral_clock       = RCC_APB2Periph_USART1,
++        .usart_peripheral_clock_func  = RCC_APB2PeriphClockCmd,
++        .usart_irq                    = USART1_IRQn,
++        .tx_dma                       = DMA2,
++        .tx_dma_stream                = DMA2_Stream7,
++        .tx_dma_channel               = DMA_Channel_4,
++        .tx_dma_peripheral_clock      = RCC_AHB1Periph_DMA2,
++        .tx_dma_peripheral_clock_func = RCC_AHB1PeriphClockCmd,
++        .tx_dma_irq                   = DMA2_Stream7_IRQn,
++        .rx_dma                       = DMA2,
++        .rx_dma_stream                = DMA2_Stream2,
++        .rx_dma_channel               = DMA_Channel_4,
++        .rx_dma_peripheral_clock      = RCC_AHB1Periph_DMA2,
++        .rx_dma_peripheral_clock_func = RCC_AHB1PeriphClockCmd,
++        .rx_dma_irq                   = DMA2_Stream2_IRQn
++    },
++    [WICED_UART_2] =
++    {
++        .usart                        = USART2,
++        .gpio_af                      = GPIO_AF_USART2,
++        .pin_tx                       = &gpio_mapping[WICED_GPIO_3],
++        .pin_rx                       = &gpio_mapping[WICED_GPIO_4],
++        .pin_cts                      = &gpio_mapping[WICED_GPIO_1],
++        .pin_rts                      = &gpio_mapping[WICED_GPIO_2],
++        .usart_peripheral_clock       = RCC_APB1Periph_USART2,
++        .usart_peripheral_clock_func  = RCC_APB1PeriphClockCmd,
++        .usart_irq                    = USART2_IRQn,
++        .tx_dma                       = DMA1,
++        .tx_dma_stream                = DMA1_Stream6,
++        .tx_dma_channel               = DMA_Channel_4,
++        .tx_dma_peripheral_clock      = RCC_AHB1Periph_DMA1,
++        .tx_dma_peripheral_clock_func = RCC_AHB1PeriphClockCmd,
++        .tx_dma_irq                   = DMA1_Stream6_IRQn,
++        .rx_dma                       = DMA1,
++        .rx_dma_stream                = DMA1_Stream5,
++        .rx_dma_channel               = DMA_Channel_4,
++        .rx_dma_peripheral_clock      = RCC_AHB1Periph_DMA1,
++        .rx_dma_peripheral_clock_func = RCC_AHB1PeriphClockCmd,
++        .rx_dma_irq                   = DMA1_Stream5_IRQn
++    },
++};
++
++/******************************************************
++ *               Function Definitions
++ ******************************************************/
++wiced_spi_device_t wiced_spi_flash =
++{
++	.port        = WICED_SPI_1,
++	.chip_select = WICED_SPI_FLASH_CS,
++	.speed       = 1000000,
++	.mode        = (SPI_CLOCK_FALLING_EDGE | SPI_CLOCK_IDLE_HIGH | SPI_NO_DMA | SPI_MSB_FIRST),
++	.bits        = 8
++};
++
++wiced_result_t wiced_platform_init( void )
++{
++    WPRINT_PLATFORM_INFO( ("\r\nPlatform " PLATFORM " initialised\r\n") );
++
++    if ( WICED_TRUE == watchdog_check_last_reset() )
++    {
++        WPRINT_PLATFORM_ERROR(("WARNING: Watchdog reset occured previously. Please see watchdog.c for debugging instructions.\r\n"));
++    }
++
++    return WICED_SUCCESS;
++}
++
++void init_platform( void )
++{
++    /* Initialise LEDs and turn off by default */
++
++    /* Initialise buttons to input by default */
++}
++
++void host_platform_reset_wifi( wiced_bool_t reset_asserted )
++{
++    if ( reset_asserted == WICED_TRUE )
++    {
++        GPIO_ResetBits( WL_RESET_BANK, WL_RESET_PIN );
++    }
++    else
++    {
++        GPIO_SetBits( WL_RESET_BANK, WL_RESET_PIN );
++    }
++}
++
++void host_platform_power_wifi( wiced_bool_t power_enabled )
++{
++    if ( power_enabled == WICED_FALSE )
++    {
++        GPIO_ResetBits( WL_REG_ON_BANK, WL_REG_ON_PIN );
++    }
++    else
++    {
++        GPIO_SetBits( WL_REG_ON_BANK, WL_REG_ON_PIN );
++    }
++}
+Index: WICED-SDK_2.3.1/Wiced/Platform/SN8000xUFL/platform_common_config.h
+diff -u nul WICED-SDK_2.3.1/Wiced/Platform/SN8000xUFL/platform_common_config.h:1.1.20.1
+--- nul	Tue Nov 12 15:50:03 2013
++++ WICED-SDK_2.3.1/Wiced/Platform/SN8000xUFL/platform_common_config.h	Tue Nov 12 15:50:03 2013
+@@ -0,0 +1,118 @@
++/*
++ * Copyright 2012, Broadcom Corporation
++ * All Rights Reserved.
++ *
++ * This is UNPUBLISHED PROPRIETARY SOURCE CODE of Broadcom Corporation;
++ * the contents of this file may not be disclosed to third parties, copied
++ * or duplicated in any form, in whole or in part, without the prior
++ * written permission of Broadcom Corporation.
++ */
++#pragma once
++
++/******************************************************
++ *                      Macros
++ ******************************************************/
++
++/******************************************************
++ *                    Constants
++ ******************************************************/
++
++#define SPI_BUS_CLOCK_BANK      GPIOB
++#define SPI_BUS_MISO_BANK       GPIOB
++#define SPI_BUS_MOSI_BANK       GPIOB
++#define SPI_BUS_CS_BANK         GPIOC
++#define SPI_IRQ_BANK            GPIOC
++#define SPI_BUS_CLOCK_BANK_CLK  RCC_AHB1Periph_GPIOB
++#define SPI_BUS_MISO_BANK_CLK   RCC_AHB1Periph_GPIOB
++#define SPI_BUS_MOSI_BANK_CLK   RCC_AHB1Periph_GPIOB
++#define SPI_BUS_CS_BANK_CLK     RCC_AHB1Periph_GPIOC
++#define SPI_IRQ_CLK             RCC_AHB1Periph_GPIOC
++#define SPI_BUS_CLOCK_PIN       13
++#define SPI_BUS_MISO_PIN        14
++#define SPI_BUS_MOSI_PIN        15
++#define SPI_BUS_CS_PIN          11
++#define SPI_IRQ_PIN             9
++
++#define SDIO_OOB_IRQ_BANK       GPIOB
++#define SDIO_CLK_BANK           GPIOC
++#define SDIO_CMD_BANK           GPIOD
++#define SDIO_D0_BANK            GPIOC
++#define SDIO_D1_BANK            GPIOC
++#define SDIO_D2_BANK            GPIOC
++#define SDIO_D3_BANK            GPIOC
++#define SDIO_OOB_IRQ_BANK_CLK   RCC_AHB1Periph_GPIOB
++#define SDIO_CLK_BANK_CLK       RCC_AHB1Periph_GPIOC
++#define SDIO_CMD_BANK_CLK       RCC_AHB1Periph_GPIOD
++#define SDIO_D0_BANK_CLK        RCC_AHB1Periph_GPIOC
++#define SDIO_D1_BANK_CLK        RCC_AHB1Periph_GPIOC
++#define SDIO_D2_BANK_CLK        RCC_AHB1Periph_GPIOC
++#define SDIO_D3_BANK_CLK        RCC_AHB1Periph_GPIOC
++#define SDIO_OOB_IRQ_PIN        0
++#define SDIO_CLK_PIN            12
++#define SDIO_CMD_PIN            2
++#define SDIO_D0_PIN             8
++#define SDIO_D1_PIN             9
++#define SDIO_D2_PIN             10
++#define SDIO_D3_PIN             11
++
++#define WL_GPIO0_BANK          GPIOB
++#define WL_GPIO0_PIN           0
++#define WL_GPIO0_BANK_CLK      RCC_AHB1Periph_GPIOB
++#define WL_GPIO1_BANK          GPIOB
++#define WL_GPIO1_PIN           1
++#define WL_GPIO1_BANK_CLK      RCC_AHB1Periph_GPIOB
++
++#define WL_REG_ON_BANK         GPIOC
++#define WL_REG_ON_PIN          GPIO_Pin_2
++#define WL_REG_ON_BANK_CLK     RCC_AHB1Periph_GPIOC
++
++#define WL_RESET_BANK          GPIOC
++#define WL_RESET_PIN           GPIO_Pin_1
++#define WL_RESET_BANK_CLK      RCC_AHB1Periph_GPIOC
++
++#define STDIO_USART                    USART1
++#define STDIO_TX_PIN                   GPIO_Pin_9
++#define STDIO_RX_PIN                   GPIO_Pin_10
++#define STDIO_TX_PINSOURCE             GPIO_PinSource9
++#define STDIO_RX_PINSOURCE             GPIO_PinSource10
++#define STDIO_TX_BANK                  GPIOA
++#define STDIO_RX_BANK                  GPIOA
++#define STDIO_TX_BANK_CLK              RCC_AHB1Periph_GPIOA
++#define STDIO_RX_BANK_CLK              RCC_AHB1Periph_GPIOA
++#define STDIO_GPIO_ALTERNATE_FUNCTION  GPIO_AF_USART1
++#define STDIO_TX_GPIO_PERIPH_CLOCK     RCC_AHB1Periph_GPIOA
++#define STDIO_RX_GPIO_PERIPH_CLOCK     RCC_AHB1Periph_GPIOA
++#define STDIO_IRQ_CHANNEL              37
++#define STDIO_PERIPH_CLOCK             RCC_APB2Periph_USART1
++#define STDIO_CLOCK_CMD                RCC_APB2PeriphClockCmd
++#define STDIO_TX_CLK_CMD               RCC_AHB1PeriphClockCmd
++#define STDIO_RX_CLK_CMD               RCC_AHB1PeriphClockCmd
++
++/*  Bootloader LED D1 */
++
++ /* Bootloader Button S1 */
++
++/* The number of UART interfaces this hardware platform has */
++#define NUMBER_OF_UART_INTERFACES  2
++
++#define STDIO_UART       WICED_UART_1
++
++/******************************************************
++ *                   Enumerations
++ ******************************************************/
++
++/******************************************************
++ *                 Type Definitions
++ ******************************************************/
++
++/******************************************************
++ *                    Structures
++ ******************************************************/
++
++/******************************************************
++ *                 Global Variables
++ ******************************************************/
++
++/******************************************************
++ *               Function Declarations
++ ******************************************************/
+Index: WICED-SDK_2.3.1/Wiced/Platform/SN8000xUFL/platform_internal_gpio.h
+diff -u nul WICED-SDK_2.3.1/Wiced/Platform/SN8000xUFL/platform_internal_gpio.h:1.1.20.1
+--- nul	Tue Nov 12 15:50:03 2013
++++ WICED-SDK_2.3.1/Wiced/Platform/SN8000xUFL/platform_internal_gpio.h	Tue Nov 12 15:50:03 2013
+@@ -0,0 +1,55 @@
++/*
++ * Copyright 2013, Broadcom Corporation
++ * All Rights Reserved.
++ *
++ * This is UNPUBLISHED PROPRIETARY SOURCE CODE of Broadcom Corporation;
++ * the contents of this file may not be disclosed to third parties, copied
++ * or duplicated in any form, in whole or in part, without the prior
++ * written permission of Broadcom Corporation.
++ */
++#pragma once
++
++#include "platform.h"
++
++/******************************************************
++ *                      Macros
++ ******************************************************/
++
++/******************************************************
++ *                    Constants
++ ******************************************************/
++
++#define WLAN_POWERSAVE_CLOCK_FREQUENCY 32768 /* 32768Hz        */
++#define WLAN_POWERSAVE_CLOCK_DUTY_CYCLE   50 /* 50% duty-cycle */
++
++/******************************************************
++ *                   Enumerations
++ ******************************************************/
++
++/* These are internal module connections only */
++typedef enum
++{
++    WICED_GPIO_WLAN_POWERSAVE_CLOCK = WICED_GPIO_MAX
++} wiced_extended_gpio_t;
++
++typedef enum
++{
++    WICED_PWM_WLAN_POWERSAVE_CLOCK = WICED_PWM_MAX
++} wiced_extended_pwm_t;
++
++/******************************************************
++ *                 Type Definitions
++ ******************************************************/
++
++/******************************************************
++ *                    Structures
++ ******************************************************/
++
++/******************************************************
++ *                 Global Variables
++ ******************************************************/
++
++/******************************************************
++ *               Function Declarations
++ ******************************************************/
++
+Index: WICED-SDK_2.3.1/Wiced/Platform/SN8000xUFL/read_wifi_firmware.c
+diff -u nul WICED-SDK_2.3.1/Wiced/Platform/SN8000xUFL/read_wifi_firmware.c:1.1.2.1
+--- nul	Tue Nov 12 15:50:03 2013
++++ WICED-SDK_2.3.1/Wiced/Platform/SN8000xUFL/read_wifi_firmware.c	Tue Nov 12 15:50:03 2013
+@@ -0,0 +1,106 @@
++#include "internal/wifi_image/wwd_wifi_image_interface.h"
++
++#ifdef OTA_UPGRADE
++#include <stdio.h>
++#include "Platform/wwd_platform_interface.h"
++#include "platform.h"
++#include "bootloader_app.h"
++#include "wifi_nvram_image.h"
++#include "wwd_assert.h"
++
++#ifndef MIN
++#define MIN(a,b) (((a) < (b))?(a):(b))
++#endif
++
++#endif /* ifdef OTA_UPGRADE */
++
++
++
++
++#ifndef OTA_UPGRADE
++
++
++
++uint32_t host_platform_read_wifi_firmware( uint32_t offset, /*@out@*/wiced_buffer_t* buffer )
++{
++    return host_platform_read_memory_wifi_firmware( offset, buffer );
++}
++
++uint32_t host_platform_read_wifi_nvram( uint32_t offset, /*@out@*/wiced_buffer_t* buffer )
++{
++    return host_platform_read_memory_wifi_nvram( offset, buffer );
++}
++
++uint32_t host_platform_variable_size( void )
++{
++    return host_platform_memory_wifi_nvram_size( );
++}
++
++
++
++#else
++
++uint32_t host_platform_read_wifi_firmware( uint32_t offset, /*@out@*/ wiced_buffer_t* buffer )
++{
++    uint32_t buffer_size = 512;
++    uint8_t* packet;
++    wiced_result_t result;
++    uint32_t read_size;
++
++    do
++    {
++        result = host_buffer_get( buffer, WICED_NETWORK_TX, (unsigned short) ( buffer_size + sizeof(wiced_buffer_header_t) ), WICED_FALSE );
++    } while ( ( result == WICED_BUFFER_UNAVAILABLE_PERMANENT ) &&
++              ( ( buffer_size >>= 1 ) > 1 ) );
++
++    if ( result != WICED_SUCCESS )
++    {
++        WPRINT_PLATFORM_ERROR(("Fatal error: host_platform_read_firmware cannot allocate buffer"));
++        return 0;
++    }
++    packet = (uint8_t*) host_buffer_get_current_piece_data_pointer( *buffer );
++
++    if ( 0 != bootloader_api->platform_read_wifi_firmware( offset, packet + sizeof(wiced_buffer_header_t), host_buffer_get_current_piece_size(*buffer)-sizeof(wiced_buffer_header_t), &read_size ) )
++    {
++        return 0;
++    }
++
++    return read_size;
++}
++
++uint32_t host_platform_read_wifi_nvram( uint32_t offset, /*@out@*/ wiced_buffer_t* buffer )
++{
++    uint32_t buffer_size = 512;
++    uint8_t* packet;
++    wiced_result_t result;
++
++    do
++    {
++        result = host_buffer_get( buffer, WICED_NETWORK_TX, (unsigned short) ( buffer_size + sizeof(wiced_buffer_header_t) ), WICED_FALSE );
++    } while ( ( result == WICED_BUFFER_UNAVAILABLE_PERMANENT ) &&
++              ( ( buffer_size >>= 1 ) > 1 ) );
++    if ( result != WICED_SUCCESS )
++    {
++        WPRINT_PLATFORM_ERROR(("Fatal error: host_platform_read_variables cannot allocate buffer"));
++        return 0;
++    }
++    packet = (uint8_t*) host_buffer_get_current_piece_data_pointer( *buffer );
++
++    buffer_size = MIN(host_buffer_get_current_piece_size(*buffer)-sizeof(wiced_buffer_header_t), (sizeof(wifi_nvram_image) - offset));
++    memcpy( packet + sizeof(wiced_buffer_header_t), &wifi_nvram_image[offset], buffer_size );
++
++    return buffer_size;
++}
++
++
++uint32_t host_platform_variable_size( void )
++{
++    return sizeof(wifi_nvram_image);
++}
++
++
++/* dummy firmware array - needed to keep the bootloader app header happy*/
++const unsigned char wifi_firmware_image[1] = { 0x00 };
++const unsigned long wifi_firmware_image_size = (unsigned long) sizeof(wifi_firmware_image);
++
++#endif /* ifdef OTA_UPGRADE */
+Index: WICED-SDK_2.3.1/Wiced/Platform/SN8000xUFL/wifi_nvram_image.h
+diff -u nul WICED-SDK_2.3.1/Wiced/Platform/SN8000xUFL/wifi_nvram_image.h:1.1.20.1
+--- nul	Tue Nov 12 15:50:04 2013
++++ WICED-SDK_2.3.1/Wiced/Platform/SN8000xUFL/wifi_nvram_image.h	Tue Nov 12 15:50:04 2013
+@@ -0,0 +1,77 @@
++/*
++ * Copyright 2012, Broadcom Corporation
++ * All Rights Reserved.
++ *
++ * This is UNPUBLISHED PROPRIETARY SOURCE CODE of Broadcom Corporation;
++ * the contents of this file may not be disclosed to third parties, copied
++ * or duplicated in any form, in whole or in part, without the prior
++ * written permission of Broadcom Corporation.
++ */
++
++/** @file
++ *  NVRAM variables for the BCM43362 on the SN8200 board
++ */
++
++#ifndef INCLUDED_VARIABLE_IMAGE_H_
++#define INCLUDED_VARIABLE_IMAGE_H_
++
++#include <string.h>
++#include <stdint.h>
++
++
++/**
++ * Character array of NVRAM image
++ */
++
++static const char wifi_nvram_image[] =
++       "manfid=0x2d0"                                                      "\x00"
++       "prodid=0x4336"                                                      "\x00"
++       "vendid=0x14e4"                                                     "\x00"
++       "devid=0x4343"                                                      "\x00"
++       "boardtype=0x0598"                                                  "\x00"
++       "boardrev=0x1207"                                                   "\x00"
++       "boardnum=777"                                                      "\x00"
++       "xtalfreq=26000"                                                    "\x00"
++	   "clkreq_conf=1"								"\x00"
++       "boardflags=0xa00"                                                  "\x00"
++       "sromrev=3"                                                         "\x00"
++       "wl0id=0x431b"                                                      "\x00"
++       "macaddr=00:90:4c:07:71:12"                                         "\x00"
++       "aa2g=1"                                                            "\x00"
++       "ag0=2"                                                             "\x00"
++       "maxp2ga0=74"                                                       "\x00"
++       "ofdm2gpo=0x33333333"                                               "\x00"
++       "mcs2gpo0=0x6666"                                                   "\x00"
++       "mcs2gpo1=0x6666"                                                   "\x00"
++       "pa0b0=0x14B8"                                                        "\x00"
++       "pa0b1=0xFD5C"                                                        "\x00"
++       "pa0b2=0xFF27"                                                        "\x00"
++       "pa0itssit=62"                                                      "\x00"
++       "pa1itssit=62"                                                      "\x00"
++       "cck2gpo=0"							   "\x00"
++       "cckPwrOffset=0"                                                    "\x00"
++       "cckdigfilttype=22"                                                    "\x00"
++       "ccode=0"                                                           "\x00"
++       "rssismf2g=0xa"                                                     "\x00"
++       "rssismc2g=0x3"                                                     "\x00"
++       "rssisav2g=0x7"                                                     "\x00"
++       "rfreg033=0x19"                                                    "\x00"
++       "rfreg033_cck=0x1f"                                                    "\x00"
++       "triso2g=1"                                                        "\x00"
++       "noise_cal_enable_2g=0"                                             "\x00"
++       "pacalidx2g=10"                                                    "\x00"
++       "swctrlmap_2g=0x0c050c05,0x0a030a03,0x0a030a03,0x0,0x1ff"      "\x00"
++       "RAW1=4a 0b ff ff 20 04 d0 02 62 a9"        "\x00"
++	   "logen_mode=0x0,0x2,0x1b,0x0,0x1b"           "\x00"
++       "noise_cal_po_2g=2"                                                "\x00"
++       "noise_cal_dbg.fab.3=1"                                            "\x00"
++       "noise_cal_high_gain.fab.3=76"                                     "\x00"
++       "noise_cal_nf_substract_val.fab.3=356"                             "\x00"
++       "noise_cal_po_2g.fab.3=4"                                          "\x00"
++        "\x00\x00";
++
++#else /* ifndef INCLUDED_VARIABLE_IMAGE_H_ */
++
++#error Variable image included twice
++
++#endif /* ifndef INCLUDED_VARIABLE_IMAGE_H_ */
+Index: WICED-SDK_2.3.1/Wiced/Platform/common/ARM_Cortex_M3/STM32F1xx/GCC/bootapp_link.ld
+diff -u WICED-SDK_2.3.1/Wiced/Platform/common/ARM_Cortex_M3/STM32F1xx/GCC/bootapp_link.ld:1.1.1.1 WICED-SDK_2.3.1/Wiced/Platform/common/ARM_Cortex_M3/STM32F1xx/GCC/bootapp_link.ld:1.1.1.1.2.1
+--- WICED-SDK_2.3.1/Wiced/Platform/common/ARM_Cortex_M3/STM32F1xx/GCC/bootapp_link.ld:1.1.1.1	Fri Jun  7 18:26:07 2013
++++ WICED-SDK_2.3.1/Wiced/Platform/common/ARM_Cortex_M3/STM32F1xx/GCC/bootapp_link.ld	Fri Jun  7 18:26:07 2013
+@@ -91,8 +91,8 @@
+     DCT1_FLASH       (rx)  : ORIGIN = 0x08004000, LENGTH = 8K
+     DCT2_FLASH       (rx)  : ORIGIN = 0x08006000, LENGTH = 8K
+     APP_HDR          (rx)  : ORIGIN = 0x08008000, LENGTH = 512
+-    APP_CODE         (rx)  : ORIGIN = 0x08008200, LENGTH = 0x77E00  /* 479.5K */
+-    SRAM             (rwx) : ORIGIN = 0x20000000, LENGTH = 64K
++    APP_CODE         (rx)  : ORIGIN = 0x08008200, LENGTH = 0xB7E00  /* 735.5K */
++    SRAM             (rwx) : ORIGIN = 0x20000000, LENGTH = 96K
+ }
+ 
+ SECTIONS
+Index: WICED-SDK_2.3.1/Wiced/Platform/common/ARM_Cortex_M3/STM32F1xx/bootloader_ota/platform_bootloader.c
+diff -u WICED-SDK_2.3.1/Wiced/Platform/common/ARM_Cortex_M3/STM32F1xx/bootloader_ota/platform_bootloader.c:1.1.1.1 WICED-SDK_2.3.1/Wiced/Platform/common/ARM_Cortex_M3/STM32F1xx/bootloader_ota/platform_bootloader.c:1.1.1.1.4.1
+--- WICED-SDK_2.3.1/Wiced/Platform/common/ARM_Cortex_M3/STM32F1xx/bootloader_ota/platform_bootloader.c:1.1.1.1	Tue Nov 12 15:50:05 2013
++++ WICED-SDK_2.3.1/Wiced/Platform/common/ARM_Cortex_M3/STM32F1xx/bootloader_ota/platform_bootloader.c	Tue Nov 12 15:50:05 2013
+@@ -252,11 +252,17 @@
+ 
+ unsigned char platform_get_bootloader_button( void )
+ {
++#ifdef BOOTLOADER_BUTTON_GPIO
+     return (wiced_gpio_input_get(BOOTLOADER_BUTTON_GPIO) == (wiced_bool_t)BOOTLOADER_BUTTON_PRESSED_STATE) ? 1 : 0;
++#else
++    return 0;
++#endif
+ }
+ 
+ void platform_set_bootloader_led( unsigned char on )
+ {
++	UNUSED_PARAMETER(on);
++#ifdef BOOTLOADER_BUTTON_GPIO
+     if ( on != 0 ) // turn on
+     {
+     	if (BOOTLOADER_LED_ON_STATE == WICED_ACTIVE_HIGH)
+@@ -279,6 +285,7 @@
+ 			wiced_gpio_output_high( BOOTLOADER_LED_GPIO );
+     	}
+     }
++#endif
+ }
+ 
+ int platform_read_wifi_firmware( uint32_t address, void* buffer, uint32_t requested_size, uint32_t* read_size )
+Index: WICED-SDK_2.3.1/Wiced/Platform/common/ARM_Cortex_M3/STM32F2xx/stm32f2xx_platform.c
+diff -u WICED-SDK_2.3.1/Wiced/Platform/common/ARM_Cortex_M3/STM32F2xx/stm32f2xx_platform.c:1.1.1.1 WICED-SDK_2.3.1/Wiced/Platform/common/ARM_Cortex_M3/STM32F2xx/stm32f2xx_platform.c:1.1.1.1.12.1
+--- WICED-SDK_2.3.1/Wiced/Platform/common/ARM_Cortex_M3/STM32F2xx/stm32f2xx_platform.c:1.1.1.1	Tue Nov 12 15:50:05 2013
++++ WICED-SDK_2.3.1/Wiced/Platform/common/ARM_Cortex_M3/STM32F2xx/stm32f2xx_platform.c	Tue Nov 12 15:50:05 2013
+@@ -314,7 +314,8 @@
+     /* Use the clock configuration utility from ST to calculate these values
+      * http://www.st.com/internet/com/SOFTWARE_RESOURCES/TOOL/CONFIGURATION_UTILITY/stm32f2xx_clockconfig.zip
+      */
+-    RCC_PLLConfig( RCC_PLLSource_HSE, 26, 240, 2, 5 ); /* NOTE: The CPU Clock Frequency is independently defined in platform.h */
++    //RCC_PLLConfig( RCC_PLLSource_HSE, 26, 240, 2, 5 );
++    RCC_PLLConfig( RCC_PLLSource_HSE, HSE_VALUE/1000000, 240, 2, 5 ); /* NOTE: The CPU Clock Frequency is independently defined in platform.h */
+     RCC_PLLCmd( ENABLE );
+ 
+     while ( RCC_GetFlagStatus( RCC_FLAG_PLLRDY ) == RESET )
+Index: WICED-SDK_2.3.1/Wiced/Platform/common/ARM_Cortex_M3/STM32F2xx/wwd_platform.c
+diff -u WICED-SDK_2.3.1/Wiced/Platform/common/ARM_Cortex_M3/STM32F2xx/wwd_platform.c:1.1.1.1 WICED-SDK_2.3.1/Wiced/Platform/common/ARM_Cortex_M3/STM32F2xx/wwd_platform.c:1.1.1.1.4.1
+--- WICED-SDK_2.3.1/Wiced/Platform/common/ARM_Cortex_M3/STM32F2xx/wwd_platform.c:1.1.1.1	Tue Nov 12 15:50:05 2013
++++ WICED-SDK_2.3.1/Wiced/Platform/common/ARM_Cortex_M3/STM32F2xx/wwd_platform.c	Tue Nov 12 15:50:05 2013
+@@ -21,6 +21,7 @@
+ #include "platform_internal_gpio.h"
+ #include "wiced_platform.h"
+ #include "Platform/wwd_platform_interface.h"
++#include "platform_sleep.h"
+ 
+ #ifndef WL_RESET_BANK
+ #error Missing WL_RESET_BANK definition
+@@ -141,6 +142,7 @@
+ 
+ wiced_result_t host_platform_init_wlan_powersave_clock( void )
+ {
++#ifdef WICED_WLAN_POWERSAVE_CLOCK_SOURCE
+ #if ( WICED_WLAN_POWERSAVE_CLOCK_SOURCE == WICED_WLAN_POWERSAVE_CLOCK_IS_PWM )
+ 
+     wiced_pwm_init( WICED_PWM_WLAN_POWERSAVE_CLOCK, WLAN_POWERSAVE_CLOCK_FREQUENCY, WLAN_POWERSAVE_CLOCK_DUTY_CYCLE );
+@@ -175,10 +177,13 @@
+     return platform_reset_wlan_powersave_clock( );
+ 
+ #endif
++#endif
++    return WICED_SUCCESS;
+ }
+ 
+ wiced_result_t host_platform_deinit_wlan_powersave_clock( void )
+ {
++#ifdef WICED_WLAN_POWERSAVE_CLOCK_SOURCE
+ #if ( WICED_WLAN_POWERSAVE_CLOCK_SOURCE == WICED_WLAN_POWERSAVE_CLOCK_IS_PWM )
+ 
+     wiced_pwm_stop( WICED_PWM_WLAN_POWERSAVE_CLOCK );
+@@ -190,12 +195,16 @@
+     return platform_reset_wlan_powersave_clock( );
+ 
+ #endif
++#endif
++    return WICED_SUCCESS;
+ }
+ 
+ static wiced_result_t platform_reset_wlan_powersave_clock( void )
+ {
++#if (WICED_WLAN_POWERSAVE_CLOCK_SOURCE != WICED_WLAN_POWERSAVE_CLOCK_IS_EXT)
+     /* Tie the pin to ground */
+     wiced_gpio_init( WICED_GPIO_WLAN_POWERSAVE_CLOCK, OUTPUT_PUSH_PULL );
+     wiced_gpio_output_low( WICED_GPIO_WLAN_POWERSAVE_CLOCK );
++#endif
+     return WICED_SUCCESS;
+ }
+Index: WICED-SDK_2.3.1/Wiced/Platform/common/ARM_Cortex_M3/STM32F2xx/bootloader_ota/platform_bootloader.c
+diff -u WICED-SDK_2.3.1/Wiced/Platform/common/ARM_Cortex_M3/STM32F2xx/bootloader_ota/platform_bootloader.c:1.1.1.1 WICED-SDK_2.3.1/Wiced/Platform/common/ARM_Cortex_M3/STM32F2xx/bootloader_ota/platform_bootloader.c:1.1.1.1.4.1
+--- WICED-SDK_2.3.1/Wiced/Platform/common/ARM_Cortex_M3/STM32F2xx/bootloader_ota/platform_bootloader.c:1.1.1.1	Tue Nov 12 15:50:05 2013
++++ WICED-SDK_2.3.1/Wiced/Platform/common/ARM_Cortex_M3/STM32F2xx/bootloader_ota/platform_bootloader.c	Tue Nov 12 15:50:05 2013
+@@ -250,11 +250,17 @@
+ 
+ unsigned char platform_get_bootloader_button( void )
+ {
++#ifdef BOOTLOADER_BUTTON_GPIO
+     return (wiced_gpio_input_get(BOOTLOADER_BUTTON_GPIO) == (wiced_bool_t)BOOTLOADER_BUTTON_PRESSED_STATE) ? 1 : 0;
++#else
++    return 0;
++#endif
+ }
+ 
+ void platform_set_bootloader_led( unsigned char on )
+ {
++	UNUSED_PARAMETER(on);
++#ifdef BOOTLOADER_BUTTON_GPIO
+     if ( on != 0 ) // turn on
+     {
+     	if (BOOTLOADER_LED_ON_STATE == WICED_ACTIVE_HIGH)
+@@ -277,6 +283,7 @@
+ 			wiced_gpio_output_high( BOOTLOADER_LED_GPIO );
+     	}
+     }
++#endif
+ }
+ 
+ 
+Index: WICED-SDK_2.3.1/Wiced/Platform/common/drivers/spi_flash/SN8000x.c
+diff -u nul WICED-SDK_2.3.1/Wiced/Platform/common/drivers/spi_flash/SN8000x.c:1.1.14.1
+--- nul	Tue Nov 12 15:50:08 2013
++++ WICED-SDK_2.3.1/Wiced/Platform/common/drivers/spi_flash/SN8000x.c	Tue Nov 12 15:50:08 2013
+@@ -0,0 +1,132 @@
++#include "spi_flash_platform_interface.h"
++#include "stm32f2xx.h"
++
++#define SFLASH_SPI                           SPI1
++#define SFLASH_SPI_CLK                       RCC_APB2Periph_SPI1
++#define SFLASH_SPI_CLK_INIT                  RCC_APB2PeriphClockCmd
++
++#define SFLASH_SPI_SCK_PIN                   GPIO_Pin_5
++#define SFLASH_SPI_SCK_GPIO_PORT             GPIOA
++#define SFLASH_SPI_SCK_GPIO_CLK              RCC_AHB1Periph_GPIOA
++#define SFLASH_SPI_SCK_SOURCE                GPIO_PinSource5
++#define SFLASH_SPI_SCK_AF                    GPIO_AF_SPI1
++
++#define SFLASH_SPI_MISO_PIN                  GPIO_Pin_6
++#define SFLASH_SPI_MISO_GPIO_PORT            GPIOA
++#define SFLASH_SPI_MISO_GPIO_CLK             RCC_AHB1Periph_GPIOA
++#define SFLASH_SPI_MISO_SOURCE               GPIO_PinSource6
++#define SFLASH_SPI_MISO_AF                   GPIO_AF_SPI1
++
++#define SFLASH_SPI_MOSI_PIN                  GPIO_Pin_7
++#define SFLASH_SPI_MOSI_GPIO_PORT            GPIOA
++#define SFLASH_SPI_MOSI_GPIO_CLK             RCC_AHB1Periph_GPIOA
++#define SFLASH_SPI_MOSI_SOURCE               GPIO_PinSource7
++#define SFLASH_SPI_MOSI_AF                   GPIO_AF_SPI1
++
++#define SFLASH_CS_PIN                        GPIO_Pin_4
++#define SFLASH_CS_PORT                       GPIOA
++#define SFLASH_CS_CLK                        RCC_AHB1Periph_GPIOA
++
++
++int sflash_platform_init( int peripheral_id, void** platform_peripheral_out )
++{
++    GPIO_InitTypeDef GPIO_InitStructure;
++    SPI_InitTypeDef  SPI_InitStructure;
++
++    (void) peripheral_id; /* Unused due to single SPI Flash */
++
++    /* Enable clocks */
++    SFLASH_SPI_CLK_INIT( SFLASH_SPI_CLK, ENABLE );
++
++    RCC_AHB1PeriphClockCmd( SFLASH_SPI_SCK_GPIO_CLK  | SFLASH_SPI_MISO_GPIO_CLK |
++                            SFLASH_SPI_MOSI_GPIO_CLK | SFLASH_CS_CLK, ENABLE      );
++
++
++    /* Use Alternate Functions for SPI pins */
++    GPIO_PinAFConfig( SFLASH_SPI_SCK_GPIO_PORT,  SFLASH_SPI_SCK_SOURCE,  SFLASH_SPI_SCK_AF  );
++    GPIO_PinAFConfig( SFLASH_SPI_MISO_GPIO_PORT, SFLASH_SPI_MISO_SOURCE, SFLASH_SPI_MISO_AF );
++    GPIO_PinAFConfig( SFLASH_SPI_MOSI_GPIO_PORT, SFLASH_SPI_MOSI_SOURCE, SFLASH_SPI_MOSI_AF );
++
++    /* Setup pin types */
++    GPIO_InitStructure.GPIO_Mode  = GPIO_Mode_AF;
++    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
++    GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
++    GPIO_InitStructure.GPIO_PuPd  = GPIO_PuPd_DOWN;
++
++    GPIO_InitStructure.GPIO_Pin   = SFLASH_SPI_SCK_PIN;
++    GPIO_Init( SFLASH_SPI_SCK_GPIO_PORT, &GPIO_InitStructure );
++
++    GPIO_InitStructure.GPIO_Pin   =  SFLASH_SPI_MOSI_PIN;
++    GPIO_Init( SFLASH_SPI_MOSI_GPIO_PORT, &GPIO_InitStructure );
++
++    GPIO_InitStructure.GPIO_Pin   =  SFLASH_SPI_MISO_PIN;
++    GPIO_Init( SFLASH_SPI_MISO_GPIO_PORT, &GPIO_InitStructure );
++
++    /* Chip select is used as a GPIO */
++    GPIO_InitStructure.GPIO_Pin   = SFLASH_CS_PIN;
++    GPIO_InitStructure.GPIO_Mode  = GPIO_Mode_OUT;
++    GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
++    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
++    GPIO_InitStructure.GPIO_PuPd  = GPIO_PuPd_NOPULL;
++    GPIO_Init( SFLASH_CS_PORT, &GPIO_InitStructure );
++
++    /* Deselect flash initially */
++    GPIO_SetBits( SFLASH_CS_PORT, SFLASH_CS_PIN );
++
++    /*!< SPI configuration */
++    SPI_InitStructure.SPI_Direction = SPI_Direction_2Lines_FullDuplex;
++    SPI_InitStructure.SPI_Mode = SPI_Mode_Master;
++    SPI_InitStructure.SPI_DataSize = SPI_DataSize_8b;
++    SPI_InitStructure.SPI_CPOL = SPI_CPOL_High;
++    SPI_InitStructure.SPI_CPHA = SPI_CPHA_2Edge;
++    SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;
++    SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_4;
++
++    SPI_InitStructure.SPI_FirstBit = SPI_FirstBit_MSB;
++    SPI_InitStructure.SPI_CRCPolynomial = 7;
++    SPI_Init(SFLASH_SPI, &SPI_InitStructure);
++
++    /* Enable the SPI peripheral */
++    SPI_Cmd(SFLASH_SPI, ENABLE);
++
++    *platform_peripheral_out = (void*)SFLASH_SPI;
++
++    return 0;
++}
++
++int sflash_platform_send_recv_byte( void* platform_peripheral, unsigned char MOSI_val, void* MISO_addr )
++{
++    /* Wait until the SPI Data Register is empty */
++    while ( SPI_I2S_GetFlagStatus( SFLASH_SPI, SPI_I2S_FLAG_TXE ) == RESET )
++    {
++        /* wait */
++    }
++
++
++    SPI_I2S_SendData( SFLASH_SPI, MOSI_val );
++
++    /* Wait until the SPI peripheral indicates the received data is ready */
++    while ( SPI_I2S_GetFlagStatus( SFLASH_SPI, SPI_I2S_FLAG_RXNE ) == RESET )
++    {
++        /* wait */
++    }
++
++    /* read the received data */
++    char x  = SPI_I2S_ReceiveData( SFLASH_SPI );
++
++    *( (char*) MISO_addr ) = x;
++    return 0;
++}
++
++int sflash_platform_chip_select( void* platform_peripheral )
++{
++    GPIO_ResetBits( SFLASH_CS_PORT, SFLASH_CS_PIN );
++    return 0;
++}
++
++int sflash_platform_chip_deselect( void* platform_peripheral )
++{
++    GPIO_SetBits( SFLASH_CS_PORT, SFLASH_CS_PIN );
++    return 0;
++}
++
+Index: WICED-SDK_2.3.1/Wiced/Platform/common/drivers/spi_flash/SN8000xUFL.c
+diff -u nul WICED-SDK_2.3.1/Wiced/Platform/common/drivers/spi_flash/SN8000xUFL.c:1.1.20.1
+--- nul	Tue Nov 12 15:50:08 2013
++++ WICED-SDK_2.3.1/Wiced/Platform/common/drivers/spi_flash/SN8000xUFL.c	Tue Nov 12 15:50:08 2013
+@@ -0,0 +1,132 @@
++#include "spi_flash_platform_interface.h"
++#include "stm32f2xx.h"
++
++#define SFLASH_SPI                           SPI1
++#define SFLASH_SPI_CLK                       RCC_APB2Periph_SPI1
++#define SFLASH_SPI_CLK_INIT                  RCC_APB2PeriphClockCmd
++
++#define SFLASH_SPI_SCK_PIN                   GPIO_Pin_5
++#define SFLASH_SPI_SCK_GPIO_PORT             GPIOA
++#define SFLASH_SPI_SCK_GPIO_CLK              RCC_AHB1Periph_GPIOA
++#define SFLASH_SPI_SCK_SOURCE                GPIO_PinSource5
++#define SFLASH_SPI_SCK_AF                    GPIO_AF_SPI1
++
++#define SFLASH_SPI_MISO_PIN                  GPIO_Pin_6
++#define SFLASH_SPI_MISO_GPIO_PORT            GPIOA
++#define SFLASH_SPI_MISO_GPIO_CLK             RCC_AHB1Periph_GPIOA
++#define SFLASH_SPI_MISO_SOURCE               GPIO_PinSource6
++#define SFLASH_SPI_MISO_AF                   GPIO_AF_SPI1
++
++#define SFLASH_SPI_MOSI_PIN                  GPIO_Pin_7
++#define SFLASH_SPI_MOSI_GPIO_PORT            GPIOA
++#define SFLASH_SPI_MOSI_GPIO_CLK             RCC_AHB1Periph_GPIOA
++#define SFLASH_SPI_MOSI_SOURCE               GPIO_PinSource7
++#define SFLASH_SPI_MOSI_AF                   GPIO_AF_SPI1
++
++#define SFLASH_CS_PIN                        GPIO_Pin_4
++#define SFLASH_CS_PORT                       GPIOA
++#define SFLASH_CS_CLK                        RCC_AHB1Periph_GPIOA
++
++
++int sflash_platform_init( int peripheral_id, void** platform_peripheral_out )
++{
++    GPIO_InitTypeDef GPIO_InitStructure;
++    SPI_InitTypeDef  SPI_InitStructure;
++
++    (void) peripheral_id; /* Unused due to single SPI Flash */
++
++    /* Enable clocks */
++    SFLASH_SPI_CLK_INIT( SFLASH_SPI_CLK, ENABLE );
++
++    RCC_AHB1PeriphClockCmd( SFLASH_SPI_SCK_GPIO_CLK  | SFLASH_SPI_MISO_GPIO_CLK |
++                            SFLASH_SPI_MOSI_GPIO_CLK | SFLASH_CS_CLK, ENABLE      );
++
++
++    /* Use Alternate Functions for SPI pins */
++    GPIO_PinAFConfig( SFLASH_SPI_SCK_GPIO_PORT,  SFLASH_SPI_SCK_SOURCE,  SFLASH_SPI_SCK_AF  );
++    GPIO_PinAFConfig( SFLASH_SPI_MISO_GPIO_PORT, SFLASH_SPI_MISO_SOURCE, SFLASH_SPI_MISO_AF );
++    GPIO_PinAFConfig( SFLASH_SPI_MOSI_GPIO_PORT, SFLASH_SPI_MOSI_SOURCE, SFLASH_SPI_MOSI_AF );
++
++    /* Setup pin types */
++    GPIO_InitStructure.GPIO_Mode  = GPIO_Mode_AF;
++    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
++    GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
++    GPIO_InitStructure.GPIO_PuPd  = GPIO_PuPd_DOWN;
++
++    GPIO_InitStructure.GPIO_Pin   = SFLASH_SPI_SCK_PIN;
++    GPIO_Init( SFLASH_SPI_SCK_GPIO_PORT, &GPIO_InitStructure );
++
++    GPIO_InitStructure.GPIO_Pin   =  SFLASH_SPI_MOSI_PIN;
++    GPIO_Init( SFLASH_SPI_MOSI_GPIO_PORT, &GPIO_InitStructure );
++
++    GPIO_InitStructure.GPIO_Pin   =  SFLASH_SPI_MISO_PIN;
++    GPIO_Init( SFLASH_SPI_MISO_GPIO_PORT, &GPIO_InitStructure );
++
++    /* Chip select is used as a GPIO */
++    GPIO_InitStructure.GPIO_Pin   = SFLASH_CS_PIN;
++    GPIO_InitStructure.GPIO_Mode  = GPIO_Mode_OUT;
++    GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
++    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
++    GPIO_InitStructure.GPIO_PuPd  = GPIO_PuPd_NOPULL;
++    GPIO_Init( SFLASH_CS_PORT, &GPIO_InitStructure );
++
++    /* Deselect flash initially */
++    GPIO_SetBits( SFLASH_CS_PORT, SFLASH_CS_PIN );
++
++    /*!< SPI configuration */
++    SPI_InitStructure.SPI_Direction = SPI_Direction_2Lines_FullDuplex;
++    SPI_InitStructure.SPI_Mode = SPI_Mode_Master;
++    SPI_InitStructure.SPI_DataSize = SPI_DataSize_8b;
++    SPI_InitStructure.SPI_CPOL = SPI_CPOL_High;
++    SPI_InitStructure.SPI_CPHA = SPI_CPHA_2Edge;
++    SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;
++    SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_4;
++
++    SPI_InitStructure.SPI_FirstBit = SPI_FirstBit_MSB;
++    SPI_InitStructure.SPI_CRCPolynomial = 7;
++    SPI_Init(SFLASH_SPI, &SPI_InitStructure);
++
++    /* Enable the SPI peripheral */
++    SPI_Cmd(SFLASH_SPI, ENABLE);
++
++    *platform_peripheral_out = (void*)SFLASH_SPI;
++
++    return 0;
++}
++
++int sflash_platform_send_recv_byte( void* platform_peripheral, unsigned char MOSI_val, void* MISO_addr )
++{
++    /* Wait until the SPI Data Register is empty */
++    while ( SPI_I2S_GetFlagStatus( SFLASH_SPI, SPI_I2S_FLAG_TXE ) == RESET )
++    {
++        /* wait */
++    }
++
++
++    SPI_I2S_SendData( SFLASH_SPI, MOSI_val );
++
++    /* Wait until the SPI peripheral indicates the received data is ready */
++    while ( SPI_I2S_GetFlagStatus( SFLASH_SPI, SPI_I2S_FLAG_RXNE ) == RESET )
++    {
++        /* wait */
++    }
++
++    /* read the received data */
++    char x  = SPI_I2S_ReceiveData( SFLASH_SPI );
++
++    *( (char*) MISO_addr ) = x;
++    return 0;
++}
++
++int sflash_platform_chip_select( void* platform_peripheral )
++{
++    GPIO_ResetBits( SFLASH_CS_PORT, SFLASH_CS_PIN );
++    return 0;
++}
++
++int sflash_platform_chip_deselect( void* platform_peripheral )
++{
++    GPIO_SetBits( SFLASH_CS_PORT, SFLASH_CS_PIN );
++    return 0;
++}
++
+Index: WICED-SDK_2.3.1/Wiced/Platform/common/drivers/spi_flash/SN8200x.c
+diff -u WICED-SDK_2.3.1/Wiced/Platform/common/drivers/spi_flash/SN8200x.c:1.1.1.1 WICED-SDK_2.3.1/Wiced/Platform/common/drivers/spi_flash/SN8200x.c:removed
+--- WICED-SDK_2.3.1/Wiced/Platform/common/drivers/spi_flash/SN8200x.c:1.1.1.1	Tue Nov 12 15:50:08 2013
++++ WICED-SDK_2.3.1/Wiced/Platform/common/drivers/spi_flash/SN8200x.c	Tue Nov 12 15:50:08 2013
+@@ -1,130 +0,0 @@
+-#include "spi_flash_platform_interface.h"
+-#include "stm32f10x.h"
+-#include "stm32f10x_spi.h"
+-
+-#define SFLASH_SPI                           SPI1
+-#define SFLASH_SPI_CLK                       RCC_APB2Periph_SPI1
+-#define SFLASH_SPI_CLK_INIT                  RCC_APB2PeriphClockCmd
+-
+-#define SFLASH_SPI_SCK_PIN                   GPIO_Pin_5
+-#define SFLASH_SPI_SCK_GPIO_PORT             GPIOA
+-#define SFLASH_SPI_SCK_GPIO_CLK              RCC_APB2Periph_GPIOA
+-#define SFLASH_SPI_SCK_SOURCE                GPIO_PinSource5
+-#if 0
+-#define SFLASH_SPI_SCK_AF                    GPIO_AF_SPI1
+-#endif
+-
+-#define SFLASH_SPI_MISO_PIN                  GPIO_Pin_6
+-#define SFLASH_SPI_MISO_GPIO_PORT            GPIOA
+-#define SFLASH_SPI_MISO_GPIO_CLK             RCC_APB2Periph_GPIOA
+-#define SFLASH_SPI_MISO_SOURCE               GPIO_PinSource6
+-#define SFLASH_SPI_MISO_AF                   GPIO_AF_SPI1
+-
+-#define SFLASH_SPI_MOSI_PIN                  GPIO_Pin_7
+-#define SFLASH_SPI_MOSI_GPIO_PORT            GPIOA
+-#define SFLASH_SPI_MOSI_GPIO_CLK             RCC_APB2Periph_GPIOA
+-#define SFLASH_SPI_MOSI_SOURCE               GPIO_PinSource7
+-#define SFLASH_SPI_MOSI_AF                   GPIO_AF_SPI1
+-
+-#define SFLASH_CS_PIN                        GPIO_Pin_4
+-#define SFLASH_CS_PORT                       GPIOA
+-#define SFLASH_CS_CLK                        RCC_APB2Periph_GPIOA
+-
+-
+-int sflash_platform_init( int peripheral_id, void** platform_peripheral_out )
+-{
+-    GPIO_InitTypeDef GPIO_InitStructure;
+-    SPI_InitTypeDef  SPI_InitStructure;
+-
+-    (void) peripheral_id; /* Unused due to single SPI Flash */
+-
+-    /* Enable clocks */
+-    SFLASH_SPI_CLK_INIT( SFLASH_SPI_CLK, ENABLE );
+-
+-    RCC_APB2PeriphClockCmd( SFLASH_SPI_SCK_GPIO_CLK  | SFLASH_SPI_MISO_GPIO_CLK |
+-                            SFLASH_SPI_MOSI_GPIO_CLK | SFLASH_CS_CLK, ENABLE      );
+-
+-#if 0
+-    /* Use Alternate Functions for SPI pins */
+-    GPIO_PinAFConfig( SFLASH_SPI_SCK_GPIO_PORT,  SFLASH_SPI_SCK_SOURCE,  SFLASH_SPI_SCK_AF  );
+-    GPIO_PinAFConfig( SFLASH_SPI_MISO_GPIO_PORT, SFLASH_SPI_MISO_SOURCE, SFLASH_SPI_MISO_AF );
+-    GPIO_PinAFConfig( SFLASH_SPI_MOSI_GPIO_PORT, SFLASH_SPI_MOSI_SOURCE, SFLASH_SPI_MOSI_AF );
+-#endif
+-    /* Setup pin types */
+-    GPIO_InitStructure.GPIO_Mode  = GPIO_Mode_Out_PP;
+-    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+-    GPIO_InitStructure.GPIO_Pin   = SFLASH_SPI_SCK_PIN;
+-    GPIO_Init( SFLASH_SPI_SCK_GPIO_PORT, &GPIO_InitStructure );
+-
+-    GPIO_InitStructure.GPIO_Pin   =  SFLASH_SPI_MOSI_PIN;
+-    GPIO_Init( SFLASH_SPI_MOSI_GPIO_PORT, &GPIO_InitStructure );
+-
+-    GPIO_InitStructure.GPIO_Pin   =  SFLASH_SPI_MISO_PIN;
+-    GPIO_Init( SFLASH_SPI_MISO_GPIO_PORT, &GPIO_InitStructure );
+-
+-    /* Chip select is used as a GPIO */
+-    GPIO_InitStructure.GPIO_Pin   = SFLASH_CS_PIN;
+-    GPIO_InitStructure.GPIO_Mode  = GPIO_Mode_Out_PP;
+-    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+-    GPIO_Init( SFLASH_CS_PORT, &GPIO_InitStructure );
+-
+-    /* Deselect flash initially */
+-    GPIO_SetBits( SFLASH_CS_PORT, SFLASH_CS_PIN );
+-
+-    /*!< SPI configuration */
+-    SPI_InitStructure.SPI_Direction = SPI_Direction_2Lines_FullDuplex;
+-    SPI_InitStructure.SPI_Mode = SPI_Mode_Master;
+-    SPI_InitStructure.SPI_DataSize = SPI_DataSize_8b;
+-    SPI_InitStructure.SPI_CPOL = SPI_CPOL_High;
+-    SPI_InitStructure.SPI_CPHA = SPI_CPHA_2Edge;
+-    SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;
+-    SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_4;
+-
+-    SPI_InitStructure.SPI_FirstBit = SPI_FirstBit_MSB;
+-    SPI_InitStructure.SPI_CRCPolynomial = 7;
+-    SPI_Init(SFLASH_SPI, &SPI_InitStructure);
+-
+-    /* Enable the SPI peripheral */
+-    SPI_Cmd(SFLASH_SPI, ENABLE);
+-
+-    *platform_peripheral_out = (void*)SFLASH_SPI;
+-
+-    return 0;
+-}
+-
+-int sflash_platform_send_recv_byte( void* platform_peripheral, unsigned char MOSI_val, void* MISO_addr )
+-{
+-    /* Wait until the SPI Data Register is empty */
+-    while ( SPI_I2S_GetFlagStatus( SFLASH_SPI, SPI_I2S_FLAG_TXE ) == RESET )
+-    {
+-        /* wait */
+-    }
+-
+-
+-    SPI_I2S_SendData( SFLASH_SPI, MOSI_val );
+-
+-    /* Wait until the SPI peripheral indicates the received data is ready */
+-    while ( SPI_I2S_GetFlagStatus( SFLASH_SPI, SPI_I2S_FLAG_RXNE ) == RESET )
+-    {
+-        /* wait */
+-    }
+-
+-    /* read the received data */
+-    char x  = SPI_I2S_ReceiveData( SFLASH_SPI );
+-
+-    *( (char*) MISO_addr ) = x;
+-    return 0;
+-}
+-
+-int sflash_platform_chip_select( void* platform_peripheral )
+-{
+-    GPIO_ResetBits( SFLASH_CS_PORT, SFLASH_CS_PIN );
+-    return 0;
+-}
+-
+-int sflash_platform_chip_deselect( void* platform_peripheral )
+-{
+-    GPIO_SetBits( SFLASH_CS_PORT, SFLASH_CS_PIN );
+-    return 0;
+-}
+-
+Index: WICED-SDK_2.3.1/Wiced/Platform/common/drivers/spi_flash/SN8205x.c
+diff -u WICED-SDK_2.3.1/Wiced/Platform/common/drivers/spi_flash/SN8205x.c:1.1.1.1 WICED-SDK_2.3.1/Wiced/Platform/common/drivers/spi_flash/SN8205x.c:removed
+--- WICED-SDK_2.3.1/Wiced/Platform/common/drivers/spi_flash/SN8205x.c:1.1.1.1	Tue Nov 12 15:50:08 2013
++++ WICED-SDK_2.3.1/Wiced/Platform/common/drivers/spi_flash/SN8205x.c	Tue Nov 12 15:50:08 2013
+@@ -1,132 +0,0 @@
+-#include "spi_flash_platform_interface.h"
+-#include "stm32f2xx.h"
+-
+-#define SFLASH_SPI                           SPI1
+-#define SFLASH_SPI_CLK                       RCC_APB2Periph_SPI1
+-#define SFLASH_SPI_CLK_INIT                  RCC_APB2PeriphClockCmd
+-
+-#define SFLASH_SPI_SCK_PIN                   GPIO_Pin_5
+-#define SFLASH_SPI_SCK_GPIO_PORT             GPIOA
+-#define SFLASH_SPI_SCK_GPIO_CLK              RCC_AHB1Periph_GPIOA
+-#define SFLASH_SPI_SCK_SOURCE                GPIO_PinSource5
+-#define SFLASH_SPI_SCK_AF                    GPIO_AF_SPI1
+-
+-#define SFLASH_SPI_MISO_PIN                  GPIO_Pin_6
+-#define SFLASH_SPI_MISO_GPIO_PORT            GPIOA
+-#define SFLASH_SPI_MISO_GPIO_CLK             RCC_AHB1Periph_GPIOA
+-#define SFLASH_SPI_MISO_SOURCE               GPIO_PinSource6
+-#define SFLASH_SPI_MISO_AF                   GPIO_AF_SPI1
+-
+-#define SFLASH_SPI_MOSI_PIN                  GPIO_Pin_7
+-#define SFLASH_SPI_MOSI_GPIO_PORT            GPIOA
+-#define SFLASH_SPI_MOSI_GPIO_CLK             RCC_AHB1Periph_GPIOA
+-#define SFLASH_SPI_MOSI_SOURCE               GPIO_PinSource7
+-#define SFLASH_SPI_MOSI_AF                   GPIO_AF_SPI1
+-
+-#define SFLASH_CS_PIN                        GPIO_Pin_4
+-#define SFLASH_CS_PORT                       GPIOA
+-#define SFLASH_CS_CLK                        RCC_AHB1Periph_GPIOA
+-
+-
+-int sflash_platform_init( int peripheral_id, void** platform_peripheral_out )
+-{
+-    GPIO_InitTypeDef GPIO_InitStructure;
+-    SPI_InitTypeDef  SPI_InitStructure;
+-
+-    (void) peripheral_id; /* Unused due to single SPI Flash */
+-
+-    /* Enable clocks */
+-    SFLASH_SPI_CLK_INIT( SFLASH_SPI_CLK, ENABLE );
+-
+-    RCC_AHB1PeriphClockCmd( SFLASH_SPI_SCK_GPIO_CLK  | SFLASH_SPI_MISO_GPIO_CLK |
+-                            SFLASH_SPI_MOSI_GPIO_CLK | SFLASH_CS_CLK, ENABLE      );
+-
+-
+-    /* Use Alternate Functions for SPI pins */
+-    GPIO_PinAFConfig( SFLASH_SPI_SCK_GPIO_PORT,  SFLASH_SPI_SCK_SOURCE,  SFLASH_SPI_SCK_AF  );
+-    GPIO_PinAFConfig( SFLASH_SPI_MISO_GPIO_PORT, SFLASH_SPI_MISO_SOURCE, SFLASH_SPI_MISO_AF );
+-    GPIO_PinAFConfig( SFLASH_SPI_MOSI_GPIO_PORT, SFLASH_SPI_MOSI_SOURCE, SFLASH_SPI_MOSI_AF );
+-
+-    /* Setup pin types */
+-    GPIO_InitStructure.GPIO_Mode  = GPIO_Mode_AF;
+-    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+-    GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+-    GPIO_InitStructure.GPIO_PuPd  = GPIO_PuPd_DOWN;
+-
+-    GPIO_InitStructure.GPIO_Pin   = SFLASH_SPI_SCK_PIN;
+-    GPIO_Init( SFLASH_SPI_SCK_GPIO_PORT, &GPIO_InitStructure );
+-
+-    GPIO_InitStructure.GPIO_Pin   =  SFLASH_SPI_MOSI_PIN;
+-    GPIO_Init( SFLASH_SPI_MOSI_GPIO_PORT, &GPIO_InitStructure );
+-
+-    GPIO_InitStructure.GPIO_Pin   =  SFLASH_SPI_MISO_PIN;
+-    GPIO_Init( SFLASH_SPI_MISO_GPIO_PORT, &GPIO_InitStructure );
+-
+-    /* Chip select is used as a GPIO */
+-    GPIO_InitStructure.GPIO_Pin   = SFLASH_CS_PIN;
+-    GPIO_InitStructure.GPIO_Mode  = GPIO_Mode_OUT;
+-    GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+-    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+-    GPIO_InitStructure.GPIO_PuPd  = GPIO_PuPd_NOPULL;
+-    GPIO_Init( SFLASH_CS_PORT, &GPIO_InitStructure );
+-
+-    /* Deselect flash initially */
+-    GPIO_SetBits( SFLASH_CS_PORT, SFLASH_CS_PIN );
+-
+-    /*!< SPI configuration */
+-    SPI_InitStructure.SPI_Direction = SPI_Direction_2Lines_FullDuplex;
+-    SPI_InitStructure.SPI_Mode = SPI_Mode_Master;
+-    SPI_InitStructure.SPI_DataSize = SPI_DataSize_8b;
+-    SPI_InitStructure.SPI_CPOL = SPI_CPOL_High;
+-    SPI_InitStructure.SPI_CPHA = SPI_CPHA_2Edge;
+-    SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;
+-    SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_4;
+-
+-    SPI_InitStructure.SPI_FirstBit = SPI_FirstBit_MSB;
+-    SPI_InitStructure.SPI_CRCPolynomial = 7;
+-    SPI_Init(SFLASH_SPI, &SPI_InitStructure);
+-
+-    /* Enable the SPI peripheral */
+-    SPI_Cmd(SFLASH_SPI, ENABLE);
+-
+-    *platform_peripheral_out = (void*)SFLASH_SPI;
+-
+-    return 0;
+-}
+-
+-int sflash_platform_send_recv_byte( void* platform_peripheral, unsigned char MOSI_val, void* MISO_addr )
+-{
+-    /* Wait until the SPI Data Register is empty */
+-    while ( SPI_I2S_GetFlagStatus( SFLASH_SPI, SPI_I2S_FLAG_TXE ) == RESET )
+-    {
+-        /* wait */
+-    }
+-
+-
+-    SPI_I2S_SendData( SFLASH_SPI, MOSI_val );
+-
+-    /* Wait until the SPI peripheral indicates the received data is ready */
+-    while ( SPI_I2S_GetFlagStatus( SFLASH_SPI, SPI_I2S_FLAG_RXNE ) == RESET )
+-    {
+-        /* wait */
+-    }
+-
+-    /* read the received data */
+-    char x  = SPI_I2S_ReceiveData( SFLASH_SPI );
+-
+-    *( (char*) MISO_addr ) = x;
+-    return 0;
+-}
+-
+-int sflash_platform_chip_select( void* platform_peripheral )
+-{
+-    GPIO_ResetBits( SFLASH_CS_PORT, SFLASH_CS_PIN );
+-    return 0;
+-}
+-
+-int sflash_platform_chip_deselect( void* platform_peripheral )
+-{
+-    GPIO_SetBits( SFLASH_CS_PORT, SFLASH_CS_PIN );
+-    return 0;
+-}
+-
+Index: WICED-SDK_2.3.1/Wiced/Platform/include/platform_sleep.h
+diff -u WICED-SDK_2.3.1/Wiced/Platform/include/platform_sleep.h:1.1.1.1 WICED-SDK_2.3.1/Wiced/Platform/include/platform_sleep.h:1.1.1.1.30.1
+--- WICED-SDK_2.3.1/Wiced/Platform/include/platform_sleep.h:1.1.1.1	Tue Nov 12 15:50:08 2013
++++ WICED-SDK_2.3.1/Wiced/Platform/include/platform_sleep.h	Tue Nov 12 15:50:08 2013
+@@ -23,7 +23,7 @@
+ 
+ #define WICED_WLAN_POWERSAVE_CLOCK_IS_PWM 0
+ #define WICED_WLAN_POWERSAVE_CLOCK_IS_MCO 1
+-
++#define WICED_WLAN_POWERSAVE_CLOCK_IS_EXT 2
+ /******************************************************
+  *                 Type Definitions
+  ******************************************************/
+Index: WICED-SDK_2.3.1/include/platforms/SN8000x/platform.h
+diff -u nul WICED-SDK_2.3.1/include/platforms/SN8000x/platform.h:1.1.14.1
+--- nul	Tue Nov 12 15:50:11 2013
++++ WICED-SDK_2.3.1/include/platforms/SN8000x/platform.h	Tue Nov 12 15:50:11 2013
+@@ -0,0 +1,254 @@
++/*
++ * Copyright 2012, Broadcom Corporation
++ * All Rights Reserved.
++ *
++ * This is UNPUBLISHED PROPRIETARY SOURCE CODE of Broadcom Corporation;
++ * the contents of this file may not be disclosed to third parties, copied
++ * or duplicated in any form, in whole or in part, without the prior
++ * written permission of Broadcom Corporation.
++ */
++#pragma once
++
++#ifdef __cplusplus
++extern "C"
++{
++#endif
++
++/******************************************************
++ *                      Macros
++ ******************************************************/
++
++/******************************************************
++ *                    Constants
++ ******************************************************/
++
++/******************************************************
++ *                   Enumerations
++ ******************************************************/
++#define WICED_WLAN_POWERSAVE_CLOCK_SOURCE WICED_WLAN_POWERSAVE_CLOCK_IS_EXT
++/*
++SN8000x platform pin definitions ...
+++--------------------------------------------------------------------------------------------------------+
++| Enum ID       |Pin |   Pin Name on    |    Module     | STM32| Peripheral  |    Board     | Peripheral  |
++|               | #  |      Module      |  GPIO Alias   | Port | Available   |  Connection  |   Alias     |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_1  | 5  | MICRO_WKUP       | WICED_GPIO_1  | A  0 | GPIO        |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_2  | 6  | MICRO_ADC_IN1    | WICED_GPIO_2  | A  1 | GPIO        |              |             |
++|               |    |                  |               |      | TIM2_CH2    |              |             |
++|               |    |                  |               |      | TIM5_CH2    |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_3  | 7  | MICRO_ADC_IN2    | WICED_GPIO_3  | A  2 | ADC123_IN2  |              |             |
++|               |    |                  |               |      | GPIO        |              |             |
++|               |    |                  |               |      | TIM2_CH3    |              |             |
++|               |    |                  |               |      | TIM5_CH3    |              |             |
++|               |    |                  |               |      | TIM9_CH1    |              |             |
++|               |    |                  |               |      | USART2_TX   |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_4  | 9  | MICRO_ADC_IN3    | WICED_GPIO_4  | A  3 | ADC123_IN3  |              |             |
++|               |    |                  |               |      | GPIO        |              |             |
++|               |    |                  |               |      | TIM2_CH4    |              |             |
++|               |    |                  |               |      | TIM5_CH4    |              |             |
++|               |    |                  |               |      | TIM9_CH2    |              |             |
++|               |    |                  |               |      | UART2_RX    |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_5  | 10 | MICRO_SPI_SSN    | WICED_GPIO_5  | A  4 | ADC12_IN4   |              |             |
++|               |    |                  |               |      | DAC1_OUT    |              |             |
++|               |    |                  |               |      | GPIO        |              |             |
++|               |    |                  |               |      | I2S3_WS     |              |             |
++|               |    |                  |               |      | SPI1_NSS    |              |             |
++|               |    |                  |               |      | SPI3_NSS    |              |             |
++|               |    |                  |               |      | USART2_CK   |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_6  | 11 | MICRO_SPI_SSN    | WICED_GPIO_6  | A  5 | ADC12_IN5   |              |             |
++|               |    |                  |               |      | DAC2_OUT    |              |             |
++|               |    |                  |               |      | GPIO        |              |             |
++|               |    |                  |               |      | SPI1_SCK    |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_7  | 12 | MICRO_SPI_MOSI   | WICED_GPIO_7  | A  7 | ADC12_IN7   |              |             |
++|               |    |                  |               |      | GPIO        |              |             |
++|               |    |                  |               |      | SPI1_MOSI   |              |             |
++|               |    |                  |               |      | TIM1_CH1N   |              |             |
++|               |    |                  |               |      | TIM3_CH2    |              |             |
++|               |    |                  |               |      | TIM8_CH1N   |              |             |
++|               |    |                  |               |      | TIM14_CH1   |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_8  | 32 | MICRO_UART_TX    | WICED_GPIO_8  | A  9 | GPIO        |              |             |
++|               |    |                  |               |      | I2C3_SMBA   |              |             |
++|               |    |                  |               |      | TIM1_CH2    |              |             |
++|               |    |                  |               |      | USART1_TX   |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_9  | 33 | MICRO_UART_RX    | WICED_GPIO_9  | A 10 | GPIO        |              |             |
++|               |    |                  |               |      | TIM1_CH3    |              |             |
++|               |    |                  |               |      | USART1_RX   |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_10 | 34 | MICRO_JTAG_TMS   | WICED_GPIO_10 | A 11 | GPIO        |              |             |
++|               |    |                  |               |      | USART1_CTS  |              |             |
++|               |    |                  |               |      | USB2_DM     |              |             |
++|               |    |                  |               |      | CAN_RX      |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_11 | 35 | MICRO_JTAG_TDI   | WICED_GPIO_11 | A 12 | GPIO        |              |             |
++|               |    |                  |               |      | USART1_RTS  |              |             |
++|               |    |                  |               |      | USB2_DP     |              |             |
++|               |    |                  |               |      | CAN_TX      |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_12 | 36 | MICRO_JTAG_TMS   | WICED_GPIO_12 | A 13 | GPIO        |              |             |
++|               |    |                  |               |      | JTMS-SWDIO  |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_13 | 37 | MICRO_JTAG_TDI   | WICED_GPIO_13 | A 15 | GPIO        |              |             |
++|               |    |                  |               |      | JTDI        |              |             |
++|               |    |                  |               |      | I2S3_WS     |              |             |
++|               |    |                  |               |      | SPI1_NSS    |              |             |
++|               |    |                  |               |      | SPI3_NSS    |              |             |
++|               |    |                  |               |      | TIM2_CH1_ETR|              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_14 | 38 | MICRO_JTAG_TCK   | WICED_GPIO_14 | A 14 | GPIO        |              |             |
++|               |    |                  |               |      | JTCK-SWCLK  |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_15 | 40 | MICRO_JTAG_TDO   | WICED_GPIO_15 | B  3 | GPIO        |              |             |
++|               |    |                  |               |      | JTDO        |              |             |
++|               |    |                  |               |      | SPI1_SCK    |              |             |
++|               |    |                  |               |      | SPI3_SCK    |              |             |
++|               |    |                  |               |      | I2S3_SCK    |              |             |
++|               |    |                  |               |      | TIM2_CH2    |              |             |
++|               |    |                  |               |      | TRACESWO    |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_16 | 41 | MICRO_JTAG_TRSTN | WICED_GPIO_16 | B  4 | GPIO        |              |             |
++|               |    |                  |               |      | NJTRST      |              |             |
++|               |    |                  |               |      | SPI1_MISO   |              |             |
++|               |    |                  |               |      | SPI3_MISO   |              |             |
++|               |    |                  |               |      | TIM3_CH1    |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_17 | 42 | SPI_MOSI         | WICED_GPIO_17 | B  5 | GPIO        |              |             |
++|               |    |                  |               |      | I2C1_SMBA   |              |             |
++|               |    |                  |               |      | SPI3_MISO   |              |             |
++|               |    |                  |               |      | I2S3_SD     |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_18 | 43 | MICRO_GPIO_0     | WICED_GPIO_18 | B  6 | GPIO        |              |             |
++|               |    |                  |               |      | TIM4_CH1    |              |             |
++|               |    |                  |               |      | I2C1_SCL    |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_19 | 44 | MICRO_GPIO_1     | WICED_GPIO_19 | B  7 | GPIO        |              |             |
++|               |    |                  |               |      | TIM4_CH2    |              |             |
++|               |    |                  |               |      | I2C1_SDA    |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_20 | 46 | MICRO_SPI_MISO   | WICED_GPIO_20 | A  6 | ADC12_IN6   |              |             |
++|               |    |                  |               |      | GPIO        |              |             |
++|               |    |                  |               |      | SPI1_MISO   |              |             |
++|               |    |                  |               |      | TIM1_BKIN   |              |             |
++|               |    |                  |               |      | TIM3_CH1    |              |             |
++|               |    |                  |               |      | TIM8_BKIN   |              |             |
++|               |    |                  |               |      | TIM13_CH1   |              |             |
+++---------------+----+------------------+------+---------------+-------------+--------------+-------------+
++Notes
++1. These mappings are defined in <WICED-SDK>/Platform/SN8000x/platform.c
++2. STM32F2xx Datasheet  -> http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00237391.pdf
++3. STM32F2xx Ref Manual -> http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/REFERENCE_MANUAL/CD00225773.pdf
++*/
++
++
++typedef enum
++{
++    WICED_GPIO_1,
++    WICED_GPIO_2,
++    WICED_GPIO_3,
++    WICED_GPIO_4,
++    WICED_GPIO_5,
++    WICED_GPIO_6,
++    WICED_GPIO_7,
++    WICED_GPIO_8,
++    WICED_GPIO_9,
++    WICED_GPIO_10,
++    WICED_GPIO_11,
++    WICED_GPIO_12,
++    WICED_GPIO_13,
++    WICED_GPIO_14,
++    WICED_GPIO_15,
++    WICED_GPIO_16,
++    WICED_GPIO_17,
++    WICED_GPIO_18,
++    WICED_GPIO_19,
++    WICED_GPIO_20,
++    WICED_GPIO_21,
++    WICED_GPIO_22,
++    WICED_GPIO_23,
++    WICED_GPIO_24,
++    WICED_GPIO_25,
++    WICED_GPIO_26,
++    WICED_GPIO_27,
++    WICED_GPIO_28,
++    WICED_GPIO_29,
++    WICED_GPIO_30,
++    WICED_GPIO_31,
++    WICED_GPIO_32,
++    WICED_GPIO_33,
++
++    WICED_GPIO_MAX, /* Denotes the total number of GPIO port aliases. Not a valid GPIO alias */
++} wiced_gpio_t;
++
++typedef enum
++{
++    WICED_SPI_1,
++    WICED_SPI_MAX, /* Denotes the total number of SPI port aliases. Not a valid SPI alias */
++} wiced_spi_t;
++
++typedef enum
++{
++    WICED_I2C_NONE = 0xFF
++} wiced_i2c_t;
++
++typedef enum
++{
++    WICED_PWM_1,
++    WICED_PWM_2,
++    WICED_PWM_3,
++    WICED_PWM_4,
++    WICED_PWM_5,
++    WICED_PWM_6,
++    WICED_PWM_7,
++    WICED_PWM_8,
++    WICED_PWM_9,
++    WICED_PWM_MAX, /* Denotes the total number of PWM port aliases. Not a valid PWM alias */
++} wiced_pwm_t;
++
++typedef enum
++{
++    WICED_ADC_1,
++    WICED_ADC_2,
++    WICED_ADC_3,
++    WICED_ADC_MAX, /* Denotes the total number of ADC port aliases. Not a valid ADC alias */
++} wiced_adc_t;
++
++typedef enum
++{
++    WICED_UART_1,
++    WICED_UART_2,
++    WICED_UART_MAX, /* Denotes the total number of UART port aliases. Not a valid UART alias */
++} wiced_uart_t;
++
++#define WICED_PLATFORM_INCLUDES_SPI_FLASH
++#define WICED_SPI_FLASH_CS  (WICED_GPIO_5)
++/*      WICED_SPI_FLASH_MOSI WICED_GPIO_8 */
++/*      WICED_SPI_FLASH_MISO WICED_GPIO_7 */
++/*      WICED_SPI_FLASH_CLK  WICED_GPIO_6 */
++
++/* Components connected to external I/Os*/
++
++/* I/O connection <-> Peripheral Connections */
++#define WICED_LED1_JOINS_PWM       (WICED_PWM_1)
++#define WICED_LED2_JOINS_PWM       (WICED_PWM_2)
++#define WICED_THERMISTOR_JOINS_ADC (WICED_ADC_3)
++
++/* WLAN Powersave Clock Source
++ * The WLAN sleep clock can be driven from one of two sources:
++ * 1. Timer/PWM (default)
++ *    - With the PWM selected, the STM32 can *NOT* be put into MCU powersave mode or the PWM output will be disabled
++ * 2. MCO (MCU Clock Output). A hardware patch is needed on the BCM943362WCD4 module to enable this mode as follows:
++ *    - Connect STM32F205RGT6 pin 41 (PA8) to pin 44 (PA11)
++ *    - Change the following directive to WICED_WLAN_POWERSAVE_CLOCK_IS_MCO
++ */
++//SN8000 uses none of the above.
++
++#ifdef __cplusplus
++} /*extern "C" */
++#endif
+Index: WICED-SDK_2.3.1/include/platforms/SN8000x/platform.txt
+diff -u nul WICED-SDK_2.3.1/include/platforms/SN8000x/platform.txt:1.1.14.1
+--- nul	Tue Nov 12 15:50:11 2013
++++ WICED-SDK_2.3.1/include/platforms/SN8000x/platform.txt	Tue Nov 12 15:50:11 2013
+@@ -0,0 +1,25 @@
++Provider    : Broadcom 
++Website     : http://go.broadcom.com/wiced
++Description : Broadcom BCM943362WCD4 mounted on a Broadcom BCM9WCD1EVAL1 evaluation board 
++ 
++Module
++  Mfr     : Broadcom
++  P/N     : SN8000x
++  MCU     : STM32F205RGT6
++  WLAN    : SN8000
++  Antenna : Diversity with two printed antennae (and in-line switched Murata MM8430 RF connectors)
++
++EVB Features
++  JLINK-JTAG debug interface
++  USB-JTAG debug interface
++  USB-serial UART interface
++  Power supply : USB and/or external +5v
++  Reset button
++  Module current monitor
++  Sensors/Peripherals
++     - 2 x Buttons
++     - 2 x LEDs
++     - 1 x Thermistor
++     - 1 x 8Mbit serial flash
++  18-pin Expansion header
++            
+Index: WICED-SDK_2.3.1/include/platforms/SN8000xUFL/platform.h
+diff -u nul WICED-SDK_2.3.1/include/platforms/SN8000xUFL/platform.h:1.1.2.1
+--- nul	Tue Nov 12 15:50:11 2013
++++ WICED-SDK_2.3.1/include/platforms/SN8000xUFL/platform.h	Tue Nov 12 15:50:11 2013
+@@ -0,0 +1,254 @@
++/*
++ * Copyright 2012, Broadcom Corporation
++ * All Rights Reserved.
++ *
++ * This is UNPUBLISHED PROPRIETARY SOURCE CODE of Broadcom Corporation;
++ * the contents of this file may not be disclosed to third parties, copied
++ * or duplicated in any form, in whole or in part, without the prior
++ * written permission of Broadcom Corporation.
++ */
++#pragma once
++
++#ifdef __cplusplus
++extern "C"
++{
++#endif
++
++/******************************************************
++ *                      Macros
++ ******************************************************/
++
++/******************************************************
++ *                    Constants
++ ******************************************************/
++
++/******************************************************
++ *                   Enumerations
++ ******************************************************/
++#define WICED_WLAN_POWERSAVE_CLOCK_SOURCE WICED_WLAN_POWERSAVE_CLOCK_IS_EXT
++/*
++SN8000xUFL platform pin definitions ...
+++--------------------------------------------------------------------------------------------------------+
++| Enum ID       |Pin |   Pin Name on    |    Module     | STM32| Peripheral  |    Board     | Peripheral  |
++|               | #  |      Module      |  GPIO Alias   | Port | Available   |  Connection  |   Alias     |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_1  | 5  | MICRO_WKUP       | WICED_GPIO_1  | A  0 | GPIO        |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_2  | 6  | MICRO_ADC_IN1    | WICED_GPIO_2  | A  1 | GPIO        |              |             |
++|               |    |                  |               |      | TIM2_CH2    |              |             |
++|               |    |                  |               |      | TIM5_CH2    |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_3  | 7  | MICRO_ADC_IN2    | WICED_GPIO_3  | A  2 | ADC123_IN2  |              |             |
++|               |    |                  |               |      | GPIO        |              |             |
++|               |    |                  |               |      | TIM2_CH3    |              |             |
++|               |    |                  |               |      | TIM5_CH3    |              |             |
++|               |    |                  |               |      | TIM9_CH1    |              |             |
++|               |    |                  |               |      | USART2_TX   |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_4  | 9  | MICRO_ADC_IN3    | WICED_GPIO_4  | A  3 | ADC123_IN3  |              |             |
++|               |    |                  |               |      | GPIO        |              |             |
++|               |    |                  |               |      | TIM2_CH4    |              |             |
++|               |    |                  |               |      | TIM5_CH4    |              |             |
++|               |    |                  |               |      | TIM9_CH2    |              |             |
++|               |    |                  |               |      | UART2_RX    |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_5  | 10 | MICRO_SPI_SSN    | WICED_GPIO_5  | A  4 | ADC12_IN4   |              |             |
++|               |    |                  |               |      | DAC1_OUT    |              |             |
++|               |    |                  |               |      | GPIO        |              |             |
++|               |    |                  |               |      | I2S3_WS     |              |             |
++|               |    |                  |               |      | SPI1_NSS    |              |             |
++|               |    |                  |               |      | SPI3_NSS    |              |             |
++|               |    |                  |               |      | USART2_CK   |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_6  | 11 | MICRO_SPI_SSN    | WICED_GPIO_6  | A  5 | ADC12_IN5   |              |             |
++|               |    |                  |               |      | DAC2_OUT    |              |             |
++|               |    |                  |               |      | GPIO        |              |             |
++|               |    |                  |               |      | SPI1_SCK    |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_7  | 12 | MICRO_SPI_MOSI   | WICED_GPIO_7  | A  7 | ADC12_IN7   |              |             |
++|               |    |                  |               |      | GPIO        |              |             |
++|               |    |                  |               |      | SPI1_MOSI   |              |             |
++|               |    |                  |               |      | TIM1_CH1N   |              |             |
++|               |    |                  |               |      | TIM3_CH2    |              |             |
++|               |    |                  |               |      | TIM8_CH1N   |              |             |
++|               |    |                  |               |      | TIM14_CH1   |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_8  | 32 | MICRO_UART_TX    | WICED_GPIO_8  | A  9 | GPIO        |              |             |
++|               |    |                  |               |      | I2C3_SMBA   |              |             |
++|               |    |                  |               |      | TIM1_CH2    |              |             |
++|               |    |                  |               |      | USART1_TX   |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_9  | 33 | MICRO_UART_RX    | WICED_GPIO_9  | A 10 | GPIO        |              |             |
++|               |    |                  |               |      | TIM1_CH3    |              |             |
++|               |    |                  |               |      | USART1_RX   |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_10 | 34 | MICRO_JTAG_TMS   | WICED_GPIO_10 | A 11 | GPIO        |              |             |
++|               |    |                  |               |      | USART1_CTS  |              |             |
++|               |    |                  |               |      | USB2_DM     |              |             |
++|               |    |                  |               |      | CAN_RX      |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_11 | 35 | MICRO_JTAG_TDI   | WICED_GPIO_11 | A 12 | GPIO        |              |             |
++|               |    |                  |               |      | USART1_RTS  |              |             |
++|               |    |                  |               |      | USB2_DP     |              |             |
++|               |    |                  |               |      | CAN_TX      |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_12 | 36 | MICRO_JTAG_TMS   | WICED_GPIO_12 | A 13 | GPIO        |              |             |
++|               |    |                  |               |      | JTMS-SWDIO  |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_13 | 37 | MICRO_JTAG_TDI   | WICED_GPIO_13 | A 15 | GPIO        |              |             |
++|               |    |                  |               |      | JTDI        |              |             |
++|               |    |                  |               |      | I2S3_WS     |              |             |
++|               |    |                  |               |      | SPI1_NSS    |              |             |
++|               |    |                  |               |      | SPI3_NSS    |              |             |
++|               |    |                  |               |      | TIM2_CH1_ETR|              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_14 | 38 | MICRO_JTAG_TCK   | WICED_GPIO_14 | A 14 | GPIO        |              |             |
++|               |    |                  |               |      | JTCK-SWCLK  |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_15 | 40 | MICRO_JTAG_TDO   | WICED_GPIO_15 | B  3 | GPIO        |              |             |
++|               |    |                  |               |      | JTDO        |              |             |
++|               |    |                  |               |      | SPI1_SCK    |              |             |
++|               |    |                  |               |      | SPI3_SCK    |              |             |
++|               |    |                  |               |      | I2S3_SCK    |              |             |
++|               |    |                  |               |      | TIM2_CH2    |              |             |
++|               |    |                  |               |      | TRACESWO    |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_16 | 41 | MICRO_JTAG_TRSTN | WICED_GPIO_16 | B  4 | GPIO        |              |             |
++|               |    |                  |               |      | NJTRST      |              |             |
++|               |    |                  |               |      | SPI1_MISO   |              |             |
++|               |    |                  |               |      | SPI3_MISO   |              |             |
++|               |    |                  |               |      | TIM3_CH1    |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_17 | 42 | SPI_MOSI         | WICED_GPIO_17 | B  5 | GPIO        |              |             |
++|               |    |                  |               |      | I2C1_SMBA   |              |             |
++|               |    |                  |               |      | SPI3_MISO   |              |             |
++|               |    |                  |               |      | I2S3_SD     |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_18 | 43 | MICRO_GPIO_0     | WICED_GPIO_18 | B  6 | GPIO        |              |             |
++|               |    |                  |               |      | TIM4_CH1    |              |             |
++|               |    |                  |               |      | I2C1_SCL    |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_19 | 44 | MICRO_GPIO_1     | WICED_GPIO_19 | B  7 | GPIO        |              |             |
++|               |    |                  |               |      | TIM4_CH2    |              |             |
++|               |    |                  |               |      | I2C1_SDA    |              |             |
++|---------------+----+------------------+---------------+------+-------------+--------------+-------------|
++| WICED_GPIO_20 | 46 | MICRO_SPI_MISO   | WICED_GPIO_20 | A  6 | ADC12_IN6   |              |             |
++|               |    |                  |               |      | GPIO        |              |             |
++|               |    |                  |               |      | SPI1_MISO   |              |             |
++|               |    |                  |               |      | TIM1_BKIN   |              |             |
++|               |    |                  |               |      | TIM3_CH1    |              |             |
++|               |    |                  |               |      | TIM8_BKIN   |              |             |
++|               |    |                  |               |      | TIM13_CH1   |              |             |
+++---------------+----+------------------+------+---------------+-------------+--------------+-------------+
++Notes
++1. These mappings are defined in <WICED-SDK>/Platform/SN8000xUFL/platform.c
++2. STM32F2xx Datasheet  -> http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00237391.pdf
++3. STM32F2xx Ref Manual -> http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/REFERENCE_MANUAL/CD00225773.pdf
++*/
++
++
++typedef enum
++{
++    WICED_GPIO_1,
++    WICED_GPIO_2,
++    WICED_GPIO_3,
++    WICED_GPIO_4,
++    WICED_GPIO_5,
++    WICED_GPIO_6,
++    WICED_GPIO_7,
++    WICED_GPIO_8,
++    WICED_GPIO_9,
++    WICED_GPIO_10,
++    WICED_GPIO_11,
++    WICED_GPIO_12,
++    WICED_GPIO_13,
++    WICED_GPIO_14,
++    WICED_GPIO_15,
++    WICED_GPIO_16,
++    WICED_GPIO_17,
++    WICED_GPIO_18,
++    WICED_GPIO_19,
++    WICED_GPIO_20,
++    WICED_GPIO_21,
++    WICED_GPIO_22,
++    WICED_GPIO_23,
++    WICED_GPIO_24,
++    WICED_GPIO_25,
++    WICED_GPIO_26,
++    WICED_GPIO_27,
++    WICED_GPIO_28,
++    WICED_GPIO_29,
++    WICED_GPIO_30,
++    WICED_GPIO_31,
++    WICED_GPIO_32,
++    WICED_GPIO_33,
++
++    WICED_GPIO_MAX, /* Denotes the total number of GPIO port aliases. Not a valid GPIO alias */
++} wiced_gpio_t;
++
++typedef enum
++{
++    WICED_SPI_1,
++    WICED_SPI_MAX, /* Denotes the total number of SPI port aliases. Not a valid SPI alias */
++} wiced_spi_t;
++
++typedef enum
++{
++    WICED_I2C_NONE = 0xFF
++} wiced_i2c_t;
++
++typedef enum
++{
++    WICED_PWM_1,
++    WICED_PWM_2,
++    WICED_PWM_3,
++    WICED_PWM_4,
++    WICED_PWM_5,
++    WICED_PWM_6,
++    WICED_PWM_7,
++    WICED_PWM_8,
++    WICED_PWM_9,
++    WICED_PWM_MAX, /* Denotes the total number of PWM port aliases. Not a valid PWM alias */
++} wiced_pwm_t;
++
++typedef enum
++{
++    WICED_ADC_1,
++    WICED_ADC_2,
++    WICED_ADC_3,
++    WICED_ADC_MAX, /* Denotes the total number of ADC port aliases. Not a valid ADC alias */
++} wiced_adc_t;
++
++typedef enum
++{
++    WICED_UART_1,
++    WICED_UART_2,
++    WICED_UART_MAX, /* Denotes the total number of UART port aliases. Not a valid UART alias */
++} wiced_uart_t;
++
++#define WICED_PLATFORM_INCLUDES_SPI_FLASH
++#define WICED_SPI_FLASH_CS  (WICED_GPIO_5)
++/*      WICED_SPI_FLASH_MOSI WICED_GPIO_8 */
++/*      WICED_SPI_FLASH_MISO WICED_GPIO_7 */
++/*      WICED_SPI_FLASH_CLK  WICED_GPIO_6 */
++
++/* Components connected to external I/Os*/
++
++/* I/O connection <-> Peripheral Connections */
++#define WICED_LED1_JOINS_PWM       (WICED_PWM_1)
++#define WICED_LED2_JOINS_PWM       (WICED_PWM_2)
++#define WICED_THERMISTOR_JOINS_ADC (WICED_ADC_3)
++
++/* WLAN Powersave Clock Source
++ * The WLAN sleep clock can be driven from one of two sources:
++ * 1. Timer/PWM (default)
++ *    - With the PWM selected, the STM32 can *NOT* be put into MCU powersave mode or the PWM output will be disabled
++ * 2. MCO (MCU Clock Output). A hardware patch is needed on the BCM943362WCD4 module to enable this mode as follows:
++ *    - Connect STM32F205RGT6 pin 41 (PA8) to pin 44 (PA11)
++ *    - Change the following directive to WICED_WLAN_POWERSAVE_CLOCK_IS_MCO
++ */
++//SN8000 uses none of the above.
++
++#ifdef __cplusplus
++} /*extern "C" */
++#endif
+Index: WICED-SDK_2.3.1/include/platforms/SN8000xUFL/platform.txt
+diff -u nul WICED-SDK_2.3.1/include/platforms/SN8000xUFL/platform.txt:1.1.2.1
+--- nul	Tue Nov 12 15:50:11 2013
++++ WICED-SDK_2.3.1/include/platforms/SN8000xUFL/platform.txt	Tue Nov 12 15:50:11 2013
+@@ -0,0 +1,25 @@
++Provider    : Broadcom 
++Website     : http://go.broadcom.com/wiced
++Description : Broadcom BCM943362WCD4 mounted on a Broadcom BCM9WCD1EVAL1 evaluation board 
++ 
++Module
++  Mfr     : Broadcom
++  P/N     : SN8000xUFL
++  MCU     : STM32F205RGT6
++  WLAN    : SN8000
++  Antenna : Diversity with two printed antennae (and in-line switched Murata MM8430 RF connectors)
++
++EVB Features
++  JLINK-JTAG debug interface
++  USB-JTAG debug interface
++  USB-serial UART interface
++  Power supply : USB and/or external +5v
++  Reset button
++  Module current monitor
++  Sensors/Peripherals
++     - 2 x Buttons
++     - 2 x LEDs
++     - 1 x Thermistor
++     - 1 x 8Mbit serial flash
++  18-pin Expansion header
++            

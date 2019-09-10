@@ -1,0 +1,151 @@
+<html>
+
+<head>
+
+<link href="../../css/rfm.css" rel="stylesheet" type="text/css">
+
+<title>RFM Case study - RFM offers a full set of custom embedded wireless networking solutions like Zigbee wireless mesh sensor networks, RF modules,  IC transceiver,  IC transmitters and  IC receivers. RFM, Inc. manufactures low power wireless and RF radio modules, wireless mesh nodes for distributed sensing on distributed sensor networks. Low Power radio, n../arrowband and short range devices, front end saw filters, active RFID, RFIC, coupled resonator filters, single silicon chips in the 70MHZ and 300-1000Mhz range.</title>
+
+<!--[if gte IE 5.5]>
+<script type="text/JavaScript">
+
+navHover = function() {
+	var lis = document.getElementById("navmenu").getElementsByTagName("LI");
+	for (var i=0; i<lis.length; i++) {
+		lis[i].onmouseover=function() {
+			this.className+=" iehover";
+		}
+		lis[i].onmouseout=function() {
+			this.className=this.className.replace(new RegExp(" iehover\\b"), "");
+		}
+	}
+}
+if (window.attachEvent) window.attachEvent("onload", navHover);
+
+</script>
+<![endif]-->
+</head>
+
+<body bgcolor="ffffff" topmargin=10 marginheight="10">
+
+<link rel="stylesheet" type="text/css" href="../../navmenu.css" />
+
+<center>
+<table align="left" valign="top" border="0" width="986" cellspacing="5" cellpadding="0" bgcolor="ffffff">
+
+<tr>
+<td align="center" colspan="4">
+
+	<!--#INCLUDE VIRTUAL="../../rfm_header.html"-->
+
+</td></tr>
+
+
+<tr>
+
+<td valign="top" align="left" rowspan="3" width="100">
+
+
+      <div class="lhsidemenu">
+      <a href="../index.shtml" class="bodyLink3"> HOME</a></div>
+      <div class="lhsidemenu">
+      <a href="../products/wirelessdevices.shtml" class="bodylink3"> Wireless Devices Overview</a></div>
+      <div class="lhsidemenu">
+      <a href="../products/wirelesscomponents.php" class="bodylink3"> RF Components</div></a>
+      <div class="lhsidemenu">
+      <a href="../products/srradios.php" class="bodylink3"> Subsystem RF Products</a></div>
+      <div class="lhsidemenu">
+      <a href="../products/oem_standalone.php" class="bodylink3">Ready Made <br>RF Modules & Standalone</a></div>
+      <div class="lhsidemenu">
+      <a href="../products/dkits.shtml" class="bodylink3"> Developer Kits</a></div>
+</td>
+
+
+
+
+
+
+<td valign="top">
+<table cellpadding="10" cellspacing="10" border="0">
+<tr>
+
+
+<td>
+
+
+
+
+<p align="right"> <a href="apnotes_cirronet.shtml" class="bodylink5"><b>back to case studies</b></a></font>
+
+
+
+
+<p align="left">
+
+<font face="arial" size="2">
+
+
+
+
+<p  class="body">
+<b>Case Study:  How Wireless Networking Links Multi-ton Crane Scales with Corporate Information Systems</b>
+
+
+<p>Seattle-based Measurement Systems International has a rich, 30-year history of innovative technical breakthroughs in industrial weighing and process control systems. MSI is especially known for systems built around its crane scales, which can accurately weigh objects weighing up to 250 tons. 
+
+<p>The only practical time to weigh a multi-ton load is when a crane lifts it, which makes these high-capacity crane scales critical in such heavy industries as shipbuilding and nuclear power. Their weight readings are always displayed remotely, for safety reasons – anyone close enough to read a display on an actual crane scale would be close enough to be crushed by tons of steel or splattered with molten metal. Because of the mobile nature of cranes, wireless links provide data transmission between scales and display devices, and MSI has relied for years on RFM industrial radio modules to provide the wireless link. 
+
+<p>The most basic wireless link deployed by MSI is in its 6260 CellScale® (MSI-6260CS), in which a radio embedded in the crane scale delivers weight data point-to-point to a radio-equipped display in the crane cab, where the crane operator can take readings. 
+
+<p>When the scale reading must be seen by workers other than the crane operator, the radio in the crane scale transmits data to a radio-equipped MSI-9020 CellModem attached to a remote serial device, such as a scoreboard, placed wherever needed. The MSI-9020 is a useful but simple wireless modem, essentially a RFM radio with industrial packaging. 
+
+<p>With the addition of the recently introduced MSI-9000 CellScale, which receives crane scale transmissions and relays scale data to multiple MSI-9020 CellModems attached to displays, MSI’s equipment forms a point-to-multipoint network that can deliver data wherever needed, such as both sides of a bridge crane trolley or multiple locations at a job site. 
+
+<p>Very significantly, the MSI-9000 also features a 4-20mA option that provides a programmable output for direct or wireless connection to PLCs and data acquisition equipment, enabling a scale/sensor-to-machine interface from any location. By offering such a high level of connectivity, MSI equipment is capable of forming the basis of a variety of sophisticated wireless networking solutions. 
+
+<p>The most sophisticated MSI network in operation to date is at a major U.S. aluminum plant. In aluminum smelting, aluminum oxide is extracted from bauxite and placed in electric furnace pots, where the oxide is burned off to produce pure aluminum. There are typically 20 to 30 pots lines, each about 500 feet long, per room, and this particular plant has four pots rooms. 
+
+<p>Crucibles with vacuums remove pure aluminum from the pots, and these crucibles are moved around by cranes. A typical operation consists of removing a precise quantity of aluminum, typically several hundred pounds, from a pot and delivering it to a mold. Avoiding waste, extracting just enough aluminum to keep each pot line running efficiently, and balancing aluminum production with demand are the primary reasons crane scales are involved in the operation. 
+
+<p>This particular U.S. aluminum plant leverages MSI’s wireless capabilities to the fullest in what Dave Taylor, MSI director of engineering, calls “a precursor for many plants to come.” The plant features a master modem in each pot room, with a Yagi antenna that covers the entire room. A CellModem with dual independent RFM ports sends data to a scoreboard and to an RFID reader with large antennas, and RF tags are embedded in walls, pots lines, and crucibles. 
+
+<p>In this environment, a human operator with a handheld controller walks throughout the plant, directing each crucible to a specific pot to extract a specific amount of aluminum. This operator is actually relaying information from the plant’s mainframe regarding quantities needed for specific orders, essentially linking the crane scale to the corporate information system and central databases. Data from each crane scale is written to scoreboards placed for maximum visibility to the operator with the handheld. 
+
+<p>It’s important to note that this is an extremely difficult environment for such automation, as the large cranes fill the rooms with immense magnetic fields. A computer can’t be taken into the rooms, as the disc drive would be ruined quickly – it’s the kind of environment where any metal object left in the room for a year gets magnetized enough to pick up a wrench. 
+
+<p>Taylor says this environmental challenge is what led MSI to partner with RFM in 1997. “We had previously tried working with a manufacturer of direct sequence radios, but the equipment had problems with multipath,” says Taylor. “The radios would work, then the crane would move two feet and they wouldn’t – giant piles of metal were causing the problems.” MSI switched to RFM, he says, because its “FHSS proved much more immune to environmental issues, working well even in scrap yards. It also helps that they truly pay attention to their customers.”
+
+<p>Wireless networks such as the one MSI installed at the U.S. aluminum plant prove the industrial worthiness of those radios – while reflecting MSI’s status as a pioneer in bringing wireless networking to large-scale industry, extending the benefits of wireless from the production floor to manufacturing control and corporate information systems.
+
+<p>For more information on Measurement Systems International, visit www.msiscales.com. 
+
+</td></tr>
+
+
+
+
+</table>
+</td>
+
+
+
+
+
+
+<td valign="top" align="left" rowspan="3">&nbsp;
+
+
+
+</td></tr>
+</table>
+</body>
+
+</html>
+
+
+
+
+
+
+
+

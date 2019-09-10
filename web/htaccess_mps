@@ -1,0 +1,18 @@
+AllowEncodedSlashes On
+
+<IfModule mod_rewrite.c>
+## enable rewrites
+        Options +FollowSymLinks
+        RewriteEngine on
+        RewriteCond %{REQUEST_URI} ^/(.+)/where/(.+)
+        RewriteRule ^/(.+)/where/(.+)$ /$1.html [R=301,L]
+
+#	RewriteCond %{HTTP_HOST} !^www\.murata-ps\.com$ [NC]
+#	RewriteRule ^/(.*)$ http://www.murata-ps.com/$1 [R=301,L]
+
+#	RewriteCond %{HTTPS_HOST} !^www\.murata-ps\.com$ [NC]
+#	RewriteRule ^/(.*)$ https://www.murata-ps.com/$1 [R=301,L]
+
+
+</IfModule>
+TimeOut 600

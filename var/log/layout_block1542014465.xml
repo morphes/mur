@@ -1,0 +1,1 @@
+2018-11-12T09:21:05+00:00 INFO (6): <layout><body><referenceContainer name="root"><block class="Magento\Robots\Block\Data" name="robotsData"/></referenceContainer></body><body><referenceContainer name="root"><block class="Magento\Sitemap\Block\Robots" name="sitemapRobotsLinks"/></referenceContainer></body></layout>

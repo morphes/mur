@@ -1,0 +1,10 @@
+<?php /** * Copyright © Mageside. All rights reserved. * See MS-LICENSE.txt for license details. */ /** @var $block \Mageside\AdminUsefulLinks\Block\Links\Preview */ ?> <?php if ($block->isEnabled()) : ?> <?php $_link = $block->getEditLink(); ?> <div style="text-align: center"><p><?= $block->escapeHtml(__('You will be redirected to the source page within several seconds.')) ?></p></div><script type="text/x-magento-init">
+        {
+            "*": {
+                "Mageside_AdminUsefulLinks/js/linkscript" : {
+                    "url": "<?= $block->escapeJs($block->getBackendUrl() ?? '') ?>",
+                    "link": "<?= $block->escapeJs($_link['url'] ?? '') ?>",
+                    "source": "<?= $block->escapeJs($_link['source'] ?? '') ?>"
+                }
+            }
+        }</script><?php endif; ?>

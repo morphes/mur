@@ -1,0 +1,202 @@
+/**
+ * Copyright В© Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+@media print {
+    @page {
+        size: 330mm 427mm;
+        margin: 14mm;
+    }
+    * {
+        -webkit-filter: none !important;
+        background: transparent !important;
+        color: #000000 !important;
+        filter: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999999;
+        page-break-inside: avoid;
+    }
+    thead {
+        display: table-header-group;
+    }
+    .table-wrapper table {
+        width: 100%;
+        table-layout: fixed;
+    }
+    .table-wrapper table td {
+        width: auto;
+    }
+    .table-wrapper table > tfoot > tr:first-child {
+        border-top: 1px solid #999999;
+    }
+    .box,
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    @page {
+        margin: 1cm;
+    }
+    .block-content,
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    .block-content {
+        page-break-before: avoid;
+    }
+    .block-title,
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+    .nav-toggle {
+        display: none !important;
+    }
+    .sidebar,
+    .nav-sections,
+    .header.content > *[class],
+    .panel.wrapper > *[class],
+    .footer.content > *[class] {
+        display: none;
+    }
+
+    .order-details-items .order-items .order-gift-message:not(.expanded-content) {
+        height: auto;
+        visibility: visible;
+    }
+    .column.main {
+        float: none !important;
+        width: 100% !important;
+    }
+    .breadcrumbs {
+        margin: 0 auto;
+        text-align: right;
+    }
+    .footer.content {
+        padding: 0;
+    }
+    .wrapper-edit-button {
+        display: none;
+    }
+    .breadcrumbs {
+        display: none;
+    }
+    .header-container.page-header .navbar,
+    .navbar > .container,
+    .page-header .top-nav-rfm,
+    .breadcrumb-wrap .container .page-tools,
+    .carousel,
+    .main-content img,
+    .page-left .m4-0a,
+    .page-right {
+        display: none
+    }
+    .logo strong {
+        display: none;
+    }
+    .minisearch {
+        display: none;
+    }
+    .humb {
+        display: none;
+    }
+    .footer ul li {
+        display: inline;
+    }
+    .footer ul li a {
+        width: 300px;
+        padding-right: 50px;
+    }
+    #murata_gdpr_popup {display: none !important;}
+    #murata_gdpr_popup div {
+        display: none;
+    }
+    .footer p.emptyspace {
+        display: none;
+    }
+    .footer ul {
+        padding-left: 0px;
+        margin-left: 0px;
+        text-align: left;
+    }
+    .footer ul li {
+        text-align: left;
+        float: left;
+    }
+    .footer p {
+        clear: both;
+        padding-top: 14px;
+    }
+    .footer address {
+        text-align: left;
+        float: right;
+    }
+    #menu {
+        display: none;
+    }
+    .tooltiptext {
+        display: none;
+    }
+    .catalog-product-view .breadcrumbs {
+        display: none;
+    }
+    .top-bar {
+        display: none;
+    }
+    .humb {
+        display: none;
+    }
+    .logo strong {
+        display: none;
+    }
+    .page-title-wrapper.product:first-child {
+        display: none;
+    }
+    .technical-mobile {
+        display: none;
+    }
+    .mm-wrapper_opening .mm-menu_offcanvas.mm-menu_opened~.mm-slideout {
+        transform: translate3d(0px,0,0);
+    }
+    .tooltip_list {
+        display: none;
+    }
+    .category-products-mobile {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

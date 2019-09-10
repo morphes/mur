@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="empty-column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=0.5"/>
+    </head>
+    <body>
+        <referenceBlock name="page.main.title">
+            <action method="setPageTitle">
+                <argument translate="true" name="page_title" xsi:type="string">Compare List</argument>
+            </action>
+        </referenceBlock>
+        <referenceContainer name="header.container" remove="true"/>
+        <referenceContainer name="page.top" remove="true"/>
+        <referenceContainer name="footer-container" remove="true"/>
+        <referenceContainer name="root" htmlTag="div" htmlClass="huyaper"/>
+        <referenceContainer name="main-wrapper" htmlTag="div" htmlClass="huyaper"/>
+        <referenceContainer name="main.content">
+            <block class="Magento\Catalog\Block\Product\Compare\ListCompare" name="catalog.compare.list" template="Murata_Theme::product/compare/list.phtml" cacheable="false"/>
+        </referenceContainer>
+    </body>
+</page>

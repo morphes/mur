@@ -1,0 +1,10 @@
+<?php
+$product = $block->getNewsProduct();
+if ($product && $product->getId()) { ?>
+    <div id="product-shortcode-<?php echo $product->getId() ?>" class="product-shortcode">
+        <b><?php echo $product->getAttributeText('series'); ?> Series</b>
+        <a href="/datasheet?<?php echo $product->getData('data_sheet'); ?>" class="call2acction-btn-gray">Data Sheet (pdf)</a>
+        <a href="/contact-us.html?form=Sample&part=<?php echo $product->getAttributeText('series'); ?>" class="call2acction-btn-gray">Sample Request</a>
+        <a href="/contact-us.html?form=Quotation&part=<?php echo $product->getAttributeText('series'); ?>" class="call2acction-btn-gray">Request a Quote</a>
+    </div>
+<?php } ?>

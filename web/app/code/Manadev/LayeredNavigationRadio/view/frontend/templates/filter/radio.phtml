@@ -1,0 +1,55 @@
+<?php
+/**
+ * @copyright   Copyright (c) http://www.manadev.com
+ * @license     http://www.manadev.com/license  Proprietary License
+ */
+/** @var $tmpBlock \Manadev\LayeredNavigation\Blocks\Navigation */
+/** @var $block \Manadev\LayeredNavigation\Blocks\FilterRenderer */
+/** @var $data array */
+/** @var $engineFilter \Manadev\LayeredNavigation\EngineFilter */
+/** @var $filter \Manadev\LayeredNavigation\Models\Filter */
+$name = $block->getFilterName($filter);
+$id = $name . '_';
+?>
+<ol id="<?php echo $block->getFilterName($filter) ?>" class="mana-filter-radio" data-mage-init='{ "Manadev_LayeredNavigationRadio/js/manadevRadioFilter": {} }'>
+    <li class="item">
+        <input
+            type="radio"
+            id="<?php echo $id ?>"
+            name="<?php echo $name ?>"
+            value="<?php echo $block->getRemoveItemUrl($engineFilter) ?>"
+            <?php echo $this->urlGenerator->renderLastAction() ?>
+            <?php if (!$engineFilter->isApplied()): ?>checked="checked" <?php endif; ?>
+        />
+        <label for="<?php echo $id ?>">
+		    <span
+                <?php if (!$engineFilter->isApplied()): ?> class="m-selected-radio-button" <?php endif; ?>
+                title="<?php echo $block->escapeHtml(__('All')) ?>"
+            >
+                <?php echo $block->escapeHtml(__('All')) ?>
+            </span>
+        </label>
+    </li>
+    <?php foreach ($data as $x => $item): $label = $block->escapeItemLabel($engineFilter, $item['label']); ?>
+    <li class="item">
+        <input
+            type="radio"
+            id="<?php echo $id.$x ?>"
+            name="<?php echo $name ?>"
+            value="<?php echo $block->getReplaceItemUrl($engineFilter, $item) ?>"
+            <?php echo $this->urlGenerator->renderLastAction() ?>
+            <?php if ($item['is_selected']): ?>checked="checked"<?php endif; ?>
+        />
+        <label for="<?php echo $id.$x ?>">
+		    <span
+                <?php if ($item['is_selected']): ?>class="m-selected-radio-button"<?php endif; ?>
+            >
+                <?php echo $label ?>
+                <?php if ($block->shouldDisplayProductCountOnLayer()): ?>
+                    (<?php echo $item['count'] ?>)
+                <?php endif; ?>
+            </span>
+        </label>
+    </li>
+    <?php endforeach; ?>
+</ol>

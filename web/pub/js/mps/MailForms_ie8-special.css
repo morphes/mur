@@ -1,0 +1,17 @@
+form#MailForm ul.special{
+	clear: both;
+	width: 500px;
+	 DISPLAY: inline-block;
+}
+form#MailForm ul.special li.first{
+	width:140px;
+	float: left;
+	text-align: left;
+}
+
+form#MailForm ul.special li{
+	display:inline-block;
+	height:21px;
+	list-style:none;
+	float: left;
+}

@@ -1,0 +1,411 @@
+
+@media only screen and (max-width: 1366px){
+    .header_bar_rfm{
+        display: block;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 1024px){
+
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1023px){
+
+    .page{
+        width: 1023px;
+        max-width: 97% !important;
+        padding-right: 0;
+        overflow: hidden;
+    }
+
+    .top-nav-rfm{
+        width: auto;
+        overflow: hidden;
+        /*margin-right: -10px;*/
+        /*padding-right: 25px;*/
+        /*display: none;*/
+    }
+
+    .header_bar_rfm{
+        display: none;
+    }
+
+    .top-bar{
+        right: 3%;
+    }
+
+    .breadcrumbs{
+        width: auto;
+        /*margin-right: -10px;*/
+        /*padding-right: 25px;*/
+        /*display: none;*/
+    }
+
+    .nav-container{
+        /*display: none;*/
+    }
+
+    .form-search{
+        /*display: none;*/
+    }
+
+    .footer{
+        width: auto;
+        margin-right: 0;
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 992px){
+
+    .header_bar_rfm{
+        /*width: auto;*/
+        /*margin-right: -10px;*/
+    }
+
+    .top-bar{
+        /*right: -1%;*/
+    }
+
+}
+
+
+
+
+
+@media only screen and (max-width: 800px){
+
+    .page{
+        /*width: 800px;*/
+        max-width: 95% !important;
+        overflow: unset;
+    }
+
+    .wrapper{
+        background-image: none;
+    }
+
+    .top-nav-rfm{
+        display: none;
+    }
+
+    .top-bar{
+        display: none;
+    }
+
+    #custommenu{
+        display: none;
+    }
+
+    .breadcrumbs{
+        display: none;
+    }
+
+    .header{
+        height: 60px;
+        /*outline: 1px solid blue;*/
+        width: 100%;
+        overflow: hidden;
+        padding-top: 5px;
+
+        /*display: flex;*/
+        /*justify-content: space-between;*/
+        /*align-items: center;*/
+    }
+
+    a.humb{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 5%;
+        /*outline: 1px solid red;*/
+    }
+
+
+    .header-container{
+        height: auto;
+    }
+
+
+
+    .content_wrap{
+        flex-direction: column;
+    }
+
+    .content_wrap .main_content{
+        border:none;
+    }
+
+    .content_wrap .right_bar{
+        margin-top: 25px;
+        border-top:1px solid #ccc;
+        padding-top: 15px;
+    }
+
+    .content_wrap .main_content .offering .wrap_card{
+        flex-wrap: wrap;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px){
+
+    .content_wrap .main_content .offering .wrap_card .card{
+        margin-right: 5px;
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+
+    .top-nav-rfm{
+        display: none;
+    }
+
+    #custommenu{
+        display: none;
+    }
+
+    .content_wrap .right_bar{
+        width: 100%;
+        border:none;
+    }
+
+    .footer address{
+        margin-top: 25px;
+        text-align: center;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 480px){
+
+    .page{
+        box-sizing: border-box;
+        overflow: hidden;
+        width: 100%;
+        max-width: 100% !important;
+        padding: 0;
+        margin: 0;
+        padding: 0 0 0 15px;
+    }
+
+    a.humb{
+        right: 8%;
+    }
+
+    .content_wrap .main_content .offering .wrap_card .card{
+        width: 100%;
+        flex-basis: 100%;
+        /*text-align: center;*/
+        margin-bottom: 35px;
+        /*flex: 1;*/
+    }
+
+    .content_wrap .main_content .offering .wrap_card .card a img{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .content_wrap .main_content .offering .wrap_card .card ul li{
+        margin-bottom: 5px;
+    }
+
+    .content_wrap .main_content .offering .wrap_card .card ul li a{
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .content_wrap .main_content .offering p{
+        font-size: 13px;
+    }
+
+    .block_relatedlinks{
+        width: 107%;
+        margin-left: -15px;
+        margin-bottom: -24px;
+    }
+
+    .inquiries{
+        margin-left: -15px;
+        width: 100%;
+        max-width: 100% ;
+        background-color: #ECECEC;
+        height: 133px;
+        /*width: 258px ;*/
+        padding-bottom: 0;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-left: 20px;
+        margin-bottom: 25px;
+    }
+
+    .footer{
+        margin-left: -15px;
+        padding-right: 15px;
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 425px){
+
+    .footer{
+        padding-right: 15px;
+    }
+
+    .footer p{
+        text-align: center;
+    }
+
+    .footer ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /*text-align: center;*/
+        /*outline: 1px solid blue;*/
+    }
+
+    .footer ul li{
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10px;
+
+    }
+
+    .footer ul li a{
+        font-weight: bold;
+    }
+
+
+    .footer .f-left{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a.humb i{
+        font-size: 40px;
+    }
+
+}
+
+
+
+
+
+@media only screen and (max-width: 414px){
+
+    .content_wrap .main_content h1{
+        font-size: 30px;
+    }
+
+    .content_wrap .main_content .text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /*display: none;*/
+
+        /*width: 100% !important;*/
+        /*text-align: center !important;*/
+        /*margin: 0 auto !important;*/
+
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 375px){
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 360px){
+
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 320px){
+    
+    .page{
+        overflow: hidden;
+    }
+
+    /*.inquiries{*/
+        /*width: 258px ;*/
+        /*padding-bottom: 0;*/
+        /*padding-right: 10px;*/
+        /*padding-top: 20px;*/
+        /*padding-left: 20px;*/
+    /*}*/
+
+    .content_wrap .main_content h1{
+        font-size: 25px;
+    }
+
+    .content_wrap .main_content .text p{
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+

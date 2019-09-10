@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+ @category    Mana
+ @package     Manadev_LayeredNavigation
+ @copyright   Copyright (c) http://www.manadev.com
+ @license     http://www.manadev.com/license  Proprietary License
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <manadev_features>
+            <Manadev_LayeredNavigationSliders>
+                <version>18.03.0619</version>
+                <code>price-slider-for-layered-navigation-magento2</code>
+                <title>Price Slider for Magento Layered Navigation</title>
+                <sort_order>600</sort_order>
+            </Manadev_LayeredNavigationSliders>
+            <Manadev_LayeredNavigation>
+                <removed_by_Manadev_LayeredNavigationSliders />
+            </Manadev_LayeredNavigation>
+        </manadev_features>
+        <mana_layered_navigation>
+            <default_templates>
+                <decimal>slider</decimal>
+                <price>slider</price>
+            </default_templates>
+        </mana_layered_navigation>
+    </default>
+</config>

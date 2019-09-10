@@ -1,0 +1,32 @@
+<?php /** * Copyright © Magento, Inc. All rights reserved. * See COPYING.txt for license details. */ /* @var $block \Magento\Framework\View\Element\Template */ ?> <?php echo $block->getLayout() ->createBlock('Magento\Cms\Block\Block') ->setBlockId('mps_product_links_right') ->toHtml(); ?> <div id="box-compare-parent"><div class="block block-list block-compare" id="box-compare" style="display: none"><div class="block-title"><strong> <span>Compare List <small id="compare-count">()</small></span></strong></div><div class="block-content"><ol id="compare-items"></ol><div class="actions"><a href="/catalog/product_compare/clear" onclick="return confirm('Are you sure you would like to remove all products from your comparison?');">Clear All</a> <button type="button" title="Compare" id="CompareButton" class="button" style="cursor:pointer"><span> <span>Compare</span></span></button></div></div></div></div><script type="text/javascript">
+
+    jQuery(document).ready(function() {
+        jQuery.post('/murata_compare/product_compare/ajax', {}, function(response) {
+            response.forEach(function(e) {
+                jQuery('#compare-items').append(
+                    '<li class="item"><input type="hidden" class="compare-item-id" id="compare-item-id" value="'+e.entity_id+'"><span title="Remove This Item" class="btn-remove" id="compare-product-id" data-product="'+e.entity_id+'">Remove This Item</span><p class="product-name"><a href="' + e.href + '" id="compare-product-name">' + e.name + '</a></p></li>'
+                );
+            });
+            jQuery('#compare-count').html('(' + response.length + ')');
+            compareEvents();
+            jQuery('.m4-3b.single-tab').first().prepend(jQuery('#box-compare-parent').html());
+            jQuery('#box-compare').first().show();
+        });
+        function compareEvents() {
+            jQuery('.btn-remove').click(function(){
+                if(confirm('Are you sure you would like to remove this item from the compare products?')) {
+                    var e = jQuery(this);
+                    var productId = e.attr('data-product');
+                    if(productId) {
+                        jQuery.get('/catalog/product_compare/remove', {product: productId}, function (response) {
+
+                        });
+                    }
+                    window.location.reload();
+                }
+            });
+            jQuery('#CompareButton').click(function(){
+                window.location = '/catalog/product_compare/index/';
+            });
+        }
+    });</script>

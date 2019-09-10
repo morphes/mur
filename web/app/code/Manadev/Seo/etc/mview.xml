@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+ @category    Mana
+ @package     Manadev_Seo
+ @copyright   Copyright (c) http://www.manadev.com
+ @license     http://www.manadev.com/license  Proprietary License
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Mview/etc/mview.xsd">
+    <view id="mana_url_rewrite" class="Manadev\Seo\Indexers\UrlRewriteIndexer" group="indexer">
+        <subscriptions>
+            <table name="url_rewrite" entity_column="url_rewrite_id" />
+        </subscriptions>
+    </view>
+</config>

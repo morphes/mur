@@ -1,0 +1,33 @@
+<?php
+/** @var $block \Manadev\LayeredNavigationCategoryTree\Blocks\TreeItem */
+/** @var $data array */
+/** @var $item array */
+/** @var $engineFilter \Manadev\LayeredNavigation\EngineFilter */
+/** @var $filter \Manadev\LayeredNavigation\Models\Filter */
+/** @var $filterTemplate \Manadev\LayeredNavigationCategoryTree\FilterTemplates\Category\Tree */
+/** @var $filterRenderer \Manadev\LayeredNavigation\Blocks\FilterRenderer */
+?>
+<li class="<?php echo $filterTemplate->getTreeItemClass($item) ?>" data-tree-id="<?php echo $item['value']?>">
+    <div class="mana-tree-item <?php echo $item['is_selected'] ? 'mana-selected' : '' ?>">
+        <?php if($item['is_selected']): ?>
+            <?php echo $filterRenderer->escapeItemLabel($engineFilter, $item['label']) ?>
+            <?php if ($filterRenderer->shouldDisplayProductCountOnLayer()): ?>
+                (<?php echo $item['count'] ?>)
+            <?php endif; ?>
+        <?php else: ?>
+            <a href="<?php echo $filterRenderer->getReplaceItemUrl($engineFilter, $item)?>"<?php echo $filterRenderer->getReplaceItemLinkAttributes($engineFilter, $item) ?>>
+                <?php echo $filterRenderer->escapeItemLabel($engineFilter, $item['label']) ?>
+            </a>
+            <?php if ($filterRenderer->shouldDisplayProductCountOnLayer()): ?>
+                (<?php echo $item['count'] ?>)
+            <?php endif; ?>
+        <?php endif; ?>
+    </div>
+    <?php if (is_array($item['children']) && $item['children']): ?>
+    <ul>
+    <?php foreach ($item['children'] as $child): ?>
+        <?php echo $filterTemplate->renderTreeItem($child, $engineFilter, $filterRenderer); ?>
+    <?php endforeach; ?>
+    </ul>
+    <?php endif; ?>
+</li>

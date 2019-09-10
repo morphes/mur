@@ -1,0 +1,394 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/** @var $block \Magento\Catalog\Block\Catalog\Product\View\Addto\Compare */
+?>
+<?php $product = $this->getProduct(); ?>
+<div class="product-shop">
+    <ul>
+        <!-- Start Help popup -->
+        <li>
+            <div class="tooltip">
+                <?php if ($product->getAttributeText('product_status') == "To Be Discontinued") { ?>
+                    <img src="/pub/images/to_be_discontinued.jpg" alt="To Be Discontinued" title="Status To Be Discontinued"/>
+                <?php } ?>
+                <?php if ($product->getAttributeText('product_status') == "Discontinued") { ?>
+                    <img src="/pub/images/discontinued.jpg" alt="Discontinued" title="Status Discontinued"/>
+                <?php } ?>
+                <?php if ($product->getAttributeText('product_status') == "In Production") { ?>
+                    <img src="/pub/images/inproduction.jpg" alt="In Production" title="Status In Production"/>
+                <?php } ?>
+                <?php if ($product->getAttributeText('product_status') == "Under Development") { ?>
+                    <img src="/pub/images/under_development.jpg" alt="Under Development" title="Status Under Development"/>
+                <?php } ?>
+                <?php if ($product->getAttributeText('product_status') == "Recommended In Production") { ?>
+                    <img src="/pub/images/recommended.jpg" alt="Recommended" title="Status Recommended"/>
+                    <img src="/pub/images/inproduction.jpg" alt="In Production" title="Status In Production"/>
+                <?php } ?>
+                <!-- Status Tool Tips -->
+                <img src="/pub/images/icon_help.gif" class="tooltip-help">
+                <span class="tooltiptext" style="display: none;">
+                    <table class="tooltiptable" width="100%" border="0">
+                        <tbody>
+                            <tr>
+                                <td colspan="2">
+                                    <h3>
+                                        <center>Explanation of Product Status</center>
+                                    </h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tooltiplisttd">
+                                    <img src="/pub/images/under_development.jpg" alt="Under Development" title="Under Development">
+                                </td>
+                                <td class="tooltiplisttd">
+                                    Products under development<br>Please contact us for product availability and sample lead-time.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tooltiplisttd">
+                                    <img src="/pub/images/inproduction.jpg" alt="In Production" title="In Production">
+                                </td>
+                                <td class="tooltiplisttd">
+                                    Product is in mass production.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tooltiplisttd">
+                                    <img src="/pub/images/to_be_discontinued.jpg" alt="to be discontinued" title="to be discontinued">
+                                </td>
+                                <td class="tooltiplisttd">
+                                    Not recommended for new designs. We are evaluating the schedule for the discontinuing of production of this item. Contact Murata or refer to the website for details of product supply and possible alternative product information.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tooltiplisttd">
+                                    <img src="/pub/images/discontinued.jpg" alt="Discontinued product" title="Discontinued product">
+                                </td>
+                                <td class="tooltiplisttd">
+                                    Production of this product has stopped. Contact Murata for inventory availability and possible alternative products.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tooltiplisttd">
+                                    <img src="/pub/images/recommended.jpg" alt="Recommended product" title="Recommended product">
+                                </td>
+                                <td class="tooltiplisttd">
+                                    This product is particularly recommended among our products currently in production.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tooltiplisttd">
+                                    <img src="/pub/images/new.jpg" alt="New product" title="New product">
+                                </td>
+                                <td class="tooltiplisttd">
+                                    It's new item.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </span>
+            </div>
+            <!-- END Help popup -->
+        </li>
+        <!-- BOF : Projected Production Date-->
+        <?php if ($product->getStatus() == "Under Development") : ?>
+            <?php if ($block->escapeHtml($product->getProductionDate())): ?>
+                <li>Production Date: <?php echo $block->escapeHtml($product->getProductionDate()); ?></li>
+            <?php endif; ?>
+        <?php endif; ?>
+        <!-- BOF : Replacement-->
+        <?php if ($block->escapeHtml($product->getReplacementPart())): ?>
+            <li class="email-friend">
+                <a href="/search<?php //echo $this->helper('catalogsearch')->getResultUrl() ?>/<?php echo $block->escapeHtml($product->getReplacementPart()); ?>">
+                    Replacement Part: <?php echo $block->escapeHtml($product->getReplacementPart()); ?>
+                </a>
+            </li>
+        <?php endif; ?>
+        <!-- BOF : EOL Notices-->
+    </ul>
+    <div class="i2columview">
+        <!-- BOF : Datasheet-->
+        <?php if ($block->escapeHtml($product->getDataSheet())): ?>
+            <div>
+                <a href="/datasheet?<?php echo $block->escapeHtml($product->getDataSheet()); ?>" class="call2acction-btn-gray">
+                    DataSheet (pdf)
+                </a>
+            </div>
+        <?php endif; ?>
+        <div>
+            <a href="#" data-post='<?= /* @escapeNotVerified */$block->getPostDataParams() ?>' data-role="add-to-links" class="action call2acction-btn-gray tocompare">
+                <span>
+                    <?= /* @escapeNotVerified */__('Add to Compare') ?>
+                </span>
+            </a>
+        </div>
+        <div>
+            <?php if($block->isMurataPsStore()) { ?>
+                <a href="/contact-us.html?form=Technical&part=<?php echo $this->stripTags($product->getName(), null, true) ?>" class="call2acction-btn-gray">
+                    Technical Support
+                </a>
+            <?php } else { ?>
+                <a href="/products/contact.html?part=<?php echo $product->getName(); ?>" class="call2acction-btn-gray">
+                    Contact Us
+                </a>
+            <?php }?>
+        </div>
+        <!-- BOF : Sample-->
+        <?php if ($product->getAttributeText('product_status') == "Discontinued" || $product->getAttributeText('product_status') == "To Be Discontinued") { ?>
+        <?php } else { ?>
+            <div>
+                <?php if($block->isMurataPsStore()) { ?>
+                    <a href="/contact-us.html?form=Sample&part=<?php echo $product->getName(); ?>" class="call2acction-btn-gray">
+                        SAMPLE REQUEST
+                    </a>
+                <?php } else { ?>
+                    <a href="/products/contact.html?part=<?php echo $product->getName(); ?>&form=Sample" class="call2acction-btn-gray">
+                        SAMPLE REQUEST
+                    </a>
+                <?php }?>
+            </div>
+        <?php } ?>
+        <!-- BOF : Technical-->
+        <?php if(!$block->isMurataPsStore()) { ?>
+
+        <?php } ?>
+        <!-- BOF : Quote-->
+        <?php if ($product->getAttributeText('product_status') == "Discontinued" || $product->getAttributeText('product_status') == "To Be Discontinued") { ?>
+        <?php } else { ?>
+            <div>
+                <a href="/contact-us.html?part=<?php echo $product->getName(); ?>&form=Quotation" class="call2acction-btn-gray">
+                    REQUEST A QUOTE
+                </a>
+            </div>
+        <?php } ?>
+        <?php $attributeSetId = $product->getAttributeSetId(); ?>
+        <?php if($attributeSetId == Murata\Category\Block\Product\ListProduct::DC_DC_Converters) { ?>
+            <?php if ($product->getAttributeText('product_status') != "Discontinued"): ?>
+            <?php endif; ?>
+        <?php } ?>
+        <!-- BOF : Stock Check-->
+        <?php if ($product->getAttributeText('product_status') == "Discontinued") { ?>
+        <?php } else { ?>
+            <div>
+                <a href="/products/stock-check.html?parts=<?php echo $product->getName(); ?>" class="call2acction-btn-gray">
+                    StockCheck: Where to Buy
+                </a>
+            </div>
+        <?php } ?>
+        <?php if ($product->getAttributeText('rohs_6') != "Pending") : ?>
+            <?php if ($product->getAttributeText('rohs_5') == "Yes" || $product->getAttributeText('rohs_6') == "Yes"): ?>
+                <form action="/rohs20" method="post" name="rohs20">
+                    <INPUT TYPE="hidden" NAME="productRequested" VALUE="<?php echo nl2br($product->getSku()) ?>">
+                    <INPUT TYPE="hidden" NAME="requestedProductName" VALUE="<?php echo $product->getName() ?>">
+                    <?php if (
+                        $product->getAttributeText('location') == "C" ||
+                        $product->getAttributeText('location') == "M" ||
+                        $product->getAttributeText('location') == "O" ||
+                        $product->getAttributeText('location') == "T" ||
+                        $product->getAttributeText('location') == "F200" ||
+                        $product->getAttributeText('location') == "B200" ||
+                        $product->getAttributeText('location') == "MMC"
+                    ): ?>
+                        <INPUT TYPE="hidden" NAME="type" VALUE="US">
+                    <?php elseif ($product->getAttributeText('location') == "K"): ?>
+                        <INPUT TYPE="hidden" NAME="type" VALUE="UK">
+                    <?php endif; ?>
+
+                    <?php if ($product->getAttributeText('rohs_exc_6a') == "Yes"): ?>
+                        <INPUT TYPE="hidden" NAME="rohs_exc_6a" VALUE="Yes">
+                    <?php endif; ?>
+                    <?php if ($product->getAttributeText('rohs_exc_6c') == "Yes"): ?>
+                        <INPUT TYPE="hidden" NAME="rohs_exc_6c" VALUE="Yes">
+                    <?php endif; ?>
+                    <?php if ($product->getAttributeText('rohs_exc_7a') == "Yes"): ?>
+                        <INPUT TYPE="hidden" NAME="rohs_exc_7a" VALUE="Yes">
+                    <?php endif; ?>
+                    <?php if ($product->getAttributeText('rohs_exc_7b') == "Yes"): ?>
+                        <INPUT TYPE="hidden" NAME="rohs_exc_7b" VALUE="Yes">
+                    <?php endif; ?>
+                    <?php if ($product->getAttributeText('rohs_exc_7c1') == "Yes"): ?>
+                        <INPUT TYPE="hidden" NAME="rohs_exc_7c1" VALUE="Yes">
+                    <?php endif; ?>
+                    <?php if ($product->getAttributeText('rohs_exc_7c2') == "Yes"): ?>
+                        <INPUT TYPE="hidden" NAME="rohs_exc_7c2" VALUE="Yes">
+                    <?php endif; ?>
+                    <?php if ($product->getAttributeText('rohs_exc_7c3') == "Yes"): ?>
+                        <INPUT TYPE="hidden" NAME="rohs_exc_7c3" VALUE="Yes">
+                    <?php endif; ?>
+                    <?php if ($product->getAttributeText('rohs_exc_8') == "Yes"): ?>
+                        <INPUT TYPE="hidden" NAME="rohs_exc_8" VALUE="Yes">
+                    <?php endif; ?>
+                    <?php if ($product->getAttributeText('rohs_exc_11') == "Yes"): ?>
+                        <INPUT TYPE="hidden" NAME="rohs_exc_11" VALUE="Yes">
+                    <?php endif; ?>
+                    <?php if ($product->getAttributeText('rohs_exc_34') == "Yes"): ?>
+                        <INPUT TYPE="hidden" NAME="rohs_exc_34" VALUE="Yes">
+                    <?php endif; ?>
+                </form>
+
+
+            <?php if ($product->getAttributeText('product_status') == "Discontinued" || $product->getAttributeText('product_status') == "To Be Discontinued") { ?>
+            <?php } else { ?>
+                <div><a href="javascript:rohs20();" class="call2acction-btn-gray">RoHS-Certificate</a></div>
+            <?php } ?>
+                <script type="text/javascript">
+                    //<![CDATA[
+                    var theForm20 = document.forms['rohs20'];
+                    if (!theForm20) {
+                        theForm20 = document.rohs20;
+                    }
+                    function rohs20() {
+                        if (theForm20.onsubmit && !theForm20.onsubmit()) {
+                            return;
+                        }
+                        theForm20.submit();
+                    }
+                    //]]>
+                </script>
+            <?php endif; ?>
+        <?php endif; ?>
+
+        <?php if($block->isMurataPsStore()){ ?>
+            <?php if ($product->getAttributeText('product_status') != "Discontinued") { ?>
+                <?php if($attributeSetId == Murata\Category\Block\Product\ListProduct::DC_DC_Converters) { ?>
+                    <div><a href="/3d/dcdc.html" class="call2acction-btn-gray">3D Models</a></div>
+                    <div>
+                        <a href="/application-notes/dc-dc-application-notes.html" class="call2acction-btn-gray">
+                            DC-DC Application Notes
+                        </a>
+                    </div>
+                <?php } elseif($attributeSetId == Murata\Category\Block\Product\ListProduct::AC_DC_Power_Supplies) { ?>
+                    <div>
+                        <a href="/3d/acdc.html" class="call2acction-btn-gray">3D Models</a>
+                    </div>
+                    <div>
+                        <a href="/application-notes/ac-dc-application-notes.html" class="call2acction-btn-gray">
+                            AC-DC Application Notes
+                        </a>
+                    </div>
+                <?php } elseif($attributeSetId == Murata\Category\Block\Product\ListProduct::Digital_Panel_Meters) { ?>
+                    <div>
+                        <a href="/3d/meters.html" class="call2acction-btn-gray">3D Models</a>
+                    </div>
+                    <div>
+                        <a href="/application-notes/digital-panel-meter-application-notes.html" class="call2acction-btn-gray">
+                            Meter Application Notes
+                        </a>
+                    </div>
+                    <?php if ($product->getData('safety_cert') != "") { ?>
+                        <div>
+                            <a href="<?php echo $block->escapeHtml($product->getData('safety_cert')); ?>" class="call2acction-btn-gray">Safety Certificate</a>
+                        </div>
+                    <?php } ?>
+                <?php } elseif(
+                    $attributeSetId == Murata\Category\Block\Product\ListProduct::Common_Mode_Chokes ||
+                    $attributeSetId == Murata\Category\Block\Product\ListProduct::Inductors ||
+                    $attributeSetId == Murata\Category\Block\Product\ListProduct::Transformers ||
+                    $attributeSetId == Murata\Category\Block\Product\ListProduct::Pulse_Transformer ||
+                    $attributeSetId == Murata\Category\Block\Product\ListProduct::Current_Sensing_Transformer ||
+                    $attributeSetId == Murata\Category\Block\Product\ListProduct::Application_Specific_Transformer
+                ) { ?>
+                    <div><a href="/products/magnetics/3d-files.html" class="call2acction-btn-gray">3D Models</a></div>
+                    <div><a href="/application-notes/magnetics-application-notes.html" class="call2acction-btn-gray">Magnetics Application Notes</a></div>
+                <?php } ?>
+            <?php } ?>
+        <?php } else { ?>
+            <!--Hide Application Notes & 3D Buttons From B200 and F200 Products-->
+            <?php if ($product->getAttributeText('location') == "F200" || $product->getAttributeText('location') == "B200") { ?>
+                <!--Show 3D Buttons for AC/DC - F200 Products-->
+                <?php if ($product->getAttributeText('product_status') == "Discontinued" || $product->getAttributeText('product_status') == "To Be Discontinued") { ?>
+                <?php } else { ?>
+
+                    <?php if ($product->getAttributeText('location') == "F200" && $attributeSetId == Murata\Category\Block\Product\ListProduct::AC_DC_Power_Supplies) { ?>
+                        <div><a href="/3d/acdc.html" class="call2acction-btn-gray">3D Models</a></div>
+                    <?php } else { ?><?php } ?>
+                <?php } ?>
+
+
+            <?php } else { ?>
+
+                <?php if ($product->getAttributeText('product_status') == "Discontinued" || $product->getAttributeText('product_status') == "To Be Discontinued") { ?>
+                <?php } else { ?>
+
+                    <?php if ($attributeSetId == Murata\Category\Block\Product\ListProduct::DC_DC_Converters): ?>
+                        <div>
+                            <a href="/application-notes/dc-dc-application-notes.html" class="call2acction-btn-gray">
+                                DC-DC Application Notes
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/3d/dcdc.html" class="call2acction-btn-gray">
+                                3D Models
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/products/safety-certifications-dcdc.html" class="call2acction-btn-gray">
+                                Safety Certificate
+                            </a>
+                        </div>
+                    <?php elseif ($attributeSetId == Murata\Category\Block\Product\ListProduct::AC_DC_Power_Supplies): ?>
+                        <div>
+                            <a href="/3d/acdc.html" class="call2acction-btn-gray">
+                                3D Models
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/application-notes/ac-dc-application-notes.html" class="call2acction-btn-gray">
+                                AC-DC Application Notes
+                            </a>
+                        </div>
+                    <?php elseif ($attributeSetId == Murata\Category\Block\Product\ListProduct::Digital_Panel_Meters): ?>
+                        <div>
+                            <a href="/3d/meters.html" class="call2acction-btn-gray">
+                                3D Models
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/application-notes/digital-panel-meter-application-notes.html" class="call2acction-btn-gray">
+                                Meter Application Notes
+                            </a>
+                        </div>
+                    <?php elseif (
+                    in_array(
+                        $attributeSetId, [
+                            Murata\Category\Block\Product\ListProduct::Common_Mode_Chokes,
+                            Murata\Category\Block\Product\ListProduct::Inductors,
+                            Murata\Category\Block\Product\ListProduct::Transformers,
+                            Murata\Category\Block\Product\ListProduct::Pulse_Transformer,
+                            Murata\Category\Block\Product\ListProduct::Current_Sensing_Transformer,
+                            Murata\Category\Block\Product\ListProduct::Application_Specific_Transformer
+                        ]
+                    )
+                    ): ?>
+                        <div>
+                            <a href="/application-notes/magnetics-application-notes.html" class="call2acction-btn-gray">
+                                Magnetics Application Notes
+                            </a>
+                        </div>
+                    <?php endif; ?>
+                <?php } ?>
+            <?php } ?>
+        <?php } ?>
+
+    </div>
+</div>
+<script type="text/javascript">
+    require(['jquery', 'jquery/ui'], function($){
+        $(document).ready( function() {
+            $('.tooltip').on('mouseover', function () {
+                $('.tooltiptext').show();
+            });
+
+            $('.tooltip').on('mouseleave', function () {
+                $('.tooltiptext').hide();
+            });
+        });
+    });
+</script>
+

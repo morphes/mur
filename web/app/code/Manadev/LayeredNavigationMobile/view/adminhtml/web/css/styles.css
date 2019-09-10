@@ -1,0 +1,7 @@
+/**
+ * @copyright   Copyright (c) http://www.manadev.com
+ * @license     http://www.manadev.com/license  Proprietary License
+ */
+#mana_filter_grid_table .col-show_on_mobile {
+    width: 50px;
+}

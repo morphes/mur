@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ @category    Mana
+ @package     Manadev_Seo
+ @copyright   Copyright (c) http://www.manadev.com
+ @license     http://www.manadev.com/license  Proprietary License
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Indexer/etc/indexer.xsd">
+    <indexer id="mana_url_rewrite" view_id="mana_url_rewrite" class="Manadev\Seo\Indexers\UrlRewriteIndexer" shared_index="mana_url_key">
+        <title translate="true">SEO URL Keys (Rewrites)</title>
+        <description translate="true">(Manadev) Based on category and CMS page URL rewrite changes, recalculates SEO URL Keys</description>
+    </indexer>
+</config>

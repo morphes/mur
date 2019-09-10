@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <manadev_features>
+            <Manadev_SeoLayeredNavigationPlus>
+                <version>17.08.2311</version>
+                <code>seo-layered-navigation-plus-magento-2</code>
+                <title>SEO Layered Navigation Plus</title>
+                <sort_order>2000</sort_order>
+            </Manadev_SeoLayeredNavigationPlus>
+            <Manadev_LayeredNavigationCheckboxes>
+                <removed_by_Manadev_SeoLayeredNavigationPlus />
+            </Manadev_LayeredNavigationCheckboxes>
+            <Manadev_LayeredNavigationMobile>
+                <removed_by_Manadev_SeoLayeredNavigationPlus />
+            </Manadev_LayeredNavigationMobile>
+            <Manadev_LayeredNavigationPositions>
+                <removed_by_Manadev_SeoLayeredNavigationPlus />
+            </Manadev_LayeredNavigationPositions>
+            <Manadev_LayeredNavigationSeo>
+                <removed_by_Manadev_SeoLayeredNavigationPlus />
+            </Manadev_LayeredNavigationSeo>
+            <Manadev_LayeredNavigationSliders>
+                <removed_by_Manadev_SeoLayeredNavigationPlus />
+            </Manadev_LayeredNavigationSliders>
+            <Manadev_LayeredNavigationAjax>
+                <removed_by_Manadev_SeoLayeredNavigationPlus />
+            </Manadev_LayeredNavigationAjax>
+            <Manadev_LayeredNavigationCategoryTree>
+                <removed_by_Manadev_SeoLayeredNavigationPlus />
+            </Manadev_LayeredNavigationCategoryTree>
+            <Manadev_LayeredNavigationDropdown>
+                <removed_by_Manadev_SeoLayeredNavigationPlus />
+            </Manadev_LayeredNavigationDropdown>
+            <Manadev_LayeredNavigationRadio>
+                <removed_by_Manadev_SeoLayeredNavigationPlus />
+            </Manadev_LayeredNavigationRadio>
+            <Manadev_LayeredNavigationShowMore>
+                <removed_by_Manadev_SeoLayeredNavigationPlus />
+            </Manadev_LayeredNavigationShowMore>
+            <Manadev_LayeredNavigation>
+                <removed_by_Manadev_SeoLayeredNavigationPlus />
+            </Manadev_LayeredNavigation>
+        </manadev_features>
+    </default>
+</config>

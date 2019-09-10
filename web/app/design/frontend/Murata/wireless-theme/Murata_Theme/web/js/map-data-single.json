@@ -1,0 +1,22 @@
+{
+	"title":"Murata map data",
+	"places":[
+		{
+			"title":"Murata African",
+			"id":1,
+			"copy":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae.",
+			"address1": "Address 1",
+			"address2": "Address 2",
+			"address3": "Address 3",
+			"city": "City",
+			"zip": "Zip",
+			"country": "Country",
+			"tel": "+44",
+			"fax": "+55",
+			"email": "email@address.com",
+			"link":"http://www.murata.com",
+			"latitude":"-25.85783888888889",
+			"longitude":"+29.173408333333334"
+		}
+	]
+}

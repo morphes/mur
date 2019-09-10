@@ -1,0 +1,32 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+?>
+<?php /** @var $block \Magento\Catalog\Block\Product\Image */ ?>
+<?php $noExists = (strpos($block->getImageUrl(), 'no_image') != false); ?>
+<div style="width: 100%">
+    <span class="product-image-container"
+          style="width:<?= /* @escapeNotVerified */ $block->getWidth() ?>px;">
+        <span class="product-image-wrapper"
+              style="padding-bottom: <?= /* @escapeNotVerified */ ($block->getRatio() * 100) ?>%;">
+            <div>
+            <img class="product-image-photo <?php echo ($noExists) ? 'noexists' : 'exists'; ?>"
+                <?= /* @escapeNotVerified */ $block->getCustomAttributes() ?>
+                src="<?= /* @escapeNotVerified */ $block->getImageUrl() ?>"
+                width="<?= /* @escapeNotVerified */ $block->getResizedImageWidth() ?>"
+                height="<?= /* @escapeNotVerified */ $block->getResizedImageHeight() ?>"
+                alt="<?= /* @escapeNotVerified */ $block->stripTags($block->getLabel(), null, true) ?>"
+                title="<?= /* @escapeNotVerified */ $block->stripTags($block->getLabel(), null, true) ?>"/>
+                </div>
+            <div>
+                <?php if ($block->getProduct() && $block->getProduct()->getAttributeText('design_origin') == "Murata") { ?>
+                    <img src="/pub/wysiwyg/categories/murata_logo.jpg" alt="Murata" title="Murata" width="100"/>
+                <?php } else { ?>
+                    <img src="/pub/wysiwyg/categories/mps_logo.jpg" alt="Murata Power Solutions" title="Murata Power Solutions" width="100"/>
+                <?php } ?>
+            </div>
+        </span>
+    </span>
+</div>

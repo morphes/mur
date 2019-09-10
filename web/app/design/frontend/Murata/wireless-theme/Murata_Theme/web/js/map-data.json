@@ -1,0 +1,73 @@
+{
+	"title":"Murata map data",
+	"places":[
+		{
+			"title":"Murata African",
+			"id":1,
+			"copy":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae.",
+			"address1": "Address 1",
+			"address2": "Address 2",
+			"address3": "Address 3",
+			"city": "City",
+			"zip": "Zip",
+			"country": "Country",
+			"tel": "+44",
+			"fax": "+55",
+			"email": "email@address.com",
+			"link":"http://www.murata.com",
+			"latitude":"-25.85783888888889",
+			"longitude":"+29.173408333333334"
+		},
+		{
+			"title":"Murata South America",
+			"id":2,
+			"copy":"Assumenda, incidunt, atque, et quasi in neque dolorum delectus quam volu.",
+			"address1": "Address 1",
+			"address2": "Address 2",
+			"address3": "Address 3",
+			"city": "City",
+			"zip": "Zip",
+			"country": "Country",
+			"tel": "+44",
+			"fax": "+55",
+			"email": "email@address.com",
+			"link":"http://www.murata.com",
+			"latitude":"-27.330833333333334",
+			"longitude":"-66.60805555555555"
+		},
+		{
+			"title":"Murata Australia",
+			"id":3,
+			"copy":"Totam, maxime, ducimus, explicabo dicta ipsa quis obcaecati mol.",
+			"address1": "Address 1",
+			"address2": "Address 2",
+			"address3": "Address 3",
+			"city": "City",
+			"zip": "Zip",
+			"country": "Country",
+			"tel": "+44",
+			"fax": "+55",
+			"email": "email@address.com",
+			"link":"http://www.murata.com",
+			"latitude":"-20.716944444444443",
+			"longitude":"+139.47583333333333"
+		},
+		{
+			"title":"Murata North America",
+			"id":4,
+			"copy":"Nulla, expedita, consequatur, quam, omnis dolor natus .",
+			"address1": "Address 1",
+			"address2": "Address 2",
+			"address3": "Address 3",
+			"city": "City",
+			"zip": "Zip",
+			"country": "Country",
+			"tel": "+44",
+			"fax": "+55",
+			"email": "email@address.com",
+			"link":"http://www.murata.com",
+			"latitude":"+46.66197777777778",
+			"longitude":"-81.33935555555555"
+		}
+	]
+}

@@ -1,0 +1,83 @@
+<?php
+$_productCollection = $block->getCollection();
+$attributeSetId = 0;
+foreach($_productCollection as $product) {
+    $attributeSetId = $product->getAttributeSetId();
+    break;
+}
+$isOpenCompute = ($attributeSetId == Murata\Category\Block\Product\ListProduct::Open_Compute);
+?>
+<div style="margin-bottom:5px; text-align:left; float:left;width:100%">
+    <?php if (!$isOpenCompute) { ?>
+        <button id="add-items-to-compare" class="form-button" onclick="addItemsToCompare()">
+            <span>Add to Compare List</span>
+        </button>
+        <br/>
+        Add to Compare List by selecting two to five items from the list.
+    <?php } ?>
+    <br/>
+    <!-- Product Status Tips -->
+    <div class="tooltip_list <?php if($isOpenCompute) { ?> open-compute<?php } ?>">
+        Product Status
+        <img src="/pub/images/icon_help.gif" class="tooltip-help">
+        <span class="tooltiptext" style="display:block">
+            <table class="tooltiptable" width="100%" border="0">
+                <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <h3><center>Explanation of Product Status</center></h3>
+                        </td>
+                    </tr>
+                <tr>
+                    <td class="tooltiplisttd">
+                        <img src="/pub/images/under_development.jpg" alt="Under Development" title="Under Development">
+                    </td>
+                    <td class="tooltiplisttd">
+                        Products under development<br>Please contact us for product availability and sample lead-time.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tooltiplisttd">
+                        <img src="/pub/images/inproduction.jpg" alt="In Production" title="In Production">
+                    </td>
+                    <td class="tooltiplisttd">
+                        Product is in mass production.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tooltiplisttd">
+                        <img src="/pub/images/to_be_discontinued.jpg" alt="to be discontinued" title="to be discontinued">
+                    </td>
+                    <td class="tooltiplisttd">
+                        Not recommended for new designs. We are evaluating the schedule for the discontinuing of production of this item. Contact Murata or refer to the website for details of product supply and possible alternative product information.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tooltiplisttd">
+                        <img src="/pub/images/discontinued.jpg" alt="Discontinued product" title="Discontinued product">
+                    </td>
+                    <td class="tooltiplisttd">
+                        Production of this product has stopped. Contact Murata for inventory availability and possible alternative products.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tooltiplisttd">
+                        <img src="/pub/images/recommended.jpg" alt="Recommended product" title="Recommended product">
+                    </td>
+                    <td class="tooltiplisttd">
+                        This product is particularly recommended among our products currently in production.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tooltiplisttd">
+                        <img src="/pub/images/new.jpg" alt="New product" title="New product">
+                    </td>
+                    <td class="tooltiplisttd">
+                        It's new item.
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </span>
+    </div>
+</div>

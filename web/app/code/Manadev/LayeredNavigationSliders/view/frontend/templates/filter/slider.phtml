@@ -1,0 +1,66 @@
+<?php
+/**
+ * @copyright   Copyright (c) http://www.manadev.com
+ * @license     http://www.manadev.com/license  Proprietary License
+ */
+/** @var $tmpBlock \Manadev\LayeredNavigation\Blocks\Navigation */
+/** @var $block \Manadev\LayeredNavigation\Blocks\FilterRenderer */
+/** @var $data array */
+/** @var $engineFilter \Manadev\LayeredNavigation\EngineFilter */
+/** @var $filter \Manadev\LayeredNavigation\Models\Filter */
+
+/** @var $filterTemplate \Manadev\LayeredNavigationSliders\FilterTemplates\AbstractSliderFilterTemplate */
+$filterTemplate = $engineFilter->getFilterTemplate();
+$navPosition = $tmpBlock->getData('position');
+
+$filterTemplate->setNavBlockPosition($navPosition);
+$_id = $block->getFilterName($filter);
+$scriptConfig = $filterTemplate->getScriptConfig($data, $filter, $block, $engineFilter);
+?>
+<div id="<?php echo $_id ?>" class="m-slider">
+    <?php if($filterTemplate->isSliderDisplayed()): ?>
+    <div class="mana-filter-slider <?php echo $filterTemplate->getSliderStyle($filter) ?>">
+        <div class="mana-slider-span"></div>
+        <div class="mana-slider-from"></div>
+        <div class="mana-slider-to"></div>
+    </div>
+    <?php endif; ?>
+    <div class="mana-slider-values <?php echo $filterTemplate->getRangeClass($filter) ?>">
+
+        <?php if ($filterTemplate->isSliderDisplayed()): ?>
+        <span class="mana-slider-min-value"></span>
+        <span class="mana-slider-max-value"></span>
+        <?php endif; ?>
+
+        <span class="mana-slider-selected-value">
+        <?php if($filterTemplate->isFilterShowRangeInput($filter)):?>
+            <span class="mana-slider-applied-from">
+                <span class="mana-slider-before-input"></span>
+                <input type="text" size="2"/>
+                <span class="mana-slider-after-input"></span>
+            </span>
+
+            <span class="mana-slider-applied-to">
+                <span class="mana-slider-before-input"></span>
+                <input type="text" size="2"/>
+                <span class="mana-slider-after-input"></span>
+            </span>
+        <?php endif; ?>
+        </span>
+    </div>
+</div>
+
+<script type="text/javascript">
+    <?php if($filterTemplate->isSliderInlineInDropdown()): // Do this here so that it's processed on page render ?>
+    document.getElementById("<?php echo $_id ?>").parentNode.parentNode.className += " mana-inline-slider";
+    <?php endif; ?>
+
+    require([
+        'jquery',
+        'Manadev_LayeredNavigationSliders/js/manaLayeredNavigationSlider'
+    ], function($) {
+        $(function() {
+            $('#<?php echo $_id ?>').manaLayeredNavigationSlider(<?php echo json_encode($scriptConfig, JSON_PRETTY_PRINT);?>);
+        });
+    });
+</script>

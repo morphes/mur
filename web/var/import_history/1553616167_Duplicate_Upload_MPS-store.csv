@@ -1,0 +1,567 @@
+sku,name,store_view_code,dimension,dimensions_mm,i1out,operating_temperature_range,total_output_power_w,v1out_vdc,v2out_vdc,vin_range,series
+8801749,,murataps_store_view,1U x 3.20 x 11.00,1U x 81.30 x 279.40,69.2,-10 to 50,850,12,3.3,40 to 72,N/A
+8801734,,murataps_store_view,1U x 3.20 x 11.00,1U x 81.30 x 279.40,98.3,-10 to 50,1200,12,5,90 to 264,N/A
+8801735,,murataps_store_view,1U x 3.20 x 11.00,1U x 81.30 x 279.40,98.3,-10 to 50,1200,12,5,90 to 264,N/A
+8801736,,murataps_store_view,1U x 3.20 x 11.00,1U x 81.30 x 279.40,98.3,-10 to 50,1200,12,3.3,90 to 264,N/A
+8801737,,murataps_store_view,1U x 3.20 x 11.00,1U x 81.30 x 279.40,98.3,-10 to 50,1200,12,3.3,90 to 264,N/A
+8401804,,murataps_store_view,1U x 3.20 x 11.00,1U x 81.30 x 279.40,69.2,-10 to 55,850,12,3.3,90 to 264,N/A
+8801730,,murataps_store_view,1U x 3.20 x 11.00,1U x 81.30 x 279.40,69.2,-10 to 55,850,12,3.3,90 to 264,D1U3CS-W
+4401731-3,,murataps_store_view,1U x 3.20 x 11.00,1U x 81.30 x 279.40,69.2,-10 to 55,850,12,3.3,90 to 264,N/A
+MPL0039A,,murataps_store_view,1.77 x 3.31 x 0.51,,0.2,-10 to 60,50,40,40,45.6 to 50.4,MPL0039
+MPL0039B,,murataps_store_view,1.77 x 3.31 x 0.51,,0.4,-10 to 60,50,40,40,45.6 to 50.4,MPL0039
+MYSSM01204BENL,,murataps_store_view,1.2 x 0.8 x 0.5,30.2 x 20.9 x 12,4,-10 to 70,48,5 to 12,,17 to 40,N/A
+MYSSM01806BENL,,murataps_store_view,1.2 x 0.8 x 0.5,30.2 x 20.9 x 12,6,-10 to 70,108,5 to 18,,25 to 40,N/A
+PQC250-54,,murataps_store_view,3 x 5 x 1.4,76.2 x 127 x 35.2,4.6,-10 to 70,277,54,5,90 to 264,N/A
+8941420,,murataps_store_view,0.5 x 0.67 x 0.42,12.7 x 17.02 x 10.7,25,-20 to 70,49.5,0.8-3.6,,7 to 13.2,N/A
+4401954,,murataps_store_view,3 x 5 x 1.4,76.2 x 127 x 35.2,13.8,-20 to 70,250,54,5,90 to 264,N/A
+4401998,,murataps_store_view,3 x 5 x 1.4,76.2 x 127 x 35.2,13.8,-20 to 70,250,54,5,90 to 264,PQC250
+IHB60T480512-C,,murataps_store_view,2.3 x 2.4 x 0.5,58.4 x 61 x 12.7,12,-40 to 100,60,5.1,12,33 to 76,N/A
+VKP100MT312,,murataps_store_view,2.3 x 2.4 x 0.5,58.4 x 61 x 12.7,30,-40 to 100,100,3.3,12,33 to 75,N/A
+VKP100MT312C,,murataps_store_view,2.3 x 2.4 x 0.5,58.4 x 61 x 12.7,30,-40 to 100,100,3.3,12,33 to 75,N/A
+VKP100MT515,,murataps_store_view,2.3 x 2.4 x 0.5,58.4 x 61 x 12.7,20,-40 to 100,100,5,15,33 to 75,N/A
+VKP60LT312C,,murataps_store_view,2.3 x 2.4 x 0.5,58.4 x 61 x 12.7,18,-40 to 100,60,3.3,12,18 to 40,N/A
+VKP60LT315C,,murataps_store_view,2.3 x 2.4 x 0.5,58.4 x 61 x 12.7,18,-40 to 100,60,3.3,15,18 to 40,N/A
+VKP60LT512C,,murataps_store_view,2.3 x 2.4 x 0.5,58.4 x 61 x 12.7,12,-40 to 100,60,5.1,12,18 to 40,N/A
+VKP60LT515C,,murataps_store_view,2.3 x 2.4 x 0.5,58.4 x 61 x 12.7,12,-40 to 100,60,5.1,15,18 to 40,N/A
+VKP60MT312,,murataps_store_view,2.3 x 2.4 x 0.5,58.4 x 61 x 12.7,18,-40 to 100,60,3.3,12,33 to 75,N/A
+VKP60MT312C,,murataps_store_view,2.3 x 2.4 x 0.5,58.4 x 61 x 12.7,18,-40 to 100,60,3.3,12,33 to 75,N/A
+VKP60MT315,,murataps_store_view,2.3 x 2.4 x 0.5,58.4 x 61 x 12.7,18,-40 to 100,60,3.3,15,33 to 75,N/A
+VKP60MT315C,,murataps_store_view,2.3 x 2.4 x 0.5,58.4 x 61 x 12.7,18,-40 to 100,60,3.3,15,33 to 75,N/A
+VKP60MT512,,murataps_store_view,2.3 x 2.4 x 0.5,58.4 x 61 x 12.7,12,-40 to 100,60,5.1,12,33 to 75,N/A
+VKP60MT512C,,murataps_store_view,2.3 x 2.4 x 0.5,58.4 x 61 x 12.7,12,-40 to 100,60,5.1,12,33 to 75,N/A
+VKP60MT515,,murataps_store_view,2.3 x 2.4 x 0.5,58.4 x 61 x 12.7,12,-40 to 100,60,5,15,33 to 75,N/A
+VKP60MT515C,,murataps_store_view,2.3 x 2.4 x 0.5,58.4 x 61 x 12.7,12,-40 to 100,60,5,15,33 to 75,N/A
+8960004,,murataps_store_view,0.90 x 2.23 x 0.46,,25,-40 to 105,30,1.2,,10.2 to 13.8,N/A
+8960005,,murataps_store_view,0.90 x 2.23 x 0.46,,25,-40 to 105,30,1.2,,10.2 to 13.8,N/A
+8960006,,murataps_store_view,0.90 x 2.3 x 0.46,,25,-40 to 105,30,1.2,,10.2 to 13.8,N/A
+8960007,,murataps_store_view,0.90 x 2.3 x 0.46,,25,-40 to 105,30,1.2,,10.2 to 13.8,N/A
+8960008,,murataps_store_view,0.90 x 2.23 x 0.46,,25,-40 to 105,38,1.5,,10.2 to 13.8,N/A
+8960009,,murataps_store_view,0.90 x 2.23 x 0.46,,25,-40 to 105,38,1.5,,10.2 to 13.8,N/A
+8960010,,murataps_store_view,0.90 x 2.3 x 0.46,,25,-40 to 105,38,1.5,,10.2 to 13.8,N/A
+8960011,,murataps_store_view,0.90 x 2.3 x 0.46,,25,-40 to 105,38,1.5,,10.2 to 13.8,N/A
+8808762,,murataps_store_view,2.3 x 1.45 x 0.57,58.4 x 36.8 x 14.5,84,-40 to 105,1000,12,,9 to 36,ICF
+8808761,,murataps_store_view,2.3 x 1.45 x 0.57,58.4 x 36.8 x 14.5,84,-40 to 105,1000,12,,9 to 36,ICF
+8808738,,murataps_store_view,2.3 x 1.45 x 0.57,58.4 x 36.8 x 14.5,21,-40 to 105,1000,48,,9 to 36,ICF
+8808737,,murataps_store_view,2.3 x 1.45 x 0.57,58.4 x 36.8 x 14.5,21,-40 to 105,1000,48,,9 to 36,ICF
+8808742,,murataps_store_view,2.3 x 1.45 x 0.57,58.4 x 36.8 x 14.5,19,-40 to 105,1000,53,,9 to 36,ICF
+8808741,,murataps_store_view,2.3 x 1.45 x 0.57,58.4 x 36.8 x 14.5,19,-40 to 105,1000,53,,9 to 36,ICF
+8913028,,murataps_store_view,0.90 x 2.23 x 0.46,,25,-40 to 105,125,5,,10.2 to 13.8,N/A
+8913026,,murataps_store_view,0.90 x 2.23 x 0.46,,25,-40 to 105,125,5,,10.2 to 13.8,N/A
+8913027,,murataps_store_view,0.90 x 2.23 x 0.46,,25,-40 to 105,125,5,,10.2 to 13.8,N/A
+8926620,,murataps_store_view,0.90 x 2.23 x 0.46,,25,-40 to 105,125,5,,10.2 to 13.8,N/A
+8913030,,murataps_store_view,0.90 x 2.3 x 0.46,,25,-40 to 105,125,5,,10.2 to 13.8,N/A
+8913025,,murataps_store_view,0.90 x 2.3 x 0.46,,25,-40 to 105,125,5,,10.2 to 13.8,N/A
+8913029,,murataps_store_view,0.90 x 2.3 x 0.46,,25,-40 to 105,125,5,,10.2 to 13.8,N/A
+8121341,,murataps_store_view,1.35 x 2.22 x 0.375,34.3 x 56.4 x 9.53,25,-40 to 105,38,1.5,,18 to 36,N/A
+8921341,,murataps_store_view,1.35 x 2.22 x 0.375,34.3 x 56.4 x 9.53,25,-40 to 105,38,1.5,,18 to 36,N/A
+8170003,,murataps_store_view,1.45 x 2.30 x 0.35,36.8 x 58.4 x 8.9,25,-40 to 105,38,1.5,,18 to 36,N/A
+8121344,,murataps_store_view,1.35 x 2.22 x 0.375,34.3 x 56.4 x 9.53,25,-40 to 105,38,1.5,,18 to 36,N/A
+8970018,,murataps_store_view,1.35 x 2.22 x 0.375,34.3 x 56.4 x 9.53,25,-40 to 105,38,1.5,,18 to 36,N/A
+8170005,,murataps_store_view,1.45 x 2.30 x 0.35,36.8 x 58.4 x 8.9,25,-40 to 105,38,1.5,,18 to 36,N/A
+8170072,,murataps_store_view,1.35 x 2.22 x 0.375,34.3 x 56.4 x 9.53,25,-40 to 105,38,1.5,,36 to 75,N/A
+8970020,,murataps_store_view,1.35 x 2.22 x 0.375,34.3 x 56.4 x 9.53,25,-40 to 105,38,1.5,,36 to 75,N/A
+8170081,,murataps_store_view,1.45 x 2.30 x 0.35,36.8 x 58.4 x 8.9,25,-40 to 105,38,1.5,,36 to 75,N/A
+8170071,,murataps_store_view,1.35 x 2.22 x 0.375,34.3 x 56.4 x 9.53,25,-40 to 105,38,1.5,,36 to 75,N/A
+8970022,,murataps_store_view,1.35 x 2.22 x 0.375,34.3 x 56.4 x 9.53,25,-40 to 105,38,1.5,,36 to 75,N/A
+8170082,,murataps_store_view,1.45 x 2.30 x 0.35,36.8 x 58.4 x 8.9,25,-40 to 105,38,1.5,,36 to 75,N/A
+8121342,,murataps_store_view,1.35 x 2.22 x 0.375,34.3 x 56.4 x 9.53,25,-40 to 105,45,1.8,,18 to 36,N/A
+8970028,,murataps_store_view,1.35 x 2.22 x 0.375,34.3 x 56.4 x 9.53,25,-40 to 105,45,1.8,,18 to 36,N/A
+8170009,,murataps_store_view,1.45 x 2.30 x 0.35,36.8 x 58.4 x 8.9,25,-40 to 105,45,1.8,,18 to 36,N/A
+8121345,,murataps_store_view,1.35 x 2.22 x 0.375,34.3 x 56.4 x 9.53,25,-40 to 105,45,1.8,,18 to 36,N/A
+8970030,,murataps_store_view,1.35 x 2.22 x 0.375,34.3 x 56.4 x 9.53,25,-40 to 105,45,1.8,,18 to 36,N/A
+8170012,,murataps_store_view,1.45 x 2.30 x 0.35,36.8 x 58.4 x 8.9,25,-40 to 105,45,1.8,,18 to 36,N/A
+8170074,,murataps_store_view,1.35 x 2.22 x 0.375,34.3 x 56.4 x 9.53,25,-40 to 105,45,1.8,,36 to 75,N/A
+8970112,,murataps_store_view,1.35 x 2.22 x 0.375,34.3 x 56.4 x 9.53,25,-40 to 105,45,1.8,,36 to 75,N/A
+8170084,,murataps_store_view,1.45 x 2.30 x 0.35,36.8 x 58.4 x 8.9,25,-40 to 105,45,1.8,,36 to 75,N/A
+8170073,,murataps_store_view,1.35 x 2.22 x 0.375,34.3 x 56.4 x 9.53,25,-40 to 105,45,1.8,,36 to 75,N/A
+8970113,,murataps_store_view,1.35 x 2.22 x 0.375,34.3 x 56.4 x 9.53,25,-40 to 105,45,1.8,,36 to 75,N/A
+8170083,,murataps_store_view,1.45 x 2.30 x 0.35,36.8 x 58.4 x 8.9,25,-40 to 105,45,1.8,,36 to 75,N/A
+8121343,,murataps_store_view,1.35 x 2.22 x 0.375,34.3 x 56.4 x 9.53,25,-40 to 105,50,2,,18 to 36,N/A
+8970077,,murataps_store_view,1.35 x 2.22 x 0.375,34.3 x 56.4 x 9.53,25,-40 to 105,50,2,,18 to 36,N/A
+8170038,,murataps_store_view,1.45 x 2.30 x 0.35,36.8 x 58.4 x 8.9,25,-40 to 105,50,2,,18 to 36,N/A
+8121346,,murataps_store_view,1.35 x 2.22 x 0.375,34.3 x 56.4 x 9.53,25,-40 to 105,50,2,,18 to 36,N/A
+8970079,,murataps_store_view,1.35 x 2.22 x 0.375,34.3 x 56.4 x 9.53,25,-40 to 105,50,2,,18 to 36,N/A
+8170040,,murataps_store_view,1.45 x 2.30 x 0.35,36.8 x 58.4 x 8.9,25,-40 to 105,50,2,,18 to 36,N/A
+8170076,,murataps_store_view,1.35 x 2.22 x 0.375,34.3 x 56.4 x 9.53,25,-40 to 105,50,2,,36 to 75,N/A
+8970081,,murataps_store_view,1.35 x 2.22 x 0.375,34.3 x 56.4 x 9.53,25,-40 to 105,50,2,,36 to 75,N/A
+8170086,,murataps_store_view,1.45 x 2.30 x 0.35,36.8 x 58.4 x 8.9,25,-40 to 105,50,2,,36 to 75,N/A
+8170075,,murataps_store_view,1.35 x 2.22 x 0.375,34.3 x 56.4 x 9.53,25,-40 to 105,50,2,,36 to 75,N/A
+8970083,,murataps_store_view,1.35 x 2.22 x 0.375,34.3 x 56.4 x 9.53,25,-40 to 105,50,2,,36 to 75,N/A
+8170085,,murataps_store_view,1.45 x 2.30 x 0.35,,25,-40 to 105,50,2,,36 to 75,N/A
+8999504,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,35,-40 to 110,420,12,,36 to 75,N/A
+8999510,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,35,-40 to 110,420,12,,36 to 75,N/A
+8999502,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,35,-40 to 110,420,12,,36 to 75,N/A
+8999505,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,35,-40 to 110,420,12,,36 to 75,N/A
+8999511,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,35,-40 to 110,420,12,,36 to 75,N/A
+8999503,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,35,-40 to 110,420,12,,36 to 75,N/A
+8999507,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,35,-40 to 110,420,12,,36 to 75,N/A
+8999549,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,35,-40 to 110,420,12,,36 to 75,N/A
+8999553,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,35,-40 to 110,420,12,,36 to 75,N/A
+CME0303S3C,,murataps_store_view,0.45 x 0.236 x 0.293,11.48 x 6.00 x 7.46,0.227,-40 to 85,0.75,3.3,,2.97 to 3.63,N/A
+CME0305S3C,,murataps_store_view,0.45 x 0.236 x 0.293,11.48 x 6.00 x 7.46,0.15,-40 to 85,0.75,5,,2.97 to 3.63,N/A
+CRE1S0305S3C,,murataps_store_view,0.454 x 0.240 x 0.294,11.53 x 6.10 x 7.46,0.2,-40 to 85,1,5,,2.97 to 3.63,N/A
+8999631,,murataps_store_view,2.3 x 0.9 x 0.52,58.4 x 22.9 x 13.2,25,-40 to 85,300,12,,36 to 75,N/A
+8999633,,murataps_store_view,2.3 x 0.9 x 0.46,58.4 x 22.9 x 11.7,25,-40 to 85,300,12,,36 to 75,N/A
+8999639,,murataps_store_view,2.3 x 0.9 x 0.46,58.4 x 22.9 x 11.7,25,-40 to 85,300,12,,36 to 75,N/A
+8999628,,murataps_store_view,2.3 x 0.9 x 0.52,58.4 x 22.9 x 13.2,25,-40 to 85,300,12,,36 to 75,N/A
+8999632,,murataps_store_view,2.3 x 0.9 x 0.52,58.4 x 22.9 x 13.2,25,-40 to 85,300,12,,36 to 75,N/A
+8999634,,murataps_store_view,2.3 x 0.9 x 0.46,58.4 x 22.9 x 11.7,25,-40 to 85,300,12,,36 to 75,N/A
+8999640,,murataps_store_view,2.3 x 0.9 x 0.46,58.4 x 22.9 x 11.7,25,-40 to 85,300,12,,36 to 75,N/A
+8999854,,murataps_store_view,2.3 x 1.45 x 0.57,58.4 x 36.8 x 14.5,88,-40 to 85,986,11.2,,36 to 60,DRQ
+8999894,,murataps_store_view,2.3 x 1.45 x 0.57,58.4 x 36.8 x 14.5,88,-40 to 85,986,11.2,,36 to 60,DRQ
+8999889,,murataps_store_view,2.3 x 1.45 x 0.57,58.4 x 36.8 x 14.5,88,-40 to 85,986,11.2,,36 to 60,DRQ
+8999891,,murataps_store_view,2.3 x 1.45 x 0.57,58.4 x 36.8 x 14.5,88,-40 to 85,986,11.2,,36 to 60,DRQ
+8999612,,murataps_store_view,2.3 x 1.45 x 1.1,58.4 x 36.8 x 27.94,43.5,-40 to 85,500,12,,38 to 75,DRQ-12/42
+8999684,,murataps_store_view,2.3 x 1.45 x 1.1,58.4 x 36.8 x 27.94,50,-40 to 85,600,12,,44 to 60,DRQ-12/50
+8999643,,murataps_store_view,2.3 x 0.9 x 0.52,58.4 x 22.9 x 13.2,25,-40 to 85,300,12,,36 to 75,N/A
+8999642,,murataps_store_view,2.3 x 0.9 x 0.52,58.4 x 22.9 x 13.2,25,-40 to 85,300,12,,36 to 75,N/A
+8999641,,murataps_store_view,2.3 x 0.9 x 0.46,58.4 x 22.9 x 11.7,25,-40 to 85,300,12,,36 to 75,N/A
+8999644,,murataps_store_view,2.3 x 0.9 x 0.46,58.4 x 22.9 x 11.7,25,-40 to 85,300,12,,36 to 75,N/A
+8999645,,murataps_store_view,2.3 x 0.9 x 0.52,58.4 x 22.9 x 13.2,25,-40 to 85,300,12,,36 to 75,N/A
+8999646,,murataps_store_view,2.3 x 0.9 x 0.52,58.4 x 22.9 x 13.2,25,-40 to 85,300,12,,36 to 75,N/A
+8999647,,murataps_store_view,2.3 x 0.9 x 0.46,58.4 x 22.9 x 11.7,25,-40 to 85,300,12,,36 to 75,N/A
+8999648,,murataps_store_view,2.3 x 0.9 x 0.46,58.4 x 22.9 x 11.7,25,-40 to 85,300,12,,36 to 75,N/A
+8900161,,murataps_store_view,2.3 x 2.4 x 0.5,58.4 x 61 x 12.7,3,-40 to 85,162,54,,18 to 72,EMH-54/3-Q48
+8900160,,murataps_store_view,2.3 x 2.4 x 0.43,58.4 x 61 x 10.92,3,-40 to 85,162,54,,18 to 72,N/A
+8999048,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,25,-40 to 85,300,12,,36 to 75,N/A
+8999049,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,25,-40 to 85,300,12,,36 to 75,N/A
+8999044,,murataps_store_view,1.45 x 2.3 x 0.49,36.8 x 58.4 x 12.4,25,-40 to 85,300,12,,36 to 75,N/A
+8999045,,murataps_store_view,1.45 x 2.3 x 0.49,36.8 x 58.4 x 12.4,25,-40 to 85,300,12,,36 to 75,N/A
+8970816,,murataps_store_view,1.45 x 2.3 x 0.49,36.8 x 58.4 x 12.4,25,-40 to 85,300,12,,36 to 75,N/A
+8999050,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,25,-40 to 85,300,12,,36 to 75,N/A
+8999051,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,25,-40 to 85,300,12,,36 to 75,HPQ-12
+8999025,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,25,-40 to 85,300,12,,36 to 75,N/A
+8999046,,murataps_store_view,1.45 x 2.3 x 0.49,36.8 x 58.4 x 12.4,25,-40 to 85,300,12,,36 to 75,N/A
+8999047,,murataps_store_view,1.45 x 2.3 x 0.49,36.8 x 58.4 x 12.4,25,-40 to 85,300,12,,36 to 75,N/A
+8970801,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,50,-40 to 85,165,3.3,,36 to 75,N/A
+8970804,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,50,-40 to 85,165,3.3,,36 to 75,N/A
+8970810,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,22,-40 to 85,183,8.3,,36 to 75,N/A
+8970811,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,22,-40 to 85,183,8.3,,36 to 75,N/A
+8970919,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,22,-40 to 85,183,8.3,,36 to 75,N/A
+8970813,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,22,-40 to 85,183,8.3,,36 to 75,N/A
+8970815,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,22,-40 to 85,183,8.3,,36 to 75,N/A
+8928143,,murataps_store_view,1.44 x 1.04 x 0.50,36.6 x 26.4 x 12.7,4.5,-40 to 85,54,12,,9 to 36,IRS-Q12
+8928144,,murataps_store_view,1.44 x 1.50 x 0.50,36.6 x 38.1 x 12.7,4.5,-40 to 85,54,12,,9 to 36,IRS-Q12
+8928145,,murataps_store_view,1.44 x 1.04 x 0.50,36.6 x 26.4 x 12.7,4.5,-40 to 85,54,12,,9 to 36,IRS-Q12
+8928146,,murataps_store_view,1.44 x 1.50 x 0.50,36.6 x 38.1 x 12.7,4.5,-40 to 85,54,12,,9 to 36,IRS-Q12
+8999982,,murataps_store_view,1.44 x 1.04 x 0.50,36.47 x 26.31 x 12.7,4.5,-40 to 85,54,12,,18 to 75,IRS-Q48
+8999984,,murataps_store_view,1.44 x 1.50 x 0.50,36.47 x 38.1 x 12.7,4.5,-40 to 85,54,12,,18 to 75,IRS-Q48
+8999983,,murataps_store_view,1.44 x 1.04 x 0.50,36.47 x 26.31 x 12.7,4.5,-40 to 85,54,12,,18 to 75,IRS-Q48
+8999985,,murataps_store_view,1.44 x 1.50 x 0.50,36.47 x 38.1 x 12.7,4.5,-40 to 85,54,12,,18 to 75,IRS-Q48
+8928147,,murataps_store_view,1.44 x 1.04 x 0.50,36.6 x 26.4 x 12.7,3.3,-40 to 85,49.5,15,,9 to 36,IRS-Q12
+8928148,,murataps_store_view,1.44 x 1.50 x 0.50,36.6 x 38.1 x 12.7,3.3,-40 to 85,49.5,15,,9 to 36,IRS-Q12
+8928149,,murataps_store_view,1.44 x 1.04 x 0.50,36.6 x 26.4 x 12.7,3.3,-40 to 85,49.5,15,,9 to 36,IRS-Q12
+8928150,,murataps_store_view,1.44 x 1.50 x 0.50,36.6 x 38.1 x 12.7,3.3,-40 to 85,49.5,15,,9 to 36,IRS-Q12
+8928151,,murataps_store_view,1.44 x 1.04 x 0.50,36.6 x 26.4 x 12.7,2,-40 to 85,48,24,,9 to 36,IRS-Q12
+8928154,,murataps_store_view,1.44 x 1.50 x 0.50,36.6 x 38.1 x 12.7,2,-40 to 85,48,24,,9 to 36,IRS-Q12
+8928135,,murataps_store_view,1.44 x 1.04 x 0.50,36.6 x 26.4 x 12.7,15,-40 to 85,49.5,3.3,,9 to 36,IRS-Q12
+8928136,,murataps_store_view,1.44 x 1.50 x 0.50,36.6 x 38.1 x 12.7,15,-40 to 85,49.5,3.3,,9 to 36,IRS-Q12
+8928137,,murataps_store_view,1.44 x 1.04 x 0.50,36.6 x 26.4 x 12.7,15,-40 to 85,49.5,3.3,,9 to 36,IRS-Q12
+8928138,,murataps_store_view,1.44 x 1.50 x 0.50,36.6 x 38.1 x 12.7,15,-40 to 85,49.5,3.3,,9 to 36,IRS-Q12
+8999974,,murataps_store_view,1.44 x 1.04 x 0.50,36.47 x 26.31 x 12.7,15,-40 to 85,49.5,3.3,,18 to 75,IRS-Q48
+8999976,,murataps_store_view,1.44 x 1.50 x 0.50,36.47 x 38.1 x 12.7,15,-40 to 85,49.5,3.3,,18 to 75,IRS-Q48
+8999975,,murataps_store_view,1.44 x 1.04 x 0.50,36.47 x 26.31 x 12.7,15,-40 to 85,49.5,3.3,,18 to 75,IRS-Q48
+8999977,,murataps_store_view,1.44 x 1.50 x 0.50,36.47 x 38.1 x 12.7,15,-40 to 85,49.5,3.3,,18 to 75,IRS-Q48
+8928140,,murataps_store_view,1.44 x 1.50 x 0.50,36.6 x 38.1 x 12.7,10,-40 to 85,50,5,,9 to 36,IRS-Q12
+8928141,,murataps_store_view,1.44 x 1.04 x 0.50,36.6 x 26.4 x 12.7,10,-40 to 85,50,5,,9 to 36,IRS-Q12
+8928142,,murataps_store_view,1.44 x 1.50 x 0.50,36.6 x 38.1 x 12.7,10,-40 to 85,50,5,,9 to 36,IRS-Q12
+8999978,,murataps_store_view,1.44 x 1.04 x 0.50,36.47 x 26.31 x 12.7,10,-40 to 85,50,5,,18 to 75,IRS-Q48
+8999981,,murataps_store_view,1.44 x 1.50 x 0.50,36.47 x 38.1 x 12.7,10,-40 to 85,50,5,,18 to 75,IRS-Q48
+8999979,,murataps_store_view,1.44 x 1.04 x 0.50,36.47 x 26.31 x 12.7,10,-40 to 85,50,5,,18 to 75,IRS-Q48
+8999986,,murataps_store_view,1.44 x 1.50 x 0.50,36.47 x 38.1 x 12.7,10,-40 to 85,50,5,,18 to 75,IRS-Q48
+MEE1S0303DC,,murataps_store_view,0.457 x 0.390 x 0.272,11.6 x  x 9.9 x 6.9,0.303,-40 to 85,1,3.3,,2.97 to 3.63,N/A
+MEE1S0303SC,,murataps_store_view,0.454 x 0.240 x 0.394,11.53 x 6.10 x 10,0.303,-40 to 85,1,3.3,,2.97 to 3.63,N/A
+MEE1S0305DC,,murataps_store_view,0.457 x 0.390 x 0.272,11.6 x  x 9.9 x 6.9,0.2,-40 to 85,1,5,,2.97 to 3.63,N/A
+MEE1S0305SC,,murataps_store_view,0.454 x 0.240 x 0.394,11.53 x 6.10 x 10,0.2,-40 to 85,1,5,,2.97 to 3.63,N/A
+MEE1S0309DC,,murataps_store_view,0.457 x 0.390 x 0.272,11.6 x  x 9.9 x 6.9,1529,-40 to 85,1,9,,2.97 to 3.63,N/A
+MEE1S0309SC,,murataps_store_view,0.454 x 0.240 x 0.394,11.53 x 6.10 x 10,1529,-40 to 85,1,9,,2.97 to 3.63,N/A
+MEE1S0312DC,,murataps_store_view,0.457 x 0.390 x 0.272,11.6 x  x 9.9 x 6.9,0.083,-40 to 85,1,12,,2.97 to 3.63,N/A
+MEE1S0312SC,,murataps_store_view,0.454 x 0.240 x 0.394,11.53 x 6.10 x 10,0.083,-40 to 85,1,12,,2.97 to 3.63,N/A
+MEE1S0315DC,,murataps_store_view,0.457 x 0.390 x 0.272,11.6 x  x 9.9 x 6.9,0.067,-40 to 85,1,15,,2.97 to 3.63,N/A
+MEE1S0315SC,,murataps_store_view,0.454 x 0.240 x 0.394,11.53 x 6.10 x 10,0.067,-40 to 85,1,15,,2.97 to 3.63,N/A
+MEJ1S0303SC,,murataps_store_view,0.774 x 0.396 x 0.498,19.65 x 10.05 x 12.65,0.303,-40 to 85,1,3.3,,2.97 to 3.63,N/A
+MEJ1S0305SC,,murataps_store_view,0.774 x 0.396 x 0.498,19.65 x 10.05 x 12.65,0.2,-40 to 85,1,5,,2.97 to 3.63,N/A
+MEJ2S0303SC,,murataps_store_view,0.774 x 0.396 x 0.498,19.65 x 10.05 x 12.65,0.606,-40 to 85,2,3.3,,2.97 to 3.63,N/A
+MEJ2S0305SC,,murataps_store_view,0.774 x 0.396 x 0.498,19.65 x 10.05 x 12.65,0.4,-40 to 85,2,5,,2.97 to 3.63,N/A
+MEU1S0303ZC,,murataps_store_view,0.327 x 0.240 x 0.313,8.30 x 6.10 x 7.95,0.303,-40 to 85,1,3.3,,2.97 to 3.63,N/A
+MEU1S0305ZC,,murataps_store_view,0.327 x 0.240 x 0.313,8.30 x 6.10 x 7.95,0.2,-40 to 85,1,5,,2.97 to 3.63,N/A
+MEU1S0309ZC,,murataps_store_view,0.327 x 0.240 x 0.313,8.30 x 6.10 x 7.95,1529,-40 to 85,1,9,,2.97 to 3.63,N/A
+MEU1S0312ZC,,murataps_store_view,0.327 x 0.240 x 0.313,8.30 x 6.10 x 7.95,0.083,-40 to 85,1,12,,2.97 to 3.63,N/A
+MEU1S0315ZC,,murataps_store_view,0.327 x 0.240 x 0.313,8.30 x 6.10 x 7.95,0.067,-40 to 85,1,15,,2.97 to 3.63,N/A
+MEU1S0503ZC,,murataps_store_view,0.327 x 0.240 x 0.313,8.30 x 6.10 x 7.95,0.303,-40 to 85,1,3.3,,4.5 to 5.5,N/A
+MEU1S0505ZC,,murataps_store_view,0.327 x 0.240 x 0.313,8.30 x 6.10 x 7.95,0.2,-40 to 85,1,5,,4.5 to 5.5,N/A
+MEU1S0509ZC,,murataps_store_view,0.327 x 0.240 x 0.313,8.30 x 6.10 x 7.95,1529,-40 to 85,1,9,,4.5 to 5.5,N/A
+MEU1S0512ZC,,murataps_store_view,0.327 x 0.240 x 0.313,8.30 x 6.10 x 7.95,0.083,-40 to 85,1,12,,4.5 to 5.5,N/A
+MEU1S0515ZC,,murataps_store_view,0.327 x 0.240 x 0.313,8.30 x 6.10 x 7.95,0.067,-40 to 85,1,15,,4.5 to 5.5,N/A
+MEU1S1205ZC,,murataps_store_view,0.327 x 0.240 x 0.313,8.30 x 6.10 x 7.95,0.2,-40 to 85,1,5,,10.8 to 13.2,N/A
+MEU1S1209ZC,,murataps_store_view,0.327 x 0.240 x 0.313,8.30 x 6.10 x 7.95,1529,-40 to 85,1,9,,10.8 to 13.2,N/A
+MEU1S1212ZC,,murataps_store_view,0.327 x 0.240 x 0.313,8.30 x 6.10 x 7.95,0.083,-40 to 85,1,12,,10.8 to 13.2,N/A
+MEU1S1215ZC,,murataps_store_view,0.327 x 0.240 x 0.313,8.30 x 6.10 x 7.95,0.067,-40 to 85,1,15,,10.8 to 13.2,N/A
+MTE1S0303MC,,murataps_store_view,0.500 x 0.433 x 0.278,12.70 x 11.00 x 7.05,0.303,-40 to 85,1,3.3,,2.97 to 3.63,N/A
+MTE1S0305MC,,murataps_store_view,0.500 x 0.433 x 0.278,12.70 x 11.00 x 7.05,0.2,-40 to 85,1,5,,2.97 to 3.63,N/A
+MTE1S0309MC,,murataps_store_view,0.500 x 0.433 x 0.278,12.70 x 11.00 x 7.05,1529,-40 to 85,1,9,,2.97 to 3.63,N/A
+MTE1S0312MC,,murataps_store_view,0.500 x 0.433 x 0.278,12.70 x 11.00 x 7.05,0.083,-40 to 85,1,12,,2.97 to 3.63,N/A
+MTE1S0315MC,,murataps_store_view,0.500 x 0.433 x 0.278,12.70 x 11.00 x 7.05,0.067,-40 to 85,1,15,,2.97 to 3.63,N/A
+MTU1D0305MC,,murataps_store_view,0.323 x 0.331 x 0.335,8.2 x 8.4 x 8.5,0.1,-40 to 85,1,5,-5,2.97 to 3.63,N/A
+MTU1S0305MC,,murataps_store_view,0.323 x 0.331 x 0.335,8.2 x 8.4 x 8.5,0.2,-40 to 85,1,5,,2.97 to 3.63,N/A
+MTU2S0305MC,,murataps_store_view,0.323 x 0.331 x 0.335,8.2 x 8.4 x 8.5,0.4,-40 to 85,2,5,,2.97 to 3.63,N/A
+NKA0303DC,,murataps_store_view,0.768 x 0.386 x 0.213,19.5 x 9.8 x 5.4,0.152,-40 to 85,1,3.3,-3.3,2.97 to 3.63,NKA
+NKA0303SC,,murataps_store_view,0.652 x 0.234 x 0.297,16.55 x 5.95 x 7.55,0.152,-40 to 85,1,3.3,-3.3,2.97 to 3.63,N/A
+NKA0305DC,,murataps_store_view,0.768 x 0.386 x 0.213,19.5 x 9.8 x 5.4,0.1,-40 to 85,1,5,-5,2.97 to 3.63,NKA
+NKA0305SC,,murataps_store_view,0.652 x 0.234 x 0.297,16.55 x 5.95 x 7.55,0.1,-40 to 85,1,5,-5,2.97 to 3.63,N/A
+NKA0309DC,,murataps_store_view,0.768 x 0.386 x 0.213,19.5 x 9.8 x 5.4,0.056,-40 to 85,1,9,-9,2.97 to 3.63,NKA
+NKA0309SC,,murataps_store_view,0.652 x 0.234 x 0.297,16.55 x 5.95 x 7.55,0.056,-40 to 85,1,9,-9,2.97 to 3.63,NKA
+NKA0312DC,,murataps_store_view,0.768 x 0.386 x 0.213,19.5 x 9.8 x 5.4,0.042,-40 to 85,1,12,-12,2.97 to 3.63,N/A
+NKA0312SC,,murataps_store_view,0.652 x 0.234 x 0.297,16.55 x 5.95 x 7.55,0.042,-40 to 85,1,12,-12,2.97 to 3.63,N/A
+NKA0315DC,,murataps_store_view,0.768 x 0.386 x 0.213,19.5 x 9.8 x 5.4,0.033,-40 to 85,1,15,-15,2.97 to 3.63,NKA
+NKA0315SC,,murataps_store_view,0.652 x 0.234 x 0.297,16.55 x 5.95 x 7.55,0.033,-40 to 85,1,15,-15,2.97 to 3.63,N/A
+NKE0303DC,,murataps_store_view,0.386 x 0.453 x 0.212,9.8 x 11.5 x 5.4,0.303,-40 to 85,1,3.3,,2.97 to 3.63,N/A
+NKE0303SC,,murataps_store_view,0.454 x 0.240 x 0.294,11.53 x 6.1 x 7.46,0.303,-40 to 85,1,3.3,,2.97 to 3.63,N/A
+NKE0305DC,,murataps_store_view,0.386 x 0.453 x 0.212,9.8 x 11.5 x 5.4,0.2,-40 to 85,1,5,,2.97 to 3.63,N/A
+NKE0305SC,,murataps_store_view,0.454 x 0.240 x 0.294,11.53 x 6.1 x 7.46,0.2,-40 to 85,1,5,,2.97 to 3.63,N/A
+NKE0309DC,,murataps_store_view,0.386 x 0.453 x 0.212,9.8 x 11.5 x 5.4,1529,-40 to 85,1,9,,2.97 to 3.63,N/A
+NKE0309SC,,murataps_store_view,0.454 x 0.240 x 0.294,11.53 x 6.1 x 7.46,1529,-40 to 85,1,9,,2.97 to 3.63,N/A
+NKE0312DC,,murataps_store_view,0.39 x 0.45 x 0.21,9.8 x 11.5 x 5.4,0.083,-40 to 85,1,12,,2.97 to 3.63,N/A
+NKE0315DC,,murataps_store_view,0.39 x 0.45 x 0.21,9.8 x 11.5 x 5.4,0.066,-40 to 85,1,15,,2.97 to 3.63,N/A
+NME0505DC,,murataps_store_view,0.457 x0.39 x 0.272,11.6 x 9.9 x 6.9,0.2,-40 to 85,1,5,,4.5 to 5.5,N/A
+NME0505DPC,,murataps_store_view,0.457 x0.39 x 0.272,11.6 x 9.9 x 6.9,0.2,-40 to 85,1,5,,4.5 to 5.5,N/A
+NME0509DC,,murataps_store_view,0.457 x0.39 x 0.272,11.6 x 9.9 x 6.9,1529,-40 to 85,1,9,,4.5 to 5.5,N/A
+NME0512DC,,murataps_store_view,0.457 x0.39 x 0.272,11.6 x 9.9 x 6.9,0.083,-40 to 85,1,12,,4.5 to 5.5,N/A
+NME0515DC,,murataps_store_view,0.457 x0.39 x 0.272,11.6 x 9.9 x 6.9,0.067,-40 to 85,1,15,,4.5 to 5.5,N/A
+NME0524DC,,murataps_store_view,0.457 x0.39 x 0.272,11.6 x 9.9 x 6.9,0.042,-40 to 85,1,24,,4.5 to 5.5,N/A
+NME1205DC,,murataps_store_view,0.457 x0.39 x 0.272,11.6 x 9.9 x 6.9,0.2,-40 to 85,1,5,,10.8 to 13.2,N/A
+NME1212DC,,murataps_store_view,0.457 x0.39 x 0.272,11.6 x 9.9 x 6.9,0.083,-40 to 85,1,12,,10.8 to 13.2,N/A
+NME1215DC,,murataps_store_view,0.457 x0.39 x 0.272,11.6 x 9.9 x 6.9,0.067,-40 to 85,1,15,,10.8 to 13.2,N/A
+NME2405DC,,murataps_store_view,0.457 x0.39 x 0.272,11.6 x 9.9 x 6.9,0.2,-40 to 85,1,5,,21.6 to 26.4,N/A
+NME2412DC,,murataps_store_view,0.457 x0.39 x 0.272,11.6 x 9.9 x 6.9,0.083,-40 to 85,1,12,,21.6 to 26.4,N/A
+NME2415DC,,murataps_store_view,0.457 x0.39 x 0.272,11.6 x 9.9 x 6.9,0.067,-40 to 85,1,15,,21.6 to 26.4,N/A
+NMJ0303SAC,,murataps_store_view,0.768 x 0.386 x 0.492,19.5 x 9.8 x 12.5,0.303,-40 to 85,1,3.3,,2.97 to 3.63,N/A
+NTA0303MC,,murataps_store_view,0.6 x 0.441 x 0.26,15.24 x 11.2 x 6.6,0.152,-40 to 85,1,3.3,-3.3,2.97 to 3.63,N/A
+NTA0303MC-R,,murataps_store_view,0.6 x 0.441 x 0.26,15.24 x 11.2 x 6.6,0.152,-40 to 85,1,3.3,-3.3,2.97 to 3.63,NTA
+NTA0305MC,,murataps_store_view,0.6 x 0.441 x 0.26,15.24 x 11.2 x 6.6,0.1,-40 to 85,1,5,-5,2.97 to 3.63,N/A
+NTA0305MC-R,,murataps_store_view,0.6 x 0.441 x 0.26,15.24 x 11.2 x 6.6,0.1,-40 to 85,1,5,-5,2.97 to 3.63,NTA
+NTA0309MC,,murataps_store_view,0.6 x 0.441 x 0.26,15.24 x 11.2 x 6.6,0.055,-40 to 85,1,9,-9,2.97 to 3.63,N/A
+NTA0309MC-R,,murataps_store_view,0.6 x 0.441 x 0.26,15.24 x 11.2 x 6.6,0.055,-40 to 85,1,9,-9,2.97 to 3.63,NTA
+NTE0303MC,,murataps_store_view,0.5 x 0.441 x 0.26,12.7 x 11.2 x 6.6,0.303,-40 to 85,1,3.3,,2.97 to 3.63,N/A
+NTE0303MC-R,,murataps_store_view,0.5 x 0.441 x 0.26,12.7 x 11.2 x 6.6,0.303,-40 to 85,1,3.3,,2.97 to 3.63,N/A
+NTE0305MC,,murataps_store_view,0.5 x 0.441 x 0.26,12.7 x 11.2 x 6.6,0.2,-40 to 85,1,5,,2.97 to 3.63,N/A
+NTE0305MC-R,,murataps_store_view,0.5 x 0.441 x 0.26,12.7 x 11.2 x 6.6,0.2,-40 to 85,1,5,,2.97 to 3.63,N/A
+NTE0309MC,,murataps_store_view,0.5 x 0.441 x 0.26,12.7 x 11.2 x 6.6,1529,-40 to 85,1,9,,2.97 to 3.63,N/A
+NTE0309MC-R,,murataps_store_view,0.5 x 0.441 x 0.26,12.7 x 11.2 x 6.6,1529,-40 to 85,1,9,,2.97 to 3.63,N/A
+NTE0312MC,,murataps_store_view,0.5 x 0.441 x 0.26,12.7 x 11.2 x 6.6,0.083,-40 to 85,1,12,,2.97 to 3.63,N/A
+NTE0312MC-R,,murataps_store_view,0.5 x 0.441 x 0.26,12.7 x 11.2 x 6.6,0.083,-40 to 85,1,12,,2.97 to 3.63,N/A
+NTE0315MC,,murataps_store_view,0.5 x 0.441 x 0.26,12.7 x 11.2 x 6.6,0.066,-40 to 85,1,15,,2.97 to 3.63,N/A
+NTE0315MC-R,,murataps_store_view,0.5 x 0.441 x 0.26,12.7 x 11.2 x 6.6,0.066,-40 to 85,1,15,,2.97 to 3.63,N/A
+NXE1S0303MC,,murataps_store_view,0.5 x 0.410 x 0.172,12.70 x 10.41 x 4.36,0.303,-40 to 85,1,3.3,,2.97 to 3.63,NXE1
+NXE1S0305MC,,murataps_store_view,0.5 x 0.410 x 0.172,12.70 x 10.41 x 4.36,0.2,-40 to 85,1,5,,2.97 to 3.63,NXE1
+NXJ1S0303MC,,murataps_store_view,0.540 x 0.412 x 0.172,13.72 x 10.46 x 4.36,0.333,-40 to 85,1,3.3,,2.97 to 3.63,NXJ1
+NXJ1S0305MC,,murataps_store_view,0.540 x 0.412 x 0.172,13.72 x 10.46 x 4.36,0.2,-40 to 85,1,5,,2.97 to 3.63,NXJ1
+NXJ2S0505MC,,murataps_store_view,0.63 x 0.57 x 0.124,16 x 14.48 x 3.16,400,-40 to 85,2,5,,4.5 to 5.5,NXJ2
+NXJ2S1212MC,,murataps_store_view,0.63 x 0.57 x 0.124,16 x 14.48 x 3.16,167,-40 to 85,2,12,,10.8 to 13.2,NXJ2
+NXJ2S1215MC,,murataps_store_view,0.63 x 0.57 x 0.124,16 x 14.48 x 3.16,133,-40 to 85,2,15,,10.8 to 13.2,NXJ2
+NXJ2S2405MC,,murataps_store_view,0.63 x 0.57 x 0.124,16 x 14.48 x 3.16,400,-40 to 85,2,5,,21.6 to 26.4,NXJ2
+NXJ2S2415MC,,murataps_store_view,0.63 x 0.57 x 0.124,16 x 14.48 x 3.16,133,-40 to 85,2,15,,21.6 to 26.4,NXJ2
+OKDH-T/20-W12-001-C,,murataps_store_view,1.01 x 0.543 x 0.323,25.65 x 13.8 x 8.2 mm,20,-40 to 85,66,0.6-3.3,,4.5 to 14,N/A
+OKDH-T/25-W12-001-C,,murataps_store_view,1.01 x 0.543 x 0.323,25.65 x 13.8 x 8.2 mm,25,-40 to 85,82.5,0.6-3.3,,4.5 to 14,N/A
+OKDX-T/25-W12-001-C,,murataps_store_view,1.035 x 0.30 x 0.614,26.3 x 7.6 x 15.6,25,-40 to 85,82.5,0.6-3.3,,4.5 to 14,N/A
+OKDY-T/20-W12-001-C,,murataps_store_view,1.01 x 0.543 x 0.323,25.65 x 13.8 x 8.2 mm,20,-40 to 85,66,0.6-3.3,,4.5 to 14,N/A
+OKDY-T/25-W12-001-C,,murataps_store_view,1.01 x 0.543 x 0.323,25.65 x 13.8 x 8.2 mm,25,-40 to 85,82.5,0.6-3.3,,4.5 to 14,N/A
+8808510,,murataps_store_view,0.8 x 0.45 x 0.34,20.32 x 11.43 x 8.55,12,-40 to 85,60,0.69 - 5.5,,4.5 to 14,N/A
+8808508,,murataps_store_view,0.8 x 0.45 x 0.34,20.32 x 11.43 x 8.55,12,-40 to 85,60,0.69 - 5.5,,4.5 to 14,OKL2-T/12-W12
+8808514,,murataps_store_view,1.3 x 0.53 x 0.34,33.02 x 13.46 x 8.75,20,-40 to 85,100,0.69 - 5.5,,4.5 to 14,N/A
+8808512,,murataps_store_view,1.3 x 0.53 x 0.34,33.02 x 13.46 x 8.75,20,-40 to 85,100,0.69 - 5.5,,4.5 to 14,N/A
+8941292,,murataps_store_view,1.3 x 0.53 x 0.48,33 x 13.5 x 12.2,25,-40 to 85,90.75,0.6-3.3,,6.5 to 14,OKLF-T/25-W12N-C
+8941475,,murataps_store_view,1.45 x 0.61 x 0.44,36.8 x 15.5 x 11.2,20,-40 to 85,100,0.591 - 5,,6 - 13.8,OKR-T/20
+8941476,,murataps_store_view,1.2 x 0.61 x 0.71 ,30.5 x 15.5 x 18.1,30,-40 to 85,180,0.591-6.0,,5.5 - 13.8,OKR-T/30
+8941477,,murataps_store_view,1.1 x 1.45 x 0.61 ,27.9 x 36.8 x 15.5,50,-40 to 85,125,0.6 - 2.5,,6.5 - 13.8,OKR-T/50
+8999494,,murataps_store_view,2.3 x 2.4 x 0.5,58.42x60.96x12.70,12.5,-40 to 85,350,28,,18 to 36,PAH
+8957405,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,5,-40 to 85,149,29.8,,36 to 75,N/A
+8957400,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,5,-40 to 85,149,29.8,,36 to 75,N/A
+8957404,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,5,-40 to 85,149,29.8,,36 to 75,N/A
+8957403,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,5,-40 to 85,149,29.8,,36 to 75,N/A
+8937104,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,17,-40 to 85,210,12,,36 to 75,N/A
+8937105,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,17,-40 to 85,210,12,,36 to 75,N/A
+8999430,,murataps_store_view,2.3 x 0.9 x 0.5,58.4 x 22.9 x 12.7,20,-40 to 85,240,12,,36 to 75,N/A
+8999431,,murataps_store_view,2.3 x 0.9 x 0.5,58.4 x 22.9 x 12.7,20,-40 to 85,240,12,,36 to 75,RBE-12/20-D48
+8999433,,murataps_store_view,2.3 x 0.9 x 0.5,58.4 x 22.9 x 12.7,20,-40 to 85,240,12,,36 to 75,N/A
+8999435,,murataps_store_view,2.3 x 0.9 x 0.5,58.4 x 22.9 x 12.7,20,-40 to 85,240,12,,36 to 75,N/A
+8999384,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,33,-40 to 85,396,12,,36 to 75,N/A
+8999385,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,33,-40 to 85,396,12,,36 to 75,N/A
+8999474,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,33,-40 to 85,396,12,,36 to 75,N/A
+8999543,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,33,-40 to 85,396,12,,36 to 75,N/A
+8999387,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,33,-40 to 85,396,12,,36 to 75,N/A
+8999389,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,33,-40 to 85,396,12,,36 to 75,N/A
+8999476,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,33,-40 to 85,396,12,,36 to 75,N/A
+8999544,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,33,-40 to 85,396,12,,36 to 75,N/A
+8970730,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,30,-40 to 85,36,1.2,,36 to 75,N/A
+8970733,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,30,-40 to 85,36,1.2,,36 to 75,N/A
+8970738,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,25,-40 to 85,37.5,1.5,,36 to 75,N/A
+8970737,,murataps_store_view,1.45 x 2.3 x 0.4,36.9 x 58.4 x 10.2,25,-40 to 85,37.5,1.5,,36 to 75,N/A
+8970741,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,25,-40 to 85,37.5,1.5,,36 to 75,N/A
+8970740,,murataps_store_view,1.45 x 2.3 x 0.4,36.9 x 58.4 x 10.2,25,-40 to 85,37.5,1.5,,36 to 75,N/A
+8970700,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,30,-40 to 85,54,1.8,,36 to 75,N/A
+8970704,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,30,-40 to 85,54,1.8,,36 to 75,N/A
+8971252,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,8.3,-40 to 85,99.6,12,,36 to 75,N/A
+8971255,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,8.3,-40 to 85,99.6,12,,36 to 75,N/A
+8981152,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,6.7,-40 to 85,100.5,15,,36 to 75,N/A
+8981153,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,6.7,-40 to 85,100.5,15,,36 to 75,N/A
+8981155,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,6.7,-40 to 85,100.5,15,,36 to 75,N/A
+8981157,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,6.7,-40 to 85,100.5,15,,36 to 75,N/A
+8970746,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,30,-40 to 85,75,2.5,,36 to 75,N/A
+8970749,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,30,-40 to 85,75,2.5,,36 to 75,N/A
+8970754,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,40,-40 to 85,100,2.5,,18 to 36,N/A
+8970757,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,40,-40 to 85,100,2.5,,18 to 36,N/A
+8970770,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,20,-40 to 85,66,3.3,,36 to 75,N/A
+8970773,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,20,-40 to 85,66,3.3,,36 to 75,N/A
+8170182,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,30,-40 to 85,99,3.3,,36 to 75,N/A
+8970255,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,30,-40 to 85,99,3.3,,36 to 75,N/A
+8170173,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,30,-40 to 85,99,3.3,,36 to 75,N/A
+8970259,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,30,-40 to 85,99,3.3,,36 to 75,N/A
+8981028,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,35,-40 to 85,115.5,3.3,,18 to 36,N/A
+8981030,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,35,-40 to 85,115.5,3.3,,18 to 36,N/A
+8970502,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,40,-40 to 85,132,3.3,,36 to 75,N/A
+8970505,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,40,-40 to 85,132,3.3,,36 to 75,N/A
+8970711,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,20,-40 to 85,100,5,,18 to 36,N/A
+8970714,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,20,-40 to 85,100,5,,18 to 36,N/A
+8170187,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,20,-40 to 85,100,5,,36 to 75,N/A
+8970187,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,20,-40 to 85,100,5,,36 to 75,N/A
+8170162,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,20,-40 to 85,100,5,,36 to 75,N/A
+8970162,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,20,-40 to 85,100,5,,36 to 75,N/A
+8981109,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,25,-40 to 85,125,5,,36 to 75,N/A
+8981108,,murataps_store_view,1.45 x 2.3 x 0.4,36.9 x 58.4 x 10.2,25,-40 to 85,125,5,,36 to 75,N/A
+8981112,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,25,-40 to 85,125,5,,36 to 75,N/A
+8981111,,murataps_store_view,1.45 x 2.3 x 0.4,36.9 x 58.4 x 10.2,25,-40 to 85,125,5,,36 to 75,N/A
+8999528,,murataps_store_view,2.3 x 0.9 x 0.5,58.4 x 22.9 x 12.7,12.5,-40 to 85,150,12,,36 to 75,N/A
+8999315,,murataps_store_view,2.3 x 0.9 x 0.5,58.4 x 22.9 x 12.7,25,-40 to 85,83,3.3,,36 to 75,N/A
+8999316,,murataps_store_view,2.3 x 0.9 x 0.5,58.4 x 22.9 x 12.7,25,-40 to 85,83,3.3,,36 to 75,N/A
+8999314,,murataps_store_view,2.3 x 0.9 x 0.37,58.4 x 22.9 x 9.4,25,-40 to 85,83,3.3,,36 to 75,N/A
+8999313,,murataps_store_view,2.3 x 0.9 x 0.37,58.4 x 22.9 x 9.4,25,-40 to 85,83,3.3,,36 to 75,N/A
+8999319,,murataps_store_view,2.3 x 0.9 x 0.37,58.4 x 22.9 x 9.4,25,-40 to 85,83,3.3,,36 to 75,N/A
+8999318,,murataps_store_view,2.3 x 0.9 x 0.5,58.4 x 22.9 x 12.7,25,-40 to 85,83,3.3,,36 to 75,N/A
+8999317,,murataps_store_view,2.3 x 0.9 x 0.37,58.4 x 22.9 x 9.4,25,-40 to 85,83,3.3,,36 to 75,N/A
+8999320,,murataps_store_view,2.3 x 0.9 x 0.37,58.4 x 22.9 x 9.4,25,-40 to 85,83,3.3,,36 to 75,UEE
+8983203,,murataps_store_view,2.3 x 0.9 x 0.5,58.4 x 22.9 x 12.7,30,-40 to 85,99,3.3,,36 to 75,N/A
+8983204,,murataps_store_view,2.3 x 0.9 x 0.5,58.4 x 22.9 x 12.7,30,-40 to 85,99,3.3,,36 to 75,N/A
+8983206,,murataps_store_view,2.3 x 0.9 x 0.5,58.4 x 22.9 x 12.7,30,-40 to 85,99,3.3,,36 to 75,N/A
+8983208,,murataps_store_view,2.3 x 0.9 x 0.5,58.4 x 22.9 x 12.7,30,-40 to 85,99,3.3,,36 to 75,N/A
+8999600,,murataps_store_view,2.3 x 0.9 x 0.5,58.4 x 22.9 x 12.7,45,-40 to 85,150,3.3,,36 to 75,N/A
+8999603,,murataps_store_view,2.3 x 0.9 x 0.5,58.4 x 22.9 x 12.7,45,-40 to 85,150,3.3,,36 to 75,N/A
+8999535,,murataps_store_view,2.3 x 0.9 x 0.5,58.4 x 22.9 x 12.7,30,-40 to 85,150,5,,36 to 75,N/A
+8999538,,murataps_store_view,2.3 x 0.9 x 0.5,58.4 x 22.9 x 12.7,30,-40 to 85,150,5,,36 to 75,N/A
+8903734,,murataps_store_view,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,4.5,-40 to 85,14.85,3.3,,9 to 36,N/A
+8903735,,murataps_store_view,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,4.5,-40 to 85,14.85,3.3,,9 to 36,N/A
+8903733,,murataps_store_view,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,5,-40 to 85,16.5,3.3,,18 to 75,N/A
+8903736,,murataps_store_view,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,5,-40 to 85,16.5,3.3,,18 to 75,N/A
+8903737,,murataps_store_view,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,3,-40 to 85,15,5,,9 to 36,N/A
+8903738,,murataps_store_view,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,3,-40 to 85,15,5,,9 to 36,N/A
+8903739,,murataps_store_view,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,3,-40 to 85,15,5,,18 to 75,N/A
+8903740,,murataps_store_view,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,3,-40 to 85,15,5,,18 to 75,N/A
+8903741,,murataps_store_view,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,1.3,-40 to 85,15.6,12,,9 to 36,N/A
+8903742,,murataps_store_view,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,1.3,-40 to 85,15.6,12,,9 to 36,N/A
+8903743,,murataps_store_view,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,1.3,-40 to 85,15.6,12,,18 to 75,N/A
+8903744,,murataps_store_view,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,1.3,-40 to 85,15.6,12,,18 to 75,N/A
+8903745,,murataps_store_view,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,1.1,-40 to 85,16.5,15,,9 to 36,N/A
+8903746,,murataps_store_view,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,1.1,-40 to 85,16.5,15,,9 to 36,N/A
+8903747,,murataps_store_view,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,1.1,-40 to 85,16.5,15,,18 to 75,N/A
+8903748,,murataps_store_view,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,1.1,-40 to 85,16.5,15,,18 to 75,N/A
+8921276,,murataps_store_view,1.45 x 2.22 x 0.5,36.9 x 56.4 x 12.7,25,-40 to 85,82.5,3.3,,9 to 36,N/A
+8921274,,murataps_store_view,1.45 x 2.22 x 0.43,36.9 x 56.4 x 10.9,25,-40 to 85,82.5,3.3,,9 to 36,N/A
+8921277,,murataps_store_view,1.45 x 2.22 x 0.5,36.9 x 56.4 x 12.7,25,-40 to 85,82.5,3.3,,9 to 36,N/A
+8921275,,murataps_store_view,1.45 x 2.22 x 0.43,36.9 x 56.4 x 10.9,25,-40 to 85,82.5,3.3,,9 to 36,N/A
+8904522,,murataps_store_view,1.45 x 2.22 x 0.5,36.9 x 56.4 x 12.7,25,-40 to 85,82.5,3.3,,18 to 75,N/A
+8904520,,murataps_store_view,1.45 x 2.22 x 0.43,36.9 x 56.4 x 10.9,25,-40 to 85,82.5,3.3,,18 to 75,N/A
+8904521,,murataps_store_view,1.45 x 2.22 x 0.5,36.9 x 56.4 x 12.7,25,-40 to 85,82.5,3.3,,18 to 75,N/A
+8904519,,murataps_store_view,1.45 x 2.22 x 0.43,36.9 x 56.4 x 10.9,25,-40 to 85,82.5,3.3,,18 to 75,N/A
+8970117,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,8,-40 to 85,96,12,,18 to 36,N/A
+8970116,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,8,-40 to 85,96,12,,18 to 36,N/A
+8970283,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,7,-40 to 85,105,15,,18 to 36,N/A
+8970284,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,7,-40 to 85,105,15,,18 to 36,N/A
+8970147,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,5.6,-40 to 85,100.8,18,,18 to 36,N/A
+8970146,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,5.6,-40 to 85,100.8,18,,18 to 36,N/A
+8970189,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,4.5,-40 to 85,108,24,,36 to 75,N/A
+8970188,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,4.5,-40 to 85,108,24,,36 to 75,N/A
+8970195,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,2.5,-40 to 85,120,48,,18 to 36,N/A
+8970198,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,2.5,-40 to 85,120,48,,18 to 36,N/A
+8970207,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,2.5,-40 to 85,120,48,,36 to 75,N/A
+8970206,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,2.5,-40 to 85,120,48,,36 to 75,N/A
+8970204,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,2.5,-40 to 85,120,48,,36 to 75,N/A
+8970205,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,2.5,-40 to 85,120,48,,36 to 75,N/A
+8970209,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,20,-40 to 85,100,5,,18 to 36,N/A
+8170400,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,20,-40 to 85,100,5,,36 to 75,N/A
+8921568,,murataps_store_view,2.3 x 0.9 x 0.5,58.42 x 22.86 x 12.7,10,-40 to 85,120,12,,9 to 36,N/A
+8921570,,murataps_store_view,2.3 x 0.9 x 0.5,58.42 x 22.86 x 12.7,10,-40 to 85,120,12,,9 to 36,N/A
+8921542,,murataps_store_view,2.3 x 0.9 x 0.5,58.42 x 22.86 x 12.8,10,-40 to 85,120,12,,18 to 75,N/A
+8921544,,murataps_store_view,2.3 x 0.9 x 0.5,58.42 x 22.86 x 12.8,10,-40 to 85,120,12,,18 to 75,N/A
+8921550,,murataps_store_view,2.3 x 0.9 x 0.5,58.42 x 22.86 x 12.8,30,-40 to 85,99,3.3,,18 to 75,N/A
+8921552,,murataps_store_view,2.3 x 0.9 x 0.5,58.42 x 22.86 x 12.8,30,-40 to 85,99,3.3,,18 to 75,UWE-100-120W
+8921553,,murataps_store_view,2.3 x 0.9 x 0.5,58.42 x 22.86 x 12.8,20,-40 to 85,100,5,,18 to 75,N/A
+8921556,,murataps_store_view,2.3 x 0.9 x 0.5,58.42 x 22.86 x 12.8,20,-40 to 85,100,5,,18 to 75,N/A
+8903124,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,17,-40 to 85,204,12,,18 to 75,N/A
+8903144,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,17,-40 to 85,204,12,,18 to 75,N/A
+8903138,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,17,-40 to 85,204,12,,18 to 75,N/A
+8903136,,murataps_store_view,1.45 x 2.3 x 0.5,36.9 x 58.4 x 12.7,17,-40 to 85,204,12,,18 to 75,N/A
+8903145,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,17,-40 to 85,204,12,,18 to 75,N/A
+8903142,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,17,-40 to 85,204,12,,18 to 75,N/A
+8903171,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,20,-40 to 85,240,12,,18 to 60,UWQ-T48
+4401898-1,,murataps_store_view,1U x 2.15 x 12.66,1U x 54.5 x 321.5,125,-5 to 45,1520,12,5,40 to 72,N/A
+4401897-1,,murataps_store_view,1U x 2.15 x 12.66,1U x 54.5 x 321.5,125,-5 to 45,1520,12,5,40 to 72,N/A
+4401903-1,,murataps_store_view,1U x 2.15 x 12.66,1U x 54.5 x 321.5,125,-5 to 45,1530,12,12,40 to 72,N/A
+4401901-1,,murataps_store_view,1U x 2.15 x 12.66,1U x 54.5 x 321.5,125,-5 to 45,1513.2,12,3.3,40 to 72,N/A
+4401900-1,,murataps_store_view,1U x 2.15 x 12.66,1U x 54.5 x 321.5,125,-5 to 45,1513.2,12,3.3,40 to 72,N/A
+4401894-2,,murataps_store_view,1U x 2.15 x 12.66,1U x 54.5 x 321.5,125,-5 to 45,1220,12,5,90 to 264,N/A
+4401893-2,,murataps_store_view,1U x 2.15 x 12.66,1U x 54.5 x 321.5,125,-5 to 45,1220,12,5,90 to 264,N/A
+4401895-2,,murataps_store_view,1U x 2.15 x 12.66,1U x 54.5 x 321.5,125,-5 to 45,1230,12,12,90 to 264,N/A
+4401892-2,,murataps_store_view,1U x 2.15 x 12.66,1U x 54.5 x 321.5,125,-5 to 45,1213.2,12,3.3,90 to 264,N/A
+4401891-2,,murataps_store_view,1U x 2.15 x 12.66,1U x 54.5 x 321.5,125,-5 to 45,1213.2,12,3.3,90 to 264,N/A
+4401920-1,,murataps_store_view,1U x 2.15 x 9.0,1U x 54.5 x 228.6,37.5,-5 to 50,460,12,5,40 to 72,N/A
+4401919-1,,murataps_store_view,1U x 2.15 x 9.0,1U x 54.5 x 228.6,37.5,-5 to 50,460,12,5,40 to 72,N/A
+4401879-1,,murataps_store_view,1U x 2.15 x 9.0,1U x 54.5 x 228.6,54.2,-5 to 50,674.4,12,12,40 to 72,N/A
+4401878-1,,murataps_store_view,1U x 2.15 x 9.0,1U x 54.5 x 228.6,54.2,-5 to 50,674.4,12,12,40 to 72,N/A
+4405004-1,,murataps_store_view,1U x 2.15 x 12.66,1U x 54.5 x 321.5,1655,-5 to 50,1215,12,5,230 to 400,D1U54-HD
+4402002-1,,murataps_store_view,1U x 2.15 x 9.32,1U x 54.5 x 236.6,66.7,-5 to 50,800,12,12,90 to 305,D1U54P
+4402001-1,,murataps_store_view,1U x 2.15 x 9.32,1U x 54.5 x 236.6,66.7,-5 to 50,800,12,12,90 to 305,D1U54P
+4401966-1,,murataps_store_view,1U x 2.15 x 12.66,1U x 54.5 x 321.5,166.7,-5 to 50,2000,12,5,90 to 264,D1U54P-W-2000-12-HxxC
+4401959-1,,murataps_store_view,1U x 2.15 x 12.66,1U x 54.5 x 321.5,166.7,-5 to 50,2000,12,5,90 to 264,D1U54P-W-2000-12-HxxC
+4401965-1,,murataps_store_view,1U x 2.15 x 12.66,1U x 54.5 x 321.5,166.7,-5 to 50,2000,12,12,90 to 264,D1U54P-W-2000-12-HxxC
+4401958-1,,murataps_store_view,1U x 2.15 x 12.66,1U x 54.5 x 321.5,166.7,-5 to 50,2000,12,12,90 to 264,D1U54P-W-2000-12-HxxC
+4401967-1,,murataps_store_view,1U x 2.15 x 12.66,1U x 54.5 x 321.5,166.7,-5 to 50,2000,12,3.3,90 to 264,D1U54P-W-2000-12-HxxC
+4401960-1,,murataps_store_view,1U x 2.15 x 12.66,1U x 54.5 x 321.5,166.7,-5 to 50,2000,12,3.3,90 to 264,D1U54P-W-2000-12-HxxC
+4401910-1,,murataps_store_view,1U x 2.15 x 9.0,1U x 54.5 x 228.6,37.5,-5 to 50,460,12,5,90 to 264,N/A
+8401909-1,,murataps_store_view,1U x 2.15 x 9.0,1U x 54.5 x 228.6,37.5,-5 to 50,460,12,5,90 to 264,N/A
+8401908-1,,murataps_store_view,1U x 2.15 x 9.0,1U x 54.5 x 228.6,37.5,-5 to 50,462,12,12,90 to 264,N/A
+8401907-1,,murataps_store_view,1U x 2.15 x 9.0,1U x 54.5 x 228.6,37.5,-5 to 50,462,12,12,90 to 264,N/A
+4401877-1,,murataps_store_view,1U x 2.15 x 9.0,1U x 54.5 x 228.6,54.2,-5 to 50,674.4,12,12,90 to 264,N/A
+4401876-1,,murataps_store_view,1U x 2.15 x 9.0,1U x 54.5 x 228.6,54.2,-5 to 50,674.4,12,12,90 to 264,N/A
+cPCI-A-3U-200C,,murataps_store_view,6.7x5.1x1.6,170x129x40,25,-5 to 55,200,5,3.3,90 to 264,N/A
+8401782,,murataps_store_view,1U x 4 x 13.56,1U x 101.60 x 344.47,40,-5 to 55,2103.75,52.5,5,40 to 72,N/A
+4401722-3,,murataps_store_view,1U x 4 x 13.56,1U x 101.60 x 344.47,40,-5 to 55,2163.75,54,5,40 to 72,N/A
+4401970-1,,murataps_store_view,1U x 2.15 x 9.32,1U x 54.5 x 236.6,66.7,-5 to 55,800,12,12,40 to 72,D1U54-D
+4401971-1,,murataps_store_view,1U x 2.15 x 9.32,1U x 54.5 x 236.6,66.7,-5 to 55,800,12,12,40 to 72,D1U54-D
+4401842-1,,murataps_store_view,1U x 3.20 x 11.00,1U x 81.30 x 279.40,108.3,0 to 40,1300,12,5,90 to 264,N/A
+4401820-1,,murataps_store_view,1U x 3.20 x 11.00,1U x 81.30 x 279.40,108.3,0 to 40,1300,12,3.3,90 to 264,N/A
+4401706-1,,murataps_store_view,1U x 4 x 14,1U x 101.60 x 355.60,180,0 to 40,2206.6,12,5,90 to 264,N/A
+4401707-5,,murataps_store_view,1U x 4 x 14,1U x 101.60 x 355.60,180,0 to 40,2201.4,12,3.3,90 to 264,N/A
+C1U-W-1200-12-TA1C,,murataps_store_view,1.67 x 5 x 14.22,42.50 x 127 x 361.20,98.3,0 to 50,1200,12,5,90 to 264,N/A
+C1U-W-1200-12-TA2C,,murataps_store_view,1.67 x 5 x 14.22,42.50 x 127 x 361.20,98.3,0 to 50,1200,12,5,90 to 264,N/A
+C1U-W-1200-12-TC1C,,murataps_store_view,1.67 x 5 x 14.22,42.50 x 127 x 361.20,98.3,0 to 50,1200,12,3.3,90 to 264,N/A
+C1U-W-1200-12-TC2C,,murataps_store_view,1.67 x 5 x 14.22,42.50 x 127 x 361.20,98.3,0 to 50,1200,12,3.3,90 to 264,N/A
+C1U-W-1200-48-TA1C,,murataps_store_view,1.67 x 5 x 14.22,42.50 x 127 x 361.20,24.6,0 to 50,1200,48,5,90 to 264,N/A
+C1U-W-1200-48-TA2C,,murataps_store_view,1.67 x 5 x 14.22,42.50 x 127 x 361.20,24.6,0 to 50,1200,48,5,90 to 264,N/A
+C1U-W-1200-48-TB1C,,murataps_store_view,1U x 5 x 14.22,1U x 127 x 361.20,24.6,0 to 50,1200,48,12,90 to 264,N/A
+C1U-W-1200-48-TB2C,,murataps_store_view,1U x 5 x 14.22,1U x 127 x 361.20,24.6,0 to 50,1200,48,12,90 to 264,N/A
+C1U-W-1200-48-TC1C,,murataps_store_view,1U x 5 x 14.22,1U x 127 x 361.20,24.6,0 to 50,1200,48,3.3,90 to 264,N/A
+C1U-W-1200-48-TC2C,,murataps_store_view,1U x 5 x 14.22,1U x 127 x 361.20,24.6,0 to 50,1200,48,3.3,90 to 264,N/A
+4600172,,murataps_store_view,6.68 x 3.93 x 5.07,169.58 x 100 x 128.7,25,0 to 50,200,5,3.3,90 to 264,CPCI200A
+4401809-1,,murataps_store_view,1U x 3.20 x 11.00,1U x 81.30 x 279.40,133,0 to 50,1620,12,3.3,40 to 72,N/A
+4401699-6,,murataps_store_view,1U x 4 x 14,1U x 101.60 x 355.60,180,0 to 50,2206.6,12,5,90 to 264,N/A
+4401708-2,,murataps_store_view,1U x 4 x 14,1U x 101.60 x 355.60,180,0 to 50,2201.4,12,3.3,90 to 264,N/A
+D1U4-W-1200-12-HA1C,,murataps_store_view,1U x 4 x 14,1U x 101.60 x 355.60,98.3,0 to 50,1200,12,5,90 to 264,N/A
+D1U4-W-1200-12-HA2C,,murataps_store_view,1U x 4 x 14,1U x 101.60 x 355.60,98.3,0 to 50,1200,12,5,90 to 264,N/A
+D1U4-W-1200-12-HC1C,,murataps_store_view,1U x 4 x 14,1U x 101.60 x 355.60,98.3,0 to 50,1200,12,3.3,90 to 264,N/A
+D1U4-W-1200-12-HC2C,,murataps_store_view,1U x 4 x 14,1U x 101.60 x 355.60,98.3,0 to 50,1200,12,3.3,90 to 264,N/A
+D1U4-W-1600-12-HA1C,,murataps_store_view,1U x 4 x 14,1U x 101.60 x 355.60,131.6,0 to 50,1600,12,5,90 to 264,N/A
+D1U4-W-1600-12-HA2C,,murataps_store_view,1U x 4 x 14,1U x 101.60 x 355.60,131.6,0 to 50,1600,12,5,90 to 264,N/A
+D1U4-W-1600-12-HC1C,,murataps_store_view,1U x 4 x 14,1U x 101.60 x 355.60,131.6,0 to 50,1600,12,3.3,90 to 264,N/A
+D1U4-W-1600-12-HC2C,,murataps_store_view,1U x 4 x 14,1U x 101.60 x 355.60,131.6,0 to 50,1600,12,3.3,90 to 264,N/A
+4401793-3,,murataps_store_view,1U x 4 x 14,1U x 101.60 x 355.60,30,0 to 50,1624,54,12,90 to 264,N/A
+4401843,,murataps_store_view,1U x 4 x 14,1U x 101.60 x 355.60,30,0 to 50,1624,54,12,90 to 264,N/A
+D1U-H-2800-52-HB1C,,murataps_store_view,1U x 5.5 x 11.4,1U x 140 x 289,54,0 to 50,2814,-52,12,90 to 264,N/A
+D1U-H-2800-52-HB1DC,,murataps_store_view,1U x 5.5 x 11.4,1U x 140 x 289,54,0 to 50,2814,-52,12,90 to 264,D1U-H
+D1U-W-1200-12-HA1C,,murataps_store_view,1U x 4.75 x 12,1U x 120.65 x 304.80,98.3,0 to 50,1200,12,5,90 to 264,N/A
+D1U-W-1200-12-HA2,,murataps_store_view,1U x 4.75 x 12,1U x 120.65 x 304.80,131,0 to 50,1200,12,5,90 to 264,N/A
+D1U-W-1200-12-HA2C,,murataps_store_view,1U x 4.75 x 12,1U x 120.65 x 304.80,98.3,0 to 50,1200,12,5,90 to 264,N/A
+D1U-W-1200-12-HC1C,,murataps_store_view,1U x 4.75 x 12,1U x 120.65 x 304.80,98.3,0 to 50,1200,12,3.3,90 to 264,N/A
+D1U-W-1200-12-HC2,,murataps_store_view,1U x 4.75 x 12,1U x 120.65 x 304.80,131,0 to 50,1200,12,3.3,90 to 264,N/A
+D1U-W-1200-12-HC2C,,murataps_store_view,1U x 4.75 x 12,1U x 120.65 x 304.80,98.3,0 to 50,1200,12,3.3,90 to 264,N/A
+D1U-W-1200-48-HA1C,,murataps_store_view,1U x 4.75 x 12,1U x 120.65 x 304.80,24.6,0 to 50,1200,48,5,90 to 264,N/A
+D1U-W-1200-48-HA2C,,murataps_store_view,1U x 4.75 x 12,1U x 120.65 x 304.80,24.6,0 to 50,1200,48,5,90 to 264,N/A
+D1U-W-1200-48-HB1C,,murataps_store_view,1U x 4.75 x 12,1U x 120.65 x 304.80,24.6,0 to 50,1200,48,12,90 to 264,N/A
+D1U-W-1200-48-HB2C,,murataps_store_view,1U x 4.75 x 12,1U x 120.65 x 304.80,24.6,0 to 50,1200,48,12,90 to 264,N/A
+D1U-W-1200-48-HC1C,,murataps_store_view,1U x 4.75 x 12,1U x 120.65 x 304.80,24.6,0 to 50,1200,48,3.3,90 to 264,N/A
+D1U-W-1200-48-HC2C,,murataps_store_view,1U x 4.75 x 12,1U x 120.65 x 304.80,24.6,0 to 50,1200,48,3.3,90 to 264,N/A
+D1U-W-1600-12-HA1C,,murataps_store_view,1U x 4.75 x 12,1U x 120.65 x 304.80,131.6,0 to 50,1600,12,5,90 to 264,N/A
+D1U-W-1600-12-HA2C,,murataps_store_view,1U x 4.75 x 12,1U x 120.65 x 304.80,131.6,0 to 50,1600,12,5,90 to 264,N/A
+D1U-W-1600-12-HC1C,,murataps_store_view,1U x 4.75 x 12,1U x 120.65 x 304.80,131.6,0 to 50,1600,12,3.3,90 to 264,N/A
+D1U-W-1600-12-HC2C,,murataps_store_view,1U x 4.75 x 12,1U x 120.65 x 304.80,131.6,0 to 50,1600,12,3.3,90 to 264,N/A
+D1U-W-1600-48-HA1C,,murataps_store_view,1U x 4.75 x 12,1U x 120.65 x 304.80,33,0 to 50,1600,48,5,90 to 264,N/A
+D1U-W-1600-48-HA2C,,murataps_store_view,1U x 4.75 x 12,1U x 120.65 x 304.80,33,0 to 50,1620,48,5,90 to 264,N/A
+D1U-W-1600-48-HB1C,,murataps_store_view,1U x 4.75 x 12,1U x 120.65 x 304.80,33,0 to 50,1600,48,12,90 to 264,N/A
+D1U-W-1600-48-HB2C,,murataps_store_view,1U x 4.75 x 12,1U x 120.65 x 304.80,33,0 to 50,1620.4,48,12,90 to 264,N/A
+D1U-W-1600-48-HC1C,,murataps_store_view,1U x 4.75 x 12,1U x 120.65 x 304.80,33,0 to 50,1600,48,3.3,90 to 264,N/A
+D1U-W-1600-48-HC2C,,murataps_store_view,1U x 4.75 x 12,1U x 120.65 x 304.80,33,0 to 50,1600,48,3.3,90 to 264,N/A
+D1U-W-2000-48-HA2C,,murataps_store_view,1U x 4.75 x 12,1U x 120.65 x 304.80,41.3,0 to 50,2002.4,48,5,90 to 264,N/A
+D1U-W-2000-48-HB2C,,murataps_store_view,1U x 4.75 x 12,1U x 120.65 x 304.80,41.3,0 to 50,2002.8,48,12,90 to 264,N/A
+4401570,,murataps_store_view,1U x 4.75 x 12,1U x 120.65 x 304.80,41.3,0 to 50,2002.8,48,12,90 to 264,N/A
+D1U-W-2000-48-HC2C,,murataps_store_view,1U x 4.75 x 12,1U x 120.65 x 304.80,41.3,0 to 50,1997.25,48,3.3,90 to 264,D1U-W
+4401726-1,,murataps_store_view,2U x 5.1 x 18,2U x 129.5 x 455.9,129.629,0 to 50,7020,54,3.3 or 5 (Selectable),180 to 525,N/A
+S1U-3X-16-A-12-RC,,murataps_store_view,1U x 17.3 x 16,1U x 439.42 x 406.40,394.8,0 to 50,4800,12,,90 to 264,N/A
+S1U-3X-16-A-48-RC,,murataps_store_view,1U x 17.3 x 16,1U x 439.42 x 406.40,123.9,0 to 50,6000,48,,90 to 264,N/A
+4401853-1,,murataps_store_view,1U x 2.15 x 12.66,1U x 54.5 x 321.5,1655,0 to 55,1220,12,5,40 to 72,N/A
+4401851-1,,murataps_store_view,1U x 2.15 x 12.66,1U x 54.5 x 321.5,1655,0 to 55,1220,12,5,40 to 72,N/A
+4401852-1,,murataps_store_view,1U x 2.15 x 12.66,1U x 54.5 x 321.5,1655,0 to 55,1219.8,12,3.3,40 to 72,N/A
+4401828-1,,murataps_store_view,1U x 2.15 x 12.66,1U x 54.5 x 321.5,1655,0 to 55,1219.8,12,3.3,40 to 72,N/A
+4401802-1,,murataps_store_view,1U x 2.15 x 12.66,1U x 54.5 x 321.5,1655,0 to 60,1215,12,5,90 to 264,N/A
+4401803-1,,murataps_store_view,1U x 2.15 x 12.66,1U x 54.5 x 321.5,1655,0 to 60,1215,12,5,90 to 264,N/A
+4401801-1,,murataps_store_view,1U x 2.15 x 12.66,1U x 54.5 x 321.5,1655,0 to 60,1210,12,3.3,90 to 264,N/A
+4401792-2,,murataps_store_view,1U x 2.15 x 12.66,1U x 54.5 x 321.5,1655,0 to 60,1210,12,3.3,90 to 264,N/A
+8978305,,murataps_store_view,,,,0 to 60,,,,,DMR20-0/5
+8978300,,murataps_store_view,,,,0 to 60,,,,,DMR20-0/5
+8978302,,murataps_store_view,,,,0 to 60,,,,,DMR20-4/20
+8978304,,murataps_store_view,,,,0 to 60,,,,,DMR20-4/20
+8978301,,murataps_store_view,,,,0 to 60,,,,,DMR20-4/20
+LME0305SC,,murataps_store_view,0.38 x 0.45 x 0.27,9.8 x 11.5 x 6.8,0.05,0 to 70,0.25,5,,2.97 to 3.63,N/A
+8999937,,murataps_store_view,2.3 x 1.45 x 0.57,58.4 x 36.8 x 14.47,1655,-40 to 85,800,8,,36 to 60,DRQ-8/100-L48NBxxxx-C
+8928139,,murataps_store_view,1.44 x 1.04 x 0.50,36.6 x 26.4 x 12.7,10,-40 to 85,50,5,,9 to 36,IRS-Q12
+782100/33VC,,murataps_store_view,,,,,,,,,782100
+782100/35JVC,,murataps_store_view,,,,,,,,,782100
+782100/35JVC-R,,murataps_store_view,,,,,,,,,782100
+782100/53VC,,murataps_store_view,,,,,,,,,782100
+782100/55JVC,,murataps_store_view,,,,,,,,,782100
+782100/55JVC-R,,murataps_store_view,,,,,,,,,782100
+782485/35C,,murataps_store_view,,,,,,,,,782485
+782485/55C,,murataps_store_view,,,,,,,,,782485
+8999506,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,35,,420,12,,36 to 75,N/A
+8999550,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,35,,420,12,,36 to 75,N/A
+HPR211,,murataps_store_view,0.34 x 2.21 x 0.4,8.6 x 56.1 x 10.2,25,,3,4 x 15,,10.8 to 13.2,N/A
+HPR211C,,murataps_store_view,0.34 x 2.21 x 0.4,8.6 x 56.1 x 10.2,25,,3,4 x 15,,10.8 to 13.2,N/A
+SLC100-29,,murataps_store_view,1.45 x 2.28 x 0.4,36.8 x 57.9 x 10.2,25,,30,1.2,,36 to 75,N/A
+SLC100-3,,murataps_store_view,1.45 x 2.28 x 0.4,36.8 x 57.9 x 10.2,25,,30,1.2,,36 to 75,N/A
+SLC100-30,,murataps_store_view,1.45 x 2.28 x 0.4,36.8 x 57.9 x 10.2,25,,37.5,1.5,,36 to 75,N/A
+SLC100-31,,murataps_store_view,1.45 x 2.28 x 0.4,36.8 x 57.9 x 10.2,25,,45,1.8,,36 to 75,N/A
+SLC100-32,,murataps_store_view,1.45 x 2.28 x 0.4,36.8 x 57.9 x 10.2,25,,50,2,,36 to 75,N/A
+SLC100-33,,murataps_store_view,1.45 x 2.28 x 0.4,36.8 x 57.9 x 10.2,25,,62.5,2.5,,36 to 75,N/A
+SLC100-34,,murataps_store_view,1.45 x 2.28 x 0.4,36.8 x 57.9 x 10.2,25,,82.5,3.3,,36 to 75,N/A
+8970235,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,40,,60,1.5,,18 to 36,N/A
+8970236,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,40,,60,1.5,,18 to 36,N/A
+8170122,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,10,,120,12,,36 to 75,N/A
+8970122,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,10,,120,12,,36 to 75,N/A
+8170123,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,10,,120,12,,36 to 75,N/A
+8970123,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,10,,120,12,,36 to 75,N/A
+8170117,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,8,,96,12,,18 to 36,N/A
+8170116,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,8,,96,12,,18 to 36,N/A
+8170916,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,8,,96,12,,18 to 36,N/A
+8170283,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,7,,105,15,,18 to 36,N/A
+8170284,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,7,,105,15,,18 to 36,N/A
+8170131,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,7,,105,15,,36 to 75,N/A
+8970131,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,7,,105,15,,36 to 75,N/A
+8170141,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,7,,105,15,,36 to 75,N/A
+8970141,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,7,,105,15,,36 to 75,N/A
+8170147,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,5.6,,100.8,18,,18 to 36,N/A
+8170146,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,5.6,,100.8,18,,18 to 36,N/A
+8170145,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,6,,108,18,,36 to 75,N/A
+8970145,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,6,,108,18,,36 to 75,N/A
+8170144,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,6,,108,18,,36 to 75,N/A
+8970144,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,6,,108,18,,36 to 75,N/A
+8970219,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,35,,87.5,2.5,,18 to 36,N/A
+8970218,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,35,,87.5,2.5,,18 to 36,N/A
+8170217,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,40,,100,2.5,,36 to 75,N/A
+8970217,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,40,,100,2.5,,36 to 75,N/A
+8170215,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,40,,100,2.5,,36 to 75,N/A
+8970215,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,40,,100,2.5,,36 to 75,N/A
+8970214,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,30,,99,3.3,,18 to 36,N/A
+8971213,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,30,,99,3.3,,18 to 36,N/A
+8971212,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,35,,115.5,3.3,,36 to 75,N/A
+8970211,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,35,,115.5,3.3,,36 to 75,N/A
+8970210,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,20,,100,5,,18 to 36,N/A
+8971203,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,20,,100,5,,36 to 75,N/A
+8971202,,murataps_store_view,1.45 x 2.3 x 0.5,36.8 x 58.4 x 12.7,20,,100,5,,36 to 75,N/A

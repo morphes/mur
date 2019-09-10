@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!--
+ @category    Mana
+ @package     Manadev_LayeredNavigationSliders
+ @copyright   Copyright (c) http://www.manadev.com
+ @license     http://www.manadev.com/license  Proprietary License
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="mana_layered_navigation">
+            <group id="slider" translate="label" type="text" sortOrder="700" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Sliders</label>
+                <field id="calculate_slider_min_max_based_on" translate="label" type="select" sortOrder="200" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Calculate Slider Minimum and Maximum Values Based On</label>
+                    <source_model>Manadev\LayeredNavigationSliders\Sources\CalculateSliderMinMaxSource</source_model>
+                </field>
+                <field id="style" translate="label" type="select" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Style</label>
+                    <source_model>Manadev\LayeredNavigationSliders\Sources\SliderStyleSource</source_model>
+                </field>
+                <field id="style_mobile" translate="label" type="select" sortOrder="400" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Slider Style in Mobile Layered Navigation</label>
+                    <source_model>Manadev\LayeredNavigationSliders\Sources\MobileSliderStyleSource</source_model>
+                </field>
+                <field id="is_slider_inline_in_dropdown_menu" translate="label comment" type="select" sortOrder="500" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Is Slider Inline in Dropdown Menu</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="above_products_template">Manadev_LayeredNavigationPositions::horizontal/menu.phtml</field>
+                    </depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

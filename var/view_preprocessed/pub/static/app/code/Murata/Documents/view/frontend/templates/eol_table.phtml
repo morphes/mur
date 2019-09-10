@@ -1,0 +1,82 @@
+<?php $collection = $block->getLoadedProductCollection(); ?> <div class="category-products"><ol class="products-list" id="products-list"><table border="0" width=100%><tr><td width=80%></td><td align="right">Sort By</td><td align="right"><form name="jumpy2"><p><select name="eol" size="1" onChange="go()"><option value=""></option><option value="?sort=name">Series</option><option value="?sort=series_status">Status</option><option value="?sort=eol_date">Date</option><option value="?sort=series_type">Series Type</option></select> <script language="javascript">
+
+                                function go() {
+                                    location = document.jumpy2.eol.options[document.jumpy2.eol.selectedIndex].value
+                                }</script></p></form></td></tr></table><table id="test" width="727px" border="1" class="listtable_eol"><tr class="listtr"><th width="210px" class=listtdtop>Series</th><th width="100px" class=listtdtop>Status</th><th width="90px" class=listtdtop>Date</th><th class=listtdtop>Series Type</th><th width="85px" class=listtdtop>Contact Us</th></tr><?php foreach ($collection as $_product): ?> <tr><td><a href="https://www.murata-ps.com/datasheet?<?php echo $_product->getData('series_datasheet') ?>"><?php echo $_product->getData('name') ?></a></td><td><?php if ($_product->getAttributeText('series_status') == "In Production") { ?> <img src="/pub/images/inproduction.jpg" alt="In Production" title="Status In Production"/><?php } else { ?> <?php } ?> <?php if ($_product->getAttributeText('series_status') == "In Production/Discontinued") { ?> <img src="/pub/images/inproduction.jpg" alt="In Production" title="Status In Production"/><br> <img src="/pub/images/discontinued.jpg" alt="Discontinued" title="Status Discontinued"/><?php } else { ?> <?php } ?> <?php if ($_product->getAttributeText('series_status') == "Recommended In Production/Discontinued") { ?> <img src="/pub/images/recommended.jpg" alt="Recommended" title="Status Recommended"/><br><img src="/pub/images/inproduction.jpg" alt="In Production" title="Status In Production"/><br><img src="/pub/images/discontinued.jpg" alt="Discontinued" title="Status Discontinued"/><?php } else { ?> <?php } ?> <?php if ($_product->getAttributeText('series_status') == "In Production/To be Discontinued") { ?> <img src="/pub/images/inproduction.jpg" alt="In Production" title="Status In Production"/><br> <img src="/pub/images/to_be_discontinued.jpg" alt="To Be Discontinued" title="Status To Be Discontinued"/><?php } else { ?> <?php } ?> <?php if ($_product->getAttributeText('series_status') == "Recommended In Production/To be Discontinued") { ?> <img src="/pub/images/recommended.jpg" alt="Recommended" title="Status Recommended"/><br><img src="/pub/images/inproduction.jpg" alt="In Production" title="Status In Production"/><br><img src="/pub/images/to_be_discontinued.jpg" alt="To Be Discontinued" title="Status To Be Discontinued"/><?php } else { ?> <?php } ?> <?php if ($_product->getAttributeText('series_status') == "In Production/To be Discontinued/Discontinued") { ?> <img src="/pub/images/inproduction.jpg" alt="In Production" title="Status In Production"/><br> <img src="/pub/images/to_be_discontinued.jpg" alt="To Be Discontinued" title="Status To Be Discontinued"/><br><img src="/pub/images/discontinued.jpg" alt="Discontinued" title="Status Discontinued"/><?php } else { ?> <?php } ?> <?php if ($_product->getAttributeText('series_status') == "Recommended In Production/To be Discontinued/Discontinued") { ?> <img src="/pub/images/recommended.jpg" alt="Recommended" title="Status Recommended"/><br><img src="/pub/images/inproduction.jpg" alt="In Production" title="Status In Production"/><br><img src="/pub/images/to_be_discontinued.jpg" alt="To Be Discontinued" title="Status To Be Discontinued"/><br><img src="/pub/images/discontinued.jpg" alt="Discontinued" title="Status Discontinued"/><?php } else { ?> <?php } ?> <?php if ($_product->getAttributeText('series_status') == "Discontinued") { ?> <img src="/pub/images/discontinued.jpg" alt="Discontinued" title="Status Discontinued"/><?php } else { ?> <?php } ?> <?php if ($_product->getAttributeText('series_status') == "To be Discontinued") { ?> <img src="/pub/images/to_be_discontinued.jpg" alt="To Be Discontinued" title="Status To Be Discontinued"/><?php } else { ?> <?php } ?> <?php if ($_product->getAttributeText('series_status') == "To be Discontinued/Discontinued") { ?> <img src="/pub/images/to_be_discontinued.jpg" alt="To Be Discontinued" title="Status To Be Discontinued"/><br><img src="/pub/images/discontinued.jpg" alt="Discontinued" title="Status Discontinued"/><?php } else { ?> <?php } ?></td><?php $eol_date3 = $_product->getData('eol_date'); $eol_date = substr($eol_date3, 0, -9); ?> <td class=listtd><?php echo $eol_date ?></td><td class=listtd><?php echo $_product->getAttributeText('series_type'); ?></td><td class=listtd><a href="https://www.murata-ps.com/en/contact-us.html?form=Technical&part=<?php echo $_product->getData('name') ?>">Contact Us</a></td></tr><?php endforeach; ?></table></li></ol><script type="text/javascript">decorateList('products-list', 'none-recursive')</script><script type="text/javascript">
+        function processNext(urls, i) {
+            var next = i + 1;
+            $('processing-text').update('Processing item ' + next);
+            if (next < urls.size()) {
+                new Ajax.Request(urls[i], {
+                    method: 'get',
+                    onComplete: function (transport) {
+                        processNext(urls, next);
+                    }
+                });
+            } else {
+                new Ajax.Request(urls[i], {
+                    method: 'get',
+                    onComplete: function (transport) {
+                        window.location.reload();
+                    }
+                });
+            }
+
+        }
+
+        function addItemsToCompare() {
+            $('add-items-to-compare').hide();
+            $('waiting').show();
+            $('m-wait').show();
+
+            var addToCompareUrls = [];
+            $$('input.add').each(function (e) {
+                if (e.checked == true) {
+                    var id = e.readAttribute('id').split('_')[1];
+                    addToCompareUrls.push($('url_' + id).value);
+                }
+            });
+
+            if (addToCompareUrls.size() > 0) {
+                processNext(addToCompareUrls, 0);
+            } else {
+                $('add-items-to-compare').show();
+                $('waiting').hide();
+                $('m-wait').hide();
+                alert('Please select the items you want to add.');
+            }
+        }</script></div><script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $('li.item a[href*="/products/"]').click(function () {
+            window.setTimeout(
+                function () {
+                    $("#m-wait").show();
+                },
+                2000);
+
+        });
+    });</script><!----Table head freeze---><script>
+
+    window.onscroll = function () {
+        myFunction()
+    };
+    var freezeheader = document.getElementById("freezeheader");
+    var sticky = test.offsetTop;
+
+    var bodyRect = document.body.getBoundingClientRect(),
+        elemRect = test.getBoundingClientRect(),
+        stickier = elemRect.top - bodyRect.top;
+
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky || document.documentElement.scrollTop >= stickier) {
+
+            var e = document.getElementById("freezeheader");
+            e.setAttribute("id", "freezeheader2");
+
+        } else {
+
+            var e = document.getElementById("freezeheader2");
+            e.setAttribute("id", "freezeheader");
+        }
+    }</script>

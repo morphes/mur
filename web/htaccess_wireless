@@ -1,0 +1,18 @@
+AllowEncodedSlashes On
+
+<IfModule mod_rewrite.c>
+## enable rewrites
+
+        Options +FollowSymLinks
+        RewriteEngine on
+        RewriteCond %{REQUEST_URI} ^/(.+)/where/(.+)
+        RewriteRule ^/(.+)/where/(.+)$ /$1.html [R=301,L]
+
+
+</IfModule>
+## set file types to download vs open
+
+AddType application/octet-stream .s2p
+
+
+TimeOut 600

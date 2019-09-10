@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Mageside. All rights reserved.
+ * See MS-LICENSE.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="empty" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Mageside\AdminUsefulLinks\Block\Links\Preview" name="edit_category" as="edit.btn.category" template="Mageside_AdminUsefulLinks::links/preview.phtml" />
+        </referenceContainer>
+    </body>
+</page>
+

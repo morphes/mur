@@ -1,0 +1,8 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="catalog_entity_attribute_save_commit_after">
+        <observer name="Manadev\LayeredNavigationSeo\Observers\ReindexEditedAttributes" instance="Manadev\LayeredNavigationSeo\Observers\ReindexEditedAttributes"/>
+    </event>
+    <event name="after_mana_filter_edit">
+        <observer name="Manadev\LayeredNavigationSeo\Observers\ReindexEditedFilters" instance="Manadev\LayeredNavigationSeo\Observers\ReindexEditedFilters"/>
+    </event>
+</config>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+ @category    Mana
+ @package     Manadev_LayeredNavigationMobile
+ @copyright   Copyright (c) http://www.manadev.com
+ @license     http://www.manadev.com/license  Proprietary License
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <link src="Manadev_LayeredNavigationMobile::js/accordionAnimateFix.js"/>
+    </head>
+    <body>
+        <referenceContainer name="sidebar.mana.mobile">
+            <block class="Manadev\LayeredNavigationMobile\Blocks\MobileNavigation" name="mobile.mana.layered_nav" before="-" template="Manadev_LayeredNavigationMobile::mobile.phtml">
+                <arguments>
+                    <argument name="position" xsi:type="string">show_on_mobile</argument>
+                    <argument name="css_prefix" xsi:type="string">mobile</argument>
+                </arguments>
+                <block class="Manadev\LayeredNavigation\Blocks\FilterRenderer" name="mobile.mana.layered_nav.filter_renderer" as="filter_renderer"/>
+                <block class="Manadev\LayeredNavigation\Blocks\AppliedItemRenderer" name="mobile.mana.layered_nav.applied_item_renderer" as="applied_item_renderer"/>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

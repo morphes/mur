@@ -1,0 +1,34 @@
+<?php
+
+/* @var \Manadev\Seo\Blocks\ContentRenderer $block */
+
+/* @var string $value */
+
+/* @var string $route */
+/* @var array $params */
+/* @var array $query */
+
+/* @var int|null $page */
+/* @var string|null $order */
+/* @var string|null $dir */
+/* @var string|null $mode */
+/* @var string|null $show */
+
+/* @var string|null $keyword */
+
+/* @var \Manadev\LayeredNavigationSeo\Data\FilterData[] $filters */
+
+// show default meta title
+echo $value;
+
+// Add labels of all applied filters and separators in between
+$filterCount = count($filters);
+foreach ($filters as $index => $filter) {
+    if ($filter->included) {
+        if ($index > 0 || $value) {
+            echo __(",");
+        }
+
+        echo $filter->item_label;
+    }
+}

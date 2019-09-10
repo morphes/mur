@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_layout.xsd">
+    <update handle="empty"/>
+    <referenceContainer name="page.wrapper">
+        <container name="header.container" as="header_container" label="Page Header Container" htmlTag="header" htmlClass="page-header" before="main.content"/>
+        <container name="page.top" as="page_top" label="After Page Header" after="header.container"/>
+        <container name="footer-container" as="footer" before="before.body.end" label="Page Footer Container" htmlTag="footer" htmlClass="page-footer"/>
+    </referenceContainer>
+    <referenceContainer name="main.content" htmlTag="div">
+        <container name="columns" htmlTag="div" htmlClass="main-container col1-layout">
+            <container name="col-main" label="Main Content Container" htmlTag="div" htmlClass="main">
+                <container name="std-col-main" label="Main Content Container" htmlTag="div" htmlClass="col-main">
+                    <container name="main" label="" htmlTag="div" htmlClass="std"/>
+                </container>
+            </container>
+        </container>
+    </referenceContainer>
+    <referenceContainer name="main.content" htmlTag="div">
+        <container name="columns.main" htmlClass="main-container col2-right-layout" htmlTag="div">
+            <container name="columns.main.main" htmlClass="main" htmlTag="div">
+                <container name="columns.main.content.wrap" htmlClass="content_wrap" htmlTag="div">
+                    <container name="column.left" before="-"/>
+                </container>
+            </container>
+        </container>
+    </referenceContainer>
+
+</layout>

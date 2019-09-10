@@ -1,0 +1,150 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+<?php
+/**
+ * Product list template
+ *
+ * @var $block \Magento\Catalog\Block\Product\ListProduct
+ */
+?>
+<?php
+$_productCollection = $block->getLoadedProductCollection();
+$_helper            = $this->helper('Magento\Catalog\Helper\Output');
+?>
+<?php if (!$_productCollection->count()): ?>
+    <div class="message info empty">
+        <div><?= /* @escapeNotVerified */
+            __('We can\'t find products matching the selection.') ?></div>
+    </div>
+<?php else: ?>
+    <?php if(!$block->isWirelessConnectivityPlatforms()) { ?>
+        <?= $block->getToolbarHtml() ?>
+        <?= $block->getAdditionalHtml() ?>
+    <?php } ?>
+    <?php
+    $viewMode        = 'list';
+    $showDescription = true;
+    $image           = 'category_page_list';
+    if ($block->getMode() == 'grid') {
+        $templateType = \Magento\Catalog\Block\Product\ReviewRendererInterface::SHORT_VIEW;
+    } else {
+        $templateType = \Magento\Catalog\Block\Product\ReviewRendererInterface::FULL_VIEW;
+    }
+    /**
+     * Position for actions regarding image size changing in vde if needed
+     */
+    $pos = $block->getPositioned();
+    ?>
+    <div class="list_category <?= /* @escapeNotVerified */
+    $viewMode ?> products-<?= /* @escapeNotVerified */
+    $viewMode ?>">
+        <?php $iterator = 1; ?>
+        <?php /** @var $_product \Magento\Catalog\Model\Product */ ?>
+        <?php if ($block->isWireless($_productCollection->getFirstItem())) { ?>
+            <?php echo $block->gridTable($_productCollection); ?>
+        <?php } else { ?>
+            <?php foreach ($_productCollection as $_product): ?>
+                <?php $attributeSetId = $_product->getAttributeSetId(); ?>
+                <div class="item <?php if($block->isWirelessConnectivityPlatforms()) {?>wireless<?php } ?>" data-container="product-grid">
+                    <?php if($block->isWirelessConnectivityPlatforms()) { ?>
+<?php $productName2 = $_helper->productAttribute($_product, $_product->getName(), 'name'); ?>
+                        <img src="/pub/media/catalog/product<?php echo $_product->getImage(); ?>" alt="<?= $productName2 ?>" title="<?= $productName2 ?>" />
+                    <?php } else { ?>
+                        <?php
+                        $productImage = $block->getImage($_product, $image);
+                        if ($pos != null) {
+                            $position = ' style="left:' . $productImage->getWidth() . 'px;'
+                                . 'top:' . $productImage->getHeight() . 'px;"';
+                        }
+                        ?>
+                        <div class="pic">
+                            <?php if ($attributeSetId != Murata\Category\Block\Product\ListProduct::Open_Compute) { ?>
+                                <a href="<?= /* @escapeNotVerified */
+                                $_product->getProductUrl() ?>" class="product photo product-item-photo" tabindex="-1">
+                                    <?= $productImage->toHtml() ?>
+                                </a>
+                            <?php } else { ?>
+                                <span class="product photo product-item-photo" tabindex="-1">
+                                <?= $productImage->toHtml() ?>
+                            </span>
+                            <?php } ?>
+                        </div>
+                    <?php } ?>
+                    <div class="info product details product-item-details">
+                        <?php if (!$block->isWirelessConnectivityPlatforms()) { ?>
+                        <?php
+                        $_productNameStripped = $block->stripTags($_product->getName(), null, true);
+                        ?>
+                        <ul class="descr">
+                            <li>
+                                <?php $productName = $_helper->productAttribute($_product, $_product->getName(), 'name'); ?>
+                                <?php if ($attributeSetId != Murata\Category\Block\Product\ListProduct::Open_Compute) { ?>
+                                    <a class="product-item-link first"
+                                       href="<?= /* @escapeNotVerified */
+                                       $_product->getProductUrl() ?>">
+                                        <?= $productName ?>
+                                    </a>
+                                <?php } else { ?>
+                                    <span class="product-name"><font color="#f5002f"><b><?= $productName ?></b> </font> </span>
+                                <?php } ?>
+                            </li>
+                            <?php if ($showDescription): ?>
+                                <li>
+                                    <?php if ($attributeSetId == Murata\Category\Block\Product\ListProduct::Open_Compute) { ?>
+                                        <?php $features = $_helper->productAttribute($_product, $_product->getFeatures(), 'features'); ?>
+                                        <?php if(substr( $features, 0, 4 ) == '<br>') {
+                                            $features = substr($features, 4);
+                                        } ?>
+                                        <?php echo $features; ?>
+                                    <?php } else { ?>
+                                        <a href="<?= /* @escapeNotVerified */
+                                        $_product->getProductUrl() ?>" title="<?= /* @escapeNotVerified */
+                                        $_productNameStripped ?>" class="action more">
+                                            <u color="red">
+                                                <?= /* @escapeNotVerified */
+                                                substr(str_replace('<p>', '', str_replace('</p>', '', $_helper->productAttribute($_product, $_product->getShortDescription(), 'short_description'))), 0, 76) ?>
+                                                <font style="color:red"><?= /* @escapeNotVerified */
+                                                    __('...details') ?></font>
+                                            </u>
+                                        </a>
+                                    <?php } ?>
+                                </li>
+                            <?php endif; ?>
+                        </ul>
+                        <?php echo $block->specButtons($_product); ?>
+                        <?= $block->getReviewsSummaryHtml($_product, $templateType) ?>
+                        <?= $block->getProductDetailsHtml($_product) ?>
+                        <?php } else { ?>
+                            <?php echo $_product->getRfmParagraph(); ?>
+                        <?php } ?>
+                    </div>
+                    <hr/>
+                </div>
+            <?php endforeach; ?>
+        <?php } ?>
+    </div>
+    <?php if(!$block->isWirelessConnectivityPlatforms()) { ?>
+        <?= $block->getToolbarHtml() ?>
+    <?php } ?>
+<?php endif; ?>
+<script type="text/javascript">
+    function addItemsToCompare() {
+        var productsIds = jQuery("input.compare-add:checked").map(function () {
+            return this.value;
+        }).get().join(",");
+        if (!productsIds) {
+            alert('Please select the items you want to add.');
+        } else {
+            jQuery.get('/catalog/product_compare/add', {productsIds: productsIds}, function (response) {
+                window.location.reload();
+            });
+        }
+    }
+</script>

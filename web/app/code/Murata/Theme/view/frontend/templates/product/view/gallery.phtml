@@ -1,0 +1,7 @@
+<?php $largeImageUrl = '/pub/media/wysiwyg/rfm_noimage_41_3.jpg'; ?>
+<?php foreach($this->getGalleryImages() as $galleryImage) { ?>
+    <?php if (strpos($galleryImage->getLargeImageUrl(), 'no_image') === false) { ?>
+        <?php $largeImageUrl = $galleryImage->getLargeImageUrl(); ?>
+    <?php } ?>
+<?php } $_product = $block->getProduct(); ?>
+<img src="<?php echo $largeImageUrl; ?>" alt="<?php echo $_product->getName(); ?>" title="<?php echo $_product->getName(); ?>"/>

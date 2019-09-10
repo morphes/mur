@@ -1,0 +1,35 @@
+<?php
+/**
+ * @copyright   Copyright (c) http://www.manadev.com
+ * @license     http://www.manadev.com/license  Proprietary License
+ */
+/**
+ * @var $block \Manadev\LayeredNavigationShowMore\Blocks\ShowMore
+ */
+?>
+
+<?php if ($block->getData('show_option_search')) : ?>
+    <div class="manadev-option-search">
+        <input type="text" title="<?php echo __('Search an option ...') ?>"
+            placeholder="<?php echo __('Search an option ...') ?>" data-mage-init='{ "Manadev_LayeredNavigationShowMore/js/OptionSearch": {}}'>
+    </div>
+<?php endif; ?>
+<div class="manadev-expandable-filter outer-container <?php echo $block->getClass() ?>">
+    <div class="inner-container">
+        <?php echo $block->getData('content') ?>
+    </div>
+</div>
+<?php if ($block->getData('show_more')) : ?>
+    <div class="manadev-show-more">
+        <a href="#" title="<?php echo __('Show more') ?>"><?php echo __('Show more') ?></a>
+    </div>
+<?php endif; ?>
+<script>
+    require([
+        'jquery',
+        'Manadev_LayeredNavigationShowMore/js/<?php echo $block->getJsComponent() ?>'
+    ], function($) {
+        var options = <?php echo json_encode($block->getData('js_options'), JSON_PRETTY_PRINT) ?>;
+        $("<?php echo $block->getData('filter_selector') ?>").<?php echo $block->getJsComponent() ?>(options);
+    });
+</script>

@@ -1,0 +1,45 @@
+<?php $_productCollection = $this->getProductCollection(); ?>
+<?php $_product = $_productCollection->getFirstItem(); ?>
+<?php $attributeSetId = $_product->getAttributeSetId(); ?>
+<?php if($attributeSetId == Murata\Category\Block\Product\ListProduct::RFM_Saw_Radios) { ?>
+    <?php echo $block->productsTable('rfm-saw-radios', $_productCollection); ?>
+<?php } ?>
+<?php if($attributeSetId == Murata\Category\Block\Product\ListProduct::RFM_Bluetooth) { ?>
+    <?php echo $block->productsTable('rfm-bluetooth', $_productCollection); ?>
+<?php } ?>
+<?php if($attributeSetId == Murata\Category\Block\Product\ListProduct::RFM_IoT_System_On_Module) { ?>
+    <?php echo $block->productsTable('rfm-iot-system-on-module', $_productCollection); ?>
+<?php } ?>
+<?php if($attributeSetId == Murata\Category\Block\Product\ListProduct::RFM_Wi_Fi) { ?>
+    <?php echo $block->productsTable('rfm-wifi', $_productCollection); ?>
+<?php } ?>
+<?php if($attributeSetId == Murata\Category\Block\Product\ListProduct::RFM_WiFi_Bluetooth) { ?>
+    <?php echo $block->productsTable('rfm-wifi-bluetooth', $_productCollection); ?>
+<?php } ?>
+<?php if($attributeSetId == Murata\Category\Block\Product\ListProduct::RFM_M2M) { ?>
+    <?php echo $block->productsTable('rfm-m2m', $_productCollection); ?>
+<?php } ?>
+<?php if($attributeSetId == Murata\Category\Block\Product\ListProduct::RFM_Cloud) { ?>
+    <?php echo $block->productsTable('rfm-cloud', $_productCollection); ?>
+<?php } ?>
+<?php if($attributeSetId == Murata\Category\Block\Product\ListProduct::RFM_802154) { ?>
+    <?php echo $block->productsTable('rfm-802154', $_productCollection); ?>
+<?php } ?>
+<?php if($attributeSetId == Murata\Category\Block\Product\ListProduct::RFM_LPWA) { ?>
+    <?php echo $block->productsTable('rfm-lpwa', $_productCollection); ?>
+<?php } ?>
+<?php if($attributeSetId == Murata\Category\Block\Product\ListProduct::RFM_Certified_Modules) { ?>
+    <?php echo $block->productsTable('rfm-certified-modules', $_productCollection); ?>
+<?php } ?>
+<?php if($attributeSetId == Murata\Category\Block\Product\ListProduct::RFM_Frequency_Control) { ?>
+    <?php echo $block->productsTable('rfm-frequency-control', $_productCollection); ?>
+<?php } ?>
+<?php if($attributeSetId == Murata\Category\Block\Product\ListProduct::RFM_Saw_Filter) { ?>
+    <?php echo $block->productsTable('rfm-saw-filter', $_productCollection); ?>
+<?php } ?>
+<?php if($attributeSetId == Murata\Category\Block\Product\ListProduct::RFM_Resonators) { ?>
+    <?php echo $block->productsTable('rfm-resonators', $_productCollection); ?>
+<?php } ?>
+<?php if($attributeSetId == Murata\Category\Block\Product\ListProduct::RFM_Rfic_Radios) { ?>
+    <?php echo $block->productsTable('rfm-rfic-radios', $_productCollection); ?>
+<?php } ?>

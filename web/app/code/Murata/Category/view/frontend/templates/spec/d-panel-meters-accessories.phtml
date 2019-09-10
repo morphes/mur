@@ -1,0 +1,8 @@
+<?php $product = $this->getProduct(); ?>
+<div class="descr_content">
+    <?php if ($product->getAttributeText('product_status')) { ?>
+        <div class="data">
+            <div class="bottom"><?php echo $block->statuses($product); ?></div>
+        </div>
+    <?php } ?>
+</div>

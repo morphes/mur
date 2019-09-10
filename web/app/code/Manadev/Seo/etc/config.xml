@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<!--
+ @category    Mana
+ @package     Manadev_Seo
+ @copyright   Copyright (c) http://www.manadev.com
+ @license     http://www.manadev.com/license  Proprietary License
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <manadev_features>
+            <Manadev_Seo>
+                <version>18.06.2611</version>
+                <title>Generic Search Engine Optimizations</title>
+                <sort_order>150</sort_order>
+            </Manadev_Seo>
+        </manadev_features>
+        <mana_seo>
+            <config_present>1</config_present>
+
+            <url_keys>
+                <search_page>search</search_page>
+                <symbols><![CDATA["\\": ""
+"_": "-"
+"'": ""
+"%": ""
+"#": ""
+"?": ""
+"&frac12;": "1/2"
+"&frac14;": "1/4"
+"&reg;": ""
+"&trade;": ""
+"&": "+"
+" ": "-"]]></symbols>
+            </url_keys>
+            <path_delimiters>
+                <prefix>-</prefix>
+                <suffix>/</suffix>
+                <category>/</category>
+            </path_delimiters>
+            <prefix_delimiters>
+                <parameter>/</parameter>
+                <value>/</value>
+                <option>-</option>
+                <range>-</range>
+                <category>-</category>
+            </prefix_delimiters>
+            <suffix_delimiters>
+                <parameter>/</parameter>
+                <value>/</value>
+                <option>-</option>
+                <range>-</range>
+                <category>-</category>
+            </suffix_delimiters>
+            <redirect>
+                <query_parameters_to_path_parameters>1</query_parameters_to_path_parameters>
+                <category_filter_to_subcategory_page>1</category_filter_to_subcategory_page>
+                <to_correct_parameter_order>1</to_correct_parameter_order>
+                <non_seo_urls>1</non_seo_urls>
+                <home_cms_page_to_home_page>1</home_cms_page_to_home_page>
+            </redirect>
+            <canonical_url>
+                <on_category_pages>1</on_category_pages>
+                <on_search_page>1</on_search_page>
+                <on_cms_pages>1</on_cms_pages>
+                <points_to_page_with_all_products>0</points_to_page_with_all_products>
+                <remove_on_second_and_further_pages>0</remove_on_second_and_further_pages>
+                <add_rel_prev_rel_next>1</add_rel_prev_rel_next>
+            </canonical_url>
+            <toolbar_page>
+                <url_key>page</url_key>
+                <url_part>suffix</url_part>
+                <position>9900</position>
+                <include_in_canonical_url>0</include_in_canonical_url>
+                <force_no_index>0</force_no_index>
+                <force_no_follow>0</force_no_follow>
+                <include_in_meta_title>1</include_in_meta_title>
+                <include_in_meta_description>1</include_in_meta_description>
+                <include_in_meta_keywords>0</include_in_meta_keywords>
+            </toolbar_page>
+            <toolbar_order>
+                <url_key>sort-by</url_key>
+                <url_part>query</url_part>
+                <position>9910</position>
+                <allow_only_known_options>1</allow_only_known_options>
+                <additional_known_options />
+                <include_in_canonical_url>0</include_in_canonical_url>
+                <force_no_index>0</force_no_index>
+                <force_no_follow>0</force_no_follow>
+                <include_in_meta_title>0</include_in_meta_title>
+                <include_in_meta_description>0</include_in_meta_description>
+                <include_in_meta_keywords>0</include_in_meta_keywords>
+            </toolbar_order>
+            <toolbar_dir>
+                <url_key>sort-direction</url_key>
+                <url_part>query</url_part>
+                <position>9920</position>
+                <include_in_canonical_url>0</include_in_canonical_url>
+                <force_no_index>0</force_no_index>
+                <force_no_follow>0</force_no_follow>
+                <include_in_meta_title>0</include_in_meta_title>
+                <include_in_meta_description>0</include_in_meta_description>
+                <include_in_meta_keywords>0</include_in_meta_keywords>
+            </toolbar_dir>
+            <toolbar_mode>
+                <url_key>mode</url_key>
+                <url_part>query</url_part>
+                <position>9930</position>
+                <allow_only_known_options>1</allow_only_known_options>
+                <additional_known_options />
+                <include_in_canonical_url>0</include_in_canonical_url>
+                <force_no_index>0</force_no_index>
+                <force_no_follow>0</force_no_follow>
+                <include_in_meta_title>0</include_in_meta_title>
+                <include_in_meta_description>0</include_in_meta_description>
+                <include_in_meta_keywords>0</include_in_meta_keywords>
+            </toolbar_mode>
+            <toolbar_show>
+                <url_key>show-per-page</url_key>
+                <url_part>query</url_part>
+                <position>9940</position>
+                <include_in_canonical_url>0</include_in_canonical_url>
+                <force_no_index>0</force_no_index>
+                <force_no_follow>0</force_no_follow>
+                <include_in_meta_title>0</include_in_meta_title>
+                <include_in_meta_description>0</include_in_meta_description>
+                <include_in_meta_keywords>0</include_in_meta_keywords>
+            </toolbar_show>
+            <search_keyword>
+                <url_key>keyword</url_key>
+                <use_parameter_url_key>0</use_parameter_url_key>
+                <url_part>suffix</url_part>
+                <position>-1000</position>
+                <include_in_canonical_url>1</include_in_canonical_url>
+                <force_no_index>0</force_no_index>
+                <force_no_follow>0</force_no_follow>
+                <include_in_meta_title>1</include_in_meta_title>
+                <include_in_meta_description>1</include_in_meta_description>
+                <include_in_meta_keywords>1</include_in_meta_keywords>
+            </search_keyword>
+            <other>
+                <number_of_applied_filters_for_sitemap>1</number_of_applied_filters_for_sitemap>
+            </other>
+        </mana_seo>
+    </default>
+</config>

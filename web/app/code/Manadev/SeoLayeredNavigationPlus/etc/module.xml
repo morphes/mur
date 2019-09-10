@@ -1,0 +1,22 @@
+<!--
+ @category    Mana
+ @package     Manadev_SeoLayeredNavigationPlus
+ @copyright   Copyright (c) http://www.manadev.com
+ @license     http://www.manadev.com/license  Proprietary License
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Manadev_SeoLayeredNavigationPlus" setup_version="1">
+        <sequence>
+            <module name="Manadev_LayeredNavigationCheckboxes" />
+            <module name="Manadev_LayeredNavigationMobile" />
+            <module name="Manadev_LayeredNavigationPositions" />
+            <module name="Manadev_LayeredNavigationSeo"/>
+            <module name="Manadev_LayeredNavigationSliders"/>
+            <module name="Manadev_LayeredNavigationAjax" />
+            <module name="Manadev_LayeredNavigationDropdown"/>
+            <module name="Manadev_LayeredNavigationRadio"/>
+            <module name="Manadev_LayeredNavigationCategoryTree"/>
+            <module name="Manadev_LayeredNavigationShowMore"/>
+        </sequence>
+    </module>
+</config>

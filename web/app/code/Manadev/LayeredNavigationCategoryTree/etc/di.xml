@@ -1,0 +1,20 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Manadev\LayeredNavigation\Registries\FilterTemplates\CategoryFilterTemplates">
+        <arguments>
+            <argument name="filterTemplates" xsi:type="array">
+                <item name="tree" xsi:type="object">Manadev\LayeredNavigationCategoryTree\FilterTemplates\Category\Tree</item>
+                <item name="tree_second_level" xsi:type="object">Manadev\LayeredNavigationCategoryTree\FilterTemplates\Category\Tree2ndLevel</item>
+                <item name="parent_children" xsi:type="object">Manadev\LayeredNavigationCategoryTree\FilterTemplates\Category\ParentChildren</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Manadev\ProductCollection\Registries\FacetResources">
+        <arguments>
+            <argument name="facetResources" xsi:type="array">
+                <item name="category_child_all" xsi:type="object">Manadev\LayeredNavigationCategoryTree\Resources\Facets\Category\ChildAllFacetResource</item>
+                <item name="category_child_2nd_level" xsi:type="object">Manadev\LayeredNavigationCategoryTree\Resources\Facets\Category\Child2ndLevelFacetResource</item>
+                <item name="category_parent_children" xsi:type="object">Manadev\LayeredNavigationCategoryTree\Resources\Facets\Category\ParentChildrenFacetResource</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

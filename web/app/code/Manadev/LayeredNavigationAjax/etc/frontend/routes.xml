@@ -1,0 +1,13 @@
+<!--
+ @category    Mana
+ @package     Manadev_LayeredNavigationAjax
+ @copyright   Copyright (c) http://www.manadev.com
+ @license     http://www.manadev.com/license  Proprietary License
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../lib/internal/Magento/Framework/App/etc/routes.xsd">
+    <router id="standard">
+        <route id="mana_layerednavigationajax" frontName="mana_layerednavigationajax">
+            <module name="Manadev_LayeredNavigationAjax" />
+        </route>
+    </router>
+</config>

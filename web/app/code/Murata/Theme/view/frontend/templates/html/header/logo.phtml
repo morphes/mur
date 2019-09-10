@@ -1,0 +1,14 @@
+<?php
+$objectManager =  \Magento\Framework\App\ObjectManager::getInstance();
+$storeManager = $objectManager->get('\Magento\Store\Model\StoreManagerInterface');
+?>
+<div class="logo">
+    <strong><?= /* @escapeNotVerified */ $block->getLogoAlt() ?></strong>
+    <a href="<?= $block->getUrl('') ?>" title="<?= /* @escapeNotVerified */ $block->getLogoAlt() ?>"
+       class="logo">
+        <img src="<?php echo $block->getLogoSrc(); ?>" alt="<?= /* @escapeNotVerified */ $block->getLogoAlt() ?>" title="<?= /* @escapeNotVerified */ $block->getLogoAlt() ?>">
+    </a>
+</div>
+<a href="#menu" class="humb"><i class="fa fa-bars" aria-hidden="true"></i></a>
+
+

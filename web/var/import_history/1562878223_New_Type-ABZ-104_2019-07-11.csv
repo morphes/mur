@@ -1,0 +1,64 @@
+out_of_stock_qty,is_qty_decimal,allow_backorders,enable_qty_increments,is_decimal_divided,website_id,price,product_online,use_config_min_qty,use_config_backorders,min_cart_qty,use_config_min_sale_qty,use_config_max_sale_qty,is_in_stock,notify_on_stock_below,use_config_notify_stock_qty,manage_stock,use_config_manage_stock,use_config_qty_increments,qty_increments,use_config_enable_qty_inc,qty,rfm_grade,max_cart_qty,rfm_ds_date,rfm_receive_sensitivity,rfm_operating_temperature,rfm_software,rfm_additional_docs,rfm_dimension,rfm_transmit_mode_current,page_layout,rfm_supply_voltage_min,rfm_receive_mode_current,rfm_interface_voltage,rfm_supply_voltage_max,updated_at,created_at,rfm_freq,display_product_options_in,visibility,sku,rfm_mp_pn,additional_attributes,rfm_antenna,rfm_certified,rfm_modulation,rfm_clock_system,rfm_technology,rfm_type_package,rfm_product_type,gift_message_available,rfm_clock_sleep,attribute_set_code,categories,rfm_chipset,product_type,rfm_feat_add1,rfm_type_ship_format,tax_class_name,rfm_purchase,name,meta_title,meta_keywords,meta_description,rfm_data_sheet,rfm_block_diagram,url_key,rfm_paragraph,base_image,small_image,thumbnail_image,swatch_image,additional_images,rfm_host_interface,rfm_product_status,rfm_output_power_range,product_websites,enable_googlecheckout,is_imported,is_recurring,rfm_rohs,rfm_certified_table
+0,0,0,0,0,0,0.01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,999,4646,10000,6/25/2019," -135.5dBm @ 1% PER, 125kHz BW, SF=12", -40 to +85,"<b>Semtech</b>
+
+</br><a href=""http://www.semtech.com/products/wireless-rf/lora-transceivers"" target=""blank"">Semtech Website (*relevant documents)</a>
+
+</br><a href=""https://lora-developers.semtech.com/"" target=""blank"">LoRa™ Community (Semtech Community Site)</a>
+
+</br><a href=""http://www.semtech.com/products/wireless-rf/lora-transceivers/sx1276"" target=""blank"">Semtech Datasheet (SX1276)</a>
+
+</br>Firmware updates and additional documentation can be found <a href=""https://github.com/lwmodem"" target=""blank"">here</a>
+</ul>","<li><a href=""/datasheet?/RFM/data/SoftwareModem_DiscoveryEVK_UG.pdf"">Software Modem Discovery Evaluation Kit User Guide</a></li>
+<li><a href=""/datasheet?/RFM/data/SoftwareModem_Ref.pdf"">Software Modem Reference Manual</a></li>
+<li><a href=""/datasheet?/RFM/data/SoftwareModem_ShieldEVK_UG.pdf"">Software Modem Shield Evaluation Kit User Guide</a></li>
+<li>
+<a href=""https://www.murata.com/support/faqs/products/lpwa"" target=""blank"">LoRa Module FAQ</a></li>
+</ul>
+<p> </p>
+<div>  <a href=""https://www.murata.com/products/connectivitymodule/lpwa""  target=""blank"" class=""rfm_call2acction-btn-datasheet""><font color=""ffffff"">Murata LPWA Products</font></a></div> ",12.5 x 11.6 x 1.76 mm,128mA @ 20dBm setting,2 columns with left bar,"2.2V for VDD_MCU, VDD_RF, VDD_TCXO",21.5mA @ 125kHz BW,3.3 Vdc,"3.6V for VDD_MCU, VDD_RF, VDD_TCXO","7/11/19, 9:59 AM","7/8/19, 3:16 PM",860-930MHz,Block after Info Column,"Catalog, Search",CMWX1ZZABZ-104,CMWX1ZZABZ-104,"enable_googlecheckout=Yes,is_imported=Yes,is_recurring=Yes,rfm_additional_docs=<li><a href=""/datasheet?/RFM/data/SoftwareModem_DiscoveryEVK_UG.pdf"">Software Modem Discovery Evaluation Kit User Guide</a></li>
+<li><a href=""/datasheet?/RFM/data/SoftwareModem_Ref.pdf"">Software Modem Reference Manual</a></li>
+<li><a href=""/datasheet?/RFM/data/SoftwareModem_ShieldEVK_UG.pdf"">Software Modem Shield Evaluation Kit User Guide</a></li>
+<li>
+<a href=""https://www.murata.com/support/faqs/products/lpwa"" target=""blank"">LoRa Module FAQ</a></li>
+</ul>
+<p> </p>
+<div>  <a href=""https://www.murata.com/products/connectivitymodule/lpwa""  target=""blank"" class=""rfm_call2acction-btn-datasheet""><font color=""ffffff"">Murata LPWA Products</font></a></div> ,rfm_antenna=External,rfm_block_diagram=typeabz_diag.jpg,rfm_certified=FCC/IC ""Reference"" Certified,rfm_certified_table=Yes*,rfm_chipset=Semtech (SX1276) + STM (STM32L),rfm_clock_sleep=No,rfm_clock_system=Integrated 32MHz (TCXO, frequency error = ±2ppm); 32.768KHz (frequency error = ±20ppm),rfm_data_sheet=type_abz-104.pdf,rfm_dimension=12.5 x 11.6 x 1.76 mm,rfm_ds_date=6/25/19,rfm_feat_add1=Small form factor LoRaWAN™ module
+<li>MCU Chipset: STM32L0 Series
+<li>CPU: ARM Cortex-M0+
+<li>Pre-loaded Semtech's Cloud-based device-management
+<li>Host Interface: UART
+<li>Pre-certified radio regulatory approvals: 868 & 915 MHz spectrum ,rfm_freq=860-930MHz,rfm_grade=4646,rfm_host_interface=UART,rfm_interface_voltage=3.3 Vdc,rfm_modulation=FSK, OOK and LoRa™ Modulation,rfm_mp_pn=CMWX1ZZABZ-104,rfm_operating_temperature=-40 to +85,rfm_output_power_range=Up to +18.5dBm,rfm_paragraph=TypeABZ-104  is a new LoRa modem module  embedding Semtech  modem  firmware integrating  the LoRaWAN protocol stack and device-management features including security keys.</p>
+
+<p>This new stand-alone module measure just 12.5 x 11.6 x 1.76mm, is constructed in a metal shielded package and comprises a Semtech SX1276 ultra-long range spread spectrum wireless transceiver and an STMicro STM32L0 series ARM Cortex-M0+ 32-bit microcontroller (MCU).
+An integrated TCXO that has robust low drift thermal characteristics provides an accurate clock source for RF transceiver.</p>
+
+<p>Communication with the module can be achieved via UART, and the module is powered from a 2.2 to 3.6 VDC supply. TypeABZ-104 has pre-certified radio regulatory approvals for operating in 868 and 915MHz industrial, scientific and medical (ISM) spectrum in most geographical regions of the world.</p>
+
+<p>The normal output power is +14dBm but a PA boost function can be selected to increase RF output to +18.5dBm for long-range application or those where the end -device is sited in a poor signal location indoors.</p>
+
+<p>Typical applications for this module includes smart metering, wearables, tracking, M2M and internet of things (IoT) edge nodes. Accomodating a wide range of temperature, the module can operate from -40 to +85 °C.</p>
+<p><a href=""https://www.murata.com/products/connectivitymodule/lpwa/lora"" target=""blank"">Learn how LoRa works</a></p>,rfm_product_status=under development recommended,rfm_product_type=Module,rfm_purchase=This module is still under development. Please engage with Murata Sales/Wireless team to request samples.</a>,rfm_receive_mode_current=21.5mA @ 125kHz BW,rfm_receive_sensitivity= -135.5dBm @ 1% PER, 125kHz BW, SF=12,rfm_rohs=Yes,rfm_software=<b>Semtech</b>
+
+</br><a href=""http://www.semtech.com/products/wireless-rf/lora-transceivers"" target=""blank"">Semtech Website (*relevant documents)</a>
+
+</br><a href=""https://lora-developers.semtech.com/"" target=""blank"">LoRa™ Community (Semtech Community Site)</a>
+
+</br><a href=""http://www.semtech.com/products/wireless-rf/lora-transceivers/sx1276"" target=""blank"">Semtech Datasheet (SX1276)</a>
+
+</br>Firmware updates and additional documentation can be found <a href=""https://github.com/lwmodem"" target=""blank"">here</a>
+</ul>,rfm_supply_voltage_max=3.6V for VDD_MCU, VDD_RF, VDD_TCXO,rfm_supply_voltage_min=2.2V for VDD_MCU, VDD_RF, VDD_TCXO,rfm_technology=LPWA,rfm_transmit_mode_current=128mA @ 20dBm setting,rfm_type_package=Metal Shield Can,rfm_type_ship_format=Tape and Reel",External,"FCC/IC ""Reference"" Certified","FSK, OOK and LoRa™ Modulation","Integrated 32MHz (TCXO, frequency error = ±2ppm); 32.768KHz (frequency error = ±20ppm)",LPWA,Metal Shield Can,Module,No,No,RFM - LPWA,RFM Default Category/Products/RF Modules,Semtech (SX1276) + STM (STM32L),simple,"Small form factor LoRaWAN™ module
+<li>MCU Chipset: STM32L0 Series
+<li>CPU: ARM Cortex-M0+
+<li>Pre-loaded Semtech's Cloud-based device-management
+<li>Host Interface: UART
+<li>Pre-certified radio regulatory approvals: 868 & 915 MHz spectrum ",Tape and Reel,Taxable Goods,This module is still under development. Please engage with Murata Sales/Wireless team to request samples.</a>,Type ABZ-104,Type ABZ-104,Type ABZ-104,Type ABZ-104 ,type_abz-104.pdf,typeabz_diag.jpg,type-abz-104,"TypeABZ-104  is a new LoRa modem module  embedding Semtech  modem  firmware integrating  the LoRaWAN protocol stack and device-management features including security keys.</p>
+
+<p>This new stand-alone module measure just 12.5 x 11.6 x 1.76mm, is constructed in a metal shielded package and comprises a Semtech SX1276 ultra-long range spread spectrum wireless transceiver and an STMicro STM32L0 series ARM Cortex-M0+ 32-bit microcontroller (MCU).
+An integrated TCXO that has robust low drift thermal characteristics provides an accurate clock source for RF transceiver.</p>
+
+<p>Communication with the module can be achieved via UART, and the module is powered from a 2.2 to 3.6 VDC supply. TypeABZ-104 has pre-certified radio regulatory approvals for operating in 868 and 915MHz industrial, scientific and medical (ISM) spectrum in most geographical regions of the world.</p>
+
+<p>The normal output power is +14dBm but a PA boost function can be selected to increase RF output to +18.5dBm for long-range application or those where the end -device is sited in a poor signal location indoors.</p>
+
+<p>Typical applications for this module includes smart metering, wearables, tracking, M2M and internet of things (IoT) edge nodes. Accomodating a wide range of temperature, the module can operate from -40 to +85 °C.</p>
+<p><a href=""https://www.murata.com/products/connectivitymodule/lpwa/lora"" target=""blank"">Learn how LoRa works</a></p>",typeabz-104.jpg,typeabz-104.jpg,typeabz-104.jpg,typeabz-104.jpg,typeabz-104.jpg,UART,under development recommended,Up to +18.5dBm,wireless,Yes,Yes,Yes,Yes,Yes*

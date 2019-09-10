@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!--
+ @category    Mana
+ @package     Manadev_LayeredNavigationSeo
+ @copyright   Copyright (c) http://www.manadev.com
+ @license     http://www.manadev.com/license  Proprietary License
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <manadev_features>
+            <Manadev_LayeredNavigationSeo>
+                <version>18.06.2611</version>
+                <code>search-engine-friendly-layered-navigation-links-magento-2</code>
+                <title>Search Engine Friendly (SEO) Layered Navigation, Paging, Sorting Links and Page Titles</title>
+                <sort_order>700</sort_order>
+            </Manadev_LayeredNavigationSeo>
+        </manadev_features>
+        <mana_seo>
+            <noindex>
+                <number_of_applied_filters>3</number_of_applied_filters>
+                <count_same_filter_options_as_one>0</count_same_filter_options_as_one>
+                <slider_filter_is_applied>1</slider_filter_is_applied>
+            </noindex>
+            <nofollow>
+                <add_to_layered_navigation_links>1</add_to_layered_navigation_links>
+                <number_of_applied_filters>3</number_of_applied_filters>
+                <count_same_filter_options_as_one>0</count_same_filter_options_as_one>
+                <slider_filter_is_applied>1</slider_filter_is_applied>
+            </nofollow>
+            <default_filter_settings>
+                <use_filter_title_in_url>1</use_filter_title_in_url>
+                <url_part>suffix</url_part>
+                <include_in_canonical_url>1</include_in_canonical_url>
+                <force_no_index>0</force_no_index>
+                <force_no_follow>0</force_no_follow>
+                <include_in_meta_title>1</include_in_meta_title>
+                <include_in_meta_description>1</include_in_meta_description>
+                <include_in_meta_keywords>1</include_in_meta_keywords>
+                <include_in_sitemap>0</include_in_sitemap>
+            </default_filter_settings>
+        </mana_seo>
+        <mana_layered_navigation>
+            <other>
+                <dont_index_multiple_filters>0</dont_index_multiple_filters>
+            </other>
+        </mana_layered_navigation>
+    </default>
+</config>

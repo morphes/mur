@@ -1,0 +1,148 @@
+<div class="page-title title-buttons">
+    <h1>Compare List</h1>
+    <a href="#" onclick="window.print(); return false;" class="link-print"><img src="/pub/images/i_print.gif" style="padding-right:5px;"/>Print This Page</a>
+</div>
+<?php $_total = $block->getItems()->getSize() ?>
+<?php if ($_total): ?>
+    <table class="data-table compare-table" id="product_comparison">
+        <?php $_i = 0; ?>
+        <?php $_helper = $this->helper('Magento\Catalog\Helper\Output'); ?>
+        <?php /** @var $_item \Magento\Catalog\Model\Product */ ?>
+        <?php foreach ($block->getItems() as $_item): ?>
+            <?php if($_i++%10==0): ?>
+                <col width="1" />
+            <?php endif; ?>
+            <col width="<?php echo floor(100/$_total); ?>%" />
+        <?php endforeach; ?>
+        <?php if ($_total>2): ?>
+        <?php endif ?>
+        <tbody>
+        <tr class="product-shop-row">
+            <?php $_i=0 ?>
+            <?php foreach($block->getItems() as $_item): ?>
+                <?php if($_i++%10==0): ?>
+                    <th>&nbsp;</th>
+                <?php endif; ?>
+                <td>
+                    <span title="Remove This Item" class="btn-remove" data-product="<?php echo $_item->getId(); ?>">
+                        Remove This Item
+                    </span>
+                    <a target="_parent" class="product-image" href="#" onclick="setPLocation('<?php echo $block->getProductUrl($_item) ?>', true)" title="<?php echo $this->stripTags($_helper->productAttribute($_item, $_item->getName(), 'name'), null, true) ?>">
+                        <?= $block->getImage($_item, 'product_comparison_list')->toHtml() ?>
+                    </a>
+                    <h2 class="product-name">
+                        <a target="_parent" href="#" onclick="setPLocation('<?php echo $block->getProductUrl($_item) ?>', true)" title="<?php echo $this->stripTags($_helper->productAttribute($_item, $_item->getName(), 'name'), null, true) ?>">
+                            <?php echo $this->stripTags($_helper->productAttribute($_item, $_item->getName(), 'name'), null, true) ?>
+                        </a>
+                    </h2>
+                </td>
+            <?php endforeach; ?>
+        </tr>
+        </tbody>
+        <tbody>
+        <?php foreach ($block->getAttributes() as $_attribute): ?>
+            <tr>
+                <?php $_i=0 ?>
+                <?php foreach($block->getItems() as $_item): ?>
+                    <?php if (!is_null($_item->getData($_attribute->getAttributeCode())) && ((string)$_attribute->getFrontend()->getValue($_item) != '')): ?>
+                        <?php if($_i++%10==0): ?>
+                            <th>
+                                <span class="nobr">
+                                    <?= $block->escapeHtml($_attribute->getStoreLabel() ? $_attribute->getStoreLabel() : __($_attribute->getFrontendLabel())) ?>
+                                </span>
+                            </th>
+                        <?php endif; ?>
+                        <td>
+                            <?php switch ($_attribute->getAttributeCode()) {
+                                case "price": ?>
+                                    <?php
+                                    /* @escapeNotVerified */ echo $block->getProductPrice(
+                                        $_item,
+                                        '-compare-list-' . $_attribute->getCode()
+                                    )
+                                    ?>
+                                    <?php break;
+                                case "small_image": ?>
+                                    <?php $block->getImage($_item, 'product_small_image')->toHtml(); ?>
+                                    <?php break;
+                                case "date":
+                                    echo substr($this->getProductAttributeValue($_item, $_attribute),0,10);
+                                    break;
+                                case "data_sheet" :?>
+                                    <a href="/datasheet?<?= /* @escapeNotVerified */ $_helper->productAttribute($_item, $block->getProductAttributeValue($_item, $_attribute), $_attribute->getAttributeCode()) ?>" class="call2acction-btn-gray">Data Sheet (pdf)</a>
+                                    <?php break;
+                                case "v1out_vdc_number": ?>
+                                    <?php echo rtrim(rtrim($_helper->productAttribute($_item, $block->getProductAttributeValue($_item, $_attribute), $_attribute->getAttributeCode()),'0'),'.') ?>
+                                    <?php break;
+                                default: ?>
+                                    <?= /* @escapeNotVerified */ $_helper->productAttribute($_item, $block->getProductAttributeValue($_item, $_attribute), $_attribute->getAttributeCode()) ?>
+                                    <?php break;
+                            } ?>
+                        </td>
+                    <?php else: ?>
+                        <?php if($_i++%10==0): ?>
+                            <th><span class="nobr"><?php echo $_attribute->getStoreLabel() ?></span></th>
+                        <?php endif; ?>
+                        <td>&nbsp;</td>
+                    <?php endif; ?>
+                <?php endforeach; ?>
+            </tr>
+            <?php //endif; ?>
+        <?php endforeach; ?>
+        </tbody>
+    </table>
+
+    <div class="buttons-set">
+        <button type="button" title="Close Window" class="button" onclick="window.close();">
+            <span>
+                <span>
+                    Close Window
+                </span>
+            </span>
+        </button>
+    </div>
+<?php else: ?>
+    <script type="text/javascript">window.close();</script>
+<?php endif; ?>
+<script type="text/javascript">
+    function setPLocation(url){
+        window.opener.location = url;
+    }
+</script>
+<script type="text/javascript">
+    require(['jquery'],function($) {
+        $(document).ready(function () {
+            $('.btn-remove').click(function () {
+                if (confirm('Are you sure you would like to remove this item from the compare products?')) {
+                    var e = $(this);
+                    var productId = e.attr('data-product');
+                    if (productId) {
+                        $.get('/catalog/product_compare/remove', {product: productId}, function (response) {
+
+                        });
+                    }
+                    window.location.reload();
+                }
+            });
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

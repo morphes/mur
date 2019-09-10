@@ -1,0 +1,182 @@
+<table width="100%" cellpadding="10px" border="5" class="listtable">
+    <tr class="listtr">
+        <td class=listtdtop>Part</td>
+        <td class=listtdtop>Frequency</td>
+        <td class=listtdtop>Lid Symbol</td>
+        <td class=listtdtop>Dimension</td>
+        <td class=listtdtop>Product Type</td>
+        <td class=listtdtop>Status</td>
+        <td class=listtdtop>Compare</td>
+    </tr>
+    <?php $_productCollection = $this->getProductCollection(); ?>
+    <?php foreach ($_productCollection as $product) { ?>
+        <tr class="listtr">
+            <td width="100px" class=listtd>
+                <a href="<?php echo $product->getProductUrl() ?>"
+                   title="<?php echo $block->stripTags($product->getName(), null, true) ?>"
+                   class="tablelink_rfm"><?php echo $product->getName(); ?>
+                </a>
+            </td>
+            <td class=listtd><?php echo $product->getRfmFreq(); ?></td>
+            <td class=listtd><?php echo $product->getRfmLidSymbol(); ?></td>
+            <td class=listtd><?php echo $product->getRfmDimension(); ?></td>
+            <td class=listtd><?php echo $product->getAttributeText('rfm_product_type'); ?></td>
+            <td><?php echo $block->wirelessStatuses($product); ?></td>
+            <td class=listtd>
+                <?php if ($product->getAttributeText('product_status') != "Obsolete"): ?>
+                    <input title="Add <?php echo $product->getName(); ?> to Compare List"
+                           value="<?php echo $product->getId(); ?>" type="checkbox"
+                           class="input-checkbox compare-add add"/>
+                    <input type="hidden"/>
+                <?php endif; ?>
+            </td>
+        </tr>
+    <?php }; ?>
+</table>
+
+
+<div class="new_wrapp">
+    <img src="/pub/media/wysiwyg/RFM/home/cypressbasedmodules.jpg" alt=""/>
+    <p>Murata offers high quality, easy-to-use, certified and ultra small wireless connectivity modules based on Cypress
+        Semiconductor Corporation for minimizing development time and effort. </p>
+    <ul class="simply">
+        <li>To learn more about Linux solution, please visit <a
+                    href="/eng/products/rf-modules-1/wi-fi-bluetooth-for-nxp-i-mx.html">here</a>.
+        </li>
+        <li>To learn more about time to market solution, please visit <a
+                    href="https://electricimp.com/platform/hardware/" target="blank">ElectricImp</a> (imp003, imp004m
+            and imp005) and <a href="https://www.aylanetworks.com/" target="blank">Ayla Networks</a> (Type1AD, TypeYD)
+            respectively.
+        </li>
+        <li>To learn more about WICED solution, please see below.</li>
+    </ul>
+    <div style="width: 350px; margin-left: 252px;padding-top: 24px;"><a class="rfm_call2acction-btn-datasheet"
+                                                                        style="color: #ffffff;"
+                                                                        href="/datasheet?/RFM/data/murata_cypress_iot_modules.pdf">Download
+            Promotion Card of Cypress Based Modules</a></div>
+
+
+    <div class="categorydescripttd_rfm"><strong>WICED Solution</strong></div>
+    <p>Cypress’s WICED® SDK is a full-featured platform with proven Software Development Kits and turnkey hardware
+        solutions to readily enable Wifi and Bluetooth connectivity in system design. WICED Studio SDK provides RTOS,
+        TCP/IP stack, Bluetooth Stack and an application framework designed to abstract complexity.</p>
+    <p>Please register Cypress Community to get more technical information including WICED Studio SDK and module detail.
+        Please follow the instructions below.</p>
+    <div class="wrap_for_txt">
+        <div class="one_side">
+            <div class="page-item">
+                <ul>
+                    <li>Please <a href="https://www.cypress.com/user/login" target="blank">register for Cypress
+                            Community by clicking here.</a></li>
+                    <li>Once registered, please send your Cypress Community Username and Email address to your local
+                        representative of Murata.
+                    </li>
+                    <li>We then grant you access to: Murata Site on <a
+                                href="https://community.cypress.com/groups/murata-private-site" target="blank">Cypress
+                            Community</a>. (Please login prior to click this link)
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <p><strong>Filter</strong><a name="filter"></a></p>
+    <p>Please select a filter to show which module support what type of platform/software/module you are looking
+        for.</p>
+    <div class="red"><a class="rfm_call2acction-btn-datasheet" style="color: #ffffff;"
+                        href="/products/rf-modules-1/cypress-based-modules.html#filter">ALL</a></div>
+    <div class="red"><a class="rfm_call2acction-btn-datasheet" style="color: #ffffff;"
+                        href="/products/rf-modules-1/cypress-based-modules/where/rfm-platform/wiced_linux,-wiced.html#filter">WICED</a>
+    </div>
+    <div class="red"><a class="rfm_call2acction-btn-datasheet" style="color: #ffffff;"
+                        href="/products/rf-modules-1/cypress-based-modules/where/rfm-platform/linux_linux,-wiced.html#filter">Linux</a>
+    </div>
+    <div class="red"><a class="rfm_call2acction-btn-datasheet" style="color: #ffffff;"
+                        href="/products/rf-modules-1/cypress-based-modules/where/rfm-platform/electricimp.html#filter">ElectricImp</a>
+    </div>
+    <div class="red"><a class="rfm_call2acction-btn-datasheet" style="color: #ffffff;"
+                        href="/products/rf-modules-1/cypress-based-modules/where/rfm-platform/ayla.html#filter">Ayla</a>
+    </div>
+    <div class="red"><a class="rfm_call2acction-btn-datasheet" style="color: #ffffff;"
+                        href="/products/rf-modules-1/cypress-based-modules/where/rfm-product-type/wi--to-fi-module.html#filter">Wifi</a>
+    </div>
+    <div class="red"><a class="rfm_call2acction-btn-datasheet" style="color: #ffffff;"
+                        href="/products/rf-modules-1/cypress-based-modules/where/rfm-product-type/wifi-and-bluetooth.html#filter">Wifi+Bluetooth</a>
+    </div>
+    <div class="red"><a class="rfm_call2acction-btn-datasheet" style="color: #ffffff;"
+                        href="/products/rf-modules-1/cypress-based-modules/where/rfm-product-type/wifi-and-mcu.html#filter">Wifi+MCU</a>
+    </div>
+    <div class="red"><a class="rfm_call2acction-btn-datasheet" style="color: #ffffff;"
+                        href="/products/rf-modules-1/cypress-based-modules/where/rfm-product-type/wifi-and-bluetooth-and-mcu.html#filter">Wifi+Bluetooth+MCU</a>
+    </div>
+</div>
+
+
+<div class="new_wrapp content hideContent">
+    <img src="/pub/media/wysiwyg/RFM/home/tibasedmodules.jpg" alt="" class="ti-img"/>
+    <p>Murata offers high quality, easy-to-use, certified and low cost wireless connectivity modules based on Texas
+        Instruments SimpleLink, WiLink and other wireless solutions for minimizing development time and effort.</p>
+    <p>
+    <div style="width: 325px; margin-left: 252px;padding-top: 24px;"><a class="rfm_call2acction-btn-datasheet"
+                                                                        href="/datasheet?/RFM/data/murata_ti_iot_modules.pdf"><font
+                    color="ffffff">Download Promotion Card of TI Based Modules</font></a></div>
+    </p>
+    <br/><br/><br/>
+    <p><strong>SimpleLink</strong> <br>Easily connect to the cloud with TI’s CERTIFIED single-chip, ARM Cortex-M4
+        wireless MCUs (SoCs) and network processors. This all-in-one portfolio of devices enables a new world of
+        connected applications that demand low-power consumption with the added flexibility of cloud integration and
+        advanced security features. To learn more about SimpleLink, please visit TI web site.</p>
+    <p><strong>WiLink</strong> <br>High-performance Wi-Fi + Bluetooth / Bluetooth low energy combo connectivity devices.
+        To learn more about WiLink, please visit TI web site.</p>
+    <p>&nbsp;</p>
+
+</div>
+<div class="show-more"><a>Show more</a></div>
+
+
+<div class="new_wrapp content hideContent">
+    <img src="{{media url=" wysiwyg/RFM/home/802154a.jpg"}}" alt="" class="img802" />
+    <p>IEEE 802.15.4 is a wireless technology that is the basis for ISA100.11a standard which is featured in Murata type
+        1EU. ISA100.11a offers a secure and highly reliable wireless communication to meet industrial wireless network
+        standard.</p>
+    <p>&nbsp;</p>
+    <p><strong>ISA100.11a</strong></p>
+    <ul class="simply">
+        <li>Industrial Automation Wireless Standard</li>
+        <li>High Reliability</li>
+        <li>Secure</li>
+        <li>IPv6 Support</li>
+        <li>ISM Band</li>
+    </ul>
+    <br>
+    <p><strong>ISA100.11a based Modules</strong></p>
+    <ul class="simply">
+        <li><a href="/type-1eu.html">Type 1EU</a> supports ISA100.11a with full integrated ISA stack</li>
+    </ul>
+</div>
+<div class="show-more"><a>Show more</a></div>
+
+
+
+
+18670	Electrical-Electronics	Electrical-Electronics	Catalog	Enabled	$0.01
+1
+1
+
+18669	Applications	Applications	Catalog	Enabled	$0.01
+1
+1
+
+18667	Embedded	Embedded	Catalog, Search	Enabled	$0.01
+1
+1
+
+18666	Mechanical	Mechanical	Catalog	Enabled	$0.01
+1
+1
+
+18665	Mobility	Mobility	Catalog	Enabled	$0.01
+
+
+
+
+

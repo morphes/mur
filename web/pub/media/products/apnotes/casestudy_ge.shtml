@@ -1,0 +1,161 @@
+<html>
+
+<head>
+
+<link href="../../css/rfm.css" rel="stylesheet" type="text/css">
+
+<title>RFM Case study - RFM offers a full set of custom embedded wireless networking solutions like Zigbee wireless mesh sensor networks, RF modules,  IC transceiver,  IC transmitters and  IC receivers. RFM, Inc. manufactures low power wireless and RF radio modules, wireless mesh nodes for distributed sensing on distributed sensor networks. Low Power radio, n../arrowband and short range devices, front end saw filters, active RFID, RFIC, coupled resonator filters, single silicon chips in the 70MHZ and 300-1000Mhz range.</title>
+
+<!--[if gte IE 5.5]>
+<script type="text/JavaScript">
+
+navHover = function() {
+	var lis = document.getElementById("navmenu").getElementsByTagName("LI");
+	for (var i=0; i<lis.length; i++) {
+		lis[i].onmouseover=function() {
+			this.className+=" iehover";
+		}
+		lis[i].onmouseout=function() {
+			this.className=this.className.replace(new RegExp(" iehover\\b"), "");
+		}
+	}
+}
+if (window.attachEvent) window.attachEvent("onload", navHover);
+
+</script>
+<![endif]-->
+</head>
+
+<body bgcolor="ffffff" topmargin=10 marginheight="10">
+
+<link rel="stylesheet" type="text/css" href="../../navmenu.css" />
+
+<center>
+<table align="left" valign="top" border="0" width="986" cellspacing="5" cellpadding="0" bgcolor="ffffff">
+
+<tr>
+<td align="center" colspan="4">
+
+	<!--#INCLUDE VIRTUAL="../../rfm_header.html"-->
+
+</td></tr>
+
+
+<tr>
+
+<td valign="top" align="left" rowspan="3" width="100">
+
+
+      <div class="lhsidemenu">
+      <a href="../index.shtml" class="bodyLink3"> HOME</a></div>
+      <div class="lhsidemenu">
+      <a href="../products/wirelessdevices.shtml" class="bodylink3"> Wireless Devices Overview</a></div>
+      <div class="lhsidemenu">
+      <a href="../products/wirelesscomponents.php" class="bodylink3"> RF Components</div></a>
+      <div class="lhsidemenu">
+      <a href="../products/srradios.php" class="bodylink3"> Subsystem RF Products</a></div>
+      <div class="lhsidemenu">
+      <a href="../products/oem_standalone.php" class="bodylink3">Ready Made <br>RF Modules & Standalone</a></div>
+      <div class="lhsidemenu">
+      <a href="../products/dkits.shtml" class="bodylink3"> Developer Kits</a></div>
+</td>
+
+
+
+
+
+
+
+<td valign="top">
+<table cellpadding="10" cellspacing="10" border="0">
+<tr>
+
+
+<td>
+
+
+
+
+<p align="right"> <a href="apnotes_cirronet.shtml" class="bodylink5"><b>back to case studies</b></a></font>
+
+
+
+
+<p align="left">
+
+<font face="arial" size="2">
+
+
+
+
+<p  class="body">
+<b>Case Study:  Transformer Monitoring System Uses Wireless to Tie Legacy Serial Devices to Ethernet Networks  </b>
+
+
+<p>The importance of the U.S. power grid can hardly be overstated, and maintaining the health of this critical industrial resource requires careful and constant monitoring. The voltage and current of electrical transformers, as well as leakage, temperature, acoustic emissions, tap position, solar radiation, and even the local weather conditions all need to be monitored in real time. Getting that data from substations – often located in remote areas – to a central location can be costly and extremely difficult.
+
+<p>To address this, a major southeastern U.S. power supplier engaged GE Energy to implement a transformer monitoring system at a number of remote substations. GE Energy’s T-MAP™ (Transformer - Maintenance Action Planner) product line proved ideal for collecting transformer data and presenting it at the customer’s headquarters; the remaining challenge was identifying the ideal communications link between the substations and the customer’s corporate network.
+
+<p><b>Wireless and Wireline Solutions </b>
+
+<p>GE Energy’s T-MAP systems feature microprocessors that compare, compute, and relate gathered data to user-set parameters, generating alarms and exception reports when data levels exceed acceptable limits. In this installation, the T-MAP system collects data from over 30 transformer detectors and sensors, along with information related to the local substation’s weather conditions. Each T-MAP cabinet supports two transformers and a weather station.
+
+<p>A cellular wireless link was considered for data transport from small substations with single cabinets, but that option included recurring monthly charges in excess of $500 per cabinet. Another option was to run a dial-up telephone line to each cabinet, but the need to protect lines from high electromagnetic fields, would drive the cost of installing each line toward the $20,000 level.
+
+<p>Larger substations typically have separate equipment sheds with existing high-speed wireline connections to a virtual private network (VPN). Where there is room, additional cabling is the best option; however, cabling is not an option when there is no room or when additional transformers must be added. And in many cases, burying cable is difficult due to ground contamination or the ground grid that must be negotiated. These instances make wireless both technologically feasible and economically attractive.
+
+<p><b>Identifying a reliable wireless solution </b>
+
+<p>The design team researched wireless technology from RFM, seeking data links to connect the transformer-monitoring equipment to the company’s wide area network. The communications link had to be extremely reliable and, as equipment is typically installed outdoors or in unconditioned environments capable of supporting a wide operating temperature range. The team chose frequency hopping spread spectrum (FHSS) technology for its superior jamming and interference immunity, with automatic retransmit request (ARQ) to assure reliable, transparent, and error-free transmission.
+
+<p>GE Energy used RFM developer’s kit radios to test the technology before going on-site for a survey. It immediately found that obstructions would not allow reliable communications with the radios mounted inside the T-MAP cabinet. This was addressed by externally mounted remote radio transceivers with integrated patch antennas situated high enough to clear obstructions. The remotely located transceivers also avoided long RF cable runs; it turned out that RF cabling would not have fit in the existing conduit, but the baseband cable fit easily.
+
+<p><b>Wireless link overcomes interference </b>
+
+<p>Initial field testing was performed with two HopNet HN-3010 serial, weatherproof modems – one at the T-MAP cabinet and one at the equipment shed with the VPN connection. The HN-3010 has a NEMA 4X (IP 66) rated enclosure and an internal 6-dB patch antenna, and operates between -40°C and +70°C. The HN-3010 in the cabinet was simply pointed in the general direction of the receiver in the shed. Testing proved the robustness of the wireless link across the substation, despite the high electromagnetic fields and other interference.
+
+<p>The next step was to get data from the serial output T-MAP to the corporate network, for which GE Energy selected RFM’s SNAP2410 access point. The SNAP2410 allows non-Ethernet serial devices to seamlessly connect to Ethernet networks, exactly as required for this application. The SNAP takes unformatted serial data from non-Ethernet remote devices, encapsulates the data in an Ethernet datagram, and transmits it to applications on an Ethernet network. For data flow from devices on an Ethernet network, the SNAP extracts the payload data from the Ethernet datagram and transmits it to the appropriate non-Ethernet remote device based on the Ethernet destination address. Non-Ethernet remote devices appear as network nodes, with individual IP addresses or as individual port numbers under the IP address of the SNAP.
+
+<p>As deployed by GE Energy, the SNAP2410 communicates with a HopNet 3010 remote radio, which transmits the RS-232 serial transformer data from GE Energy’s T-MAP 3100 system over a 460 Kbps data link. The SNAP2410 is housed in a NEMA 4X (IP 66) rated enclosure, and can be mounted up to 300 feet from the network connection. A separate T-MAP monitoring local substation weather data runs on the same link. The SNAP is connected to the VPN link in the equipment shed and appears as a node on the customer’s network. Data from the T-MAP is sent from the SNAP to GE Energy’s monitoring application program on a SQL server in a central monitoring location, where the information is available to authorized users on the network. The SNAP uses port numbers to address each remote T-MAP, thus needing only a single IP address for each substation – which pleased the customer’s IT department.
+
+<p>The T-MAP’s monitoring software application, running on a SQL server connected to the corporate network, gathers data from the 30+ digital and analog sensors, and makes that data available online either periodically or for polling whenever needed. The real-time data, alarm information, and parameters collected by T-MAP technology are viewed remotely from a PC on the corporate network hundreds of miles away.
+
+<p><center><img src="vol1i3_3.jpg"></center>
+
+<p>Figure 1:  GE Energy’s TMS T-MAP systems interface with RFM SNAP2410 radios to link up with the corporate Ethernet.
+
+<p><b>Leveraging the technology </b>
+
+<p>At the time of this writing, the GE Power system monitors roughly five percent of the power company’s transformers. Now that the capability of GE’s TMS with RFM’s wireless radios has been proven in the challenging RF environment of an electrical substation, the power provider is expected to leverage the technology to monitor additional transformers at other substations. Clearly GE Energy has provided its client with a reliable and cost effective solution to a critical business need.
+
+
+</td></tr>
+
+
+
+
+</table>
+</td>
+
+
+
+
+
+
+<td valign="top" align="left" rowspan="3">&nbsp;
+
+
+
+</td></tr>
+</table>
+</body>
+
+</html>
+
+
+
+
+
+
+
+

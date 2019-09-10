@@ -1,0 +1,44 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+$crumbs = $block->murataCrumbs($crumbs);
+$objectManager =  \Magento\Framework\App\ObjectManager::getInstance();
+$storeManager = $objectManager->get('\Magento\Store\Model\StoreManagerInterface');
+$i = 0;
+?>
+<?php
+$requesturi = $_SERVER['REQUEST_URI'];
+if ($crumbs && is_array($crumbs) && $requesturi != '/rohs20') : ?>
+    <div class="breadcrumbs">
+        <ul>
+            <?php foreach ($crumbs as $crumbName => $crumbInfo) : ?>
+                <li class="<?= /* @escapeNotVerified */
+                $crumbName ?>">
+                    <?php if ($crumbInfo['link']) : ?>
+                        <a <?php if(isset($crumbInfo['target'])) { echo ' target="_blank" '; } ?> href="<?= /* @escapeNotVerified */
+                        $crumbInfo['link'] ?>"
+                           title="<?= $block->escapeHtml($crumbInfo['title']) ?>"                         ><?= $block->escapeHtml($crumbInfo['label']) ?></a>
+                    <?php else: ?>
+                        <?= $block->escapeHtml($crumbInfo['label']) ?>
+                    <?php endif; ?>
+                </li>
+                <?php if($i != count($crumbs) - 1) { ?>
+                    <span><img src="/pub/images/icomoon.jpg" alt=""> </span>
+                <?php } ?>
+                <?php $i++; ?>
+            <?php endforeach; ?>
+        </ul>
+        <div class="crumb_icons">
+            <a class="addthis_button_compact at300m" href="#">
+                <img src="/pub/images/share.jpg" alt="Share" title="Share">
+            </a>
+            <?php $contactUrl = ($storeManager->getStore()->getCode() == 'murataps_store_view') ? 'contact-us' : 'products/contact'; ?>
+            <a href="/<?php echo $contactUrl; ?>.html"> <img src="/pub/images/contact.jpg" alt="Contact"></a>
+            <a href="javascript:window.print()"><img src="/pub/images/print.jpg" alt="Print"></a>
+        </div>
+    </div>
+<?php endif; ?>

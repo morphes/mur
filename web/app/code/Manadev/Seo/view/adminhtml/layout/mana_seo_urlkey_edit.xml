@@ -1,0 +1,16 @@
+<!--
+ @category    Mana
+ @package     Manadev_Seo
+ @copyright   Copyright (c) http://www.manadev.com
+ @license     http://www.manadev.com/license  Proprietary License
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Manadev_Seo::css/styles.css"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="Manadev\Seo\Blocks\Adminhtml\UrlKeyFormContainer" name="mana.urlkey.form.container" />
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,90 @@
+<?php
+namespace Murata\Redirects\Observer;
+
+use Magento\Framework\Event\ObserverInterface;
+
+class MainObserver implements ObserverInterface
+{
+    const EN_PREFIX = '/en/';
+    const ENG_PREFIX = '/eng/';
+    const PUB_PREFIX = '/pub/data/';
+    /**
+     * @var \Magento\Framework\App\ActionFlag
+     */
+    protected $_actionFlag;
+
+    /**
+     * @var \Magento\Framework\Message\ManagerInterface
+     */
+    protected $messageManager;
+
+    /**
+     * @var \Magento\Framework\App\Response\RedirectInterface
+     */
+    protected $redirect;
+
+    protected $_storeManager;
+
+    protected $_requestManager;
+
+    /**
+     * @var Magento\Backend\Helper\Data
+     */
+    private $HelperBackend;
+
+    /**
+     * @param \Magento\Framework\App\ActionFlag $actionFlag
+     * @param \Magento\Framework\Message\ManagerInterface $messageManager
+     * @param \Magento\Framework\App\Response\RedirectInterface $redirect
+     */
+    public function __construct(
+        \Magento\Framework\App\ActionFlag $actionFlag,
+        \Magento\Framework\Message\ManagerInterface $messageManager,
+        \Magento\Framework\App\Response\RedirectInterface $redirect,
+        \Magento\Backend\Helper\Data $HelperBackend,
+        \Magento\Store\Model\StoreManagerInterface $storeManager,
+        \Magento\Framework\App\Request\Http $request
+    ) {
+        $this->_actionFlag = $actionFlag;
+        $this->messageManager = $messageManager;
+        $this->redirect = $redirect;
+        $this->HelperBackend = $HelperBackend;
+        $this->_storeManager = $storeManager;
+        $this->_requestManager = $request;
+    }
+
+    /**
+     *
+     * @param \Magento\Framework\Event\Observer $observer
+     * @return void
+     */
+    public function execute(\Magento\Framework\Event\Observer $observer)
+    {
+        $store = $this->_requestManager;
+        $urlPath = $store->getRequestString();
+        foreach([self::EN_PREFIX, self::ENG_PREFIX] as $urlPrefix) {
+            if(substr( $urlPath, 0, strlen($urlPrefix) ) === $urlPrefix) {
+                $redirectPath = str_replace($urlPrefix, '', $urlPath);
+                header("Location:/".$redirectPath); exit;
+            }
+        }
+        foreach([self::PUB_PREFIX] as $pubPrefix) {
+            if(substr( $urlPath, 0, strlen($pubPrefix) ) === $pubPrefix) {
+                $redirectPath = str_replace($pubPrefix, '/data/', $urlPath);
+                header("Location:/".$redirectPath); exit;
+            }
+        }
+        if($this->_storeManager->getStore()->getId() == 3) {
+            foreach(
+                [
+                    '/support.html' => 'products/support.html'
+                ] as $from => $to
+            ) {
+                if($urlPath == $from) {
+                    header("Location:/".$to); exit;
+                }
+            }
+        }
+    }
+
+}

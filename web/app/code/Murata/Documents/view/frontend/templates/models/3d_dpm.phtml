@@ -1,0 +1,164 @@
+<?php
+$collection = $block->getLoadedProductCollection();
+?>
+
+<div class="category-products">
+    <ol class="products-list" id="products-list">
+
+        <table id="test" width="100%" border="1" class="listtable_eol">
+            <tr class="listtr">
+                <th width="132px" class=listtdtop>Series</th>
+                <th width="294px" class=listtdtop>Optional Details</th>
+                <th width="74px" class=listtdtop>Status</th>
+                <th width="96px" class=listtdtop>Series Type</th>
+                <th width="78px" class=listtdtop>Solidworks®</th>
+                <th width="54px" class=listtdtop>Step</th>
+                <th width="54px" class=listtdtop>Iges</th>
+                <th width="41px" class=listtdtop>3D PDF</th>
+            </tr>
+
+            <?php foreach ($collection as $_product): ?>
+
+
+                <tr>
+                    <td>
+                        <a href="/datasheet?<?php echo $_product->getData('series_datasheet') ?>"><?php echo $_product->getData('name') ?></a>
+                    </td>
+
+                    <td><?php echo $_product->getData('series_3d_details') ?></td>
+                    <td>
+
+                        <?php if ($_product->getAttributeText('series_status') == "Recommended In Production") { ?>
+                            <img src="/images/recommended.jpg" alt="Recommended" title="Status Recommended"/><br>
+                            <img src="/images/inproduction.jpg" alt="In Production" title="Status In Production"/>
+                        <?php } else { ?>
+                        <?php } ?>
+
+                        <?php if ($_product->getAttributeText('series_status') == "In Production") { ?>
+                            <img src="/images/inproduction.jpg" alt="In Production" title="Status In Production"/>
+                        <?php } else { ?>
+                        <?php } ?>
+
+                        <?php if ($_product->getAttributeText('series_status') == "In Production/Discontinued") { ?>
+                            <img src="/images/inproduction.jpg" alt="In Production" title="Status In Production"/>
+                            <br><img src="/images/discontinued.jpg" alt="Discontinued" title="Status Discontinued"/>
+                        <?php } else { ?>
+                        <?php } ?>
+
+                        <?php if ($_product->getAttributeText('series_status') == "Recommended In Production/Discontinued") { ?>
+                            <img src="/images/recommended.jpg" alt="Recommended" title="Status Recommended"/><br>
+                            <img src="/images/inproduction.jpg" alt="In Production" title="Status In Production"/>
+                            <br><img src="/images/discontinued.jpg" alt="Discontinued" title="Status Discontinued"/>
+                        <?php } else { ?>
+                        <?php } ?>
+
+                        <?php if ($_product->getAttributeText('series_status') == "In Production/To be Discontinued") { ?>
+                            <img src="/images/inproduction.jpg" alt="In Production" title="Status In Production"/>
+                            <br><img src="/images/to_be_discontinued.jpg" alt="To Be Discontinued"
+                                     title="Status To Be Discontinued"/>
+                        <?php } else { ?>
+                        <?php } ?>
+
+                        <?php if ($_product->getAttributeText('series_status') == "Recommended In Production/To be Discontinued") { ?>
+                            <img src="/images/recommended.jpg" alt="Recommended" title="Status Recommended"/><br>
+                            <img src="/images/inproduction.jpg" alt="In Production" title="Status In Production"/>
+                            <br><img src="/images/to_be_discontinued.jpg" alt="To Be Discontinued"
+                                     title="Status To Be Discontinued"/>
+                        <?php } else { ?>
+                        <?php } ?>
+
+                        <?php if ($_product->getAttributeText('series_status') == "In Production/To be Discontinued/Discontinued") { ?>
+                            <img src="/images/inproduction.jpg" alt="In Production" title="Status In Production"/>
+                            <br><img src="/images/to_be_discontinued.jpg" alt="To Be Discontinued"
+                                     title="Status To Be Discontinued"/><br><img src="/images/discontinued.jpg"
+                                                                                 alt="Discontinued"
+                                                                                 title="Status Discontinued"/>
+                        <?php } else { ?>
+                        <?php } ?>
+
+                        <?php if ($_product->getAttributeText('series_status') == "Recommended In Production/To be Discontinued/Discontinued") { ?>
+                            <img src="/images/recommended.jpg" alt="Recommended" title="Status Recommended"/><br>
+                            <img src="/images/inproduction.jpg" alt="In Production" title="Status In Production"/>
+                            <br><img src="/images/to_be_discontinued.jpg" alt="To Be Discontinued"
+                                     title="Status To Be Discontinued"/><br><img src="/images/discontinued.jpg"
+                                                                                 alt="Discontinued"
+                                                                                 title="Status Discontinued"/>
+                        <?php } else { ?>
+                        <?php } ?>
+
+                        <?php if ($_product->getAttributeText('series_status') == "Discontinued") { ?>
+                            <img src="/images/discontinued.jpg" alt="Discontinued" title="Status Discontinued"/>
+                        <?php } else { ?>
+                        <?php } ?>
+
+                        <?php if ($_product->getAttributeText('series_status') == "To be Discontinued") { ?>
+                            <img src="/images/to_be_discontinued.jpg" alt="To Be Discontinued"
+                                 title="Status To Be Discontinued"/>
+                        <?php } else { ?>
+                        <?php } ?>
+
+                        <?php if ($_product->getAttributeText('series_status') == "To be Discontinued/Discontinued") { ?>
+                            <img src="/images/to_be_discontinued.jpg" alt="To Be Discontinued"
+                                 title="Status To Be Discontinued"/><br><img src="/images/discontinued.jpg"
+                                                                             alt="Discontinued"
+                                                                             title="Status Discontinued"/>
+                        <?php } else { ?>
+                        <?php } ?>
+                    </td>
+
+
+                    <td class=listtd><?php echo $_product->getAttributeText('series_type'); ?></td>
+
+                    <?php if ($_product->getData('series_3d_solidworks') != "Request") { ?>
+                        <td>
+                            <a href="/3d-download?<?php echo $_product->getData('series_3d_solidworks') ?>">Download</a>
+                        </td>
+                    <?php } else { ?>
+                        <td>
+                            <a href="/contact-us.html?part=<?php echo $_product->getData('name') ?> Solidworks File">Request</a>
+                        </td>
+                    <?php } ?>
+
+                    <?php if ($_product->getData('series_3d_step') != "Request") { ?>
+                        <td>
+                            <a href="/3d-download?<?php echo $_product->getData('series_3d_step') ?>">Download</a>
+                        </td>
+                    <?php } else { ?>
+                        <td>
+                            <a href="/contact-us.html?part=<?php echo $_product->getData('name') ?> Step File">Request</a>
+                        </td>
+                    <?php } ?>
+
+                    <?php if ($_product->getData('series_3d_iges') != "Request") { ?>
+                        <td>
+                            <a href="/3d-download?<?php echo $_product->getData('series_3d_iges') ?>">Download</a>
+                        </td>
+                    <?php } else { ?>
+                        <td>
+                            <a href="/contact-us.html?part=<?php echo $_product->getData('name') ?> Iges File">Request</a>
+                        </td>
+                    <?php } ?>
+
+                    <?php if ($_product->getData('series_3d_pdf') != "Request") { ?>
+                        <td>
+                            <a href="/datasheet?<?php echo $_product->getData('series_3d_pdf') ?>">View</a>
+                        </td>
+                    <?php } else { ?>
+                        <td>&nbsp;
+                    <?php } ?>
+
+
+                </tr>
+
+
+            <?php endforeach; ?>
+        </table>
+
+
+        </li>
+
+
+    </ol>
+    
+    </script>
+</div>

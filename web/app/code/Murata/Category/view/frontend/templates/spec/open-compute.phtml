@@ -1,0 +1,15 @@
+<?php $product = $this->getProduct(); ?>
+<div class="descr_content">
+    <?php if ($block->escapeHtml($product->getData('short_description'))) { ?>
+        <div class="data">
+            <div class="top">Description</div>
+            <div class="bottom"><?php echo $block->escapeHtml($product->getData('short_description')) ?></div>
+        </div>
+    <?php } ?>
+    <?php if ($product->getAttributeText('product_status')) { ?>
+        <div class="data">
+            <div class="top">Status</div>
+            <div class="bottom"><?php echo $block->statuses($product); ?></div>
+        </div>
+    <?php } ?>
+</div>

@@ -1,0 +1,597 @@
+#pre-div{
+    height: 279px;
+}
+
+.owl-carousel .owl-item img{
+    overflow: hidden;
+}
+
+
+
+
+.form-search .search-autocomplete ul{
+    margin-top: 47px;
+}
+
+
+
+
+
+
+.page-header .container .nav-pills > li.dropdown:hover:first-child > a span{
+    color: #fff !important;
+}
+
+
+.page-header .container .nav-pills > li.dropdown:hover > a span{
+    color:  #f5002f !important;
+}
+
+
+
+
+
+
+
+
+
+
+.right_bar .filter {
+    background-color: #ECECEC;
+}
+
+
+
+.right_bar .filter .title{
+    background-color: #f0b323;
+    padding: 12px 5px 16px 13px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+.right_bar .filter .content{
+    padding: 10px 13px 15px 13px;
+}
+
+
+.right_bar .filter .content strong.subtitle{
+    font-weight: bold;
+    padding: 8px 10px 0 10px;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+.right_bar .filter .content .options{
+    font-weight: bold;
+    border-top: 1px solid #7c858d;
+    padding: 8px 10px 0 10px;
+    font-size: 12px;
+
+}
+
+
+.right_bar .filter .content .options ol.items{
+    margin-top: 5px;
+}
+
+.right_bar .filter .content .options ol.items li.item a{
+    color: #5b6770;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+
+
+
+
+
+.wrap_jsone_blocks .item a:hover{
+    text-decoration: underline !important;
+}
+
+
+
+
+
+
+
+
+
+/* .block .block-title{
+	display: block;
+} */
+
+
+
+
+.block-title {
+    /* box-sizing: border-box; */
+    background-color:#f0b323;
+    height:36px;
+    padding-top:12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    /* margin-left: -15px; */
+}
+
+
+
+
+.block-title i{
+    font-size: 20px;
+    color:  #fff;
+    display: none;
+}
+
+
+.block .block-title strong{
+    color: #fff;
+    padding-left: 10px;
+}
+
+
+
+
+
+@media only screen and (max-width: 1366px){
+
+}
+
+
+
+
+
+@media only screen and (max-width: 1024px){
+
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1023px){
+
+    .catalog-category-view .block_relatedlinks{
+        margin-right: 0;
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 992px){
+
+    .catalog-category-view .content_wrap{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 800px){
+
+
+
+
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px){
+
+
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+
+    .catalog-category-view .content_wrap .main_content2{
+        width: 100%;
+    }
+
+
+
+    .catalog-category-view .content_wrap .main_content2 .filter_block{
+        margin-right: 9px;
+    }
+
+
+
+    .catalog-category-view .content_wrap .main_content2 .list_category .item{
+        margin-right: 9px;
+    }
+
+
+
+    .catalog-category-view .block-title i{
+        display: block;
+    }
+
+    .catalog-category-view .block .block-content{
+        display: none;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 480px){
+
+    .sorter > div{
+        text-align: center !important;
+    }
+
+    .catalog-category-view .content_wrap .main_content2 .for_device{
+        float:none;
+    }
+
+    .catalog-category-view .content_wrap .main_content2 .filter_block{
+        max-width: 115%;
+        margin-left: -15px;
+        margin-right: 0;
+    }
+
+    .catalog-category-view .content_wrap .main_content2 .list_category .item{
+        flex-direction: column;
+        padding-bottom: 32px;
+    }
+
+    .catalog-category-view .content_wrap .main_content2 .list_category .item .info .descr_content{
+        width: 99%;
+        flex-direction: column;
+        justify-content: space-between;
+        border:1px solid #777;
+        /*align-items: center;*/
+    }
+
+    .catalog-category-view .content_wrap .main_content2 .list_category .item .info .descr_content .data{
+        /*width: 100%;*/
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+    }
+
+    .catalog-category-view .content_wrap .main_content2 .list_category .item .info .descr_content .data .top{
+        width: 48%;
+        padding-right: 10px;
+        min-height: auto;
+        border:none;
+        text-align: right;
+        font-weight: bold;
+        font-size: 13px;
+        border-right:1px solid #777;
+    }
+    .catalog-category-view .content_wrap .main_content2 .list_category .item .info .descr_content .data .bottom{
+        width: 45%;
+        text-align: left;
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+
+    .catalog-category-view .content_wrap .main_content2 .list_category .item .info ul.descr li a{
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    .catalog-category-view .content_wrap .main_content2 .list_category .item .pic{
+        text-align: center;
+    }
+
+    .catalog-category-view .tooltip_list {
+        margin-top: 10px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+
+
+    .catalog-category-view .sorter .sort-by {
+        text-align: center;
+        padding: 0;
+        float: none;
+    }
+
+    .catalog-category-view .form-button {
+        margin: 10px 0;
+        text-align: center;
+        display: inline-block;
+        padding: 1px 3px;
+    }
+
+    .catalog-category-view .block .block-content{
+        margin-left: -15px;
+
+    }
+
+    .catalog-category-view .block-title {
+        margin-left: -15px;
+    }
+
+
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 425px){
+
+    .catalog-category-view .content_wrap .main_content2{
+        width: 100%;
+    }
+
+    .catalog-category-view .content_wrap .main_content2 .filter_block{
+
+    }
+
+    .catalog-category-view .content_wrap .main_content2 .list_category .item .info ul.buttons{
+        width: 100%;
+        flex-direction: column;
+        /*justify-content: center;*/
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .catalog-category-view .content_wrap .main_content2 .list_category .item .info ul.descr li a.first{
+        margin-top: 15px;
+    }
+
+    .catalog-category-view .content_wrap .main_content2 .list_category .item .info ul.descr li a.secondt{
+        margin-bottom: 10px;
+    }
+
+    .catalog-category-view .content_wrap .main_content2 .list_category .item .info ul.buttons li{
+        margin-bottom: 8px;
+    }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 414px){
+
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 375px){
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 360px){
+
+    .catalog-category-view .content_wrap .main_content2 .list_category .item .info .descr_content .data .top{
+        font-size: 12px;
+    }
+
+    .catalog-category-view .content_wrap .main_content2 .list_category .item .info .descr_content .data .bottom{
+        font-size: 12px;
+    }
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 320px){
+
+    .catalog-category-view .content_wrap .main_content2 .list_category .item .info .descr_content .data .top{
+        width: 49%;
+        padding-right: 6px;
+        font-size: 11px;
+    }
+
+    .catalog-category-view .content_wrap .main_content2 .list_category .item .info .descr_content .data .bottom{
+        font-size: 11px;
+    }
+
+}
+
+
+
+
+
+
+.form-search .search-autocomplete ul{
+    margin-top: 47px;
+}
+
+/* .page-header .container .nav-pills > li.dropdown:hover > a span{
+    color:  #fff !important;
+}
+
+
+ */
+
+
+.right_bar .filter {
+    background-color: #ECECEC;
+    margin-top: 11px;
+}
+
+
+
+.right_bar .filter .title{
+    background-color: #f0b323;
+    padding: 12px 5px 16px 13px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+.right_bar .filter .content{
+    padding: 10px 13px 15px 13px;
+}
+
+
+.right_bar .filter .content strong.subtitle{
+    font-weight: bold;
+    padding: 8px 10px 0 10px;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+
+.right_bar .filter .content .options{
+    font-weight: bold;
+    border-top: 1px solid #7c858d;
+    padding: 8px 10px 0 10px;
+    font-size: 12px;
+
+}
+
+
+.right_bar .filter .content .options ol.items{
+    margin-top: 2px;
+    line-height: 22px;
+}
+
+.right_bar .filter .content .options ol.items li.item a{
+    color: #5b6770;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+
+
+
+
+
+.wrap_jsone_blocks .item a:hover{
+    text-decoration: underline !important;
+}
+
+
+
+.header_bar_rfm {
+    background: url(/pub/RFM/images/topbar.jpg) repeat-x;
+    height: 0px;
+    margin-bottom: 0;
+    margin-top: -15px;
+    margin-left: -10px;
+    margin-right: 0px;
+    padding-bottom: 15px;
+    padding-right: 0px !important;
+    padding-top: 0;
+    width: 1046px;
+    margin-top: 3px;
+}
+
+.header-container.page-header .nav {
+    /* margin-bottom: 0; */
+    /* padding-left: 0; */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 28px !important;
+    /* outline: 1px solid red; */
+}
+
+.header-container.page-header .nav {
+    /* margin-bottom: 0; */
+    /* padding-left: 0; */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 37px !important;
+    /* outline: 1px solid red; */
+}
+
+.level-top {
+    height: 28px !important;
+    padding-top: 2px !important;
+}
+
+.page-header .container .nav > li:first-child:hover > a span{
+    color: #fff;
+}
+
+
+
+.active-link {
+    font-weight: bold !important;
+    font-size: 17px !important;
+    text-decoration: underline !important;
+    font-family: "FS Emeric Regular",Verdana,sans-serif !important;
+}
+
+.page-header .container .nav > li .dropdown-menu li {
+    border: 0 !important;
+    font-size: 17px !important;
+    font-family: "FS Emeric Regular",Verdana,sans-serif !important;
+}
+
+.category-title h1 {
+    font-family: 'FS Emeric light',sans-serif;
+    font-weight: 200;
+    color: #293036;
+    font-size: 36px;
+    height: 30px;
+    line-height: 1.25 !important;
+    background: none;
+    margin: 15px 0 30px !important;
+    padding-left: 10px !important;
+    padding-top: 10px !important;
+}
+
+.pager .amount {
+    float: left;
+    margin: 0;
+    font-weight: bold !important;
+}
+.mana-filter-block .block-title {
+    padding-bottom: 9px !important;
+    padding-top: 7px !important;
+}

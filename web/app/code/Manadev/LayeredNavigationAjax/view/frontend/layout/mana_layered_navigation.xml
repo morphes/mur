@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!--
+ @category    Mana
+ @package     Manadev_LayeredNavigationAjax
+ @copyright   Copyright (c) http://www.manadev.com
+ @license     http://www.manadev.com/license  Proprietary License
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="before.body.end">
+            <block class="Manadev\LayeredNavigationAjax\Blocks\Intercept" name="mana.layered-nav.ajax.interceptor"
+                    template="Manadev_LayeredNavigationAjax::interceptor.phtml">
+                <arguments>
+                    <argument name="selector" xsi:type="string">.mana-filter-block, .toolbar-products</argument>
+                </arguments>
+
+                <action method="refreshAfterCategoryChange"><argument name="block" xsi:type="string">mana.seo.query</argument></action>
+                <action method="refreshAfterCategoryChange"><argument name="block" xsi:type="string">page.main.title</argument></action>
+                <action method="refreshAfterCategoryChange"><argument name="block" xsi:type="string">category.image</argument></action>
+                <action method="refreshAfterCategoryChange"><argument name="block" xsi:type="string">category.description</argument></action>
+                <action method="refreshAfterCategoryChange"><argument name="block" xsi:type="string">category.cms</argument></action>
+                <action method="refreshAfterCategoryChange"><argument name="block" xsi:type="string">main</argument></action>
+                <action method="refreshAfterCategoryChange"><argument name="block" xsi:type="string">breadcrumbs</argument></action>
+
+                <action method="refreshAfterCategoryChange"><argument name="block" xsi:type="string">main.mana.layered_nav</argument></action>
+                <action method="refreshAfterCategoryChange"><argument name="block" xsi:type="string">additional.mana.layered_nav</argument></action>
+
+                <action method="refreshStayingInSameCategory"><argument name="block" xsi:type="string">mana.seo.query</argument></action>
+                <action method="refreshStayingInSameCategory"><argument name="block" xsi:type="string">category.products.list</argument></action>
+                <action method="refreshStayingInSameCategory"><argument name="block" xsi:type="string">search_result_list</argument></action>
+
+                <action method="refreshStayingInSameCategory"><argument name="block" xsi:type="string">main.mana.layered_nav</argument></action>
+                <action method="refreshStayingInSameCategory"><argument name="block" xsi:type="string">additional.mana.layered_nav</argument></action>
+            </block>
+            <block class="Manadev\LayeredNavigationAjax\Blocks\Apply" name="mana.layered-nav.apply"
+                template="Manadev_LayeredNavigationAjax::apply.phtml" />
+        </referenceContainer>
+    </body>
+</page>

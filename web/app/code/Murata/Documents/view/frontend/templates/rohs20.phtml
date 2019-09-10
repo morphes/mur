@@ -1,0 +1,288 @@
+<?php echo "<body style='background-color:#ececec;'>";
+$heading    = "";
+$productRequested = "";
+if (isset($_REQUEST['productRequested'])) {
+    $productRequested = $_REQUEST['productRequested'];
+}
+$requestedProductName = "";
+if (isset($_REQUEST['requestedProductName'])) {
+    $requestedProductName = $_REQUEST['requestedProductName'];
+}
+
+$type = "";
+if (isset($_REQUEST['type'])) {
+    $type = $_REQUEST['type'];
+}
+$rohs_exc_6a = "";
+if (isset($_REQUEST['rohs_exc_6a'])) {
+    $rohs_exc_6a = $_REQUEST['rohs_exc_6a'];
+}
+
+$rohs_exc_6c = "";
+if (isset($_REQUEST['rohs_exc_6c'])) {
+    $rohs_exc_6c = $_REQUEST['rohs_exc_6c'];
+}
+
+$rohs_exc_7a = "";
+if (isset($_REQUEST['rohs_exc_7a'])) {
+    $rohs_exc_7a = $_REQUEST['rohs_exc_7a'];
+}
+
+$rohs_exc_7b = "";
+if (isset($_REQUEST['rohs_exc_7b'])) {
+    $rohs_exc_7b = $_REQUEST['rohs_exc_7b'];
+}
+
+$rohs_exc_7c1 = "";
+if (isset($_REQUEST['rohs_exc_7c1'])) {
+    $rohs_exc_7c1 = $_REQUEST['rohs_exc_7c1'];
+}
+
+$rohs_exc_7c2 = "";
+if (isset($_REQUEST['rohs_exc_7c2'])) {
+    $rohs_exc_7c2 = $_REQUEST['rohs_exc_7c2'];
+}
+
+$rohs_exc_7c3 = "";
+if (isset($_REQUEST['rohs_exc_7c3'])) {
+    $rohs_exc_7c3 = $_REQUEST['rohs_exc_7c3'];
+}
+
+$rohs_exc_8 = "";
+if (isset($_REQUEST['rohs_exc_8'])) {
+    $rohs_exc_8 = $_REQUEST['rohs_exc_8'];
+}
+
+$rohs_exc_11 = "";
+if (isset($_REQUEST['rohs_exc_11'])) {
+    $rohs_exc_11 = $_REQUEST['rohs_exc_11'];
+}
+
+$rohs_exc_34 = "";
+if (isset($_REQUEST['rohs_exc_34'])) {
+    $rohs_exc_34 = $_REQUEST['rohs_exc_34'];
+}
+
+if ($productRequested && $requestedProductName && $type) {
+
+    ?>
+    <script language="javascript">
+        document.title = "<?=$requestedProductName?> | <?=$type?> | " + document.title;
+    </script>
+    
+
+<div style="width: 100%; background-color:#ececec;">
+<center><div style="max-width: 800px; background:#FFF;">
+
+
+    <table border="0">
+        <tr><td width="10"> &nbsp; &nbsp; </td> 
+        <td>
+
+
+    <table border="0">
+        <tr>
+        
+        <?php $servername = $_SERVER['SERVER_NAME']; $serverlookingfor = 'www.murata-ps.com'; if (strpos ($servername , $serverlookingfor) !== false)  { ?>  
+        
+            <td class="rohs-logo-td-first" align="right" style="background-image:url(/pub/images/rohs/mps_bg.jpg);background-repeat:repeat; height:60px;">
+                <a href="/">
+
+                    <img style="top:0;" src="/pub/images/rohs/logo_mps1.png" id="rohs-logo" align="right"></a><br>
+               &nbsp;  &nbsp; <a href="javascript:history.back();" class=rohsblue>Go Back</a>
+                
+                </td></tr>
+                
+<tr><td><div align="right">129 Flanders Road
+<br/>Westborough, MA 01581
+<br/>Tel +1-508-339-3000
+<br/>Fax +1-508-339-6356
+<br/>www.murata-ps.com</div>
+                </td></tr>
+                
+                
+                <?php } else { ?>
+                            <td class="rohs-logo-td-first" align="right">
+                <a href="/">
+                                    <img style="top:0;" src="/pub/images/rohs/logo.jpg" id="rohs-logo" align="right"></a><br>
+               &nbsp;  &nbsp; <a href="javascript:history.back();" class=rohsblue>Go Back</a>
+                
+                </td></tr>
+  <?php }  ?>  
+                
+        <tr><td>&nbsp; </td></tr>
+ 
+        <tr>
+            <td>                
+                <H1 style="text-align:center;">RoHS Document of Conformance</H1></td>
+        </tr>
+        <tr><td>&nbsp; </td></tr>
+        <tr>
+            <td class="rohs-logo-td">
+                <p>Murata Power Solutions (MPS) hereby declares and certifies the product identified below is compliant to the definitions and requirements of the European Union Restriction of Hazardous Substances (RoHS) Directives 2002/95/EC, 2011/65/EU, and 2015/863.</p>
+                <p>Other than any allowed exemption(s), included in the RoHS Directive and shown below if applicable, Murata Power Solutions certifies that the following materials or substances are not found above the threshold levels as defined in the Directive.</p>
+
+            </td>
+        </tr>
+        <tr>
+            <td class="rohs-logo-td">
+            <div align="center">
+                <table width="400" border="1" cellpadding="2" cellspacing="0" bordercolor="#111111"
+                       bgcolor="#ffffff" style="border-collapse: collapse; height: 20px;">
+                    <TR>
+                        <TD style="text-align:center"><strong>Material/Substance</strong></TD>
+                        <TD style="text-align:center"><strong>Threshold Level*</strong></TD>
+                    </TR>
+                    <TR>
+                        <TD> &nbsp; Cadmium</TD>
+                        <TD style="text-align:center">0.01%</TD>
+                    </TR>
+                    <TR>
+                        <TD> &nbsp; Hexavalent Chromium</TD>
+                        <TD style="text-align:center">0.10%</TD>
+                    </TR>
+                    <TR>
+                        <TD> &nbsp; Lead</TD>
+                        <TD style="text-align:center">0.10%</TD>
+                    </TR>
+                    <TR>
+                        <TD> &nbsp; Mercury</TD>
+                        <TD style="text-align:center">0.10%</TD>
+                    </TR>
+                    <TR>
+                        <TD> &nbsp; Polybrominated Biphenyls (PBB)</TD>
+                        <TD style="text-align:center">0.10%</TD>
+                    </TR>
+                    <TR>
+                        <TD> &nbsp; Polybrominated Diphenl Ethers (PBDE)</TD>
+                        <TD style="text-align:center">0.10%</TD>
+                        
+                        
+                                               <TR> <TD> &nbsp; Bis(2-ethylhexyl) phthalate (DEHP)</TD>
+                        <TD style="text-align:center">0.10%</TD></TR>
+                                                <TR><TD> &nbsp; Butyl benzyl phthalate (BBP)</TD>
+                        <TD style="text-align:center">0.10%</TD></TR>
+                                                <TR><TD> &nbsp; Dibutyl phthalate (DBP)</TD>
+                        <TD style="text-align:center">0.10%</TD></TR>
+                                                <TR><TD> &nbsp; Diisobutyl phthalate (DIBP)</TD>
+                        <TD style="text-align:center">0.10%</TD>
+                    </TR>
+                </TABLE></div>
+                <p style="text-align:center;">* Maximum concentration by weight in homogenous materials.</p></td>
+        </tr>
+        <tr>
+            <td class="rohs-logo-td"><div align="center">
+                <table width="400" border="1" cellpadding="2" cellspacing="0" bordercolor="#111111"
+                       bgcolor="#ffffff" style="border-collapse: collapse; height: 20px;">
+                    <TR style="text-align:center">
+                        <TD style="text-align:center"><strong>MPS Product Name</strong></TD>
+                        <TD style="text-align:center"><strong>Part Number / Identifier</strong></TD>
+                        <TD style="text-align:center"><strong>Exemption(s) claimed</strong></TD>
+                    </TR>
+                    <TR>
+                        <TD style="text-align:center"><?= $requestedProductName ?></TD>
+                        <TD style="text-align:center"><?= $productRequested ?></TD>
+                        <TD style="text-align:center">
+                            <?php if ($rohs_exc_6a == "Yes"): ?>
+                                6a
+                            <?php endif ?>
+                            <?php if ($rohs_exc_6c == "Yes"): ?>
+                                6c
+                            <?php endif ?>
+                            <?php if ($rohs_exc_7a == "Yes"): ?>
+                                7a
+                            <?php endif ?>
+                            <?php if ($rohs_exc_7b == "Yes"): ?>
+                                7b
+                            <?php endif ?>
+                            <?php if ($rohs_exc_7c1 == "Yes"): ?>
+                                7c1
+                            <?php endif ?>
+                            <?php if ($rohs_exc_7c2 == "Yes"): ?>
+                                7c2
+                            <?php endif ?>
+                            <?php if ($rohs_exc_7c3 == "Yes"): ?>
+                                <!--Removed 2013-04-23-KK-BS: 7c3 -->
+                            <?php endif ?>
+                            <?php if ($rohs_exc_8 == "Yes"): ?>
+                                8b1
+                            <?php endif ?>
+                            <?php if ($rohs_exc_11 == "Yes"): ?>
+                                <!--Removed 2013-07-15-KK-BS: 11b  -->
+                            <?php endif ?>
+                            <?php if ($rohs_exc_34 == "Yes"): ?>
+                                34
+                            <?php endif ?>
+                        </TD>
+                    </TR>
+                </TABLE></div>
+            </td>
+        </tr>
+        <tr>
+            <td class="rohs-logo-td">
+                <?php if ($rohs_exc_7b == "Yes"): ?>
+                    <p>This product contains lead in solder and claims exemption 7b. To qualify for this
+                        exemption, the product must be used in servers, storage and storage array systems,
+                        network infrastructure equipment for switching, signalling, transmission, and network
+                        management for telecommunications.</p>
+                <?php endif ?>
+                <?php if ($rohs_exc_7c3 == "Yes"): ?>
+                    <p>All products manufactured after December 1, 2011 do not claim 7c3 exemption. MPS stopped
+                        shipping products with 7c3 exemption after March 1, 2012 unless authorized in writing by
+                        the customer. </p>
+                <?php endif ?>
+                <?php if ($rohs_exc_11 == "Yes"): ?>
+                    <p>All products manufactured after October 7, 2010 do not claim 11b exemption.</p>
+                <?php endif ?><br><br></td>
+        </tr>
+        <tr>
+            <td class="rohs-logo-td">
+                <table border=0>
+                    <tr>
+                        <td class=rohsbottom>
+                        Authorized signature,<br/>
+                                           
+                                                    <?php if ($type == "US"): ?>
+                                <img src="/pub/images/rohs/signiture_jay_vanwormer.gif">
+                            <?php elseif ($type == "UK"): ?>
+                                <img src="/pub/images/rohs/signiture_jay_vanwormer.gif">
+                            <?php endif; ?>
+                        
+
+<br/>Jay vanWormer
+<br/>Senior Manager - Global Product safety & Compliance					
+<br/>Email: jvanwormer@murata.com	
+</td>
+
+                        
+                        <td class="rohs-date" style="vertical-align: bottom;"> Date: <?php echo date("l, F j, Y"); ?></td></tr>
+                        
+                      <tr>
+                        <td colspan="2" class="text">&nbsp;</td></tr>                      
+                        
+                      
+                    <tr>
+                        <td colspan="2" class="text"><b>Important Information and Disclaimer</b>: This certification is based on information provided by third party suppliers of components and materials. While Murata Power Solutions continues to take reasonable steps to ensure that its suppliers have provided accurate and correct information, including, the performance of destructive testing and chemical analysis of components when deemed necessary, Murata Power Solutions makes no certification and disclaims any warranty, whether express or implied, as to the accuracy or completeness of any information supplied by its component suppliers.  Information posted by Murata Power Solutions on its websites or published in other documents concerning the composition or content of its products reflects the Company's knowledge and belief as of the date that the information is published. 
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </td><td width="10"> &nbsp; &nbsp; </td></tr>
+    <tr colspan="3"><td height="30"></td></tr>
+        <tr colspan="3"><td height="30"></td></tr>
+    </table>
+    
+
+    </div>
+    </div>
+    </div>
+ 
+    
+    
+    <?php
+} else {
+    echo "<a href=\"javascript:history.back();\" class=rohsblue>Go Back</a>";
+} ?>
+

@@ -1,0 +1,48 @@
+<div class="block_relatedlinks widget block block-search" data-bind="scope: 'news-search'">
+    <div>
+        <form class="form minisearch"
+              id="news_search_mini_form"
+              action="<?php echo $this->getUrl(
+                  $block->getSearchUrl()
+              ) ?>"
+              method="get">
+            <div class="field search">
+                <div class="block_relatedlinks-title">
+                    <strong>
+                        <span><?php echo __('Search') ?></span>
+                    </strong>
+                </div>
+                <div class="control">
+                    <input id="search_news" type="text" name="s"
+                           value="<?php echo $block->escapeHtml(
+                               $block->getSearchQuery()
+                           ) ?>"
+                           class="input-text"
+                           aria-haspopup="false"
+                           maxlength="128"
+                           role="combobox"
+                           placeholder="<?php echo __(
+                               'Search posts here...'
+                           ) ?>"
+                           aria-autocomplete="both" autocomplete="off">
+                </div>
+            </div>
+            <button type="submit" title="Go" class="button-news-search" disabled="">
+                <span>
+
+                </span>
+            </button>
+        </form>
+    </div>
+</div>
+<div class="block_relatedlinks block_feed">
+    <div class="block_relatedlinks-content">
+        <ul>
+            <li class="news-item-1">
+                <a href="/news/rss/feed" title="RSS Feed">
+                    <img src="/pub/media/wysiwyg/home_ico_rss.png" title="RSS Feed" alt="RSS Feed"/>RSS Feed
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

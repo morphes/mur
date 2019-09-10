@@ -1,0 +1,238 @@
+<?php
+$collection = $block->getLoadedProductCollection();
+?>
+<div class="category-products-mobile">
+    <?php foreach ($collection as $_product) { ?>
+        <div class="series-mobile">
+            <div class="list-series series">
+                <a href="/datasheet?<?php echo $_product->getData('series_datasheet') ?>">
+                    <?php echo $_product->getData('name') ?>
+                </a>
+            </div>
+            <?php if($status = $block->getCertificatesStatuses($_product)) { ?>
+                <?= $status ?>
+            <?php } ?>
+            <?php if($safetyUlIte = $_product->getData('safety_ul_ite')) { ?>
+                <div class="list-series details">
+                    <span>UL ITE:</span>
+                    <span class="series-value">
+                        <a href="/datasheet?/data/safety/<?= $safetyUlIte ?>">View</center></a>
+                    </span>
+                </div>
+            <?php } ?>
+            <?php if($safetyUlMed = $_product->getData('safety_ul_med')) { ?>
+                <div class="list-series details">
+                    <span>UL Med:</span>
+                    <span class="series-value">
+                        <a href="/datasheet?/data/safety/<?= $safetyUlMed ?>">View</center></a>
+                    </span>
+                </div>
+            <?php } ?>
+            <?php if($safetyCbIte = $_product->getData('safety_cb_ite')) { ?>
+                <div class="list-series details">
+                    <span>UL Med:</span>
+                    <span class="series-value">
+                        <a href="/datasheet?/data/safety/<?= $safetyCbIte ?>">View</center></a>
+                    </span>
+                </div>
+            <?php } ?>
+            <?php if($safetyCsa = $_product->getData('safety_csa')) { ?>
+                <div class="list-series details">
+                    <span>CB ITE:</span>
+                    <span class="series-value">
+                        <a href="/datasheet?/data/safety/<?= $safetyCsa ?>">View</center></a>
+                    </span>
+                </div>
+            <?php } ?>
+            <?php if($safetyCdMed = $_product->getData('safety_cd_med')) { ?>
+                <div class="list-series details">
+                    <span>CD MED:</span>
+                    <span class="series-value">
+                        <a href="/datasheet?/data/safety/<?= $safetyCdMed ?>">View</center></a>
+                    </span>
+                </div>
+            <?php } ?>
+            <?php if($safetyCsa = $_product->getData('safety_csa')) { ?>
+                <div class="list-series details">
+                    <span>CSA:</span>
+                    <span class="series-value">
+                        <a href="/datasheet?/data/safety/<?= $safetyCsa ?>">View</center></a>
+                    </span>
+                </div>
+            <?php } ?>
+            <?php if($safetyVde = $_product->getData('safety_vde')) { ?>
+                <div class="list-series details">
+                    <span>VDE:</span>
+                    <span class="series-value">
+                        <a href="/datasheet?/data/safety/<?= $safetyVde ?>">View</center></a>
+                    </span>
+                </div>
+            <?php } ?>
+            <?php if($safetyTuv = $_product->getData('safety_tuv')) { ?>
+                <div class="list-series details">
+                    <span>TUV:</span>
+                    <span class="series-value">
+                        <a href="/datasheet?/data/safety/<?= $safetyTuv ?>">View</center></a>
+                    </span>
+                </div>
+            <?php } ?>
+            <?php if($safetyCcc = $_product->getData('safety_ccc')) { ?>
+                <div class="list-series details">
+                    <span>CCC:</span>
+                    <span class="series-value">
+                        <a href="/datasheet?/data/safety/<?= $safetyCcc ?>">View</center></a>
+                    </span>
+                </div>
+            <?php } ?>
+            <?php if($safetyDemko = $_product->getData('safety_demko')) { ?>
+                <div class="list-series details">
+                    <span>DEMKO:</span>
+                    <span class="series-value">
+                        <a href="/datasheet?/data/safety/<?= $safetyDemko ?>">View</center></a>
+                    </span>
+                </div>
+            <?php } ?>
+            <?php if($safetyBsmi = $_product->getData('safety_bsmi')) { ?>
+                <div class="list-series details">
+                    <span>BSMI:</span>
+                    <span class="series-value">
+                        <a href="/datasheet?/data/safety/<?= $safetyBsmi ?>">View</center></a>
+                    </span>
+                </div>
+            <?php } ?>
+
+            <?php if (
+                ($_product->getData('safety_ul_ite') != "") ||
+                ($_product->getData('safety_ul_med') != "") ||
+                ($_product->getData('safety_cb_ite') != "") ||
+                ($_product->getData('safety_cd_med') != "") ||
+                ($_product->getData('safety_csa') != "") ||
+                ($_product->getData('safety_vde') != "") ||
+                ($_product->getData('safety_tuv') != "") ||
+                ($_product->getData('safety_ccc') != "") ||
+                ($_product->getData('safety_demko') != "") ||
+                ($_product->getData('safety_bsmi') != "")
+            ) { ?>
+            <?php } else { ?>
+                <div class="list-series details">
+                    <span>Request:</span>
+                    <span class="series-value">
+                        <a href="/products/contact.html?part=<?php echo $_product->getData('name') ?>&inquiry=Request Safety Certificates&form=Technical">Request</a>
+                    </span>
+                </div>
+            <?php }  ?>
+        </div>
+        <hr/>
+    <?php } ?>
+</div>
+<div class="category-products">
+    <ol class="products-list" id="products-list">
+        <div id="freezehead" name="freezehead">
+            <table id="maintable" width="690px" border="1" class="sortable" style="margin-left:0px;">
+                <thead>
+                <tr>
+                    <th width="175px" class=listtdtop>Series</th>
+                    <th width="72px" class=listtdtop>Status</th>
+                    <th width="30px" class=listtdtop>UL<br />ITE</th>
+                    <th width="30px" class=listtdtop>UL<br />Med</th>
+                    <th width="30px" class=listtdtop>CB<br />ITE</th>
+                    <th width="30px" class=listtdtop>CB<br />Med</th>
+                    <th width="30px" class=listtdtop>CSA</th>
+                    <th width="30px" class=listtdtop>VDE</th>
+                    <th width="30px" class=listtdtop>TUV</th>
+                    <th width="30px" class=listtdtop>CCC</th>
+                    <th width="47px" class=listtdtop>DEMKO</th>
+                    <th width="37px" class=listtdtop>BSMI</th>
+                    <th class=listtdtop>Request</th>
+                </tr>
+                </thead>
+            </table>
+        </div>
+        <table id="maintable" width="690" border="1" class="sortable" style="margin-left:0px;">
+            <tbody>
+            <?php foreach ($collection as $_product): ?>
+                <tr>
+
+                    <?php if ($_product->getData('series_datasheet') != "") { ?>
+                        <td width="175px" ><a href="/datasheet?<?php echo $_product->getData('series_datasheet') ?>"><?php echo $_product->getData('name') ?></a></td>
+                    <?php } else { ?>
+                        <td width="175px" ><?php echo $_product->getData('name') ?></td>
+                    <?php }  ?>
+
+                    <td width="72px">
+                        <?= $block->getCertificatesStatuses($_product); ?>
+                    </td>
+                    <?php if ($_product->getData('safety_ul_ite') != "") { ?>
+                        <td width="30px"><center><a href="/datasheet?/data/safety/<?php echo $_product->getData('safety_ul_ite') ?>">View</center></a></td>
+                    <?php } else { ?>
+                        <td width="30px" >&nbsp;</td>
+                    <?php }  ?>
+                    <?php if ($_product->getData('safety_ul_med') != "") { ?>
+                        <td width="30px"><center><a href="/datasheet?/data/safety/<?php echo $_product->getData('safety_ul_med') ?>">View</center></a></td>
+                    <?php } else { ?>
+                        <td width="30px" >&nbsp;</td>
+                    <?php }  ?>
+                    <?php if ($_product->getData('safety_cb_ite') != "") { ?>
+                        <td width="30px"><center><a href="/datasheet?/data/safety/<?php echo $_product->getData('safety_cb_ite') ?>">View</center></a></td>
+                    <?php } else { ?>
+                        <td width="30px" >&nbsp;</td>
+                    <?php }  ?>
+                    <?php if ($_product->getData('safety_cd_med') != "") { ?>
+                        <td width="30px"><center><a href="/datasheet?/data/safety/<?php echo $_product->getData('safety_cd_med') ?>">View</center></a></td>
+                    <?php } else { ?>
+                        <td width="30px" >&nbsp;</td>
+                    <?php }  ?>
+                    <?php if ($_product->getData('safety_csa') != "") { ?>
+                        <td width="30px"><center><a href="/datasheet?/data/safety/<?php echo $_product->getData('safety_csa') ?>">View</center></a></td>
+                    <?php } else { ?>
+                        <td width="30px" >&nbsp;</td>
+                    <?php }  ?>
+                    <?php if ($_product->getData('safety_vde') != "") { ?>
+                        <td width="30px"><center><a href="/datasheet?/data/safety/<?php echo $_product->getData('safety_vde') ?>">View</center></a></td>
+                    <?php } else { ?>
+                        <td width="30px" >&nbsp;</td>
+                    <?php }  ?>
+                    <?php if ($_product->getData('safety_tuv') != "") { ?>
+                        <td width="30px"><center><a href="/datasheet?/data/safety/<?php echo $_product->getData('safety_tuv') ?>">View</center></a></td>
+                    <?php } else { ?>
+                        <td width="30px" >&nbsp;</td>
+                    <?php }  ?>
+                    <?php if ($_product->getData('safety_ccc') != "") { ?>
+                        <td width="30px"><center><a href="/datasheet?/data/safety/<?php echo $_product->getData('safety_ccc') ?>">View</center></a></td>
+                    <?php } else { ?>
+                        <td width="30px" >&nbsp;</td>
+                    <?php }  ?>
+                    <?php if ($_product->getData('safety_demko') != "") { ?>
+                        <td width="47px"><center><a href="/datasheet?/data/safety/<?php echo $_product->getData('safety_demko') ?>">View</center></a></td>
+                    <?php } else { ?>
+                        <td width="47px">&nbsp;</td>
+                    <?php }  ?>
+                    <?php if ($_product->getData('safety_bsmi') != "") { ?>
+                        <td width="37px"><center><a href="/datasheet?/data/safety/<?php echo $_product->getData('safety_bsmi') ?>">View</a></center></td>
+                    <?php } else { ?>
+                        <td width="37px">&nbsp;</td>
+                    <?php }  ?>
+                    <?php if (
+                        ($_product->getData('safety_ul_ite') != "") ||
+                        ($_product->getData('safety_ul_med') != "") ||
+                        ($_product->getData('safety_cb_ite') != "") ||
+                        ($_product->getData('safety_cd_med') != "") ||
+                        ($_product->getData('safety_csa') != "") ||
+                        ($_product->getData('safety_vde') != "") ||
+                        ($_product->getData('safety_tuv') != "") ||
+                        ($_product->getData('safety_ccc') != "") ||
+                        ($_product->getData('safety_demko') != "") ||
+                        ($_product->getData('safety_bsmi') != "")
+                    ) { ?>
+                        <td>&nbsp;</td>
+                    <?php } else { ?>
+                        <td><center><a href="/en/products/contact.html?part=<?php echo $_product->getData('name') ?>&inquiry=Request Safety Certificates&form=Technical">Request</a></center></td>
+                    <?php }  ?>
+                </tr>
+            <?php endforeach; ?>
+        </table>
+        </li>
+    </ol>
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!--
+ @category    Mana
+ @package     Manadev_LayeredNavigationMobile
+ @copyright   Copyright (c) http://www.manadev.com
+ @license     http://www.manadev.com/license  Proprietary License
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <manadev_features>
+            <Manadev_LayeredNavigationMobile>
+                <version>17.11.1708</version>
+                <code>mobile-layered-navigation-magento2</code>
+                <title>Responsive Mobile Layered Navigation</title>
+                <sort_order>400</sort_order>
+            </Manadev_LayeredNavigationMobile>
+            <Manadev_LayeredNavigation>
+                <removed_by_Manadev_LayeredNavigationMobile />
+            </Manadev_LayeredNavigation>
+        </manadev_features>
+        <mana_layered_navigation>
+            <default_positions>
+                <on_mobile>1</on_mobile>
+            </default_positions>
+            <show_applied_filter>
+                <show_on_mobile>1</show_on_mobile>
+            </show_applied_filter>
+            <mobile>
+                <max_width>767</max_width>
+                <behavior>accordion</behavior>
+                <effect_duration>150</effect_duration>
+            </mobile>
+        </mana_layered_navigation>
+    </default>
+</config>

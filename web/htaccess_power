@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+## enable rewrites
+
+	Options +FollowSymLinks
+	RewriteEngine on
+        #### Redirect old Magento filter URL included /where/ and point back to directory + .html
+	#RewriteCond %{HTTP_HOST} ^power\.murata\.com$ [NC]
+        RewriteCond %{REQUEST_URI} ^/(.+)/where/(.+)
+        RewriteRule ^/(.+)/where/(.+)$ /$1.html [R=301,L]
+
+
+</IfModule>
+
+###### increase timeout for export
+TimeOut 600

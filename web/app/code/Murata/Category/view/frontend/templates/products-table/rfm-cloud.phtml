@@ -1,0 +1,46 @@
+<table width="100%" cellpadding="10px" border="5" class="listtable">
+    <tr class="listtr">
+        <td class=listtdtop>Part</td>
+        <td class=listtdtop>Order Number</td>
+        <td class=listtdtop>Chipset</td>
+        <td class=listtdtop>Processor</td>
+        <td class=listtdtop>WLAN</td>
+        <td class=listtdtop>Host Interface</td>
+        <td class=listtdtop>Dimen.</td>
+        <td class=listtdtop>Cert.</td>
+        <td class=listtdtop>Grade</td>
+        <td class=listtdtop>Status</td>
+        <td class=listtdtop>Com-<br/>pare</td>
+    </tr>
+    <?php $_productCollection = $this->getProductCollection(); ?>
+    <?php foreach($_productCollection as $product) { ?>
+        <tr class="listtr">
+            <td width="100px" class=listtd>
+                <a href="<?php echo $product->getProductUrl() ?>" title="<?php echo $this->stripTags($product->getName(), null, true) ?>"
+                    class="tablelink_rfm"><?php echo $product->getName(); ?>
+                </a>
+            </td>
+            <td class=listtd><?php echo $product->getSku(); ?></td>
+            <td class=listtd><?php echo $product->getRfmChipset(); ?></td>
+            <td class=listtd><?php echo $product->getRfmProcessor(); ?></td>
+            <td class=listtd><?php echo $product->getAttributeText('rfm_wlan'); ?></td>
+            <td class=listtd><?php echo $product->getRfmHostInterface(); ?></td>
+            <td class=listtd><?php echo $product->getRfmDimension(); ?></td>
+            <td class=listtd><?php echo $product->getAttributeText('rfm_certified_table'); ?></td>
+            <td class=listtd>
+                <?php if($product->getAttributeText('rfm_grade') == 4646) {
+                    echo 'Consumer';
+                } else { ?>
+                    <?php echo $product->getAttributeText('rfm_grade'); ?>
+                <?php } ?>
+            </td>
+            <td><?php echo $block->wirelessStatuses($product); ?></td>
+            <td class=listtd>
+                <?php if ($product->getAttributeText('product_status') != "Obsolete"): ?>
+                    <input title="Add <?php echo $product->getName(); ?> to Compare List" value="<?php echo $product->getId(); ?>" type="checkbox" class="input-checkbox compare-add add"/>
+                    <input type="hidden"/>
+                <?php endif; ?>
+            </td>
+        </tr>
+    <?php }; ?>
+</table>

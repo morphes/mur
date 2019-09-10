@@ -1,0 +1,73 @@
+<!--
+ @category    Mana
+ @package     Manadev_LayeredNavigationSeo
+ @copyright   Copyright (c) http://www.manadev.com
+ @license     http://www.manadev.com/license  Proprietary License
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Manadev\Seo\Registries\UrlKeySubTypes">
+        <arguments>
+            <argument name="urlKeySubTypes" xsi:type="array">
+                <item name="option_filter_parameter" xsi:type="object">Manadev\LayeredNavigationSeo\UrlKeySubTypes\OptionFilterParameter</item>
+                <item name="range_filter_parameter" xsi:type="object">Manadev\LayeredNavigationSeo\UrlKeySubTypes\RangeFilterParameter</item>
+                <item name="category_filter_parameter" xsi:type="object">Manadev\LayeredNavigationSeo\UrlKeySubTypes\CategoryFilterParameter</item>
+                <item name="filter_option" xsi:type="object">Manadev\LayeredNavigationSeo\UrlKeySubTypes\FilterOption</item>
+                <item name="category_option" xsi:type="object">Manadev\LayeredNavigationSeo\UrlKeySubTypes\CategoryOption</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Manadev\Seo\Registries\NoIndexTransformations">
+        <arguments>
+            <argument name="transformations" xsi:type="array">
+                <item name="filter_parameters" xsi:type="object">Manadev\LayeredNavigationSeo\NoIndex\FilterParameters</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Manadev\Seo\Registries\NoFollowTransformations">
+        <arguments>
+            <argument name="transformations" xsi:type="array">
+                <item name="filter_parameters" xsi:type="object">Manadev\LayeredNavigationSeo\NoFollow\FilterParameters</item>
+            </argument>
+        </arguments>
+    </type>
+
+    <type name="Manadev\LayeredNavigationSettings\Blocks\Adminhtml\FilterForm">
+        <plugin name="Manadev\LayeredNavigationSeo\Plugins\FilterForm" type="Manadev\LayeredNavigationSeo\Plugins\FilterForm" sortOrder="200"/>
+    </type>
+    <type name="Manadev\Seo\Enums\UrlKeySubType">
+        <plugin name="Manadev\LayeredNavigationSeo\Plugins\UrlKeySubType" type="Manadev\LayeredNavigationSeo\Plugins\UrlKeySubType" sortOrder="200"/>
+    </type>
+    <type name="Manadev\ProductCollection\Resources\Facets\Dropdown\StandardFacetResource">
+        <plugin name="Manadev\LayeredNavigationSeo\Plugins\OptionFacetResource" type="Manadev\LayeredNavigationSeo\Plugins\StandardOptionFacetResource" sortOrder="200"/>
+    </type>
+    <type name="Manadev\ProductCollection\Resources\Facets\Dropdown\OptimizedFacetResource">
+        <plugin name="Manadev\LayeredNavigationSeo\Plugins\OptionFacetResource" type="Manadev\LayeredNavigationSeo\Plugins\OptimizedOptionFacetResource" sortOrder="200"/>
+    </type>
+    <type name="Manadev\ProductCollection\Resources\Facets\Swatch\StandardFacetResource">
+        <plugin name="Manadev\LayeredNavigationSeo\Plugins\OptionFacetResource" type="Manadev\LayeredNavigationSeo\Plugins\StandardOptionFacetResource" sortOrder="200"/>
+    </type>
+    <type name="Manadev\ProductCollection\Resources\Facets\Swatch\OptimizedFacetResource">
+        <plugin name="Manadev\LayeredNavigationSeo\Plugins\OptionFacetResource" type="Manadev\LayeredNavigationSeo\Plugins\OptimizedOptionFacetResource" sortOrder="200"/>
+    </type>
+    <type name="Manadev\Seo\Parsing\GeneralUrlSettings">
+        <plugin name="Manadev\LayeredNavigationSeo\Plugins\GeneralUrlSettingsPlugin" type="Manadev\LayeredNavigationSeo\Plugins\GeneralUrlSettingsPlugin" sortOrder="100"/>
+    </type>
+    <type name="Manadev\Seo\Resources\SeoUrlKeyIndexers\IndexerScopeResource">
+        <plugin name="Manadev\LayeredNavigationSeo\Plugins\IndexerScopeResourcePlugin" type="Manadev\LayeredNavigationSeo\Plugins\IndexerScopeResourcePlugin" sortOrder="100"/>
+    </type>
+    <type name="Manadev\LayeredNavigation\Blocks\Navigation">
+        <plugin name="Manadev\LayeredNavigationSeo\Plugins\NavigationBlockPlugin" type="Manadev\LayeredNavigationSeo\Plugins\NavigationBlockPlugin" sortOrder="100"/>
+    </type>
+    <type name="Manadev\LayeredNavigation\Blocks\AppliedItemRenderer">
+        <plugin name="Manadev\LayeredNavigationSeo\Plugins\AppliedItemRendererPlugin" type="Manadev\LayeredNavigationSeo\Plugins\AppliedItemRendererPlugin" sortOrder="100"/>
+    </type>
+    <type name="Manadev\LayeredNavigation\Blocks\FilterRenderer">
+        <plugin name="Manadev\LayeredNavigationSeo\Plugins\FilterRendererPlugin" type="Manadev\LayeredNavigationSeo\Plugins\FilterRendererPlugin" sortOrder="100"/>
+    </type>
+    <type name="Manadev\Seo\Content">
+        <plugin name="Manadev\LayeredNavigationSeo\Plugins\ContentPlugin" type="Manadev\LayeredNavigationSeo\Plugins\ContentPlugin" sortOrder="100"/>
+    </type>
+    <type name="Manadev\LayeredNavigationSliders\FilterTemplates\Dropdown\Slider">
+        <plugin name="\Manadev\LayeredNavigationSeo\Plugins\DropdownSliderPlugin" type="\Manadev\LayeredNavigationSeo\Plugins\DropdownSliderPlugin" sortOrder="100"/>
+    </type>
+</config>

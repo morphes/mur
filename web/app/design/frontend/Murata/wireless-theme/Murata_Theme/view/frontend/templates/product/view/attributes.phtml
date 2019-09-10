@@ -1,0 +1,61 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/**
+ * Product additional attributes template
+ *
+ * @var $block \Magento\Catalog\Block\Product\View\Attributes
+ */
+?>
+<?php
+$_helper = $this->helper('Magento\Catalog\Helper\Output');
+$_product = $block->getProduct();
+?>
+<?php if ($_additional = $block->getAdditionalData()): ?>
+    <div class="additional-attributes-wrapper table-wrapper" style="clear: both">
+        <ul>
+            <li><a href="#"><?= /* @escapeNotVerified */ __('Techni234cal Information') ?></a></li>
+        </ul>
+        <table class="listing">
+            <tbody>
+            <?php foreach ($_additional as $_data): ?>
+                <?php $dl = $_data['label']; ?>
+                <?php if(
+                !in_array(
+                    $dl, [
+                    'Data Sheet (pdf)',
+                    'Product Status',
+                    'Replacement Part',
+                    'Location',
+                    'Short Description',
+                    'Face view',
+                    'Face Dim view',
+                    'RoHS Exemption 6a',
+                    'RoHS Exemption 6c',
+                    'RoHS Exemption 7a',
+                    'RoHS Exemption 7b',
+                    'RoHS Exemption 7c1',
+                    'RoHS Exemption 7c2',
+                    'RoHS Exemption 7c3',
+                    'RoHS Exemption 8',
+                    'RoHS Exemption 11b',
+                    'RoHS Exemption 34'
+                ])
+                ) { ?>
+                    <?php if($_helper->productAttribute($_product, $_data['value'], $_data['code']) != 'No') { ?>
+                        <tr>
+                            <td><?= $block->escapeHtml(__($_data['label'])) ?></td>
+                            <td data-th="<?= $block->escapeHtml(__($_data['label'])) ?>"><?= /* @escapeNotVerified */ $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?></td>
+                        </tr>
+                    <?php } ?>
+                <?php } ?>
+            <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
+<?php endif;?>

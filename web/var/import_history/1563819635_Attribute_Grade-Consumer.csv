@@ -1,0 +1,75 @@
+sku,store_view_code,name,rfm_grade
+LBWB1ZZYDZ-BTEMP-AYLAKIT,,Type YDD for Ayla IoT Cloud software,Consumer
+LBEH5DU1BW,,Type 1BW,Consumer
+LBMA15Q1BX,,Type 1BX,Consumer
+LBEH17YSHC,,Type SH,Consumer
+LBWA19XSLZ,,Type SL,Consumer
+LBEE5ZSTNC,,Type TN,Consumer
+LBMA1BGUG2,,Type UG,Consumer
+LBEH59XUHC,,Type UH,Consumer
+LBEH5Z9UWC,,Type UW,Consumer
+LBWA1ZZVK7-539,,Type VK,Consumer
+LBCA2ZZVZE,,Type VZ,Consumer
+LBEP5CLWMC-633,,Type WM,Consumer
+LBCA2ZXWSE,,Type WS,Consumer
+LBEP5CLWTC-631,,Type WT,Consumer
+LBEH5Z4XLC,,Type XL,Consumer
+LBWA1ZVYDZ,,Type YD,Consumer
+LBWB1ZZYDZ-740,,Type YD-Certified,Consumer
+LBWA1ZVZDZ,,Type ZD,Consumer
+LBCA2BZZFZ,,Type ZF,Consumer
+LBEH5HMZPC,,Type ZP,Consumer
+LBEH5HMZPC-TEMP -D ,,Type ZP Daughter Card,Consumer
+LBEH5HMZPC-TEMP -AA,,Type ZP Mother Board,Consumer
+LBWA17DZX6,,Type ZX,Consumer
+LBCA2HNZYZ,,Type ZY,Consumer
+LBEE5KL1DX,,Type 1DX,Consumer
+LBEE1ZZ1FJ,,Type 1FJ,Consumer
+LBWA1KL1FX,,Type 1FX,Consumer
+LBWA1CS1AD,,Type 1AD for Ayla IoT Cloud software,Consumer
+LBWB1ZZ1AD,,Type 1AD Certified for Ayla IoT Cloud software,Consumer
+CMEN1ZZABH,,Type ABH,Consumer
+CMWC1ZZABR,,Type ABR,Consumer
+LBWA1ZZ1JP,,Type 1JP,Consumer
+LBWA1UZ1GC,,Type 1GC,Consumer
+LBWA1ZZ1HD,,Type 1HD,Consumer
+LBWA1ZZ1JQ,,Type 1JQ,Consumer
+LBEE5ZZ1CK,,Type 1CK,Consumer
+LBWA1ZV1CD,,Type 1CD - imp003,Consumer
+LBWA1UZ1GC-901,,Type 1GC-imp005,Consumer
+LBEE5PA1LD,,Type 1LD,Consumer
+LBEE5ZZ1MD,,Type 1MD - imp004m,Consumer
+LBCA1CW1GR,,Type 1GR,Consumer
+CMWX1ZZABZ,,Type ABZ,Consumer
+WSC-WB242-ADA-SM1,,SprIoT 6UL,Consumer
+LBWA1ZZ1KP,,Type 1KP,Consumer
+LBWA1ZZ1KQ,,Type 1KQ,Consumer
+LBWA1ZZ1KR,,Type 1KR,Consumer
+LBWA1ZZ1KS,,Type 1KS,Consumer
+WSM-BL241-ADA-008,,MBN52832,Consumer
+AFERO-BL24-01,,Afero ASR-1,Consumer
+LBEE59B1LV,,Type 1LV,Consumer
+LBEE5HY1MW,,Type 1MW,Consumer
+LBEE5PA1LD-222,,Type 1LD-Ayla,Consumer
+LBEE5U91CQ,,Type 1CQ,Consumer
+LBEE5ZZ1PJ,,Type 1PJ,Consumer
+LBEH5UL1CX,,Type 1CX,Consumer
+LBWA1UZ1PS ,,Type 1PS ,Consumer
+mQ100 & mQ200,,mQ100/mQ200,Consumer
+CMWX1ZZABZ-104,,Type ABZ-104,Consumer
+DR-WLS1273L-102,,DR-WLS1273L-102,Industrial
+88-00153-00,,SN8000,Industrial
+88-00153-02,,SN8000UFL,Industrial
+88-00151-00,,SN8200,Industrial
+88-00151-95,,SN8200-EVK,Industrial
+88-00151-02,,SN8200UFL,Industrial
+88-00151-97,,SN8200UFL-EVK,Industrial
+88-00158-00,,SN8205,Industrial
+88-00158-95,,SN8205-EVK,Industrial
+88-00158-02,,SN8205UFL,Industrial
+88-00158-97,,SN8205UFL-EVK,Industrial
+"88-00158-00, 88-00158-02",,SN820X,Industrial
+WSN802G,,WSN802GX,Industrial
+LBEP5CLXRC,,Type XR,Industrial
+LBEP5CLXRC,wireless_store_view,,Industrial
+LBBA0ZZ1EU-951,,Type 1EU,Industrial

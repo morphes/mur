@@ -1,0 +1,5 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="adminhtml_block_html_before">
+        <observer name="Vendor_Module_Custom_Menu" instance="Vendor\Module\Observer\AdminhtmlBlockHtmlBefore" />
+    </event>
+</config>

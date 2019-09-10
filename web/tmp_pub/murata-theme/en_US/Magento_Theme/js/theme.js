@@ -1,0 +1,1 @@
+/hdd/www/murata/data/www/murata1.sk-its.ru/vendor/magento/theme-frontend-blank/Magento_Theme/web/js/theme.js

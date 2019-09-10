@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<!--
+ @category    Mana
+ @package     Manadev_Seo
+ @copyright   Copyright (c) http://www.manadev.com
+ @license     http://www.manadev.com/license  Proprietary License
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="mana_seo">
+            <group id="noindex" translate="label" type="text" sortOrder="400" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Apply robots=NOINDEX</label>
+                <field id="number_of_applied_filters" translate="label comment" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>If Number of Applied Filters Is Equal or More Than</label>
+                    <comment>Leave empty to disable this setting</comment>
+                    <frontend_class>validate-zero-or-greater</frontend_class>
+                </field>
+                <field id="count_same_filter_options_as_one" translate="label" type="select" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Count Applied Options in the Same Filter As One</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="slider_filter_is_applied" translate="label" type="select" sortOrder="400" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>If Slider Filter Is Applied</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="nofollow" translate="label" type="text" sortOrder="410" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Apply robots=NOFOLLOW</label>
+                <field id="add_to_layered_navigation_links" translate="label" type="select" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Add NOFOLLOW to Layered Navigation Links</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="number_of_applied_filters" translate="label comment" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>If Number of Applied Filters Is Equal or More Than</label>
+                    <comment>Leave empty to disable this setting</comment>
+                    <frontend_class>validate-zero-or-greater</frontend_class>
+                </field>
+                <field id="count_same_filter_options_as_one" translate="label" type="select" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Count Applied Options in the Same Filter As One</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="slider_filter_is_applied" translate="label" type="select" sortOrder="400" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>If Slider Filter Is Applied</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="default_filter_settings" translate="label" type="text" sortOrder="800" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Default Filter Settings</label>
+                <field id="use_filter_title_in_url" translate="label" type="select" sortOrder="100" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Use Filter Title in URL</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="url_part" translate="label" type="select" sortOrder="200" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>URL Part</label>
+                    <source_model>Manadev\Seo\Enums\QueryPart</source_model>
+                </field>
+                <field id="include_in_canonical_url" translate="label" type="select" sortOrder="300" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Include in Canonical URL</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="force_no_index" translate="label" type="select" sortOrder="400" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Force NOINDEX If Filter is Selected</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="force_no_follow" translate="label" type="select" sortOrder="500" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Force NOFOLLOW If Filter is Selected</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="include_in_meta_title" translate="label" type="select" sortOrder="600" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Include in Meta Title</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="include_in_meta_description" translate="label" type="select" sortOrder="700" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Include in Meta Description</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="include_in_meta_keywords" translate="label" type="select" sortOrder="800" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Include in Meta Keywords</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <!--<field id="include_in_sitemap" translate="label" type="select" sortOrder="900" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Include in Sitemap</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>-->
+            </group>
+        </section>
+    </system>
+</config>

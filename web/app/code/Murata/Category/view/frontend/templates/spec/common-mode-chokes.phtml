@@ -1,0 +1,43 @@
+<?php $product = $this->getProduct(); ?>
+<div class="descr_content">
+    <?php if ($block->escapeHtml($product->getData('cmc_inductance_nom_muh'))) { ?>
+        <div class="data">
+            <div class="top">Inductance Nom. (&micro;H)</div>
+            <div class="bottom"><?php echo rtrim(rtrim($block->escapeHtml($product->getData('cmc_inductance_nom_muh')), '0'), '.') ?></div>
+        </div>
+    <?php } ?>
+    <?php if ($block->escapeHtml($product->getData('cmc_current_rating_madc'))) { ?>
+        <div class="data">
+            <div class="top">Current Rating (mAdc)</div>
+            <div class="bottom"><?php echo rtrim(rtrim($block->escapeHtml($product->getData('cmc_current_rating_madc')), '0'), '.') ?></div>
+        </div>
+    <?php } ?>
+    <?php if ($block->escapeHtml($product->getData('cmc_dc_resistance_max_mom'))) { ?>
+        <div class="data">
+            <div class="top">DC Resistance Max. (m&Omega;)</div>
+            <div class="bottom"><?php echo rtrim(rtrim($block->escapeHtml($product->getData('cmc_dc_resistance_max_mom')), '0'), '.') ?></div>
+        </div>
+    <?php } ?>
+    <?php if ($block->escapeHtml($product->getData('cmc_height_mm'))) { ?>
+        <div class="data">
+            <div class="top">DC Resistance Max. (m&Omega;)</div>
+            <div class="bottom">
+                <?php echo rtrim(rtrim($block->escapeHtml($product->getData('cmc_height_mm')), '0'), '.') ?>
+                x <?php echo rtrim(rtrim($block->escapeHtml($product->getData('cmc_width_mm')), '0'), '.') ?>
+                x <?php echo rtrim(rtrim($block->escapeHtml($product->getData('cmc_depth_mm')), '0'), '.') ?>
+            </div>
+        </div>
+    <?php } ?>
+    <?php if ($product->getAttributeText('cmc_mounting_option')) { ?>
+        <div class="data">
+            <div class="top">Mounting Option</div>
+            <div class="bottom"><?php echo $product->getAttributeText('cmc_mounting_option') ?></div>
+        </div>
+    <?php } ?>
+    <?php if ($product->getAttributeText('product_status')) { ?>
+        <div class="data">
+            <div class="top">Status</div>
+            <div class="bottom"><?php echo $block->statuses($product); ?></div>
+        </div>
+    <?php } ?>
+</div>

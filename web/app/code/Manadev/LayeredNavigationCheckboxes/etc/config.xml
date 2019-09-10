@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <manadev_features>
+            <Manadev_LayeredNavigationCheckboxes>
+                <version>17.10.0615</version>
+                <code>multiple-select-checkboxes-for-layered-navigation-magento2</code>
+                <title>Multiple Select and Checkboxes for Magento Layered Navigation</title>
+                <sort_order>300</sort_order>
+            </Manadev_LayeredNavigationCheckboxes>
+            <Manadev_LayeredNavigation>
+                <removed_by_Manadev_LayeredNavigationCheckboxes />
+            </Manadev_LayeredNavigation>
+        </manadev_features>
+        <mana_layered_navigation>
+            <default_templates>
+                <dropdown>checkboxes</dropdown>
+            </default_templates>
+        </mana_layered_navigation>
+    </default>
+</config>

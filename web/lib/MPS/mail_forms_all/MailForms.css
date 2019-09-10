@@ -1,0 +1,206 @@
+form#MailForm{
+	font-family:Verdana, sans-serif;
+	font-size: 12px;
+}
+
+form#MailForm label, input[type="text"]{
+    float:left;
+    display:block;
+    color: 
+}
+form#MailForm .rfq-label, form#MailForm .rma-label{
+	width:142px;
+	text-align:right;
+}
+form#MailForm .sample-label{
+	width:167px;
+	text-align:right;
+}
+form#MailForm .text, form#MailForm select.fdd{
+	float:left;
+	margin:2px 10px 3px 0;
+	width:300px;
+	padding-left: 5px;
+}
+form#MailForm .text-phone{
+	width: 200px;
+	float: left;
+}
+form#MailForm .text-ext{
+	width: 70px;
+}
+form#MailForm .label-ext{
+	float:left;
+	padding: 4px 5px 0 5px;
+}
+form#MailForm .text-rfq, form#MailForm .text-rma, form#MailForm .text-sample{
+	float:left;
+	margin:2px 10px 3px 0;
+	width:200px;
+}
+form#MailForm fieldset.rfq-main{
+	width:-moz-fit-content;
+}
+form#MailForm fieldset.main{
+    background-color: #dcdcdc;
+    border: 1px solid #333;
+    margin: 10px;
+    padding: 15px;
+}
+form#MailForm fieldset.main legend{
+    background-color: #333;
+    border: 1px solid #fff;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+form#MailForm fieldset.select_field{
+	border:1px solid #4682b4;
+	margin-left: 150px;
+	background-color: #f5f5dc;
+	margin: 10px 0 5px 0;
+}
+form#MailForm fieldset.select_field legend{
+	background-color: #447cad;
+	border: 1px solid #fff;
+   color: #FFFFFF;
+   font-size: 12px;
+   padding: 5px 10px;
+   width: 96%;
+}
+form#MailForm fieldset.note{
+	font-size: 11px;
+	background-color: #ffffcf;
+	border: 1px solid #ff6347;
+	margin-left: 200px;
+}
+form#MailForm fieldset.note legend{
+	background-color: #fff;
+    border: 1px solid #ff6347;
+    color: #ff6347;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+form#MailForm fieldset.rfq{
+    background-color: #FFFFCF;
+    margin: 10px;
+    padding: 15px;
+	float:left;	
+	width:150px;
+}
+form#MailForm div.rfqrow, form#MailForm div.rmarow, form#MailForm div.samplerow{
+	clear:both;
+}
+
+form#MailForm label
+{
+    margin:5px 10px 0 0;
+	text-align:right;
+	font-size:12px;
+}
+form#MailForm *label{
+	width:192px;
+}
+form#MailForm .field{
+    width:100%;
+    overflow:auto;
+    margin:5px 0px;
+}
+
+form#MailForm label.error {
+	float: left;
+	color: red;
+	vertical-align: top;
+	text-align:left;
+	font-size:11px;
+	padding-top: 3px;
+	margin-left: -10px;
+}
+form#MailForm label.none{
+	display: inline;
+   float: none;
+	border: 1px solid Green;
+}
+form#MailForm input, form#MailForm select, form#MailForm textarea{
+	border: 1px solid #666;
+	background-color: #f5f5f5;
+}
+form#MailForm input.error, form#MailForm select.error{
+	border: 1px solid #ff5151;
+	background-color: #fff5ee;
+}
+form#MailForm p {
+	clear: both;
+	margin:0;
+}
+form#MailForm p.btns{
+	width:500px;
+	text-align:right;
+}
+form#MailForm p.add-field-sample{
+	width:580px;
+	text-align:right;
+}
+form#MailForm p.add-field-rfq, form#MailForm p.add-field-rma{
+	width:450px;
+	text-align:right;
+}
+
+form#MailForm hr{
+	height:1px;
+	color:#c0c0c0;
+	width:70%;
+	margin:0;
+}
+form#MailForm .gray {
+	/*color: gray;*/
+	display: none;
+}
+form#MailForm #newsletter_topics label.error {
+	display: none;
+	padding-left: 0px;
+}
+form#MailForm .datasheet{
+	margin-top:10px;
+}
+sform#MailForm pan.star{
+	color:red;
+}
+form#MailForm .req-literature{
+	float:right;
+	line-height: 20px; 
+	margin: -120px 50px 0 0;
+	*margin-top:-140px;
+}
+form#MailForm ul.reqlit-title li{
+	display:inline-block;
+	height:17px;
+	border-bottom:1px solid #999;
+	list-style:none;
+	font-weight:600;	
+}
+form#MailForm ul.reqlit li, form#MailForm ul.special li, form#MailForm ul.appsinfo li{
+	display:inline-block;
+	height:17px;
+	list-style:none;
+}
+form#MailForm ul.reqlit li.first, form#MailForm ul.appsinfo li.first{
+	width:220px;
+}
+form#MailForm ul.reqlit li.first-big{
+	width:300px;
+}
+form#MailForm ul.reqlit li.box{
+	width:60px;
+}
+form#MailForm ul.reqlit li.link{
+	width:120px;
+	background-image:url(pdf.png);
+	background-repeat:no-repeat;
+	padding-left:20px;
+}
+form#MailForm ul.special li.first{
+	width:175px;
+}

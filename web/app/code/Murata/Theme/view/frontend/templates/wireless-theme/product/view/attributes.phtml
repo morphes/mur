@@ -1,0 +1,99 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/**
+ * Product additional attributes template
+ *
+ * @var $block \Magento\Catalog\Block\Product\View\Attributes
+ */
+?>
+<?php
+$_helper  = $this->helper('Magento\Catalog\Helper\Output');
+$_product = $block->getProduct();
+?>
+<?php if($_product->getAttributeText('rfm_product_status') != 'discontinued') { ?>
+    <div class="product-collateral">
+        <div id="tabs" class="tabs">
+            <ul class="strapp-product-tabs  tabs__caption">
+                <?php $i = 0; ?>
+                <?php foreach (array_keys($block->getAttributesGroups()) as $groupName) { ?>
+                    <li <?php if(!$i) {?>class="active"<?php } ?>>
+                        <?php echo $groupName; ?>
+                    </li>
+                    <?php $i++; ?>
+                <?php } ?>
+            </ul>
+            <?php $i = 0; ?>
+            <?php foreach ($block->getAttributesGroups() as $groupName => $groupsAttributes) { ?>
+            <div id="tabs-<?php echo $i; ?>" class="strapp-product-tabs-content tabs__content  <?php if(!$i) {?>active<?php } ?>">
+                <table cellspacing="0" class="data-table" id="product-attribute-specs-table">
+                    <tbody>
+                        <?php if ($groupName == 'Purchase' && $_product->getRfmStockCheck()) { ?>
+                            <tr>
+                                <td class="label">Order Number</td>
+                                <td class="data"><?php echo $_product->getSku(); ?></td>
+                            </tr>
+                            <tr>
+                                <td class="label" colspan="2">
+                                    <div style="width:240px;">
+                                        <a href="/products/where-to-buy.html?parts=<?php echo $_product['rfm_stock_check'];?>" style="text-decoration: none" class="rfm_call2acction-btn-datasheet call2acction-btn-gray rfm_call2acction-btn-datasheet">
+                                            <font color="white">Where to Buy | Distributor Inventory</font>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        <?php } ?>
+                        <?php foreach ($groupsAttributes as $attributeCode => $attributeValue) { ?>
+                            <?php if(!$attributeCode || !in_array($attributeCode, ['Packaging', 'Stock Check'])) { ?>
+                                <tr>
+                                    <?php if ($attributeCode && $attributeCode != 'Block Diagram') { ?>
+                                        <td class="label"><?php echo $attributeCode; ?></td>
+                                    <?php } ?>
+                                    <td class="data">
+
+                                        <?php if (
+                                            $attributeCode == 'Block Diagram' && (
+                                                strpos($attributeValue, '.jpg') !== false ||
+                                                strpos($attributeValue, '.png') !== false
+                                            )
+                                        ) { ?>
+                                            <img src="/RFM/data/<?php echo $attributeValue; ?>" alt="Block Diagram : <?php echo $_product->getName(); ?>" title="Block Diagram : <?php echo $_product->getName(); ?>" />
+                                        <?php }  elseif ($attributeCode == 'Software'  || $attributeCode == 'Certification' || $attributeCode == '3rd Party' || $attributeCode == 'Additional Docs') {
+                                                echo $attributeValue;
+                                        } elseif (strpos($attributeValue, '.pdf') !== false) { ?>
+                                            <a href="/datasheet?/RFM/data/<?php echo $attributeValue; ?>">Download PDF</a>
+                                        <?php
+                                         } elseif ($attributeCode == 'S-Parameter' || $attributeCode == 'S-Parameter Narrow' || $attributeCode == 'S-Parameter Wide') {?>
+                                                <a href="/RFM/data/<?php echo $attributeValue; ?>">Download</a>
+                                        <?php
+                                         } elseif ($attributeCode == 'Data Sheet Date'){?>
+<?php
+//$stop_date = $attributeValue;
+//echo 'date before day adding: ' . $stop_date. '<hr>';
+//$stop_date = date('M d Y', strtotime($stop_date . ' +1 day'));
+//echo 'date after adding 1 day: ' . $stop_date . '<hr>';
+$stop_date = $attributeValue;
+$stop_date = date('M j, Y', strtotime($stop_date . ' +1 day'));
+echo $stop_date;
+?>
+                                        <?php } else {
+                                            echo $attributeValue;
+                                        } ?>
+                                    </td>
+                                </tr>
+                            <?php } ?>
+                        <?php } ?>
+                    </tbody>
+                </table>
+            </div>
+        <?php $i++; ?>
+        <?php } ?>
+        </div>
+    </div>
+<?php } ?>
+

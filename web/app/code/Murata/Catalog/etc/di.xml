@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Created by wilson.sun330@gmail.com
+ * Date: 13/05/2015
+* Time: 5:02 PM
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <preference for="Magento\Catalog\Controller\Product\Compare\Add" type="Murata\Catalog\Controller\Product\Compare\Add" />
+    <preference for="Magento\Catalog\Controller\Product\Compare\Ajax" type="Murata\Catalog\Controller\Product\Compare\Ajax" />
+    <preference for="Magento\Catalog\Block\Product\View\Attributes" type="Murata\Catalog\Block\Product\View\Attributes" />
+    <preference for="Magento\Catalog\Block\Product\ImageBuilder" type="Murata\Catalog\Block\Product\ImageBuilder" />
+    <preference for="Magento\Eav\Model\ResourceModel\Entity\Attribute\Option" type="Murata\Catalog\Model\ResourceModel\Entity\Attribute\Option"/>
+    <preference for="Magento\Catalog\Block\Product\View\AddTo\Compare" type="Murata\Catalog\Block\Product\View\AddTo\Compare" />
+</config>

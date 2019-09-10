@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <manadev_features>
+            <Manadev_LayeredNavigationAjax>
+                <version>18.06.2511</version>
+                <code>ajax-in-layered-navigation-magento2</code>
+                <title>AJAX in Magento Layered Navigation</title>
+                <sort_order>310</sort_order>
+            </Manadev_LayeredNavigationAjax>
+            <Manadev_LayeredNavigation>
+                <removed_by_Manadev_LayeredNavigationAjax />
+            </Manadev_LayeredNavigation>
+        </manadev_features>
+        <mana_layered_navigation>
+            <ajax>
+                <history>1</history>
+                <overlay>0</overlay>
+                <indicator>1</indicator>
+                <apply_filters>after_each_click</apply_filters>
+                <scroll_to_top>after_pager_clicks</scroll_to_top>
+            </ajax>
+        </mana_layered_navigation>
+    </default>
+</config>

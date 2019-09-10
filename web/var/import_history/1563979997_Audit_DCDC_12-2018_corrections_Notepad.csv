@@ -1,0 +1,799 @@
+sku,name,store_view_code,short_description,dimension,dimensions_mm,line_regulation_max,load_regulation_max,i2out,output_power_total_w,series_description,total_output_power_w
+NMD050512SC,NMD050512SC,,"5V/5V 100mA/100mA, Isolated 1W Dual Output  1kVDC, DC-DC Converter, 4.5-9V Input",,,,,,,,
+NMD050515SC,NMD050515SC,,"5V/5V 100mA/100mA, Isolated 1W Dual Output  1kVDC, DC-DC Converter, 4.5-9V Input",,,,,,,,
+NME0505DC,NME0505DC,,"5V 200mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 4.5-5.5V Input",,,,,,,,
+NME0505SC,NME0505SC,,"5V 200mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 4.5-5.5V Input",,,,,,,,
+NME0509DC,NME0509DC,,"9V 111mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 4.5-5.5V Input",,,,,,,,
+NME0509SC,NME0509SC,,"9V 111mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 4.5-5.5V Input",,,,,,,,
+NME0512DC,NME0512DC,,"12V 83mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 4.5-5.5V Input",,,,,,,,
+NME0512SC,NME0512SC,,"12V 83mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 4.5-5.5V Input",,,,,,,,
+NME0515DC,NME0515DC,,"15V 67mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 4.5-5.5V Input",,,,,,,,
+NME0515SC,NME0515SC,,"15V 67mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 4.5-5.5V Input",,,,,,,,
+NME0524DC,NME0524DC,,"24V 42mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 4.5-5.5V Input",,,,,,,,
+NME0524SC,NME0524SC,,"24V 42mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 4.5-5.5V Input",,,,,,,,
+NME1205DC,NME1205DC,,"5V 200mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 10.8-13.2V Input",,,,,,,,
+NME1205SC,NME1205SC,,"5V 200mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 10.8-13.2V Input",,,,,,,,
+NME1209SC,NME1209SC,,"9V 111mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 10.8-13.2V Input",,,,,,,,
+NME1212DC,NME1212DC,,"12V 83mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 10.8-13.2V Input",,,,,,,,
+NME1212SC,NME1212SC,,"12V 83mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 10.8-13.2V Input",,,,,,,,
+NME1215DC,NME1215DC,,"15V 67mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 10.8-13.2V Input",,,,,,,,
+NME1215SC,NME1215SC,,"15V 67mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 10.8-13.2V Input",,,,,,,,
+NME1515SC,NME1515SC,,"15V 67mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 13.5-16.5V Input",,,,,,,,
+NME2405DC,NME2405DC,,"5V 200mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 21.6-26.4V Input",,,,,,,,
+NME2405SC,NME2405SC,,"5V 200mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 21.6-26.4V Input",,,,,,,,
+NME2412DC,NME2412DC,,"12V 83mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 21.6-26.4V Input",,,,,,,,
+NME2412SC,NME2412SC,,"12V 83mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 21.6-26.4V Input",,,,,,,,
+NME2415DC,NME2415DC,,"15V 67mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 21.6-26.4V Input",,,,,,,,
+NME2415SC,NME2415SC,,"15V 67mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 21.6-26.4V Input",,,,,,,,
+NME0505SPC,NME0505SPC,,"5V 200mA, Isolated 1W Single Output DC-DC Converter 1kVDC, 4.5-5.5V Input",,,,,,,,
+NME0505DPC,NME0505DPC,,"5V 200mA, Isolated 1W Single Output DC-DC Converter 1kVDC, 4.5 - 5.5V Input",,,,,,,,
+NCS6S1212C,NCS6S1212C,,,0.787 x 1.260 x 0.394,,,,,,,
+NCS6S1215C,NCS6S1215C,,,0.787 x 1.260 x 0.394,,,,,,,
+NCS6S4803C,NCS6S4803C,,,0.787 x 1.260 x 0.394,,,,,,,
+NCS6S4805C,NCS6S4805C,,,0.787 x 1.260 x 0.394,,,,,,,
+NCS6S4812C,NCS6S4812C,,,0.787 x 1.260 x 0.394,,,,,,,
+NCS6S4815C,NCS6S4815C,,,0.787 x 1.260 x 0.394,,,,,,,
+LME0512DC,LME0512DC,,,,11.6 x 9.9 x 6.9,,,,,,
+LME1209DC,LME1209DC,,,,11.6 x 9.9 x 6.10,,,,,,
+NCS12S1203C,NCS12S1203C,,,,,±0.5,,,,,
+NCS12S1205C,NCS12S1205C,,,,,±0.5,,,,,
+NCS12S1212C,NCS12S1212C,,,,,±0.5,,,,,
+NCS12S1215C,NCS12S1215C,,,,,±0.5,,,,,
+NCS12D1205C,NCS12D1205C,,,,,±0.5,,,,,
+NCS12D1212C,NCS12D1212C,,,,,±0.5,,,,,
+NCS12D1215C,NCS12D1215C,,,,,±0.5,,,,,
+NCS1S2412SC,NCS1S2412SC,,,,,±0.5,,,,,
+NCS1S2405SC,NCS1S2405SC,,,,,±0.5,,,,,
+NCS1S2403SC,NCS1S2403SC,,,,,±0.5,,,,,
+NCS1S1212SC,NCS1S1212SC,,,,,±0.5,,,,,
+NCS1S1205SC,NCS1S1205SC,,,,,±0.5,,,,,
+NCS1S1203SC,NCS1S1203SC,,,,,±0.5,,,,,
+MEV1S1209SC,MEV1S1209SC,,,,,,3.3,,,,
+MEV1S1212SC,MEV1S1212SC,,,,,,3.6,,,,
+MEV1S1215SC,MEV1S1215SC,,,,,,2.9,,,,
+NTA0503MC-R,NTA0503MC-R,,,,,,,-0.152,,,
+NCS6S1203C,NCS6S1203C,,,,,,,,6,,6
+NDL0505SC,NDL0505SC,,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL0509SC,NDL0509SC,,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL0512SC,NDL0512SC,,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL0515SC,NDL0515SC,,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL1205SC,NDL1205SC,,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL1209SC,NDL1209SC,,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL1212SC,NDL1212SC,,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL1215SC,NDL1215SC,,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL2405SC,NDL2405SC,,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL2409SC,NDL2409SC,,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL2412SC,NDL2412SC,,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL2415SC,NDL2415SC,,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL4805SC,NDL4805SC,,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL4809SC,NDL4809SC,,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL4812SC,NDL4812SC,,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL4815SC,NDL4815SC,,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+MTC1S1203MC,MTC1S1203MC,,,,,±0.2,±0.5,,,,
+MTC1S1205MC,MTC1S1205MC,,,,,±0.2,±0.5,,,,
+MTC1S1212MC,MTC1S1212MC,,,,,±0.2,±0.5,,,,
+MTC1S2403MC,MTC1S2403MC,,,,,±0.2,±0.5,,,,
+MTC1S2405MC,MTC1S2405MC,,,,,±0.2,±0.5,,,,
+MTC1S2412MC,MTC1S2412MC,,,,,±0.2,±0.5,,,,
+MTC2S1203MC,MTC2S1203MC,,,,,±0.2,±0.5,,,,
+MTC2S1205MC,MTC2S1205MC,,,,,±0.2,±0.5,,,,
+MTC2S1212MC,MTC2S1212MC,,,,,±0.2,±0.5,,,,
+MTC2S2403MC,MTC2S2403MC,,,,,±0.2,±0.5,,,,
+MTC2S2405MC,MTC2S2405MC,,,,,±0.2,±0.5,,,,
+MTC2S2412MC,MTC2S2412MC,,,,,±0.2,±0.5,,,,
+NCS3S1203SC,NCS3S1203SC,,,,,±0.5,±1,,,,
+NCS3S1205SC,NCS3S1205SC,,,,,±0.5,±1,,,,
+NCS3S1212SC,NCS3S1212SC,,,,,±0.5,±1,,,,
+NCS3S1215SC,NCS3S1215SC,,,,,±0.5,±1,,,,
+NCS3S4803SC,NCS3S4803SC,,,,,±0.5,±1,,,,
+NCS3S4805SC,NCS3S4805SC,,,,,±0.5,±1,,,,
+NCS3S4812SC,NCS3S4812SC,,,,,±0.5,±1,,,,
+NCS3S4815SC,NCS3S4815SC,,,,,±0.5,±1,,,,
+NMD050512SC,,murataps_store_view,"5V/5V 100mA/100mA, Isolated 1W Dual Output  1kVDC, DC-DC Converter, 4.5-9V Input",,,,,,,,
+NMD050515SC,,murataps_store_view,"5V/5V 100mA/100mA, Isolated 1W Dual Output  1kVDC, DC-DC Converter, 4.5-9V Input",,,,,,,,
+NME0505DC,,murataps_store_view,"5V 200mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 4.5-5.5V Input",,,,,,,,
+NME0505SC,,murataps_store_view,"5V 200mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 4.5-5.5V Input",,,,,,,,
+NME0509DC,,murataps_store_view,"9V 111mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 4.5-5.5V Input",,,,,,,,
+NME0509SC,,murataps_store_view,"9V 111mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 4.5-5.5V Input",,,,,,,,
+NME0512DC,,murataps_store_view,"12V 83mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 4.5-5.5V Input",,,,,,,,
+NME0512SC,,murataps_store_view,"12V 83mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 4.5-5.5V Input",,,,,,,,
+NME0515DC,,murataps_store_view,"15V 67mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 4.5-5.5V Input",,,,,,,,
+NME0515SC,,murataps_store_view,"15V 67mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 4.5-5.5V Input",,,,,,,,
+NME0524DC,,murataps_store_view,"24V 42mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 4.5-5.5V Input",,,,,,,,
+NME0524SC,,murataps_store_view,"24V 42mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 4.5-5.5V Input",,,,,,,,
+NME1205DC,,murataps_store_view,"5V 200mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 10.8-13.2V Input",,,,,,,,
+NME1205SC,,murataps_store_view,"5V 200mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 10.8-13.2V Input",,,,,,,,
+NME1209SC,,murataps_store_view,"9V 111mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 10.8-13.2V Input",,,,,,,,
+NME1212DC,,murataps_store_view,"12V 83mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 10.8-13.2V Input",,,,,,,,
+NME1212SC,,murataps_store_view,"12V 83mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 10.8-13.2V Input",,,,,,,,
+NME1215DC,,murataps_store_view,"15V 67mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 10.8-13.2V Input",,,,,,,,
+NME1215SC,,murataps_store_view,"15V 67mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 10.8-13.2V Input",,,,,,,,
+NME1515SC,,murataps_store_view,"15V 67mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 13.5-16.5V Input",,,,,,,,
+NME2405DC,,murataps_store_view,"5V 200mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 21.6-26.4V Input",,,,,,,,
+NME2405SC,,murataps_store_view,"5V 200mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 21.6-26.4V Input",,,,,,,,
+NME2412DC,,murataps_store_view,"12V 83mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 21.6-26.4V Input",,,,,,,,
+NME2412SC,,murataps_store_view,"12V 83mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 21.6-26.4V Input",,,,,,,,
+NME2415DC,,murataps_store_view,"15V 67mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 21.6-26.4V Input",,,,,,,,
+NME2415SC,,murataps_store_view,"15V 67mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 21.6-26.4V Input",,,,,,,,
+NME0505SPC,,murataps_store_view,"5V 200mA, Isolated 1W Single Output DC-DC Converter 1kVDC, 4.5-5.5V Input",,,,,,,,
+NME0505DPC,,murataps_store_view,"5V 200mA, Isolated 1W Single Output DC-DC Converter 1kVDC, 4.5 - 5.5V Input",,,,,,,,
+NCS6S1212C,,murataps_store_view,,0.787 x 1.260 x 0.394,,,,,,,
+NCS6S1215C,,murataps_store_view,,0.787 x 1.260 x 0.394,,,,,,,
+NCS6S4803C,,murataps_store_view,,0.787 x 1.260 x 0.394,,,,,,,
+NCS6S4805C,,murataps_store_view,,0.787 x 1.260 x 0.394,,,,,,,
+NCS6S4812C,,murataps_store_view,,0.787 x 1.260 x 0.394,,,,,,,
+NCS6S4815C,,murataps_store_view,,0.787 x 1.260 x 0.394,,,,,,,
+LME0512DC,,murataps_store_view,,,11.6 x 9.9 x 6.9,,,,,,
+LME1209DC,,murataps_store_view,,,11.6 x 9.9 x 6.10,,,,,,
+NCS12S1203C,,murataps_store_view,,,,±0.5,,,,,
+NCS12S1205C,,murataps_store_view,,,,±0.5,,,,,
+NCS12S1212C,,murataps_store_view,,,,±0.5,,,,,
+NCS12S1215C,,murataps_store_view,,,,±0.5,,,,,
+NCS12D1205C,,murataps_store_view,,,,±0.5,,,,,
+NCS12D1212C,,murataps_store_view,,,,±0.5,,,,,
+NCS12D1215C,,murataps_store_view,,,,±0.5,,,,,
+NCS1S2412SC,,murataps_store_view,,,,±0.5,,,,,
+NCS1S2405SC,,murataps_store_view,,,,±0.5,,,,,
+NCS1S2403SC,,murataps_store_view,,,,±0.5,,,,,
+NCS1S1212SC,,murataps_store_view,,,,±0.5,,,,,
+NCS1S1205SC,,murataps_store_view,,,,±0.5,,,,,
+NCS1S1203SC,,murataps_store_view,,,,±0.5,,,,,
+MEV1S1209SC,,murataps_store_view,,,,,3.3,,,,
+MEV1S1212SC,,murataps_store_view,,,,,3.6,,,,
+MEV1S1215SC,,murataps_store_view,,,,,2.9,,,,
+NTA0503MC-R,,murataps_store_view,,,,,,-0.152,,,
+NCS6S1203C,,murataps_store_view,,,,,,,6,,6
+NDL0505SC,,murataps_store_view,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL0509SC,,murataps_store_view,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL0512SC,,murataps_store_view,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL0515SC,,murataps_store_view,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL1205SC,,murataps_store_view,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL1209SC,,murataps_store_view,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL1212SC,,murataps_store_view,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL1215SC,,murataps_store_view,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL2405SC,,murataps_store_view,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL2409SC,,murataps_store_view,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL2412SC,,murataps_store_view,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL2415SC,,murataps_store_view,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL4805SC,,murataps_store_view,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL4809SC,,murataps_store_view,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL4812SC,,murataps_store_view,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL4815SC,,murataps_store_view,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+MTC1S1203MC,,murataps_store_view,,,,±0.2,±0.5,,,,
+MTC1S1205MC,,murataps_store_view,,,,±0.2,±0.5,,,,
+MTC1S1212MC,,murataps_store_view,,,,±0.2,±0.5,,,,
+MTC1S2403MC,,murataps_store_view,,,,±0.2,±0.5,,,,
+MTC1S2405MC,,murataps_store_view,,,,±0.2,±0.5,,,,
+MTC1S2412MC,,murataps_store_view,,,,±0.2,±0.5,,,,
+MTC2S1203MC,,murataps_store_view,,,,±0.2,±0.5,,,,
+MTC2S1205MC,,murataps_store_view,,,,±0.2,±0.5,,,,
+MTC2S1212MC,,murataps_store_view,,,,±0.2,±0.5,,,,
+MTC2S2403MC,,murataps_store_view,,,,±0.2,±0.5,,,,
+MTC2S2405MC,,murataps_store_view,,,,±0.2,±0.5,,,,
+MTC2S2412MC,,murataps_store_view,,,,±0.2,±0.5,,,,
+NCS3S1203SC,,murataps_store_view,,,,±0.5,±1,,,,
+NCS3S1205SC,,murataps_store_view,,,,±0.5,±1,,,,
+NCS3S1212SC,,murataps_store_view,,,,±0.5,±1,,,,
+NCS3S1215SC,,murataps_store_view,,,,±0.5,±1,,,,
+NCS3S4803SC,,murataps_store_view,,,,±0.5,±1,,,,
+NCS3S4805SC,,murataps_store_view,,,,±0.5,±1,,,,
+NCS3S4812SC,,murataps_store_view,,,,±0.5,±1,,,,
+NCS3S4815SC,,murataps_store_view,,,,±0.5,±1,,,,
+NMD050512SC,,power_store_view,"5V/5V 100mA/100mA, Isolated 1W Dual Output  1kVDC, DC-DC Converter, 4.5-9V Input",,,,,,,,
+NMD050515SC,,power_store_view,"5V/5V 100mA/100mA, Isolated 1W Dual Output  1kVDC, DC-DC Converter, 4.5-9V Input",,,,,,,,
+NME0505DC,,power_store_view,"5V 200mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 4.5-5.5V Input",,,,,,,,
+NME0505SC,,power_store_view,"5V 200mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 4.5-5.5V Input",,,,,,,,
+NME0509DC,,power_store_view,"9V 111mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 4.5-5.5V Input",,,,,,,,
+NME0509SC,,power_store_view,"9V 111mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 4.5-5.5V Input",,,,,,,,
+NME0512DC,,power_store_view,"12V 83mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 4.5-5.5V Input",,,,,,,,
+NME0512SC,,power_store_view,"12V 83mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 4.5-5.5V Input",,,,,,,,
+NME0515DC,,power_store_view,"15V 67mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 4.5-5.5V Input",,,,,,,,
+NME0515SC,,power_store_view,"15V 67mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 4.5-5.5V Input",,,,,,,,
+NME0524DC,,power_store_view,"24V 42mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 4.5-5.5V Input",,,,,,,,
+NME0524SC,,power_store_view,"24V 42mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 4.5-5.5V Input",,,,,,,,
+NME1205DC,,power_store_view,"5V 200mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 10.8-13.2V Input",,,,,,,,
+NME1205SC,,power_store_view,"5V 200mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 10.8-13.2V Input",,,,,,,,
+NME1209SC,,power_store_view,"9V 111mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 10.8-13.2V Input",,,,,,,,
+NME1212DC,,power_store_view,"12V 83mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 10.8-13.2V Input",,,,,,,,
+NME1212SC,,power_store_view,"12V 83mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 10.8-13.2V Input",,,,,,,,
+NME1215DC,,power_store_view,"15V 67mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 10.8-13.2V Input",,,,,,,,
+NME1215SC,,power_store_view,"15V 67mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 10.8-13.2V Input",,,,,,,,
+NME1515SC,,power_store_view,"15V 67mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 13.5-16.5V Input",,,,,,,,
+NME2405DC,,power_store_view,"5V 200mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 21.6-26.4V Input",,,,,,,,
+NME2405SC,,power_store_view,"5V 200mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 21.6-26.4V Input",,,,,,,,
+NME2412DC,,power_store_view,"12V 83mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 21.6-26.4V Input",,,,,,,,
+NME2412SC,,power_store_view,"12V 83mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 21.6-26.4V Input",,,,,,,,
+NME2415DC,,power_store_view,"15V 67mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 21.6-26.4V Input",,,,,,,,
+NME2415SC,,power_store_view,"15V 67mA, Isolated 1W Single Output 1kVDC, DC-DC Converter, 21.6-26.4V Input",,,,,,,,
+NME0505SPC,,power_store_view,"5V 200mA, Isolated 1W Single Output DC-DC Converter 1kVDC, 4.5-5.5V Input",,,,,,,,
+NME0505DPC,,power_store_view,"5V 200mA, Isolated 1W Single Output DC-DC Converter 1kVDC, 4.5 - 5.5V Input",,,,,,,,
+NCS6S1212C,,power_store_view,,0.787 x 1.260 x 0.394,,,,,,,
+NCS6S1215C,,power_store_view,,0.787 x 1.260 x 0.394,,,,,,,
+NCS6S4803C,,power_store_view,,0.787 x 1.260 x 0.394,,,,,,,
+NCS6S4805C,,power_store_view,,0.787 x 1.260 x 0.394,,,,,,,
+NCS6S4812C,,power_store_view,,0.787 x 1.260 x 0.394,,,,,,,
+NCS6S4815C,,power_store_view,,0.787 x 1.260 x 0.394,,,,,,,
+LME0512DC,,power_store_view,,,11.6 x 9.9 x 6.9,,,,,,
+LME1209DC,,power_store_view,,,11.6 x 9.9 x 6.10,,,,,,
+NCS12S1203C,,power_store_view,,,,±0.5,,,,,
+NCS12S1205C,,power_store_view,,,,±0.5,,,,,
+NCS12S1212C,,power_store_view,,,,±0.5,,,,,
+NCS12S1215C,,power_store_view,,,,±0.5,,,,,
+NCS12D1205C,,power_store_view,,,,±0.5,,,,,
+NCS12D1212C,,power_store_view,,,,±0.5,,,,,
+NCS12D1215C,,power_store_view,,,,±0.5,,,,,
+NCS1S2412SC,,power_store_view,,,,±0.5,,,,,
+NCS1S2405SC,,power_store_view,,,,±0.5,,,,,
+NCS1S2403SC,,power_store_view,,,,±0.5,,,,,
+NCS1S1212SC,,power_store_view,,,,±0.5,,,,,
+NCS1S1205SC,,power_store_view,,,,±0.5,,,,,
+NCS1S1203SC,,power_store_view,,,,±0.5,,,,,
+MEV1S1209SC,,power_store_view,,,,,3.3,,,,
+MEV1S1212SC,,power_store_view,,,,,3.6,,,,
+MEV1S1215SC,,power_store_view,,,,,2.9,,,,
+NTA0503MC-R,,power_store_view,,,,,,-0.152,,,
+NCS6S1203C,,power_store_view,,,,,,,6,,6
+NDL0505SC,,power_store_view,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL0509SC,,power_store_view,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL0512SC,,power_store_view,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL0515SC,,power_store_view,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL1205SC,,power_store_view,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL1209SC,,power_store_view,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL1212SC,,power_store_view,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL1215SC,,power_store_view,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL2405SC,,power_store_view,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL2409SC,,power_store_view,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL2412SC,,power_store_view,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL2415SC,,power_store_view,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL4805SC,,power_store_view,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL4809SC,,power_store_view,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL4812SC,,power_store_view,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+NDL4815SC,,power_store_view,,,,,,,,"The NDL series is a range of high performance
+miniature DC-DC converters having regulated outputs
+over the wide temperature range of -40ºC to
+85ºC. The input voltage range is 2:1 with the output
+power at 2 watts and the input to output isolation
+is 1kVDC. Continuous short circuit protection,
+external control and extremely small SIP packaging
+provide state of the art functionality. Nominal input
+voltages of 5, 12, 24 and 48V with output voltages
+of 5,9,12 and 15V are available as standard with
+custom parts on request. The plastic case is rated
+to UL94V-0 with encapsulant to UL94V-1.",
+MTC1S1203MC,,power_store_view,,,,±0.2,±0.5,,,,
+MTC1S1205MC,,power_store_view,,,,±0.2,±0.5,,,,
+MTC1S1212MC,,power_store_view,,,,±0.2,±0.5,,,,
+MTC1S2403MC,,power_store_view,,,,±0.2,±0.5,,,,
+MTC1S2405MC,,power_store_view,,,,±0.2,±0.5,,,,
+MTC1S2412MC,,power_store_view,,,,±0.2,±0.5,,,,
+MTC2S1203MC,,power_store_view,,,,±0.2,±0.5,,,,
+MTC2S1205MC,,power_store_view,,,,±0.2,±0.5,,,,
+MTC2S1212MC,,power_store_view,,,,±0.2,±0.5,,,,
+MTC2S2403MC,,power_store_view,,,,±0.2,±0.5,,,,
+MTC2S2405MC,,power_store_view,,,,±0.2,±0.5,,,,
+MTC2S2412MC,,power_store_view,,,,±0.2,±0.5,,,,
+NCS3S1203SC,,power_store_view,,,,±0.5,±1,,,,
+NCS3S1205SC,,power_store_view,,,,±0.5,±1,,,,
+NCS3S1212SC,,power_store_view,,,,±0.5,±1,,,,
+NCS3S1215SC,,power_store_view,,,,±0.5,±1,,,,
+NCS3S4803SC,,power_store_view,,,,±0.5,±1,,,,
+NCS3S4805SC,,power_store_view,,,,±0.5,±1,,,,
+NCS3S4812SC,,power_store_view,,,,±0.5,±1,,,,
+NCS3S4815SC,,power_store_view,,,,±0.5,±1,,,,

@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!--
+ @category    Mana
+ @package     Manadev_LayeredNavigationAjax
+ @copyright   Copyright (c) http://www.manadev.com
+ @license     http://www.manadev.com/license  Proprietary License
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="mana_core">
+            <group id="log" translate="label" type="text" sortOrder="10200" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Detailed Logs for Troubleshooting</label>
+                <field id="ajax_activity_in_browser_console" translate="label" type="select" sortOrder="600" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>AJAX Activity In Browser Console</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+        <section id="mana_layered_navigation">
+            <group id="ajax" translate="label" type="text" sortOrder="600" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>AJAX Refresh</label>
+                <field id="history" translate="label" type="select" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Browser 'Back' and 'Forward' Navigation Actions</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="overlay" translate="label" type="select" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Block User Actions Until AJAX Refresh Is Completed</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="indicator" translate="label" type="select" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show 'Please Wait' While AJAX Refresh Is Being Processed</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="apply_filters" translate="label" type="select" sortOrder="400" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Apply Filters</label>
+                    <source_model>Manadev\LayeredNavigationAjax\Sources\ApplyFiltersSource</source_model>
+                </field>
+                <field id="scroll_to_top" translate="label" type="select" sortOrder="500" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Scroll To Top</label>
+                    <source_model>Manadev\LayeredNavigationAjax\Sources\ScrollToTopSource</source_model>
+                </field>
+                <field id="google_analytics_account" translate="label" type="text" sortOrder="600" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Google Analytics Account ID</label>
+                    <comment>Used to track layered navigation AJAX refresh requests. Leave empty if standard setting in Google API section is filled in.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

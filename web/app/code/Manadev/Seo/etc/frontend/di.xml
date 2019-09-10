@@ -1,0 +1,26 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\App\RouterList">
+        <arguments>
+            <argument name="routerList" xsi:type="array">
+                <item name="manadev_seo_early_router" xsi:type="array">
+                    <item name="class" xsi:type="string">Manadev\Seo\Routing\EarlyRouter</item>
+                    <item name="disable" xsi:type="boolean">false</item>
+                    <item name="sortOrder" xsi:type="string">10</item>
+                </item>
+                <item name="manadev_seo_late_router" xsi:type="array">
+                    <item name="class" xsi:type="string">Manadev\Seo\Routing\LateRouter</item>
+                    <item name="disable" xsi:type="boolean">false</item>
+                    <item name="sortOrder" xsi:type="string">90</item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+
+    <type name="Magento\Framework\Url">
+        <plugin name="Manadev\Seo\Plugins\UrlBuilder" type="Manadev\Seo\Plugins\UrlBuilder" sortOrder="100"/>
+    </type>
+    <type name="Magento\Store\Block\Switcher">
+        <plugin name="Manadev\Seo\Plugins\StoreSwitcherPlugin" type="Manadev\Seo\Plugins\StoreSwitcherPlugin" sortOrder="100"/>
+    </type>
+
+</config>

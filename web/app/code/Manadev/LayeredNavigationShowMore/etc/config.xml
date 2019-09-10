@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+ @category    Mana
+ @package     Manadev_LayeredNavigationShowMore
+ @copyright   Copyright (c) http://www.manadev.com
+ @license     http://www.manadev.com/license  Proprietary License
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <manadev_features>
+            <Manadev_LayeredNavigationShowMore>
+                <version>18.03.2115</version>
+                <code>show-more-show-less-for-layered-navigation-magento2</code>
+                <title>Show More/Show Less/Popup/Scroll bar for Magento Layered Navigation</title>
+                <sort_order>350</sort_order>
+            </Manadev_LayeredNavigationShowMore>
+            <Manadev_LayeredNavigation>
+                <removed_by_Manadev_LayeredNavigationShowMore />
+            </Manadev_LayeredNavigation>
+        </manadev_features>
+        <mana_layered_navigation>
+            <show_more>
+                <effect_duration>100</effect_duration>
+            </show_more>
+        </mana_layered_navigation>
+    </default>
+</config>

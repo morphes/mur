@@ -1,0 +1,38 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Manadev\LayeredNavigation\Registries\FilterTemplates\CategoryFilterTemplates">
+        <arguments>
+            <argument name="filterTemplates" xsi:type="array">
+                <item name="radio" xsi:type="object">Manadev\LayeredNavigationRadio\FilterTemplates\Category\Radio</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Manadev\LayeredNavigation\Registries\FilterTemplates\DecimalFilterTemplates">
+        <arguments>
+            <argument name="filterTemplates" xsi:type="array">
+                <item name="radio" xsi:type="object">Manadev\LayeredNavigationRadio\FilterTemplates\Decimal\Radio</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Manadev\LayeredNavigation\Registries\FilterTemplates\PriceFilterTemplates">
+        <arguments>
+            <argument name="filterTemplates" xsi:type="array">
+                <item name="radio" xsi:type="object">Manadev\LayeredNavigationRadio\FilterTemplates\Price\Radio</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Manadev\LayeredNavigation\Registries\FilterTemplates\SwatchFilterTemplates">
+        <arguments>
+            <argument name="filterTemplates" xsi:type="array">
+                <item name="radio" xsi:type="object">Manadev\LayeredNavigationRadio\FilterTemplates\Swatch\Radio</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Manadev\LayeredNavigation\Registries\FilterTemplates\DropdownFilterTemplates">
+        <arguments>
+            <argument name="filterTemplates" xsi:type="array">
+                <item name="radio" xsi:type="object">Manadev\LayeredNavigationRadio\FilterTemplates\Dropdown\Radio</item>
+            </argument>
+        </arguments>
+    </type>
+
+</config>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!--
+ @category    Mana
+ @package     Manadev_LayeredNavigationCategoryTree
+ @copyright   Copyright (c) http://www.manadev.com
+ @license     http://www.manadev.com/license  Proprietary License
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="mana_layered_navigation">
+            <group id="category_tree" translate="label" type="text" sortOrder="700" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Category Tree</label>
+                <field id="expand_all_on_initial_load" translate="label" type="select" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Expand All Tree Items on Initial Page Load</label>
+                    <comment>Tree remembers collapsed/expanded state of each category, so on subsequent page loads remembered collapsed/expanded state is restored and not touched items are processed as specified here</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="expand_selected" translate="label" type="select" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Expand Currently Applied Item on Initial Page Load</label>
+                    <comment>If `No` is set, then currently applied item is expanded/collapsed based on the above setting</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

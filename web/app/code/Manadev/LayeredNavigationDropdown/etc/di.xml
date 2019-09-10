@@ -1,0 +1,38 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Manadev\LayeredNavigation\Registries\FilterTemplates\CategoryFilterTemplates">
+        <arguments>
+            <argument name="filterTemplates" xsi:type="array">
+                <item name="select" xsi:type="object">Manadev\LayeredNavigationDropdown\FilterTemplates\Category\Select</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Manadev\LayeredNavigation\Registries\FilterTemplates\DecimalFilterTemplates">
+        <arguments>
+            <argument name="filterTemplates" xsi:type="array">
+                <item name="select" xsi:type="object">Manadev\LayeredNavigationDropdown\FilterTemplates\Decimal\Select</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Manadev\LayeredNavigation\Registries\FilterTemplates\PriceFilterTemplates">
+        <arguments>
+            <argument name="filterTemplates" xsi:type="array">
+                <item name="select" xsi:type="object">Manadev\LayeredNavigationDropdown\FilterTemplates\Price\Select</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Manadev\LayeredNavigation\Registries\FilterTemplates\SwatchFilterTemplates">
+        <arguments>
+            <argument name="filterTemplates" xsi:type="array">
+                <item name="select" xsi:type="object">Manadev\LayeredNavigationDropdown\FilterTemplates\Swatch\Select</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Manadev\LayeredNavigation\Registries\FilterTemplates\DropdownFilterTemplates">
+        <arguments>
+            <argument name="filterTemplates" xsi:type="array">
+                <item name="select" xsi:type="object">Manadev\LayeredNavigationDropdown\FilterTemplates\Dropdown\Select</item>
+            </argument>
+        </arguments>
+    </type>
+
+</config>

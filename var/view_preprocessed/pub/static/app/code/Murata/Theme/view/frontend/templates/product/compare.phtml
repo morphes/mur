@@ -1,0 +1,20 @@
+<?php /** * Copyright © Magento, Inc. All rights reserved. * See COPYING.txt for license details. */ /* @var $block \Magento\Framework\View\Element\Template */ ?> <?php $helper = $this->helper('Magento\Catalog\Helper\Product\Compare'); $items = $helper->getItemCount() > 0 ? $helper->getItemCollection() : null; $count = $helper->getItemCount(); ?> <?php if($count) { ?> <div class="block block-list block-compare" id="box-compare"><div class="block-title"><strong> <span>Compare List <small>(<?php echo $count; ?>)</small></span></strong></div><div class="block-content"><ol id="compare-items"><?php foreach($items as $item) { ?> <li class="item"><input type="hidden" class="compare-item-id" value="<?php echo $item->getId(); ?>"><span title="Remove This Item" class="btn-remove" data-product="<?php echo $item->getId(); ?>"> Remove This Item</span> <p class="product-name"><a href="<?php echo $item->getProductUrl(); ?>"><?php echo $item->getName(); ?></a></p></li> <?php } ?></ol><div class="actions"><a href="/catalog/product_compare/clear" onclick="return confirm('Are you sure you would like to remove all products from your comparison?');">Clear All</a> <button type="button" title="Compare" id="CompareButton" class="button" style="cursor:pointer"><span> <span>Compare</span></span></button></div></div></div><?php } ?> <script type="text/javascript">
+    require(['jquery'],function($) {
+        $(document).ready(function () {
+            $('.btn-remove').click(function () {
+                if (confirm('Are you sure you would like to remove this item from the compare products?')) {
+                    var e = $(this);
+                    var productId = e.attr('data-product');
+                    if (productId) {
+                        $.get('/catalog/product_compare/remove', {product: productId}, function (response) {
+
+                        });
+                    }
+                    window.location.reload();
+                }
+            });
+            $('#CompareButton').click(function () {
+                window.open("/catalog/product_compare/index/", "_BLANK", "height=400");
+            });
+        });
+    });</script>

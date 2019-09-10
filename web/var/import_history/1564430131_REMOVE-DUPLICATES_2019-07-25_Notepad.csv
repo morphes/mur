@@ -1,0 +1,1358 @@
+sku,store_view_code,name,dimension,dimensions_mm,efficiency,form_factor,i1out,load_regulation_max,measuring_range,series,total_output_power_w,v1out_vdc,v2out_vdc,vin_nominal,vin_range,product_type
+4401809-1,,D1U3CS-D-1600-12-HC4EC,,,,1U x 81.30 x 279.40,,,,,,,,,,simple
+8401804,,D1U3CS-D-850-12-HC3C,,,,1U x 81.30 x 279.40,,,,,,,,,,simple
+8801749,,D1U3CS-D-850-12-HC4C,,,,1U x 81.30 x 279.40,,,,,,,,,,simple
+8801734,,D1U3CS-W-1200-12-HA3C,,,,1U x 81.30 x 279.40,,,,,,,,,,simple
+8801735,,D1U3CS-W-1200-12-HA4C,,,,1U x 81.30 x 279.40,,,,,,,,,,simple
+8801736,,D1U3CS-W-1200-12-HC3C,,,,1U x 81.30 x 279.40,,,,,,,,,,simple
+8801737,,D1U3CS-W-1200-12-HC4C,,,,1U x 81.30 x 279.40,,,,,,,,,,simple
+4401842-1,,D1U3CS-W-1300F-12-HA4EC,,,,1U x 81.30 x 279.40,,,,,,,,,,simple
+4401820-1,,D1U3CS-W-1300F-12-HC4EC,,,,1U x 81.30 x 279.40,,,,,,,,,,simple
+8801730,,D1U3CS-W-850-12-HC3C,,,,1U x 81.30 x 279.40,,,,,,,,,,simple
+4401731-3,,D1U3CS-W-850-12-HC4C,,,,1U x 81.30 x 279.40,,,,,,,,,,simple
+4401706-1,,D1U4CS-W-2200-12-HA3C,,,,1U x 101.60 x 355.60,,,,,,,,,,simple
+4401699-6,,D1U4CS-W-2200-12-HA4C,,,,1U x 101.60 x 355.60,,,,,,,,,,simple
+4401707-5,,D1U4CS-W-2200-12-HC3C,,,,1U x 101.60 x 355.60,,,,,,,,,,simple
+4401708-2,,D1U4CS-W-2200-12-HC4C,,,,1U x 101.60 x 355.60,,,,,,,,,,simple
+D1U4-W-1200-12-HA1C,,D1U4-W-1200-12-HA1C,,,,1U x 101.60 x 355.60,,,,,,,,,,simple
+D1U4-W-1200-12-HA2C,,D1U4-W-1200-12-HA2C,,,,1U x 101.60 x 355.60,,,,,,,,,,simple
+D1U4-W-1200-12-HC1C,,D1U4-W-1200-12-HC1C,,,,1U x 101.60 x 355.60,,,,,,,,,,simple
+D1U4-W-1200-12-HC2C,,D1U4-W-1200-12-HC2C,,,,1U x 101.60 x 355.60,,,,,,,,,,simple
+D1U4-W-1600-12-HA1C,,D1U4-W-1600-12-HA1C,,,,1U x 101.60 x 355.60,,,,,,,,,,simple
+D1U4-W-1600-12-HA2C,,D1U4-W-1600-12-HA2C,,,,1U x 101.60 x 355.60,,,,,,,,,,simple
+D1U4-W-1600-12-HC1C,,D1U4-W-1600-12-HC1C,,,,1U x 101.60 x 355.60,,,,,,,,,,simple
+D1U4-W-1600-12-HC2C,,D1U4-W-1600-12-HC2C,,,,1U x 101.60 x 355.60,,,,,,,,,,simple
+4401793-3,,D1U4-W-1600-54-HB3C,,,,1U x 101.60 x 355.60,,,,,,,,,,simple
+4401843,,D1U4-W-1600-54-HB4C,,,,1U x 101.60 x 355.60,,,,,,,,,,simple
+4401853-1,,D1U54-D-1200-12-HA3PC,,,,1U x 54.5 x 321.5,,,,,,,,,,simple
+4401851-1,,D1U54-D-1200-12-HA4PC,,,,1U x 54.5 x 321.5,,,,,,,,,,simple
+4401852-1,,D1U54-D-1200-12-HC3PC,,,,1U x 54.5 x 321.5,,,,,,,,,,simple
+4401828-1,,D1U54-D-1200-12-HC4PC,,,,1U x 54.5 x 321.5,,,,,,,,,,simple
+4401898-1,,D1U54-D-1500-12-HA3C,,,,1U x 54.5 x 321.5,,,,,,,,,,simple
+4401897-1,,D1U54-D-1500-12-HA4C,,,,1U x 54.5 x 321.5,,,,,,,,,,simple
+4401903-1,,D1U54-D-1500-12-HB4C,,,,1U x 54.5 x 321.5,,,,,,,,,,simple
+4401901-1,,D1U54-D-1500-12-HC3C,,,,1U x 54.5 x 321.5,,,,,,,,,,simple
+4401900-1,,D1U54-D-1500-12-HC4C,,,,1U x 54.5 x 321.5,,,,,,,,,,simple
+4401920-1,,D1U54-D-450-12-HA3C,,,,1U x 54.5 x 228.6,,,,,,,,,,simple
+4401919-1,,D1U54-D-450-12-HA4C,,,,1U x 54.5 x 228.6,,,,,,,,,,simple
+4401879-1,,D1U54-D-650-12-HB3C,,,,1U x 54.5 x 228.6,,,,,,,,,,simple
+4401878-1,,D1U54-D-650-12-HB4C,,,,1U x 54.5 x 228.6,,,,,,,,,,simple
+4401970-1,,D1U54-D-800-12-HB3BC,,,,1U x 54.5 x 236.6,,,,,,,,,,simple
+4401971-1,,D1U54-D-800-12-HB4BC,,,,1U x 54.5 x 236.6,,,,,,,,,,simple
+4405004-1,,D1U54-HD-1200-12-HA4C,,,,1U x 54.5 x 321.5,,,,,,,,,,simple
+4402002-1,,D1U54P-M-800-12-HB3BC,,,,1U x 54.5 x 236.6,,,,,,,,,,simple
+4402001-1,,D1U54P-M-800-12-HB4BC,,,,1U x 54.5 x 236.6,,,,,,,,,,simple
+4401802-1,,D1U54P-W-1200-12-HA3PC,,,,1U x 54.5 x 321.5,,,,,,,,,,simple
+4401803-1,,D1U54P-W-1200-12-HA4PC,,,,1U x 54.5 x 321.5,,,,,,,,,,simple
+4401801-1,,D1U54P-W-1200-12-HC3PC,,,,1U x 54.5 x 321.5,,,,,,,,,,simple
+4401792-2,,D1U54P-W-1200-12-HC4PC,,,,1U x 54.5 x 321.5,,,,,,,,,,simple
+4401894-2,,D1U54P-W-1500-12-HA3TC,,,,1U x 54.5 x 321.5,,,,,,,,,,simple
+4401893-2,,D1U54P-W-1500-12-HA4TC,,,,1U x 54.5 x 321.5,,,,,,,,,,simple
+4401895-2,,D1U54P-W-1500-12-HB4TC,,,,1U x 54.5 x 321.5,,,,,,,,,,simple
+4401892-2,,D1U54P-W-1500-12-HC3TC,,,,1U x 54.5 x 321.5,,,,,,,,,,simple
+4401891-2,,D1U54P-W-1500-12-HC4TC,,,,1U x 54.5 x 321.5,,,,,,,,,,simple
+4401966-1,,D1U54P-W-2000-12-HA3C,,,,1U x 54.5 x 321.5,,,,,,,,,,simple
+4401959-1,,D1U54P-W-2000-12-HA4C,,,,1U x 54.5 x 321.5,,,,,,,,,,simple
+4401965-1,,D1U54P-W-2000-12-HB3C,,,,1U x 54.5 x 321.5,,,,,,,,,,simple
+4401958-1,,D1U54P-W-2000-12-HB4C,,,,1U x 54.5 x 321.5,,,,,,,,,,simple
+4401967-1,,D1U54P-W-2000-12-HC3C,,,,1U x 54.5 x 321.5,,,,,,,,,,simple
+4401960-1,,D1U54P-W-2000-12-HC4C,,,,1U x 54.5 x 321.5,,,,,,,,,,simple
+4401910-1,,D1U54P-W-450-12-HA3C,,,,1U x 54.5 x 228.6,,,,,,,,,,simple
+8401909-1,,D1U54P-W-450-12-HA4C,,,,1U x 54.5 x 228.6,,,,,,,,,,simple
+8401908-1,,D1U54P-W-450-12-HB3C,,,,1U x 54.5 x 228.6,,,,,,,,,,simple
+8401907-1,,D1U54P-W-450-12-HB4C,,,,1U x 54.5 x 228.6,,,,,,,,,,simple
+4401877-1,,D1U54P-W-650-12-HB3C,,,,1U x 54.5 x 228.6,,,,,,,,,,simple
+4401876-1,,D1U54P-W-650-12-HB4C,,,,1U x 54.5 x 228.6,,,,,,,,,,simple
+D1U-H-2800-52-HB1C,,D1U-H-2800-52-HB1C,,,,1U x 140 x 289,,,,,,,,,,simple
+D1U-H-2800-52-HB1DC,,D1U-H-2800-52-HB1DC,,,,1U x 140 x 289,,,,,,,,,,simple
+D1U-W-1200-12-HA1C,,D1U-W-1200-12-HA1C,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-12-HA2,,D1U-W-1200-12-HA2,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-12-HA2C,,D1U-W-1200-12-HA2C,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-12-HC1C,,D1U-W-1200-12-HC1C,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-12-HC2,,D1U-W-1200-12-HC2,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-12-HC2C,,D1U-W-1200-12-HC2C,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-48-HA1C,,D1U-W-1200-48-HA1C,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-48-HA2C,,D1U-W-1200-48-HA2C,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-48-HB1C,,D1U-W-1200-48-HB1C,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-48-HB2C,,D1U-W-1200-48-HB2C,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-48-HC1C,,D1U-W-1200-48-HC1C,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-48-HC2C,,D1U-W-1200-48-HC2C,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-12-HA1C,,D1U-W-1600-12-HA1C,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-12-HA2C,,D1U-W-1600-12-HA2C,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-12-HC1C,,D1U-W-1600-12-HC1C,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-12-HC2C,,D1U-W-1600-12-HC2C,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-48-HA1C,,D1U-W-1600-48-HA1C,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-48-HA2C,,D1U-W-1600-48-HA2C,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-48-HB1C,,D1U-W-1600-48-HB1C,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-48-HB2C,,D1U-W-1600-48-HB2C,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-48-HC1C,,D1U-W-1600-48-HC1C,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-48-HC2C,,D1U-W-1600-48-HC2C,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-2000-48-HA2C,,D1U-W-2000-48-HA2C,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-2000-48-HB2C,,D1U-W-2000-48-HB2C,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+4401570,,D1U-W-2000-48-HB4C,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-2000-48-HC2C,,D1U-W-2000-48-HC2C,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+8999504,,DBQ0135V1N2BC,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8999510,,DBQ0135V1N2BSC,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8999502,,DBQ0135V1NBC,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8999506,,DBQ0135V1NBSC,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8999505,,DBQ0135V1P2BC,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8999511,,DBQ0135V1P2BSC,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8999503,,DBQ0135V1PBC,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8999507,,DBQ0135V1PBSC,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8978305,,DMR20-0/5-G-C,,,,,,,0 to 5V,,,,,,,simple
+8978300,,DMR20-0/5-R-C,,,,,,,0 to 5V,,,,,,,simple
+8978302,,DMR20-4/20B-R-C,,,,,,,4 to 20mA,,,,,,,simple
+8978304,,DMR20-4/20S-G-C,,,,,,,4 to 20mA,,,,,,,simple
+8978301,,DMR20-4/20S-R-C,,,,,,,4 to 20mA,,,,,,,simple
+8999891,,DRQ-11.4/88-L48PBS-C,,,96.3,,,,,,,,,,,simple
+8942096,,DSD-40BCD-RS-C,,,,,,,0 to 5V,,,,,,,simple
+8999549,,DVQ0135V1NBC,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8999553,,DVQ0135V1NBSC,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8999550,,DVQ0135V1PBC,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8102980,,EBC-8/16-L48,,,,,,-5,,,,,,,,simple
+8102982,,EBC-8/16-L48L,,,,,,-5,,,,,,,,simple
+8102981,,EBC-8/16-L48N,,,,,,-5,,,,,,,,simple
+8102983,,EBC-8/16-L48NL,,,,,,-5,,,,,,,,simple
+HB01U24D12Y,,HB01U24D12Y,,,,,,,,,,,,,20 to 30,simple
+HB01U24D12YC,,HB01U24D12YC,,,,,,,,,,,,,20 to 30,simple
+8808762,,ICF0184V1NC,,,,,,,,,,,,14,,simple
+8808761,,ICF0184V1PC,,,,,,,,,,,,14,,simple
+8928152,,IRS-24/2-Q12NF-C,,,,,,,,IRS-Q12,,,,,,simple
+8928153,,IRS-24/2-Q12P-C,,,,,,,,IRS-Q12,,,,,,simple
+NKE0312DC,,NKE0312DC,,,,,,,,,,,,,2.97 to 3.63,simple
+NKE0315DC,,NKE0315DC,,,,,,,,,,,,,2.97 to 3.63,simple
+RUW15SL05C,,RUW15SL05C,,,,,,,,,,,,16,,simple
+RUW15SL05HC,,RUW15SL05HC,,,,,,,,,,,,16,,simple
+MEU1S0309ZC,wireless_store_view,,0.327 x 0.240 x 0.313,,,,,,,,,,,,2.97 to 3.63,simple
+MEU1S0309ZC,default,,0.327 x 0.240 x 0.313,,,,,,,,,,,,2.97 to 3.63,simple
+MEU1S0303ZC,wireless_store_view,,0.327 x 0.240 x 0.313,,,,,,,,,,,,2.97 to 3.63,simple
+MEU1S0303ZC,default,,0.327 x 0.240 x 0.313,,,,,,,,,,,,2.97 to 3.63,simple
+MEU1S0305ZC,wireless_store_view,,0.327 x 0.240 x 0.313,,,,,,,,,,,,2.97 to 3.63,simple
+MEU1S0305ZC,default,,0.327 x 0.240 x 0.313,,,,,,,,,,,,2.97 to 3.63,simple
+MEU1S0312ZC,wireless_store_view,,0.327 x 0.240 x 0.313,,,,,,,,,,,,2.97 to 3.63,simple
+MEU1S0312ZC,default,,0.327 x 0.240 x 0.313,,,,,,,,,,,,2.97 to 3.63,simple
+MEU1S0315ZC,wireless_store_view,,0.327 x 0.240 x 0.313,,,,,,,,,,,,2.97 to 3.63,simple
+MEU1S0315ZC,default,,0.327 x 0.240 x 0.313,,,,,,,,,,,,2.97 to 3.63,simple
+NTE0309MC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+NTE0309MC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NTE0309MC-R,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+NTE0309MC-R,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NKE0309DC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+NKE0309DC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NKE0309SC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+NKE0309SC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+MEE1S0309SC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+MEE1S0309SC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+MEE1S0309DC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+MEE1S0309DC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+MTE1S0309MC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+MTE1S0309MC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NXJ1S0303MC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+NXJ1S0303MC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NXJ1S0305MC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+NXJ1S0305MC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NTA0303MC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+NTA0303MC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NTA0303MC-R,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NTA0305MC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+NTA0305MC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NTA0305MC-R,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NTA0309MC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+NTA0309MC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NTA0309MC-R,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+MEJ2S0303SC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+MEJ2S0303SC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+MEJ2S0305SC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+MEJ2S0305SC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+LME0305SC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+LME0305SC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+CME0305S3C,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+CME0305S3C,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+CME0303S3C,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+CME0303S3C,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NXE1S0303MC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NXE1S0305MC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+NXE1S0305MC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NTE0303MC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+NTE0303MC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NTE0303MC-R,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+NTE0303MC-R,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NTE0305MC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+NTE0305MC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NTE0305MC-R,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+NTE0305MC-R,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NTE0312MC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+NTE0312MC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NTE0312MC-R,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+NTE0312MC-R,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NTE0315MC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+NTE0315MC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NTE0315MC-R,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+NTE0315MC-R,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NKA0303DC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NKA0303SC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+NKA0303SC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NKA0305DC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NKA0305SC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+NKA0305SC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NKA0309DC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NKA0309SC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NKA0312DC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+NKA0312DC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NKA0312SC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+NKA0312SC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NKA0315DC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NKA0315SC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+NKA0315SC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NKE0303DC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+NKE0303DC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NKE0303SC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+NKE0303SC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NKE0305DC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+NKE0305DC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NKE0305SC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+NKE0305SC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+MTU1S0305MC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+MTU1S0305MC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+MTU1D0305MC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+MTU1D0305MC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+MEE1S0303SC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+MEE1S0303SC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+MEE1S0305SC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+MEE1S0305SC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+MEE1S0312SC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+MEE1S0312SC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+MEE1S0315SC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+MEE1S0315SC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+MEE1S0303DC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+MEE1S0303DC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+MEE1S0305DC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+MEE1S0305DC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+MEE1S0312DC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+MEE1S0312DC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+MEE1S0315DC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+MEE1S0315DC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+NMJ0303SAC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+NMJ0303SAC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+MTE1S0303MC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+MTE1S0303MC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+MTE1S0305MC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+MTE1S0305MC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+MTE1S0312MC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+MTE1S0312MC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+MTE1S0315MC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+MTE1S0315MC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+MEJ1S0303SC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+MEJ1S0303SC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+MEJ1S0305SC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+MEJ1S0305SC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+MTU2S0305MC,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+MTU2S0305MC,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+CRE1S0305S3C,wireless_store_view,,,,,,,,,,,,,,2.97 to 3.63,simple
+CRE1S0305S3C,default,,,,,,,,,,,,,,2.97 to 3.63,simple
+8941476,wireless_store_view,,,,,,,,,,,,,,5.5 - 13.8,simple
+8941476,default,,,,,,,,,,,,,,5.5 - 13.8,simple
+8941475,wireless_store_view,,,,,,,,,,,,,,6 - 13.8,simple
+8941475,default,,,,,,,,,,,,,,6 - 13.8,simple
+8941477,wireless_store_view,,,,,,,,,,,,,,6.5 - 13.8,simple
+8941477,default,,,,,,,,,,,,,,6.5 - 13.8,simple
+4402002-1,wireless_store_view,,1U x 2.15 x 9.32,1U x 54.5 x 236.6,,,66.7,,,,,,,,90 to 305,simple
+4402002-1,default,,1U x 2.15 x 9.32,1U x 54.5 x 236.6,,,66.7,,,,,,,,90 to 305,simple
+4402001-1,wireless_store_view,,1U x 2.15 x 9.32,1U x 54.5 x 236.6,,,66.7,,,,,,,,90 to 305,simple
+4402001-1,default,,1U x 2.15 x 9.32,1U x 54.5 x 236.6,,,66.7,,,,,,,,90 to 305,simple
+MPL0039B,wireless_store_view,,1.77 x 3.31 x 0.51,,,,,,,MPL0039,,,40,,,simple
+MPL0039B,default,,1.77 x 3.31 x 0.51,,,,,,,MPL0039,,,40,,,simple
+8808514,wireless_store_view,,,,,,,,,,,0.69 - 5.5,,,,simple
+8808514,default,,,,,,,,,,,0.69 - 5.5,,,,simple
+8808512,wireless_store_view,,,,,,,,,,,0.69 - 5.5,,,,simple
+8808512,default,,,,,,,,,,,0.69 - 5.5,,,,simple
+8808510,wireless_store_view,,,,,,,,,,,0.69 - 5.5,,,,simple
+8808510,default,,,,,,,,,,,0.69 - 5.5,,,,simple
+8808508,wireless_store_view,,,,,,,,,,,0.69 - 5.5,,,,simple
+8808508,default,,,,,,,,,,,0.69 - 5.5,,,,simple
+4401722-3,wireless_store_view,,1U x 4 x 13.56,1U x 101.60 x 344.47,,,,,,,,54,,,,simple
+4401722-3,default,,1U x 4 x 13.56,1U x 101.60 x 344.47,,,,,,,,54,,,,simple
+4401843,wireless_store_view,,1U x 4 x 14,1U x 101.60 x 355.60,,,,,,,,54,,,,simple
+4401843,default,,1U x 4 x 14,1U x 101.60 x 355.60,,,,,,,,54,,,,simple
+4401793-3,wireless_store_view,,1U x 4 x 14,1U x 101.60 x 355.60,,,,,,,,54,,,,simple
+4401793-3,default,,1U x 4 x 14,1U x 101.60 x 355.60,,,,,,,,54,,,,simple
+8900161,wireless_store_view,,,58.4 x 61 x 12.7,,,,,,,,54,,,,simple
+8900161,default,,,58.4 x 61 x 12.7,,,,,,,,54,,,,simple
+8900160,wireless_store_view,,,,,,,,,,,54,,,,simple
+8900160,default,,,,,,,,,,,54,,,,simple
+4401726-1,wireless_store_view,,,,,,,,,,,54,,,,simple
+4401726-1,default,,,,,,,,,,,54,,,,simple
+PQC250-54,wireless_store_view,,,,,,,,,,,54,,,,simple
+PQC250-54,default,,,,,,,,,,,54,,,,simple
+4401954,wireless_store_view,,,,,,,,,,,54,,,,simple
+4401954,default,,,,,,,,,,,54,,,,simple
+4401998,wireless_store_view,,,,,,,,,,,54,,,,simple
+4401998,default,,,,,,,,,,,54,,,,simple
+D1U-W-1200-12-HA1C,wireless_store_view,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,1200,,,,,simple
+D1U-W-1200-12-HA1C,default,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,1200,,,,,simple
+D1U-W-1200-12-HA2,wireless_store_view,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,1200,,,,,simple
+D1U-W-1200-12-HA2,default,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,1200,,,,,simple
+D1U-W-1200-12-HA2C,wireless_store_view,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,1200,,,,,simple
+D1U-W-1200-12-HA2C,default,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,1200,,,,,simple
+D1U-W-1200-12-HC1C,wireless_store_view,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,1200,,,,,simple
+D1U-W-1200-12-HC1C,default,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,1200,,,,,simple
+D1U-W-1200-12-HC2,wireless_store_view,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,1200,,,,,simple
+D1U-W-1200-12-HC2,default,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,1200,,,,,simple
+D1U-W-1200-12-HC2C,wireless_store_view,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,1200,,,,,simple
+D1U-W-1200-12-HC2C,default,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,1200,,,,,simple
+D1U-W-1200-48-HA1C,wireless_store_view,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,1200,,,,,simple
+D1U-W-1200-48-HA1C,default,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,1200,,,,,simple
+D1U-W-1200-48-HA2C,wireless_store_view,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,1200,,,,,simple
+D1U-W-1200-48-HA2C,default,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,1200,,,,,simple
+D1U-W-1200-48-HB1C,wireless_store_view,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,1200,,,,,simple
+D1U-W-1200-48-HB1C,default,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,1200,,,,,simple
+D1U-W-1200-48-HB2C,wireless_store_view,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,1200,,,,,simple
+D1U-W-1200-48-HB2C,default,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,1200,,,,,simple
+D1U-W-1200-48-HC1C,wireless_store_view,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,1200,,,,,simple
+D1U-W-1200-48-HC1C,default,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,1200,,,,,simple
+D1U-W-1200-48-HC2C,wireless_store_view,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,1200,,,,,simple
+D1U-W-1200-48-HC2C,default,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,1200,,,,,simple
+C1U-W-1200-48-TB1C,wireless_store_view,,,1U x 127 x 361.20,,1U x 127 x 361.20,,,,,1200,,,,,simple
+C1U-W-1200-48-TB1C,default,,,1U x 127 x 361.20,,1U x 127 x 361.20,,,,,1200,,,,,simple
+C1U-W-1200-48-TB2C,wireless_store_view,,,1U x 127 x 361.20,,1U x 127 x 361.20,,,,,1200,,,,,simple
+C1U-W-1200-48-TB2C,default,,,1U x 127 x 361.20,,1U x 127 x 361.20,,,,,1200,,,,,simple
+C1U-W-1200-48-TC1C,wireless_store_view,,,1U x 127 x 361.20,,1U x 127 x 361.20,,,,,1200,,,,,simple
+C1U-W-1200-48-TC1C,default,,,1U x 127 x 361.20,,1U x 127 x 361.20,,,,,1200,,,,,simple
+C1U-W-1200-48-TC2C,wireless_store_view,,,1U x 127 x 361.20,,1U x 127 x 361.20,,,,,1200,,,,,simple
+C1U-W-1200-48-TC2C,default,,,1U x 127 x 361.20,,1U x 127 x 361.20,,,,,1200,,,,,simple
+8801737,wireless_store_view,,1U x 3.20 x 11.00,1U x 81.30 x 279.40,,1U x 81.30 x 279.40,,,,,1200,,,,,simple
+8801737,default,,1U x 3.20 x 11.00,1U x 81.30 x 279.40,,1U x 81.30 x 279.40,,,,,1200,,,,,simple
+8801735,wireless_store_view,,1U x 3.20 x 11.00,1U x 81.30 x 279.40,,1U x 81.30 x 279.40,,,,,1200,,,,,simple
+8801735,default,,1U x 3.20 x 11.00,1U x 81.30 x 279.40,,1U x 81.30 x 279.40,,,,,1200,,,,,simple
+8801736,wireless_store_view,,1U x 3.20 x 11.00,1U x 81.30 x 279.40,,1U x 81.30 x 279.40,,,,,1200,,,,,simple
+8801736,default,,1U x 3.20 x 11.00,1U x 81.30 x 279.40,,1U x 81.30 x 279.40,,,,,1200,,,,,simple
+8801734,wireless_store_view,,1U x 3.20 x 11.00,1U x 81.30 x 279.40,,1U x 81.30 x 279.40,,,,,1200,,,,,simple
+8801734,default,,1U x 3.20 x 11.00,1U x 81.30 x 279.40,,1U x 81.30 x 279.40,,,,,1200,,,,,simple
+D1U4-W-1200-12-HA1C,wireless_store_view,,1U x 4 x 14,1U x 101.60 x 355.60,,,,,,,1200,,,,,simple
+D1U4-W-1200-12-HA1C,default,,1U x 4 x 14,1U x 101.60 x 355.60,,,,,,,1200,,,,,simple
+D1U4-W-1200-12-HA2C,wireless_store_view,,1U x 4 x 14,1U x 101.60 x 355.60,,,,,,,1200,,,,,simple
+D1U4-W-1200-12-HA2C,default,,1U x 4 x 14,1U x 101.60 x 355.60,,,,,,,1200,,,,,simple
+D1U4-W-1200-12-HC1C,wireless_store_view,,1U x 4 x 14,1U x 101.60 x 355.60,,,,,,,1200,,,,,simple
+D1U4-W-1200-12-HC1C,default,,1U x 4 x 14,1U x 101.60 x 355.60,,,,,,,1200,,,,,simple
+D1U4-W-1200-12-HC2C,wireless_store_view,,1U x 4 x 14,1U x 101.60 x 355.60,,,,,,,1200,,,,,simple
+D1U4-W-1200-12-HC2C,default,,1U x 4 x 14,1U x 101.60 x 355.60,,,,,,,1200,,,,,simple
+C1U-W-1200-12-TA1C,wireless_store_view,,,,,,,,,,1200,,,,,simple
+C1U-W-1200-12-TA1C,default,,,,,,,,,,1200,,,,,simple
+C1U-W-1200-12-TA2C,wireless_store_view,,,,,,,,,,1200,,,,,simple
+C1U-W-1200-12-TA2C,default,,,,,,,,,,1200,,,,,simple
+C1U-W-1200-12-TC1C,wireless_store_view,,,,,,,,,,1200,,,,,simple
+C1U-W-1200-12-TC1C,default,,,,,,,,,,1200,,,,,simple
+C1U-W-1200-12-TC2C,wireless_store_view,,,,,,,,,,1200,,,,,simple
+C1U-W-1200-12-TC2C,default,,,,,,,,,,1200,,,,,simple
+C1U-W-1200-48-TA1C,wireless_store_view,,,,,,,,,,1200,,,,,simple
+C1U-W-1200-48-TA1C,default,,,,,,,,,,1200,,,,,simple
+C1U-W-1200-48-TA2C,wireless_store_view,,,,,,,,,,1200,,,,,simple
+C1U-W-1200-48-TA2C,default,,,,,,,,,,1200,,,,,simple
+8999891,wireless_store_view,,,58.4 x 36.8 x 14.5,,,88,,,,986,,,,,simple
+8999891,default,,,58.4 x 36.8 x 14.5,,,88,,,,986,,,,,simple
+8999854,wireless_store_view,,,58.4 x 36.8 x 14.5,,,,,,,986,,,,,simple
+8999854,default,,,58.4 x 36.8 x 14.5,,,,,,,986,,,,,simple
+8999894,wireless_store_view,,,58.4 x 36.8 x 14.5,,,,,,,986,,,,,simple
+8999894,default,,,58.4 x 36.8 x 14.5,,,,,,,986,,,,,simple
+8999889,wireless_store_view,,,58.4 x 36.8 x 14.5,,,,,,,986,,,,,simple
+8999889,default,,,58.4 x 36.8 x 14.5,,,,,,,986,,,,,simple
+782100/33VC,wireless_store_view,,,,,,,,,782100,,,,,,simple
+782100/33VC,default,,,,,,,,,782100,,,,,,simple
+782100/53VC,wireless_store_view,,,,,,,,,782100,,,,,,simple
+782100/53VC,default,,,,,,,,,782100,,,,,,simple
+782100/35JVC,wireless_store_view,,,,,,,,,782100,,,,,,simple
+782100/35JVC,default,,,,,,,,,782100,,,,,,simple
+782100/55JVC,wireless_store_view,,,,,,,,,782100,,,,,,simple
+782100/55JVC,default,,,,,,,,,782100,,,,,,simple
+782100/35JVC-R,wireless_store_view,,,,,,,,,782100,,,,,,simple
+782100/35JVC-R,default,,,,,,,,,782100,,,,,,simple
+782100/55JVC-R,wireless_store_view,,,,,,,,,782100,,,,,,simple
+782100/55JVC-R,default,,,,,,,,,782100,,,,,,simple
+782485/35C,wireless_store_view,,,,,,,,,782485,,,,,,simple
+782485/35C,default,,,,,,,,,782485,,,,,,simple
+782485/55C,wireless_store_view,,,,,,,,,782485,,,,,,simple
+782485/55C,default,,,,,,,,,782485,,,,,,simple
+4401966-1,wireless_store_view,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,166.7,,,D1U54P-W-2000-12-HxxC,,,,,,simple
+4401966-1,default,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,166.7,,,D1U54P-W-2000-12-HxxC,,,,,,simple
+4401959-1,wireless_store_view,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,166.7,,,D1U54P-W-2000-12-HxxC,,,,,,simple
+4401959-1,default,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,166.7,,,D1U54P-W-2000-12-HxxC,,,,,,simple
+4401958-1,wireless_store_view,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,166.7,,,D1U54P-W-2000-12-HxxC,,,,,,simple
+4401958-1,default,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,166.7,,,D1U54P-W-2000-12-HxxC,,,,,,simple
+4401965-1,wireless_store_view,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,166.7,,,D1U54P-W-2000-12-HxxC,,,,,,simple
+4401965-1,default,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,166.7,,,D1U54P-W-2000-12-HxxC,,,,,,simple
+4401967-1,wireless_store_view,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,166.7,,,D1U54P-W-2000-12-HxxC,,,,,,simple
+4401967-1,default,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,166.7,,,D1U54P-W-2000-12-HxxC,,,,,,simple
+4401960-1,wireless_store_view,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,166.7,,,D1U54P-W-2000-12-HxxC,,,,,,simple
+4401960-1,default,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,166.7,,,D1U54P-W-2000-12-HxxC,,,,,,simple
+8978300,wireless_store_view,,,,,,,,,DMR20-0/5,,,,,,simple
+8978300,default,,,,,,,,,DMR20-0/5,,,,,,simple
+8978305,wireless_store_view,,,,,,,,,DMR20-0/5,,,,,,simple
+8978305,default,,,,,,,,,DMR20-0/5,,,,,,simple
+8978301,wireless_store_view,,,,,,,,,DMR20-4/20,,,,,,simple
+8978301,default,,,,,,,,,DMR20-4/20,,,,,,simple
+8978302,wireless_store_view,,,,,,,,,DMR20-4/20,,,,,,simple
+8978302,default,,,,,,,,,DMR20-4/20,,,,,,simple
+8978304,wireless_store_view,,,,,,,,,DMR20-4/20,,,,,,simple
+8978304,default,,,,,,,,,DMR20-4/20,,,,,,simple
+8999612,wireless_store_view,,,,,,,,,DRQ-12/42,,,,,,simple
+8999612,default,,,,,,,,,DRQ-12/42,,,,,,simple
+8999684,wireless_store_view,,,,,,,,,DRQ-12/50,,,,,,simple
+8999684,default,,,,,,,,,DRQ-12/50,,,,,,simple
+8999937,wireless_store_view,,,,,,,,,DRQ-8/100-L48NBxxxx-C,,,,,,simple
+8999937,default,,,,,,,,,DRQ-8/100-L48NBxxxx-C,,,,,,simple
+8928143,wireless_store_view,,,36.6 x 26.4 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928143,default,,,36.6 x 26.4 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928145,wireless_store_view,,,36.6 x 26.4 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928145,default,,,36.6 x 26.4 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928147,wireless_store_view,,,36.6 x 26.4 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928147,default,,,36.6 x 26.4 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928149,wireless_store_view,,,36.6 x 26.4 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928149,default,,,36.6 x 26.4 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928151,wireless_store_view,,,36.6 x 26.4 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928151,default,,,36.6 x 26.4 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928135,wireless_store_view,,,36.6 x 26.4 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928135,default,,,36.6 x 26.4 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928137,wireless_store_view,,,36.6 x 26.4 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928137,default,,,36.6 x 26.4 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928139,wireless_store_view,,,36.6 x 26.4 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928139,default,,,36.6 x 26.4 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928141,wireless_store_view,,,36.6 x 26.4 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928141,default,,,36.6 x 26.4 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928144,wireless_store_view,,,36.6 x 38.1 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928144,default,,,36.6 x 38.1 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928146,wireless_store_view,,,36.6 x 38.1 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928146,default,,,36.6 x 38.1 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928148,wireless_store_view,,,36.6 x 38.1 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928148,default,,,36.6 x 38.1 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928150,wireless_store_view,,,36.6 x 38.1 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928150,default,,,36.6 x 38.1 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928154,wireless_store_view,,,36.6 x 38.1 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928154,default,,,36.6 x 38.1 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928136,wireless_store_view,,,36.6 x 38.1 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928136,default,,,36.6 x 38.1 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928138,wireless_store_view,,,36.6 x 38.1 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928138,default,,,36.6 x 38.1 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928140,wireless_store_view,,,36.6 x 38.1 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928140,default,,,36.6 x 38.1 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928142,wireless_store_view,,,36.6 x 38.1 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8928142,default,,,36.6 x 38.1 x 12.7,,,,,,IRS-Q12,,,,,,simple
+8999982,wireless_store_view,,,,,,,,,IRS-Q48,,,,,,simple
+8999982,default,,,,,,,,,IRS-Q48,,,,,,simple
+8999983,wireless_store_view,,,,,,,,,IRS-Q48,,,,,,simple
+8999983,default,,,,,,,,,IRS-Q48,,,,,,simple
+8999984,wireless_store_view,,,,,,,,,IRS-Q48,,,,,,simple
+8999984,default,,,,,,,,,IRS-Q48,,,,,,simple
+8999985,wireless_store_view,,,,,,,,,IRS-Q48,,,,,,simple
+8999985,default,,,,,,,,,IRS-Q48,,,,,,simple
+8999978,wireless_store_view,,,,,,,,,IRS-Q48,,,,,,simple
+8999978,default,,,,,,,,,IRS-Q48,,,,,,simple
+8999979,wireless_store_view,,,,,,,,,IRS-Q48,,,,,,simple
+8999979,default,,,,,,,,,IRS-Q48,,,,,,simple
+8999981,wireless_store_view,,,,,,,,,IRS-Q48,,,,,,simple
+8999981,default,,,,,,,,,IRS-Q48,,,,,,simple
+8999986,wireless_store_view,,,,,,,,,IRS-Q48,,,,,,simple
+8999986,default,,,,,,,,,IRS-Q48,,,,,,simple
+8999974,wireless_store_view,,,,,,,,,IRS-Q48,,,,,,simple
+8999974,default,,,,,,,,,IRS-Q48,,,,,,simple
+8999975,wireless_store_view,,,,,,,,,IRS-Q48,,,,,,simple
+8999975,default,,,,,,,,,IRS-Q48,,,,,,simple
+8999976,wireless_store_view,,,,,,,,,IRS-Q48,,,,,,simple
+8999976,default,,,,,,,,,IRS-Q48,,,,,,simple
+8999977,wireless_store_view,,,,,,,,,IRS-Q48,,,,,,simple
+8999977,default,,,,,,,,,IRS-Q48,,,,,,simple
+NXJ2S0505MC,wireless_store_view,,,16 x 14.48 x 3.16,,,400,,,NXJ2,,,,,,simple
+NXJ2S0505MC,default,,,16 x 14.48 x 3.16,,,400,,,NXJ2,,,,,,simple
+NXJ2S2405MC,wireless_store_view,,,16 x 14.48 x 3.16,,,400,,,NXJ2,,,,,,simple
+NXJ2S2405MC,default,,,16 x 14.48 x 3.16,,,400,,,NXJ2,,,,,,simple
+NXJ2S1212MC,wireless_store_view,,,16 x 14.48 x 3.16,,,,,,NXJ2,,,,,,simple
+NXJ2S1212MC,default,,,16 x 14.48 x 3.16,,,,,,NXJ2,,,,,,simple
+NXJ2S1215MC,wireless_store_view,,,16 x 14.48 x 3.16,,,,,,NXJ2,,,,,,simple
+NXJ2S1215MC,default,,,16 x 14.48 x 3.16,,,,,,NXJ2,,,,,,simple
+NXJ2S2415MC,wireless_store_view,,,16 x 14.48 x 3.16,,,,,,NXJ2,,,,,,simple
+NXJ2S2415MC,default,,,16 x 14.48 x 3.16,,,,,,NXJ2,,,,,,simple
+8999494,wireless_store_view,,,,,,,,,PAH,,,,,,simple
+8999494,default,,,,,,,,,PAH,,,,,,simple
+8808742,wireless_store_view,,,58.4 x 36.8 x 14.5,,,19,,,,,,,,,simple
+8808742,default,,,58.4 x 36.8 x 14.5,,,19,,,,,,,,,simple
+8808741,wireless_store_view,,,58.4 x 36.8 x 14.5,,,19,,,,,,,,,simple
+8808741,default,,,58.4 x 36.8 x 14.5,,,19,,,,,,,,,simple
+OKDH-T/25-W12-001-C,wireless_store_view,,1.01 x 0.543 x 0.323,,,,25,,,,,,,,,simple
+OKDH-T/25-W12-001-C,default,,1.01 x 0.543 x 0.323,,,,25,,,,,,,,,simple
+OKDY-T/25-W12-001-C,wireless_store_view,,1.01 x 0.543 x 0.323,,,,25,,,,,,,,,simple
+OKDY-T/25-W12-001-C,default,,1.01 x 0.543 x 0.323,,,,25,,,,,,,,,simple
+8970738,wireless_store_view,,1.45 x 2.3 x 0.5,,,,25,,,,,,,,,simple
+8970738,default,,1.45 x 2.3 x 0.5,,,,25,,,,,,,,,simple
+8970741,wireless_store_view,,1.45 x 2.3 x 0.5,,,,25,,,,,,,,,simple
+8970741,default,,1.45 x 2.3 x 0.5,,,,25,,,,,,,,,simple
+8981109,wireless_store_view,,1.45 x 2.3 x 0.5,,,,25,,,,,,,,,simple
+8981109,default,,1.45 x 2.3 x 0.5,,,,25,,,,,,,,,simple
+8981112,wireless_store_view,,1.45 x 2.3 x 0.5,,,,25,,,,,,,,,simple
+8981112,default,,1.45 x 2.3 x 0.5,,,,25,,,,,,,,,simple
+8999025,wireless_store_view,,1.45 x 2.3 x 0.5,,,,25,,,,,,,,,simple
+8999025,default,,1.45 x 2.3 x 0.5,,,,25,,,,,,,,,simple
+8999048,wireless_store_view,,1.45 x 2.3 x 0.5,,,,25,,,,,,,,,simple
+8999048,default,,1.45 x 2.3 x 0.5,,,,25,,,,,,,,,simple
+8999049,wireless_store_view,,1.45 x 2.3 x 0.5,,,,25,,,,,,,,,simple
+8999049,default,,1.45 x 2.3 x 0.5,,,,25,,,,,,,,,simple
+8999050,wireless_store_view,,1.45 x 2.3 x 0.5,,,,25,,,,,,,,,simple
+8999050,default,,1.45 x 2.3 x 0.5,,,,25,,,,,,,,,simple
+8999051,wireless_store_view,,1.45 x 2.3 x 0.5,,,,25,,,,,,,,,simple
+8999051,default,,1.45 x 2.3 x 0.5,,,,25,,,,,,,,,simple
+8999315,wireless_store_view,,2.3 x 0.9 x 0.5,,,,25,,,,,,,,,simple
+8999315,default,,2.3 x 0.9 x 0.5,,,,25,,,,,,,,,simple
+8999316,wireless_store_view,,2.3 x 0.9 x 0.5,,,,25,,,,,,,,,simple
+8999316,default,,2.3 x 0.9 x 0.5,,,,25,,,,,,,,,simple
+8999318,wireless_store_view,,2.3 x 0.9 x 0.5,,,,25,,,,,,,,,simple
+8999318,default,,2.3 x 0.9 x 0.5,,,,25,,,,,,,,,simple
+8121341,wireless_store_view,,,,,,25,,,,,,,,,simple
+8121341,default,,,,,,25,,,,,,,,,simple
+8121342,wireless_store_view,,,,,,25,,,,,,,,,simple
+8121342,default,,,,,,25,,,,,,,,,simple
+8121343,wireless_store_view,,,,,,25,,,,,,,,,simple
+8121343,default,,,,,,25,,,,,,,,,simple
+8121344,wireless_store_view,,,,,,25,,,,,,,,,simple
+8121344,default,,,,,,25,,,,,,,,,simple
+8121345,wireless_store_view,,,,,,25,,,,,,,,,simple
+8121345,default,,,,,,25,,,,,,,,,simple
+8121346,wireless_store_view,,,,,,25,,,,,,,,,simple
+8121346,default,,,,,,25,,,,,,,,,simple
+8170003,wireless_store_view,,,,,,25,,,,,,,,,simple
+8170003,default,,,,,,25,,,,,,,,,simple
+8170005,wireless_store_view,,,,,,25,,,,,,,,,simple
+8170005,default,,,,,,25,,,,,,,,,simple
+8170009,wireless_store_view,,,,,,25,,,,,,,,,simple
+8170009,default,,,,,,25,,,,,,,,,simple
+8170012,wireless_store_view,,,,,,25,,,,,,,,,simple
+8170012,default,,,,,,25,,,,,,,,,simple
+8170038,wireless_store_view,,,,,,25,,,,,,,,,simple
+8170038,default,,,,,,25,,,,,,,,,simple
+8170040,wireless_store_view,,,,,,25,,,,,,,,,simple
+8170040,default,,,,,,25,,,,,,,,,simple
+8170071,wireless_store_view,,,,,,25,,,,,,,,,simple
+8170071,default,,,,,,25,,,,,,,,,simple
+8170072,wireless_store_view,,,,,,25,,,,,,,,,simple
+8170072,default,,,,,,25,,,,,,,,,simple
+8170073,wireless_store_view,,,,,,25,,,,,,,,,simple
+8170073,default,,,,,,25,,,,,,,,,simple
+8170074,wireless_store_view,,,,,,25,,,,,,,,,simple
+8170074,default,,,,,,25,,,,,,,,,simple
+8170075,wireless_store_view,,,,,,25,,,,,,,,,simple
+8170075,default,,,,,,25,,,,,,,,,simple
+8170076,wireless_store_view,,,,,,25,,,,,,,,,simple
+8170076,default,,,,,,25,,,,,,,,,simple
+8170081,wireless_store_view,,,,,,25,,,,,,,,,simple
+8170081,default,,,,,,25,,,,,,,,,simple
+8170082,wireless_store_view,,,,,,25,,,,,,,,,simple
+8170082,default,,,,,,25,,,,,,,,,simple
+8170083,wireless_store_view,,,,,,25,,,,,,,,,simple
+8170083,default,,,,,,25,,,,,,,,,simple
+8170084,wireless_store_view,,,,,,25,,,,,,,,,simple
+8170084,default,,,,,,25,,,,,,,,,simple
+8170085,wireless_store_view,,,,,,25,,,,,,,,,simple
+8170085,default,,,,,,25,,,,,,,,,simple
+8170086,wireless_store_view,,,,,,25,,,,,,,,,simple
+8170086,default,,,,,,25,,,,,,,,,simple
+8904519,wireless_store_view,,,,,,25,,,,,,,,,simple
+8904519,default,,,,,,25,,,,,,,,,simple
+8904520,wireless_store_view,,,,,,25,,,,,,,,,simple
+8904520,default,,,,,,25,,,,,,,,,simple
+8904521,wireless_store_view,,,,,,25,,,,,,,,,simple
+8904521,default,,,,,,25,,,,,,,,,simple
+8904522,wireless_store_view,,,,,,25,,,,,,,,,simple
+8904522,default,,,,,,25,,,,,,,,,simple
+8913025,wireless_store_view,,,,,,25,,,,,,,,,simple
+8913025,default,,,,,,25,,,,,,,,,simple
+8913026,wireless_store_view,,,,,,25,,,,,,,,,simple
+8913026,default,,,,,,25,,,,,,,,,simple
+8913027,wireless_store_view,,,,,,25,,,,,,,,,simple
+8913027,default,,,,,,25,,,,,,,,,simple
+8913028,wireless_store_view,,,,,,25,,,,,,,,,simple
+8913028,default,,,,,,25,,,,,,,,,simple
+8913029,wireless_store_view,,,,,,25,,,,,,,,,simple
+8913029,default,,,,,,25,,,,,,,,,simple
+8913030,wireless_store_view,,,,,,25,,,,,,,,,simple
+8913030,default,,,,,,25,,,,,,,,,simple
+8921274,wireless_store_view,,,,,,25,,,,,,,,,simple
+8921274,default,,,,,,25,,,,,,,,,simple
+8921275,wireless_store_view,,,,,,25,,,,,,,,,simple
+8921275,default,,,,,,25,,,,,,,,,simple
+8921276,wireless_store_view,,,,,,25,,,,,,,,,simple
+8921276,default,,,,,,25,,,,,,,,,simple
+8921277,wireless_store_view,,,,,,25,,,,,,,,,simple
+8921277,default,,,,,,25,,,,,,,,,simple
+8921341,wireless_store_view,,,,,,25,,,,,,,,,simple
+8921341,default,,,,,,25,,,,,,,,,simple
+8926620,wireless_store_view,,,,,,25,,,,,,,,,simple
+8926620,default,,,,,,25,,,,,,,,,simple
+8960004,wireless_store_view,,,,,,25,,,,,,,,,simple
+8960004,default,,,,,,25,,,,,,,,,simple
+8960005,wireless_store_view,,,,,,25,,,,,,,,,simple
+8960005,default,,,,,,25,,,,,,,,,simple
+8960006,wireless_store_view,,,,,,25,,,,,,,,,simple
+8960006,default,,,,,,25,,,,,,,,,simple
+8960007,wireless_store_view,,,,,,25,,,,,,,,,simple
+8960007,default,,,,,,25,,,,,,,,,simple
+8960008,wireless_store_view,,,,,,25,,,,,,,,,simple
+8960008,default,,,,,,25,,,,,,,,,simple
+8960009,wireless_store_view,,,,,,25,,,,,,,,,simple
+8960009,default,,,,,,25,,,,,,,,,simple
+8960010,wireless_store_view,,,,,,25,,,,,,,,,simple
+8960010,default,,,,,,25,,,,,,,,,simple
+8960011,wireless_store_view,,,,,,25,,,,,,,,,simple
+8960011,default,,,,,,25,,,,,,,,,simple
+8970018,wireless_store_view,,,,,,25,,,,,,,,,simple
+8970018,default,,,,,,25,,,,,,,,,simple
+8970020,wireless_store_view,,,,,,25,,,,,,,,,simple
+8970020,default,,,,,,25,,,,,,,,,simple
+8970022,wireless_store_view,,,,,,25,,,,,,,,,simple
+8970022,default,,,,,,25,,,,,,,,,simple
+8970028,wireless_store_view,,,,,,25,,,,,,,,,simple
+8970028,default,,,,,,25,,,,,,,,,simple
+8970030,wireless_store_view,,,,,,25,,,,,,,,,simple
+8970030,default,,,,,,25,,,,,,,,,simple
+8970077,wireless_store_view,,,,,,25,,,,,,,,,simple
+8970077,default,,,,,,25,,,,,,,,,simple
+8970079,wireless_store_view,,,,,,25,,,,,,,,,simple
+8970079,default,,,,,,25,,,,,,,,,simple
+8970081,wireless_store_view,,,,,,25,,,,,,,,,simple
+8970081,default,,,,,,25,,,,,,,,,simple
+8970083,wireless_store_view,,,,,,25,,,,,,,,,simple
+8970083,default,,,,,,25,,,,,,,,,simple
+8970112,wireless_store_view,,,,,,25,,,,,,,,,simple
+8970112,default,,,,,,25,,,,,,,,,simple
+8970113,wireless_store_view,,,,,,25,,,,,,,,,simple
+8970113,default,,,,,,25,,,,,,,,,simple
+8970737,wireless_store_view,,,,,,25,,,,,,,,,simple
+8970737,default,,,,,,25,,,,,,,,,simple
+8970740,wireless_store_view,,,,,,25,,,,,,,,,simple
+8970740,default,,,,,,25,,,,,,,,,simple
+8970816,wireless_store_view,,,,,,25,,,,,,,,,simple
+8970816,default,,,,,,25,,,,,,,,,simple
+8981108,wireless_store_view,,,,,,25,,,,,,,,,simple
+8981108,default,,,,,,25,,,,,,,,,simple
+8981111,wireless_store_view,,,,,,25,,,,,,,,,simple
+8981111,default,,,,,,25,,,,,,,,,simple
+8999044,wireless_store_view,,,,,,25,,,,,,,,,simple
+8999044,default,,,,,,25,,,,,,,,,simple
+8999045,wireless_store_view,,,,,,25,,,,,,,,,simple
+8999045,default,,,,,,25,,,,,,,,,simple
+8999046,wireless_store_view,,,,,,25,,,,,,,,,simple
+8999046,default,,,,,,25,,,,,,,,,simple
+8999047,wireless_store_view,,,,,,25,,,,,,,,,simple
+8999047,default,,,,,,25,,,,,,,,,simple
+HPR211,wireless_store_view,,,,,,25,,,,,,,,,simple
+HPR211,default,,,,,,25,,,,,,,,,simple
+HPR211C,wireless_store_view,,,,,,25,,,,,,,,,simple
+HPR211C,default,,,,,,25,,,,,,,,,simple
+SLC100-29,wireless_store_view,,,,,,25,,,,,,,,,simple
+SLC100-29,default,,,,,,25,,,,,,,,,simple
+SLC100-3,wireless_store_view,,,,,,25,,,,,,,,,simple
+SLC100-3,default,,,,,,25,,,,,,,,,simple
+SLC100-30,wireless_store_view,,,,,,25,,,,,,,,,simple
+SLC100-30,default,,,,,,25,,,,,,,,,simple
+SLC100-31,wireless_store_view,,,,,,25,,,,,,,,,simple
+SLC100-31,default,,,,,,25,,,,,,,,,simple
+SLC100-32,wireless_store_view,,,,,,25,,,,,,,,,simple
+SLC100-32,default,,,,,,25,,,,,,,,,simple
+SLC100-33,wireless_store_view,,,,,,25,,,,,,,,,simple
+SLC100-33,default,,,,,,25,,,,,,,,,simple
+SLC100-34,wireless_store_view,,,,,,25,,,,,,,,,simple
+SLC100-34,default,,,,,,25,,,,,,,,,simple
+4600172,wireless_store_view,,,,,,25,,,,,,,,,simple
+4600172,default,,,,,,25,,,,,,,,,simple
+cPCI-A-3U-200C,wireless_store_view,,,,,,25,,,,,,,,,simple
+cPCI-A-3U-200C,default,,,,,,25,,,,,,,,,simple
+8999314,wireless_store_view,,,,,,25,,,,,,,,,simple
+8999314,default,,,,,,25,,,,,,,,,simple
+8999313,wireless_store_view,,,,,,25,,,,,,,,,simple
+8999313,default,,,,,,25,,,,,,,,,simple
+8999319,wireless_store_view,,,,,,25,,,,,,,,,simple
+8999319,default,,,,,,25,,,,,,,,,simple
+8999317,wireless_store_view,,,,,,25,,,,,,,,,simple
+8999317,default,,,,,,25,,,,,,,,,simple
+8999320,wireless_store_view,,,,,,25,,,,,,,,,simple
+8999320,default,,,,,,25,,,,,,,,,simple
+8941420,wireless_store_view,,,,,,25,,,,,,,,,simple
+8941420,default,,,,,,25,,,,,,,,,simple
+8941292,wireless_store_view,,,,,,25,,,,,,,,,simple
+8941292,default,,,,,,25,,,,,,,,,simple
+OKDX-T/25-W12-001-C,wireless_store_view,,,,,,25,,,,,,,,,simple
+OKDX-T/25-W12-001-C,default,,,,,,25,,,,,,,,,simple
+8999628,wireless_store_view,,,,,,25,,,,,,,,,simple
+8999628,default,,,,,,25,,,,,,,,,simple
+8999631,wireless_store_view,,,,,,25,,,,,,,,,simple
+8999631,default,,,,,,25,,,,,,,,,simple
+8999632,wireless_store_view,,,,,,25,,,,,,,,,simple
+8999632,default,,,,,,25,,,,,,,,,simple
+8999633,wireless_store_view,,,,,,25,,,,,,,,,simple
+8999633,default,,,,,,25,,,,,,,,,simple
+8999634,wireless_store_view,,,,,,25,,,,,,,,,simple
+8999634,default,,,,,,25,,,,,,,,,simple
+8999639,wireless_store_view,,,,,,25,,,,,,,,,simple
+8999639,default,,,,,,25,,,,,,,,,simple
+8999640,wireless_store_view,,,,,,25,,,,,,,,,simple
+8999640,default,,,,,,25,,,,,,,,,simple
+8999641,wireless_store_view,,,,,,25,,,,,,,,,simple
+8999641,default,,,,,,25,,,,,,,,,simple
+8999642,wireless_store_view,,,,,,25,,,,,,,,,simple
+8999642,default,,,,,,25,,,,,,,,,simple
+8999643,wireless_store_view,,,,,,25,,,,,,,,,simple
+8999643,default,,,,,,25,,,,,,,,,simple
+8999644,wireless_store_view,,,,,,25,,,,,,,,,simple
+8999644,default,,,,,,25,,,,,,,,,simple
+8999645,wireless_store_view,,,,,,25,,,,,,,,,simple
+8999645,default,,,,,,25,,,,,,,,,simple
+8999646,wireless_store_view,,,,,,25,,,,,,,,,simple
+8999646,default,,,,,,25,,,,,,,,,simple
+8999647,wireless_store_view,,,,,,25,,,,,,,,,simple
+8999647,default,,,,,,25,,,,,,,,,simple
+8999648,wireless_store_view,,,,,,25,,,,,,,,,simple
+8999648,default,,,,,,25,,,,,,,,,simple
+4401970-1,wireless_store_view,,1U x 2.15 x 9.32,1U x 54.5 x 236.6,,,66.7,,,,,,,,,simple
+4401970-1,default,,1U x 2.15 x 9.32,1U x 54.5 x 236.6,,,66.7,,,,,,,,,simple
+4401971-1,wireless_store_view,,1U x 2.15 x 9.32,1U x 54.5 x 236.6,,,66.7,,,,,,,,,simple
+4401971-1,default,,1U x 2.15 x 9.32,1U x 54.5 x 236.6,,,66.7,,,,,,,,,simple
+8808762,wireless_store_view,,,58.4 x 36.8 x 14.5,,,84,,,,,,,,,simple
+8808762,default,,,58.4 x 36.8 x 14.5,,,84,,,,,,,,,simple
+8808761,wireless_store_view,,,58.4 x 36.8 x 14.5,,,84,,,,,,,,,simple
+8808761,default,,,58.4 x 36.8 x 14.5,,,84,,,,,,,,,simple
+D1U-W-1600-12-HA1C,wireless_store_view,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-12-HA1C,default,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-12-HA2C,wireless_store_view,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-12-HA2C,default,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-12-HC1C,wireless_store_view,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-12-HC1C,default,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-12-HC2C,wireless_store_view,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-12-HC2C,default,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-48-HA1C,wireless_store_view,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-48-HA1C,default,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-48-HA2C,wireless_store_view,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-48-HA2C,default,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-48-HB1C,wireless_store_view,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-48-HB1C,default,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-48-HB2C,wireless_store_view,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-48-HB2C,default,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-48-HC1C,wireless_store_view,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-48-HC1C,default,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-48-HC2C,wireless_store_view,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-48-HC2C,default,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-2000-48-HA2C,wireless_store_view,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-2000-48-HA2C,default,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-2000-48-HB2C,wireless_store_view,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-2000-48-HB2C,default,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-2000-48-HC2C,wireless_store_view,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-2000-48-HC2C,default,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,,,,,,simple
+4401570,wireless_store_view,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,,,,,,simple
+4401570,default,,1U x 4.75 x 12,1U x 120.65 x 304.80,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-12-HA1C,power_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-12-HA1C,murataps_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-12-HA2,power_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-12-HA2,murataps_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-12-HA2C,power_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-12-HA2C,murataps_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-12-HC1C,power_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-12-HC1C,murataps_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-12-HC2,power_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-12-HC2,murataps_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-12-HC2C,power_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-12-HC2C,murataps_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-48-HA1C,power_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-48-HA1C,murataps_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-48-HA2C,power_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-48-HA2C,murataps_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-48-HB1C,power_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-48-HB1C,murataps_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-48-HB2C,power_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-48-HB2C,murataps_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-48-HC1C,power_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-48-HC1C,murataps_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-48-HC2C,power_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1200-48-HC2C,murataps_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-12-HA1C,power_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-12-HA1C,murataps_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-12-HA2C,power_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-12-HA2C,murataps_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-12-HC1C,power_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-12-HC1C,murataps_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-12-HC2C,power_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-12-HC2C,murataps_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-48-HA1C,power_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-48-HA1C,murataps_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-48-HA2C,power_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-48-HA2C,murataps_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-48-HB1C,power_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-48-HB1C,murataps_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-48-HB2C,power_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-48-HB2C,murataps_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-48-HC1C,power_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-48-HC1C,murataps_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-48-HC2C,power_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-1600-48-HC2C,murataps_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-2000-48-HA2C,power_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-2000-48-HA2C,murataps_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-2000-48-HB2C,power_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-2000-48-HB2C,murataps_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-2000-48-HC2C,power_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+D1U-W-2000-48-HC2C,murataps_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+4401570,power_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+4401570,murataps_store_view,,,,,1U x 120.65 x 304.80,,,,,,,,,,simple
+C1U-W-1200-48-TB1C,power_store_view,,,,,1U x 127 x 361.20,,,,,,,,,,simple
+C1U-W-1200-48-TB1C,murataps_store_view,,,,,1U x 127 x 361.20,,,,,,,,,,simple
+C1U-W-1200-48-TB2C,power_store_view,,,,,1U x 127 x 361.20,,,,,,,,,,simple
+C1U-W-1200-48-TB2C,murataps_store_view,,,,,1U x 127 x 361.20,,,,,,,,,,simple
+C1U-W-1200-48-TC1C,power_store_view,,,,,1U x 127 x 361.20,,,,,,,,,,simple
+C1U-W-1200-48-TC1C,murataps_store_view,,,,,1U x 127 x 361.20,,,,,,,,,,simple
+C1U-W-1200-48-TC2C,power_store_view,,,,,1U x 127 x 361.20,,,,,,,,,,simple
+C1U-W-1200-48-TC2C,murataps_store_view,,,,,1U x 127 x 361.20,,,,,,,,,,simple
+4401876-1,wireless_store_view,,1U x 2.15 x 9.0,1U x 54.5 x 228.6,,1U x 54.5 x 228.6,,,,,,,,,,simple
+4401876-1,default,,1U x 2.15 x 9.0,1U x 54.5 x 228.6,,1U x 54.5 x 228.6,,,,,,,,,,simple
+4401877-1,wireless_store_view,,1U x 2.15 x 9.0,1U x 54.5 x 228.6,,1U x 54.5 x 228.6,,,,,,,,,,simple
+4401877-1,default,,1U x 2.15 x 9.0,1U x 54.5 x 228.6,,1U x 54.5 x 228.6,,,,,,,,,,simple
+4401878-1,wireless_store_view,,1U x 2.15 x 9.0,1U x 54.5 x 228.6,,1U x 54.5 x 228.6,,,,,,,,,,simple
+4401878-1,default,,1U x 2.15 x 9.0,1U x 54.5 x 228.6,,1U x 54.5 x 228.6,,,,,,,,,,simple
+4401879-1,wireless_store_view,,1U x 2.15 x 9.0,1U x 54.5 x 228.6,,1U x 54.5 x 228.6,,,,,,,,,,simple
+4401879-1,default,,1U x 2.15 x 9.0,1U x 54.5 x 228.6,,1U x 54.5 x 228.6,,,,,,,,,,simple
+4401910-1,wireless_store_view,,1U x 2.15 x 9.0,1U x 54.5 x 228.6,,1U x 54.5 x 228.6,,,,,,,,,,simple
+4401910-1,default,,1U x 2.15 x 9.0,1U x 54.5 x 228.6,,1U x 54.5 x 228.6,,,,,,,,,,simple
+8401908-1,wireless_store_view,,1U x 2.15 x 9.0,1U x 54.5 x 228.6,,1U x 54.5 x 228.6,,,,,,,,,,simple
+8401908-1,default,,1U x 2.15 x 9.0,1U x 54.5 x 228.6,,1U x 54.5 x 228.6,,,,,,,,,,simple
+8401909-1,wireless_store_view,,1U x 2.15 x 9.0,1U x 54.5 x 228.6,,1U x 54.5 x 228.6,,,,,,,,,,simple
+8401909-1,default,,1U x 2.15 x 9.0,1U x 54.5 x 228.6,,1U x 54.5 x 228.6,,,,,,,,,,simple
+8401907-1,wireless_store_view,,1U x 2.15 x 9.0,1U x 54.5 x 228.6,,1U x 54.5 x 228.6,,,,,,,,,,simple
+8401907-1,default,,1U x 2.15 x 9.0,1U x 54.5 x 228.6,,1U x 54.5 x 228.6,,,,,,,,,,simple
+4401920-1,wireless_store_view,,1U x 2.15 x 9.0,1U x 54.5 x 228.6,,1U x 54.5 x 228.6,,,,,,,,,,simple
+4401920-1,default,,1U x 2.15 x 9.0,1U x 54.5 x 228.6,,1U x 54.5 x 228.6,,,,,,,,,,simple
+4401919-1,wireless_store_view,,1U x 2.15 x 9.0,1U x 54.5 x 228.6,,1U x 54.5 x 228.6,,,,,,,,,,simple
+4401919-1,default,,1U x 2.15 x 9.0,1U x 54.5 x 228.6,,1U x 54.5 x 228.6,,,,,,,,,,simple
+4401876-1,power_store_view,,,,,1U x 54.5 x 228.6,,,,,,,,,,simple
+4401876-1,murataps_store_view,,,,,1U x 54.5 x 228.6,,,,,,,,,,simple
+4401877-1,power_store_view,,,,,1U x 54.5 x 228.6,,,,,,,,,,simple
+4401877-1,murataps_store_view,,,,,1U x 54.5 x 228.6,,,,,,,,,,simple
+4401878-1,power_store_view,,,,,1U x 54.5 x 228.6,,,,,,,,,,simple
+4401878-1,murataps_store_view,,,,,1U x 54.5 x 228.6,,,,,,,,,,simple
+4401879-1,power_store_view,,,,,1U x 54.5 x 228.6,,,,,,,,,,simple
+4401879-1,murataps_store_view,,,,,1U x 54.5 x 228.6,,,,,,,,,,simple
+4401910-1,power_store_view,,,,,1U x 54.5 x 228.6,,,,,,,,,,simple
+4401910-1,murataps_store_view,,,,,1U x 54.5 x 228.6,,,,,,,,,,simple
+8401908-1,power_store_view,,,,,1U x 54.5 x 228.6,,,,,,,,,,simple
+8401908-1,murataps_store_view,,,,,1U x 54.5 x 228.6,,,,,,,,,,simple
+8401909-1,power_store_view,,,,,1U x 54.5 x 228.6,,,,,,,,,,simple
+8401909-1,murataps_store_view,,,,,1U x 54.5 x 228.6,,,,,,,,,,simple
+8401907-1,power_store_view,,,,,1U x 54.5 x 228.6,,,,,,,,,,simple
+8401907-1,murataps_store_view,,,,,1U x 54.5 x 228.6,,,,,,,,,,simple
+4401920-1,power_store_view,,,,,1U x 54.5 x 228.6,,,,,,,,,,simple
+4401920-1,murataps_store_view,,,,,1U x 54.5 x 228.6,,,,,,,,,,simple
+4401919-1,power_store_view,,,,,1U x 54.5 x 228.6,,,,,,,,,,simple
+4401919-1,murataps_store_view,,,,,1U x 54.5 x 228.6,,,,,,,,,,simple
+8801749,wireless_store_view,,1U x 3.20 x 11.00,1U x 81.30 x 279.40,,1U x 81.30 x 279.40,,,,,,,,,,simple
+8801749,default,,1U x 3.20 x 11.00,1U x 81.30 x 279.40,,1U x 81.30 x 279.40,,,,,,,,,,simple
+4401731-3,wireless_store_view,,1U x 3.20 x 11.00,1U x 81.30 x 279.40,,1U x 81.30 x 279.40,,,,,,,,,,simple
+4401731-3,default,,1U x 3.20 x 11.00,1U x 81.30 x 279.40,,1U x 81.30 x 279.40,,,,,,,,,,simple
+8801730,wireless_store_view,,1U x 3.20 x 11.00,1U x 81.30 x 279.40,,1U x 81.30 x 279.40,,,,,,,,,,simple
+8801730,default,,1U x 3.20 x 11.00,1U x 81.30 x 279.40,,1U x 81.30 x 279.40,,,,,,,,,,simple
+8401804,wireless_store_view,,1U x 3.20 x 11.00,1U x 81.30 x 279.40,,1U x 81.30 x 279.40,,,,,,,,,,simple
+8401804,default,,1U x 3.20 x 11.00,1U x 81.30 x 279.40,,1U x 81.30 x 279.40,,,,,,,,,,simple
+4401842-1,wireless_store_view,,1U x 3.20 x 11.00,1U x 81.30 x 279.40,,1U x 81.30 x 279.40,,,,,,,,,,simple
+4401842-1,default,,1U x 3.20 x 11.00,1U x 81.30 x 279.40,,1U x 81.30 x 279.40,,,,,,,,,,simple
+4401820-1,wireless_store_view,,1U x 3.20 x 11.00,1U x 81.30 x 279.40,,1U x 81.30 x 279.40,,,,,,,,,,simple
+4401820-1,default,,1U x 3.20 x 11.00,1U x 81.30 x 279.40,,1U x 81.30 x 279.40,,,,,,,,,,simple
+4401809-1,wireless_store_view,,1U x 3.20 x 11.00,1U x 81.30 x 279.40,,1U x 81.30 x 279.40,,,,,,,,,,simple
+4401809-1,default,,1U x 3.20 x 11.00,1U x 81.30 x 279.40,,1U x 81.30 x 279.40,,,,,,,,,,simple
+8801749,power_store_view,,,,,1U x 81.30 x 279.40,,,,,,,,,,simple
+8801749,murataps_store_view,,,,,1U x 81.30 x 279.40,,,,,,,,,,simple
+4401731-3,power_store_view,,,,,1U x 81.30 x 279.40,,,,,,,,,,simple
+4401731-3,murataps_store_view,,,,,1U x 81.30 x 279.40,,,,,,,,,,simple
+8801737,power_store_view,,,,,1U x 81.30 x 279.40,,,,,,,,,,simple
+8801737,murataps_store_view,,,,,1U x 81.30 x 279.40,,,,,,,,,,simple
+8801735,power_store_view,,,,,1U x 81.30 x 279.40,,,,,,,,,,simple
+8801735,murataps_store_view,,,,,1U x 81.30 x 279.40,,,,,,,,,,simple
+8801736,power_store_view,,,,,1U x 81.30 x 279.40,,,,,,,,,,simple
+8801736,murataps_store_view,,,,,1U x 81.30 x 279.40,,,,,,,,,,simple
+8801734,power_store_view,,,,,1U x 81.30 x 279.40,,,,,,,,,,simple
+8801734,murataps_store_view,,,,,1U x 81.30 x 279.40,,,,,,,,,,simple
+8801730,power_store_view,,,,,1U x 81.30 x 279.40,,,,,,,,,,simple
+8801730,murataps_store_view,,,,,1U x 81.30 x 279.40,,,,,,,,,,simple
+8401804,power_store_view,,,,,1U x 81.30 x 279.40,,,,,,,,,,simple
+8401804,murataps_store_view,,,,,1U x 81.30 x 279.40,,,,,,,,,,simple
+4401842-1,power_store_view,,,,,1U x 81.30 x 279.40,,,,,,,,,,simple
+4401842-1,murataps_store_view,,,,,1U x 81.30 x 279.40,,,,,,,,,,simple
+4401820-1,power_store_view,,,,,1U x 81.30 x 279.40,,,,,,,,,,simple
+4401820-1,murataps_store_view,,,,,1U x 81.30 x 279.40,,,,,,,,,,simple
+4401809-1,power_store_view,,,,,1U x 81.30 x 279.40,,,,,,,,,,simple
+4401809-1,murataps_store_view,,,,,1U x 81.30 x 279.40,,,,,,,,,,simple
+NME0509DC,wireless_store_view,,,11.6 x 9.9 x 6.9,,,,,,,,,,,,simple
+NME0509DC,default,,,11.6 x 9.9 x 6.9,,,,,,,,,,,,simple
+NME0505DC,wireless_store_view,,,11.6 x 9.9 x 6.9,,,,,,,,,,,,simple
+NME0505DC,default,,,11.6 x 9.9 x 6.9,,,,,,,,,,,,simple
+NME0512DC,wireless_store_view,,,11.6 x 9.9 x 6.9,,,,,,,,,,,,simple
+NME0512DC,default,,,11.6 x 9.9 x 6.9,,,,,,,,,,,,simple
+NME0515DC,wireless_store_view,,,11.6 x 9.9 x 6.9,,,,,,,,,,,,simple
+NME0515DC,default,,,11.6 x 9.9 x 6.9,,,,,,,,,,,,simple
+NME0524DC,wireless_store_view,,,11.6 x 9.9 x 6.9,,,,,,,,,,,,simple
+NME0524DC,default,,,11.6 x 9.9 x 6.9,,,,,,,,,,,,simple
+NME1205DC,wireless_store_view,,,11.6 x 9.9 x 6.9,,,,,,,,,,,,simple
+NME1205DC,default,,,11.6 x 9.9 x 6.9,,,,,,,,,,,,simple
+NME1212DC,wireless_store_view,,,11.6 x 9.9 x 6.9,,,,,,,,,,,,simple
+NME1212DC,default,,,11.6 x 9.9 x 6.9,,,,,,,,,,,,simple
+NME1215DC,wireless_store_view,,,11.6 x 9.9 x 6.9,,,,,,,,,,,,simple
+NME1215DC,default,,,11.6 x 9.9 x 6.9,,,,,,,,,,,,simple
+NME2405DC,wireless_store_view,,,11.6 x 9.9 x 6.9,,,,,,,,,,,,simple
+NME2405DC,default,,,11.6 x 9.9 x 6.9,,,,,,,,,,,,simple
+NME2412DC,wireless_store_view,,,11.6 x 9.9 x 6.9,,,,,,,,,,,,simple
+NME2412DC,default,,,11.6 x 9.9 x 6.9,,,,,,,,,,,,simple
+NME2415DC,wireless_store_view,,,11.6 x 9.9 x 6.9,,,,,,,,,,,,simple
+NME2415DC,default,,,11.6 x 9.9 x 6.9,,,,,,,,,,,,simple
+NME0505DPC,wireless_store_view,,,11.6 x 9.9 x 6.9,,,,,,,,,,,,simple
+NME0505DPC,default,,,11.6 x 9.9 x 6.9,,,,,,,,,,,,simple
+8401782,wireless_store_view,,1U x 4 x 13.56,1U x 101.60 x 344.47,,,,,,,,,,,,simple
+8401782,default,,1U x 4 x 13.56,1U x 101.60 x 344.47,,,,,,,,,,,,simple
+D1U4-W-1600-12-HA1C,wireless_store_view,,1U x 4 x 14,1U x 101.60 x 355.60,,,,,,,,,,,,simple
+D1U4-W-1600-12-HA1C,default,,1U x 4 x 14,1U x 101.60 x 355.60,,,,,,,,,,,,simple
+D1U4-W-1600-12-HA2C,wireless_store_view,,1U x 4 x 14,1U x 101.60 x 355.60,,,,,,,,,,,,simple
+D1U4-W-1600-12-HA2C,default,,1U x 4 x 14,1U x 101.60 x 355.60,,,,,,,,,,,,simple
+D1U4-W-1600-12-HC1C,wireless_store_view,,1U x 4 x 14,1U x 101.60 x 355.60,,,,,,,,,,,,simple
+D1U4-W-1600-12-HC1C,default,,1U x 4 x 14,1U x 101.60 x 355.60,,,,,,,,,,,,simple
+D1U4-W-1600-12-HC2C,wireless_store_view,,1U x 4 x 14,1U x 101.60 x 355.60,,,,,,,,,,,,simple
+D1U4-W-1600-12-HC2C,default,,1U x 4 x 14,1U x 101.60 x 355.60,,,,,,,,,,,,simple
+4401706-1,wireless_store_view,,1U x 4 x 14,1U x 101.60 x 355.60,,,,,,,,,,,,simple
+4401706-1,default,,1U x 4 x 14,1U x 101.60 x 355.60,,,,,,,,,,,,simple
+4401699-6,wireless_store_view,,1U x 4 x 14,1U x 101.60 x 355.60,,,,,,,,,,,,simple
+4401699-6,default,,1U x 4 x 14,1U x 101.60 x 355.60,,,,,,,,,,,,simple
+4401707-5,wireless_store_view,,1U x 4 x 14,1U x 101.60 x 355.60,,,,,,,,,,,,simple
+4401707-5,default,,1U x 4 x 14,1U x 101.60 x 355.60,,,,,,,,,,,,simple
+4401708-2,wireless_store_view,,1U x 4 x 14,1U x 101.60 x 355.60,,,,,,,,,,,,simple
+4401708-2,default,,1U x 4 x 14,1U x 101.60 x 355.60,,,,,,,,,,,,simple
+D1U-H-2800-52-HB1C,wireless_store_view,,1U x 5.5 x 11.4,1U x 140 x 289,,,,,,,,,,,,simple
+D1U-H-2800-52-HB1C,default,,1U x 5.5 x 11.4,1U x 140 x 289,,,,,,,,,,,,simple
+D1U-H-2800-52-HB1DC,wireless_store_view,,1U x 5.5 x 11.4,1U x 140 x 289,,,,,,,,,,,,simple
+D1U-H-2800-52-HB1DC,default,,1U x 5.5 x 11.4,1U x 140 x 289,,,,,,,,,,,,simple
+S1U-3X-16-A-12-RC,wireless_store_view,,1U x 17.3 x 16,1U x 439.42 x 406.40,,,,,,,,,,,,simple
+S1U-3X-16-A-12-RC,default,,1U x 17.3 x 16,1U x 439.42 x 406.40,,,,,,,,,,,,simple
+S1U-3X-16-A-48-RC,wireless_store_view,,1U x 17.3 x 16,1U x 439.42 x 406.40,,,,,,,,,,,,simple
+S1U-3X-16-A-48-RC,default,,1U x 17.3 x 16,1U x 439.42 x 406.40,,,,,,,,,,,,simple
+4401803-1,wireless_store_view,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401803-1,default,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401802-1,wireless_store_view,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401802-1,default,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401792-2,wireless_store_view,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401792-2,default,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401801-1,wireless_store_view,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401801-1,default,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401828-1,wireless_store_view,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401828-1,default,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401851-1,wireless_store_view,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401851-1,default,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401853-1,wireless_store_view,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401853-1,default,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401852-1,wireless_store_view,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401852-1,default,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4405004-1,wireless_store_view,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4405004-1,default,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401891-2,wireless_store_view,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401891-2,default,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401893-2,wireless_store_view,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401893-2,default,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401895-2,wireless_store_view,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401895-2,default,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401892-2,wireless_store_view,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401892-2,default,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401894-2,wireless_store_view,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401894-2,default,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401900-1,wireless_store_view,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401900-1,default,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401897-1,wireless_store_view,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401897-1,default,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401903-1,wireless_store_view,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401903-1,default,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401901-1,wireless_store_view,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401901-1,default,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401898-1,wireless_store_view,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+4401898-1,default,,1U x 2.15 x 12.66,1U x 54.5 x 321.5,,,,,,,,,,,,simple
+8903734,wireless_store_view,,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,,,,,,,,,,,,simple
+8903734,default,,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,,,,,,,,,,,,simple
+8903735,wireless_store_view,,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,,,,,,,,,,,,simple
+8903735,default,,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,,,,,,,,,,,,simple
+8903733,wireless_store_view,,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,,,,,,,,,,,,simple
+8903733,default,,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,,,,,,,,,,,,simple
+8903736,wireless_store_view,,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,,,,,,,,,,,,simple
+8903736,default,,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,,,,,,,,,,,,simple
+8903737,wireless_store_view,,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,,,,,,,,,,,,simple
+8903737,default,,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,,,,,,,,,,,,simple
+8903738,wireless_store_view,,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,,,,,,,,,,,,simple
+8903738,default,,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,,,,,,,,,,,,simple
+8903739,wireless_store_view,,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,,,,,,,,,,,,simple
+8903739,default,,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,,,,,,,,,,,,simple
+8903740,wireless_store_view,,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,,,,,,,,,,,,simple
+8903740,default,,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,,,,,,,,,,,,simple
+8903741,wireless_store_view,,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,,,,,,,,,,,,simple
+8903741,default,,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,,,,,,,,,,,,simple
+8903742,wireless_store_view,,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,,,,,,,,,,,,simple
+8903742,default,,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,,,,,,,,,,,,simple
+8903743,wireless_store_view,,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,,,,,,,,,,,,simple
+8903743,default,,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,,,,,,,,,,,,simple
+8903744,wireless_store_view,,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,,,,,,,,,,,,simple
+8903744,default,,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,,,,,,,,,,,,simple
+8903745,wireless_store_view,,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,,,,,,,,,,,,simple
+8903745,default,,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,,,,,,,,,,,,simple
+8903746,wireless_store_view,,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,,,,,,,,,,,,simple
+8903746,default,,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,,,,,,,,,,,,simple
+8903747,wireless_store_view,,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,,,,,,,,,,,,simple
+8903747,default,,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,,,,,,,,,,,,simple
+8903748,wireless_store_view,,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,,,,,,,,,,,,simple
+8903748,default,,1.1 x 0.96 x 0.32,27.9 x 24.4 x 8.1,,,,,,,,,,,,simple
+MYSSM01204BENL,wireless_store_view,,,30.2 x 20.9 x 12,,,,,,,,,,,,simple
+MYSSM01204BENL,default,,,30.2 x 20.9 x 12,,,,,,,,,,,,simple
+MYSSM01806BENL,wireless_store_view,,,30.2 x 20.9 x 12,,,,,,,,,,,,simple
+MYSSM01806BENL,default,,,30.2 x 20.9 x 12,,,,,,,,,,,,simple
+8928153,power_store_view,,,36.6 x 26.4 x 12.7,,,,,,,,,,,,simple
+8928153,murataps_store_view,,,36.6 x 26.4 x 12.7,,,,,,,,,,,,simple
+8928153,wireless_store_view,,,36.6 x 26.4 x 12.7,,,,,,,,,,,,simple
+8928153,default,,,36.6 x 26.4 x 12.7,,,,,,,,,,,,simple
+8928152,power_store_view,,,36.6 x 38.1 x 12.7,,,,,,,,,,,,simple
+8928152,murataps_store_view,,,36.6 x 38.1 x 12.7,,,,,,,,,,,,simple
+8928152,wireless_store_view,,,36.6 x 38.1 x 12.7,,,,,,,,,,,,simple
+8928152,default,,,36.6 x 38.1 x 12.7,,,,,,,,,,,,simple
+8808738,wireless_store_view,,,58.4 x 36.8 x 14.5,,,,,,,,,,,,simple
+8808738,default,,,58.4 x 36.8 x 14.5,,,,,,,,,,,,simple
+8808737,wireless_store_view,,,58.4 x 36.8 x 14.5,,,,,,,,,,,,simple
+8808737,default,,,58.4 x 36.8 x 14.5,,,,,,,,,,,,simple
+IHB60T480512-C,default,,,58.4 x 61 x 12.7,,,,,,,,,,,,simple
+VKP100MT312,default,,,58.4 x 61 x 12.7,,,,,,,,,,,,simple
+VKP100MT312C,default,,,58.4 x 61 x 12.7,,,,,,,,,,,,simple
+VKP100MT515,default,,,58.4 x 61 x 12.7,,,,,,,,,,,,simple
+VKP60LT312C,wireless_store_view,,,58.4 x 61 x 12.7,,,,,,,,,,,,simple
+VKP60LT312C,default,,,58.4 x 61 x 12.7,,,,,,,,,,,,simple
+VKP60LT315C,wireless_store_view,,,58.4 x 61 x 12.7,,,,,,,,,,,,simple
+VKP60LT315C,default,,,58.4 x 61 x 12.7,,,,,,,,,,,,simple
+VKP60LT512C,wireless_store_view,,,58.4 x 61 x 12.7,,,,,,,,,,,,simple
+VKP60LT512C,default,,,58.4 x 61 x 12.7,,,,,,,,,,,,simple
+VKP60LT515C,wireless_store_view,,,58.4 x 61 x 12.7,,,,,,,,,,,,simple
+VKP60LT515C,default,,,58.4 x 61 x 12.7,,,,,,,,,,,,simple
+VKP60MT312,default,,,58.4 x 61 x 12.7,,,,,,,,,,,,simple
+VKP60MT312C,default,,,58.4 x 61 x 12.7,,,,,,,,,,,,simple
+VKP60MT315,default,,,58.4 x 61 x 12.7,,,,,,,,,,,,simple
+VKP60MT315C,default,,,58.4 x 61 x 12.7,,,,,,,,,,,,simple
+VKP60MT512,default,,,58.4 x 61 x 12.7,,,,,,,,,,,,simple
+VKP60MT512C,default,,,58.4 x 61 x 12.7,,,,,,,,,,,,simple
+VKP60MT515,default,,,58.4 x 61 x 12.7,,,,,,,,,,,,simple
+VKP60MT515C,default,,,58.4 x 61 x 12.7,,,,,,,,,,,,simple
+MEU1S0509ZC,wireless_store_view,,0.327 x 0.240 x 0.313,,,,,,,,,,,,,simple
+MEU1S0509ZC,default,,0.327 x 0.240 x 0.313,,,,,,,,,,,,,simple
+MEU1S1209ZC,wireless_store_view,,0.327 x 0.240 x 0.313,,,,,,,,,,,,,simple
+MEU1S1209ZC,default,,0.327 x 0.240 x 0.313,,,,,,,,,,,,,simple
+MEU1S0503ZC,wireless_store_view,,0.327 x 0.240 x 0.313,,,,,,,,,,,,,simple
+MEU1S0503ZC,default,,0.327 x 0.240 x 0.313,,,,,,,,,,,,,simple
+MEU1S0505ZC,wireless_store_view,,0.327 x 0.240 x 0.313,,,,,,,,,,,,,simple
+MEU1S0505ZC,default,,0.327 x 0.240 x 0.313,,,,,,,,,,,,,simple
+MEU1S0512ZC,wireless_store_view,,0.327 x 0.240 x 0.313,,,,,,,,,,,,,simple
+MEU1S0512ZC,default,,0.327 x 0.240 x 0.313,,,,,,,,,,,,,simple
+MEU1S0515ZC,wireless_store_view,,0.327 x 0.240 x 0.313,,,,,,,,,,,,,simple
+MEU1S0515ZC,default,,0.327 x 0.240 x 0.313,,,,,,,,,,,,,simple
+MEU1S1205ZC,wireless_store_view,,0.327 x 0.240 x 0.313,,,,,,,,,,,,,simple
+MEU1S1205ZC,default,,0.327 x 0.240 x 0.313,,,,,,,,,,,,,simple
+MEU1S1212ZC,wireless_store_view,,0.327 x 0.240 x 0.313,,,,,,,,,,,,,simple
+MEU1S1212ZC,default,,0.327 x 0.240 x 0.313,,,,,,,,,,,,,simple
+MEU1S1215ZC,wireless_store_view,,0.327 x 0.240 x 0.313,,,,,,,,,,,,,simple
+MEU1S1215ZC,default,,0.327 x 0.240 x 0.313,,,,,,,,,,,,,simple
+OKDH-T/20-W12-001-C,wireless_store_view,,1.01 x 0.543 x 0.323,,,,,,,,,,,,,simple
+OKDH-T/20-W12-001-C,default,,1.01 x 0.543 x 0.323,,,,,,,,,,,,,simple
+OKDY-T/20-W12-001-C,wireless_store_view,,1.01 x 0.543 x 0.323,,,,,,,,,,,,,simple
+OKDY-T/20-W12-001-C,default,,1.01 x 0.543 x 0.323,,,,,,,,,,,,,simple
+8170116,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170116,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170117,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170117,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170122,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170122,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170123,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170123,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170131,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170131,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170141,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170141,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170144,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170144,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170145,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170145,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170146,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170146,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170147,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170147,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170162,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170162,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170173,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170173,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170182,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170182,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170187,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170187,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170215,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170215,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170217,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170217,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170283,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170283,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170284,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170284,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170400,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170400,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170916,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8170916,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970116,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970116,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970117,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970117,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970122,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970122,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970123,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970123,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970131,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970131,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970141,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970141,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970144,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970144,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970145,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970145,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970146,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970146,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970147,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970147,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970162,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970162,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970187,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970187,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970188,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970188,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970189,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970189,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970195,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970195,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970198,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970198,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970204,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970204,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970205,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970205,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970206,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970206,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970207,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970207,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970209,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970209,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970210,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970210,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970211,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970211,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970214,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970214,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970215,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970215,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970217,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970217,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970218,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970218,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970219,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970219,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970235,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970235,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970236,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970236,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970255,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970255,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970259,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970259,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970283,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970283,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970284,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970284,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970502,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970502,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970505,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970505,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970700,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970700,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970704,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970704,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970711,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970711,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970714,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970714,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970730,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970730,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970733,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970733,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970746,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970746,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970749,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970749,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970754,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970754,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970757,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970757,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970770,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970770,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970773,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970773,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970801,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970801,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970804,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970804,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970810,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970810,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970811,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970811,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970813,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970813,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970815,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970815,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970919,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8970919,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8971202,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8971202,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8971203,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8971203,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8971212,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8971212,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8971213,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8971213,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8971252,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8971252,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8971255,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8971255,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8981028,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8981028,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8981030,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8981030,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8981152,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8981152,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8981153,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8981153,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8981155,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8981155,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8981157,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8981157,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8937104,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8937104,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8937105,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8937105,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8903124,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8903124,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8903136,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8903136,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8903144,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8903144,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8903138,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8903138,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8903145,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8903145,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8903142,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8903142,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8957400,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8957400,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8957405,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8957405,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8957403,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8957403,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8957404,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8957404,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8999384,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8999384,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8999387,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8999387,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8999385,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8999385,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8999389,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8999389,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8999474,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8999474,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8999476,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8999476,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8999543,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8999543,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8999544,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8999544,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8903171,wireless_store_view,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8903171,default,,1.45 x 2.3 x 0.5,,,,,,,,,,,,,simple
+8921570,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8921570,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8969992,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8969992,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8969996,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8969996,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8970328,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8970328,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8970332,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8970332,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8970336,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8970336,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8970341,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8970341,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8970364,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8970364,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8970367,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8970367,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8970372,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8970372,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8970375,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8970375,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8971260,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8971260,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8971263,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8971263,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8971276,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8971276,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8971279,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8971279,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8981040,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8981040,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8981042,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8981042,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8981052,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8981052,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8981053,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8981053,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8981056,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8981056,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8981057,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8981057,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8981061,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8981061,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8983203,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8983203,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8983204,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8983204,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8983206,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8983206,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8983208,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8983208,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8921542,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8921542,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8921544,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8921544,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8921550,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8921550,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8921552,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8921552,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8921553,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8921553,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8921556,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8921556,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8999430,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8999430,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8999431,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8999431,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8999433,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8999433,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8999435,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8999435,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8999538,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8999538,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8999528,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8999528,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8999535,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8999535,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8999603,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8999603,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8999600,wireless_store_view,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple
+8999600,default,,2.3 x 0.9 x 0.5,,,,,,,,,,,,,simple

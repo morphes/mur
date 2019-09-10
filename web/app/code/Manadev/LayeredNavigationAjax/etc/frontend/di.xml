@@ -1,0 +1,18 @@
+<!--
+ @category    Mana
+ @package     Manadev_LayeredNavigationAjax
+ @copyright   Copyright (c) http://www.manadev.com
+ @license     http://www.manadev.com/license  Proprietary License
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Layout">
+        <plugin name="Manadev\LayeredNavigationAjax\Plugins\LayoutPlugin" type="Manadev\LayeredNavigationAjax\Plugins\LayoutPlugin"/>
+    </type>
+    <type name="Magento\Framework\View\Result\Layout">
+        <plugin name="Manadev\LayeredNavigationAjax\Plugins\LayoutResultPlugin" type="Manadev\LayeredNavigationAjax\Plugins\LayoutResultPlugin" sortOrder="100"/>
+    </type>
+
+    <type name="Magento\Framework\View\Element\AbstractBlock">
+        <plugin name="Manadev\LayeredNavigationAjax\Plugins\AbstractBlockPlugin" type="Manadev\LayeredNavigationAjax\Plugins\AbstractBlockPlugin" sortOrder="10000"/>
+    </type>
+</config>

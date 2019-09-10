@@ -1,0 +1,2 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1548214288;s:6:"expire";i:9999999999;s:4:"tags";s:37:"bd2_CONFIG_SCOPES,bd2_CONFIG,bd2_MAGE";}
+a:2:{s:8:"websites";a:10:{s:5:"admin";i:1;i:0;i:1;s:5:"power";i:1;i:1;i:1;s:8:"wireless";i:1;i:2;i:1;s:8:"murataps";i:1;i:3;i:1;s:4:"base";i:1;i:4;i:1;}s:6:"stores";a:10:{s:5:"admin";i:1;i:0;i:1;s:16:"power_store_view";i:1;i:1;i:1;s:19:"murataps_store_view";i:1;i:2;i:1;s:19:"wireless_store_view";i:1;i:3;i:1;s:7:"default";i:1;i:4;i:1;}}

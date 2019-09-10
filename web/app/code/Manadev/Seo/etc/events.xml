@@ -1,0 +1,14 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="after_mana_url_key_edit">
+        <observer name="Manadev\Seo\Observers\ReindexEditedUrlKeys" instance="Manadev\Seo\Observers\ReindexEditedUrlKeys"/>
+    </event>
+    <event name="model_save_commit_after">
+        <observer name="Manadev\Seo\Observers\ReindexEditedUrlRewrites" instance="Manadev\Seo\Observers\ReindexEditedUrlRewrites"/>
+    </event>
+    <event name="catalog_category_save_commit_after">
+        <observer name="Manadev\Seo\Observers\ReindexEditedCategories" instance="Manadev\Seo\Observers\ReindexEditedCategories"/>
+    </event>
+    <event name="cms_page_save_commit_after">
+        <observer name="Manadev\Seo\Observers\ReindexEditedCmsPages" instance="Manadev\Seo\Observers\ReindexEditedCmsPages"/>
+    </event>
+</config>

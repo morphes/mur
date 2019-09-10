@@ -1,0 +1,59 @@
+<!--
+ @category    Mana
+ @package     Manadev_Seo
+ @copyright   Copyright (c) http://www.manadev.com
+ @license     http://www.manadev.com/license  Proprietary License
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Manadev\Core\Registries\PostInstallScripts">
+        <arguments>
+            <argument name="postInstallScripts" xsi:type="array">
+                <item name="Manadev_Seo" xsi:type="object">Manadev\Seo\PostInstallScript</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Manadev\Core\Registries\ConfigDependentIndexers">
+        <arguments>
+            <argument name="configDependentIndexers" xsi:type="array">
+                <item name="Manadev\Seo\Resources\IndexerResource" xsi:type="object">Manadev\Seo\Resources\IndexerResource</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Manadev\Seo\Registries\UrlKeySubTypes">
+        <arguments>
+            <argument name="urlKeySubTypes" xsi:type="array">
+                <item name="category_page" xsi:type="object">Manadev\Seo\UrlKeySubTypes\CategoryPage</item>
+                <item name="cms_page" xsi:type="object">Manadev\Seo\UrlKeySubTypes\CmsPage</item>
+                <item name="search_page" xsi:type="object">Manadev\Seo\UrlKeySubTypes\SearchPage</item>
+                <item name="toolbar_parameter" xsi:type="object">Manadev\Seo\UrlKeySubTypes\ToolbarParameter</item>
+                <item name="keyword_parameter" xsi:type="object">Manadev\Seo\UrlKeySubTypes\KeywordParameter</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Manadev\Seo\Registries\NoIndexTransformations">
+        <arguments>
+            <argument name="transformations" xsi:type="array">
+                <item name="toolbar_parameters" xsi:type="object">Manadev\Seo\NoIndex\ToolbarParameters</item>
+                <item name="keyword_parameter" xsi:type="object">Manadev\Seo\NoIndex\KeywordParameter</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Manadev\Seo\Registries\NoFollowTransformations">
+        <arguments>
+            <argument name="transformations" xsi:type="array">
+                <item name="toolbar_parameters" xsi:type="object">Manadev\Seo\NoFollow\ToolbarParameters</item>
+                <item name="keyword_parameter" xsi:type="object">Manadev\Seo\NoFollow\KeywordParameter</item>
+            </argument>
+        </arguments>
+    </type>
+
+    <type name="Magento\Config\Controller\Adminhtml\System\Config\Save">
+        <plugin name="Manadev\Seo" type="Manadev\Seo\Plugins\ConfigSaveAction" sortOrder="100"/>
+    </type>
+    <type name="Magento\Framework\View\Page\Config">
+        <plugin name="Manadev\Seo\Plugins\PageConfigPlugin" type="Manadev\Seo\Plugins\PageConfigPlugin" sortOrder="100"/>
+    </type>
+    <type name="Manadev\Core\PageTypes\CategoryPage">
+        <plugin name="Manadev\Seo\Plugins\CategoryPageTypePlugin" type="Manadev\Seo\Plugins\CategoryPageTypePlugin" sortOrder="100"/>
+    </type>
+</config>

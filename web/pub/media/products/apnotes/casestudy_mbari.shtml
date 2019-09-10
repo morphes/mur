@@ -1,0 +1,196 @@
+<html>
+
+<head>
+
+<link href="../../css/rfm.css" rel="stylesheet" type="text/css">
+
+<title>RFM Case study - RFM offers a full set of custom embedded wireless networking solutions like Zigbee wireless mesh sensor networks, RF modules,  IC transceiver,  IC transmitters and  IC receivers. RFM, Inc. manufactures low power wireless and RF radio modules, wireless mesh nodes for distributed sensing on distributed sensor networks. Low Power radio, n../arrowband and short range devices, front end saw filters, active RFID, RFIC, coupled resonator filters, single silicon chips in the 70MHZ and 300-1000Mhz range.</title>
+
+<!--[if gte IE 5.5]>
+<script type="text/JavaScript">
+
+navHover = function() {
+	var lis = document.getElementById("navmenu").getElementsByTagName("LI");
+	for (var i=0; i<lis.length; i++) {
+		lis[i].onmouseover=function() {
+			this.className+=" iehover";
+		}
+		lis[i].onmouseout=function() {
+			this.className=this.className.replace(new RegExp(" iehover\\b"), "");
+		}
+	}
+}
+if (window.attachEvent) window.attachEvent("onload", navHover);
+
+</script>
+<![endif]-->
+</head>
+
+<body bgcolor="ffffff" topmargin=10 marginheight="10">
+
+<link rel="stylesheet" type="text/css" href="../../navmenu.css" />
+
+<center>
+<table align="left" valign="top" border="0" width="986" cellspacing="5" cellpadding="0" bgcolor="ffffff">
+
+<tr>
+<td align="center" colspan="4">
+
+	<!--#INCLUDE VIRTUAL="../../rfm_header.html"-->
+
+</td></tr>
+
+
+<tr>
+
+<td valign="top" align="left" rowspan="3" width="100">
+
+
+      <div class="lhsidemenu">
+      <a href="../index.shtml" class="bodyLink3"> HOME</a></div>
+      <div class="lhsidemenu">
+      <a href="../products/wirelessdevices.shtml" class="bodylink3"> Wireless Devices Overview</a></div>
+      <div class="lhsidemenu">
+      <a href="../products/wirelesscomponents.php" class="bodylink3"> RF Components</div></a>
+      <div class="lhsidemenu">
+      <a href="../products/srradios.php" class="bodylink3"> Subsystem RF Products</a></div>
+      <div class="lhsidemenu">
+      <a href="../products/oem_standalone.php" class="bodylink3">Ready Made <br>RF Modules & Standalone</a></div>
+      <div class="lhsidemenu">
+      <a href="../products/dkits.shtml" class="bodylink3"> Developer Kits</a></div>
+</td>
+
+
+
+
+
+
+<td valign="top">
+<table cellpadding="10" cellspacing="10" border="0">
+<tr>
+
+
+<td>
+
+
+
+
+<p align="right"> <a href="apnotes_cirronet.shtml" class="bodylink5"><b>back to case studies</b></a></font>
+
+
+
+
+<p align="left">
+
+<font face="arial" size="2">
+
+
+
+
+<p  class="body">
+<b>Case Study:  How Wireless Sensing Helps Scientists Manage a Key Coastal Resource    </b>
+
+
+<p>Encompassing over 1400 coastal California acres on Monterey Bay, California, Elkhorn Slough lives life in a delicate balance. It is an important marine-life breeding area and migratory bird location; it is also agricultural land, an active fishing harbor and home to a power plant.
+
+<p>This combination of characteristics makes it both imperative and difficult to monitor the slough’s health with traditional methods. For the Monterey Bay Aquarium Research Institute (MBARI), water sampling and analysis had for years meant maintaining a group of boats that would ferry scientists to data collection points, where they would gather samples to take back to the laboratory for study. Data collection occurred once every few weeks, and could not reflect the fact that water composition can change over short periods of time, as when rain sends in a large volume of fresh water. Because of this, scientists had no clear picture of the ecosystem’s dynamics.
+
+<p>Environmental importance and the shortcomings of manual sampling methods made Elkhorn Slough an excellent candidate for a custom wireless sensing application. MBARI scientists knew that if they could simultaneously measure nutrients in different parts of the slough and obtain those measurements whenever needed, they could better understand the source of the nutrients, their path through the slough, and their relationship to other biological, geological and chemical changes. This would also enable them to make the most informed recommendations possible regarding management of the area.
+
+<p>In 2004, MBARI launched the Land/Ocean Biogeochemical Observatory (LOBO) project in Elkhorn Slough to determine the potential of sensor networks in managing this coastal resource. LOBO’s aim was to develop an automated application that would use remote sensors to repeatedly measure both water properties and key nutrient levels, enabling scientists to pinpoint processes that affect Elkhorn Slough’s biogeochemistry. Very importantly, the sensing instruments to be used would allow for high-resolution sampling and the ability to access the collected data in near-real time at a centralized monitoring station.
+
+<p><b>The Sensors </b>
+
+<p>The first phase of the LOBO project involved designing the remote instrumentation, which called for complex remote nodes placed on moorings for offshore deployment. Moorings that would be placed in deeper water were to feature sensors designed to monitor such water properties as salinity, temperature and current velocity. Moorings for more shallow placement were to also feature several nutrient sensors, including a highly specialized and effective nitrate sensor developed by MBARI.
+
+<p><center><img src="vol1i4_2.jpg"></center>
+
+<p>Figure 1:  This LOBO mooring houses a complex collection of sensors.
+
+<p>Network planning for LOBO called for the placement of four of these nodes throughout Elkhorn Slough, covering an overall span exceeding four miles.
+
+<p><center><img src="vol1i4_3.jpg"></center>
+
+<p>Figure 2: Sensor moorings to be placed throughout Elkhorn Slough
+
+<p>Because of the remote sensors’ locations, wireless was the only plausible networking technique. Running data cable throughout the slough, including cabling to waterborne sensors, would have been impractical and extremely expensive. There was also no electricity available at sensor locations, which meant that any radios attached to the sensors would have to be battery-powered and, therefore, very economical in power use.
+
+<p><b>The Sensor Network </b>
+
+<p>The investigation of industrial radios to use with the sensors was guided by three primary requirements:
+
+<p>Low power consumption. Very low power consumption was extremely important, as the radios would derive power from the same lithium batteries used to drive the sensors. 
+Resistance to interference. The amount of industry in the area also meant a good deal of 802.11 traffic that could potentially interfere with data transmission. The radios would need substantial built-in resistance to jamming and interference. 
+Range. With the radios spread throughout the slough, and with all data to be delivered to a single collection point, the most remote radio would need to support transmission over a line-of-sight range of several miles. 
+After evaluating multiple alternatives, the LOBO team selected a RFM 2.4 GHz OEM radio (WIT2410) paired with a “whipless” antenna to telemeter instrument data from each mooring. Of special interest was the module’s low power consumption (less than 50 microamps in sleep mode, 40 milliamps typical operation), which would help conserve battery power, and its frequency hopping spread spectrum (FHSS) technology, which minimizes data loss caused by jamming and interference and maximizes bandwidth sharing. The radio/antenna combination provides reliable transmission at ranges of up to five miles, which was more than adequate for the distance to be covered in Elkhorn Slough.
+
+<p><b>Serial-to-Ethernet Access Points, Ethernet Bridging </b>
+
+<p>To complement the WIT modules at the sensor moorings, the project team investigated RFM’s SNAP access point (SNAP2410). In addition to collecting data from up to 62 remote radios, the SNAP2410 passes serial data seamlessly to an Ethernet network, without the need for a separate serial-to-10/100BaseT Ethernet conversion device. The SNAP2410 server mode proved especially attractive for its seamless data collection, which eliminates the need to poll remote radios. This lightened the duty for the battery-powered radios, as they would need to power up only for brief transmissions, and also simplified software development.
+
+<p>Satisfied that the SNAP access point would meet the project’s need for data collection, the LOBO team selected a RFM wireless Ethernet bridge (SEM2410) to distribute IP data to a shore-side UNIX machine, where a custom MBARI-designed server application would present the data over the Internet. The delivery of information via standard Web browsers was extremely attractive, as it would make data available in near real-time to scientists wherever they might be located. As an added benefit, MBARI’s mission involves educational outreach, and making data accessible over the Internet was important to supporting that mission as well.
+
+<p><b>How It All Works </b>
+
+<p>The MBARI LOBO implementation is an excellent example of how three complementary wireless products – OEM modules, access points, and Ethernet bridges – work together to automate the collection of raw serial data, reformat it for Ethernet, and deliver it over the air for several miles to reach monitoring stations in near real-time.
+
+<p>The MBARI node controller wakes up each mooring’s WIT2410 when it is time to transmit sensor data. Each transmission is extremely brief, taking advantage of the WIT2410’s nearly .5 Mbps data rate, and this is the only time the radio makes significant use of power derived from the mooring’s lithium batteries. The radios return to sleep mode immediately following transmission.
+
+<p>The WIT2410s transmit serial data streams over the air to SNAP2410s, which encapsulate it into Ethernet datagrams and make each mooring radio appear as a node on an Ethernet network.
+
+<p><center><img src="vol1i4_4.jpg"></center>
+
+<p>Figure 3: Networking multiple types of radios
+
+<p>The original network plan called for all four moorings to transmit data to a single SNAP access point, but as one mooring’s location did not offer line-of-site, it communicates with a separate SNAP serving as a repeater. This means there are actually three wireless networks operating in close proximity: The two networks that join the SNAPs to corresponding WITs, and the network that links the SEMs. The radios’ FHSS technology, with its 64 hopping patterns, ensures that the networks can coexist without interfering with each other.
+
+<p>The encapsulated data is handed off from each SNAP2410 to a SEM2410, where it is then forwarded over the air to a SEM2410 on an MBARI Ethernet network. At that point, an MBARI-designed server application running on a shore-side UNIX machine makes the sensor data available to authorized users everywhere, with a graphical interface that plots the data according to the user’s desired view.
+
+<p><center><img src="vol1i4_5.jpg"></center>
+
+<p>Figure 4: Flexible data plotting via the Internet
+
+<p>For added assurance of successful data transmission, MBARI commissioned a special ZMODEM file transfer implementation that governs the delivery of sensor data from the moorings to the MBARI server. While the radios’ built-in ARQ (automatic repeat-request) mode provides valuable error correction at the link layer, ZMODEM provides application-level correction, including crash recovery that restarts an interrupted transmission at the point at which transmission was dropped.
+
+<p><b>The System Today </b>
+
+<p>The LOBO project met its goals completely, and demonstrates the value of operating a network of autonomous sensors for in-depth understanding of coastal biogeochemistry. The ability to study the slough’s hydrological and nutrient chemical cycles, and to simultaneously understand human alterations of these cycles at the land/ocean boundary, is a fundamental component of coastal zone management – and one that has been a major scientific challenge.
+
+<p>This is quite an improvement over the previous manual system of collecting samples by boat, taking them back to a lab for analysis, and still having no visibility into underlying dynamics. Very importantly, this system allows for precise coastal oceanography observations near shore, where human activity has enormous impact. The LOBO team anticipates that many organizations similar to MBARI have a need for this kind of pioneering system.
+
+<p>It’s important to note that the wireless components of LOBO are actually a highly portable application that can be deployed in numerous operating environments. Wherever sensor data needs to be collected, relayed seamlessly, and automatically translated to Ethernet for LAN access to data, that system can employ the same types of components that are today serving MBARI so well.
+
+<p>MBARI Technical Contact, Luke Coletti - coletti@mbari.org
+
+
+
+</td></tr>
+
+
+
+
+</table>
+</td>
+
+
+
+
+
+
+<td valign="top" align="left" rowspan="3">&nbsp;
+
+
+
+</td></tr>
+</table>
+</body>
+
+</html>
+
+
+
+
+
+
+
+

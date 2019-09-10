@@ -1,0 +1,23 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Manadev\LayeredNavigationSettings\Blocks\Adminhtml\FilterForm">
+        <plugin name="Manadev\LayeredNavigationMobile" type="Manadev\LayeredNavigationMobile\Plugins\FilterForm" sortOrder="300" />
+    </type>
+
+    <type name="Magento\Catalog\Block\Product\ListProduct">
+        <plugin name="Manadev\LayeredNavigationMobile" type="Manadev\LayeredNavigationMobile\Plugins\ProductList" sortOrder="200"/>
+    </type>
+
+    <type name="Manadev\LayeredNavigation\Blocks\Navigation">
+        <plugin name="Manadev\LayeredNavigationMobile" type="Manadev\LayeredNavigationMobile\Plugins\NavigationBlock" sortOrder="200"/>
+    </type>
+
+    <type name="Manadev\LayeredNavigationMobile\Registries\MobileBehaviorRegistry">
+        <arguments>
+            <argument name="mobileBehaviors" xsi:type="array">
+                <item name="accordion" xsi:type="object">Manadev\LayeredNavigationMobile\MobileBehaviors\Accordion</item>
+                <item name="initially_collapsed" xsi:type="object">Manadev\LayeredNavigationMobile\MobileBehaviors\InitiallyCollapsed</item>
+                <item name="initially_expanded" xsi:type="object">Manadev\LayeredNavigationMobile\MobileBehaviors\InitiallyExpanded</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

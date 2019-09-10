@@ -1,0 +1,454 @@
+<?xml version="1.0"?>
+<!--
+ @category    Mana
+ @package     Manadev_Seo
+ @copyright   Copyright (c) http://www.manadev.com
+ @license     http://www.manadev.com/license  Proprietary License
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="mana_core">
+            <group id="log" translate="label" type="text" sortOrder="10200" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Detailed Logs for Troubleshooting</label>
+                <field id="seo_url_parser_queries" translate="label" type="select" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>SEO URL Parser Queries</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="seo_url_generator_queries" translate="label" type="select" sortOrder="400" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>SEO URL Generator Queries</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="seo_url_index_queries" translate="label" type="select" sortOrder="500" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>SEO URL Index Queries</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="seo_url_parser_logic" translate="label" type="select" sortOrder="550" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>SEO URL Parser Logic</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+        <section id="mana_seo" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>SEO Settings</label>
+            <tab>mana</tab>
+            <resource>Manadev_Seo::global_configuration</resource>
+            <group id="url_keys" translate="label" type="text" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>URL Keys</label>
+                <field id="search_page" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Search Page</label>
+                    <frontend_class>required-entry</frontend_class>
+                </field>
+                <field id="symbols" translate="label" type="textarea" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Symbol Translations</label>
+                </field>
+            </group>
+            <group id="path_delimiters" translate="label" type="text" sortOrder="210" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>URL Path Delimiters</label>
+                <field id="prefix" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Prefix Delimiter</label>
+                    <frontend_model>Manadev\Seo\Blocks\Adminhtml\FieldWithCreateRedirectCheckbox</frontend_model>
+                    <frontend_class>required-entry</frontend_class>
+                </field>
+                <field id="suffix" translate="label" type="text" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Suffix Delimiter</label>
+                    <frontend_model>Manadev\Seo\Blocks\Adminhtml\FieldWithCreateRedirectCheckbox</frontend_model>
+                    <frontend_class>required-entry</frontend_class>
+                </field>
+                <field id="category" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Category Path Delimiter</label>
+                    <frontend_model>Manadev\Seo\Blocks\Adminhtml\FieldWithCreateRedirectCheckbox</frontend_model>
+                    <frontend_class>required-entry</frontend_class>
+                </field>
+            </group>
+            <group id="prefix_delimiters" translate="label" type="text" sortOrder="220" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>URL Path Prefix Delimiters</label>
+                <field id="parameter" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Parameter Delimiter</label>
+                    <frontend_model>Manadev\Seo\Blocks\Adminhtml\FieldWithCreateRedirectCheckbox</frontend_model>
+                    <frontend_class>required-entry</frontend_class>
+                </field>
+                <field id="value" translate="label" type="text" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Value Delimiter</label>
+                    <frontend_model>Manadev\Seo\Blocks\Adminhtml\FieldWithCreateRedirectCheckbox</frontend_model>
+                    <frontend_class>required-entry</frontend_class>
+                </field>
+                <field id="option" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Option Delimiter</label>
+                    <frontend_model>Manadev\Seo\Blocks\Adminhtml\FieldWithCreateRedirectCheckbox</frontend_model>
+                    <frontend_class>required-entry</frontend_class>
+                </field>
+                <!--<field id="range" translate="label" type="text" sortOrder="400" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Range Delimiter</label>
+                    <frontend_model>Manadev\Seo\Blocks\Adminhtml\FieldWithCreateRedirectCheckbox</frontend_model>
+                    <frontend_class>required-entry</frontend_class>
+                </field>
+                <field id="category" translate="label" type="text" sortOrder="500" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Category Path Delimiter</label>
+                    <frontend_model>Manadev\Seo\Blocks\Adminhtml\FieldWithCreateRedirectCheckbox</frontend_model>
+                    <frontend_class>required-entry</frontend_class>
+                </field>-->
+            </group>
+            <group id="suffix_delimiters" translate="label" type="text" sortOrder="230" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>URL Path Suffix Delimiters</label>
+                <field id="parameter" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Parameter Delimiter</label>
+                    <frontend_model>Manadev\Seo\Blocks\Adminhtml\FieldWithCreateRedirectCheckbox</frontend_model>
+                    <frontend_class>required-entry</frontend_class>
+                </field>
+                <field id="value" translate="label" type="text" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Value Delimiter</label>
+                    <frontend_model>Manadev\Seo\Blocks\Adminhtml\FieldWithCreateRedirectCheckbox</frontend_model>
+                    <frontend_class>required-entry</frontend_class>
+                </field>
+                <field id="option" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Option Delimiter</label>
+                    <frontend_model>Manadev\Seo\Blocks\Adminhtml\FieldWithCreateRedirectCheckbox</frontend_model>
+                    <frontend_class>required-entry</frontend_class>
+                </field>
+                <!--<field id="range" translate="label" type="text" sortOrder="400" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Range Delimiter</label>
+                    <frontend_model>Manadev\Seo\Blocks\Adminhtml\FieldWithCreateRedirectCheckbox</frontend_model>
+                    <frontend_class>required-entry</frontend_class>
+                </field>
+                <field id="category" translate="label" type="text" sortOrder="500" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Category Path Delimiter</label>
+                    <frontend_model>Manadev\Seo\Blocks\Adminhtml\FieldWithCreateRedirectCheckbox</frontend_model>
+                    <frontend_class>required-entry</frontend_class>
+                </field>-->
+            </group>
+            <group id="redirect" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Redirect</label>
+                <field id="query_parameters_to_path_parameters" translate="label comment" type="select" sortOrder="100" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Query Parameters to Path Parameters</label>
+                    <comment>Migrates ?color=24 URLs to /color/red URLs. Turn off to improve performance</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="non_seo_urls" translate="label comment" type="select" sortOrder="150" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Non SEO URLs to Their SEO Counterparts</label>
+                    <comment>Migrates catalog/category/view and catalogsearch/result/ URLs to URLs based on SEO friendly URL keys</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="category_filter_to_subcategory_page" translate="label" type="select" sortOrder="200" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Applied Category Filter to Subcategory Page</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="to_correct_parameter_order" translate="label" type="select" sortOrder="300" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>To Correct Path Parameter Order</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="home_cms_page_to_home_page" translate="label" type="select" sortOrder="400" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Home CMS Page to Home Page</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <!-- NOINDEX, NOFOLLOW-->
+            <group id="canonical_url" translate="label" type="text" sortOrder="500" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Canonical URL</label>
+                <field id="on_category_pages" translate="label" type="select" sortOrder="100" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>On Category Pages</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="on_search_page" translate="label" type="select" sortOrder="110" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>On Search Page</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="on_cms_pages" translate="label" type="select" sortOrder="120" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>On CMS Pages</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="points_to_page_with_all_products" translate="label" type="select" sortOrder="200" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Points to Page With All Products</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="remove_on_second_and_further_pages" translate="label" type="select" sortOrder="300" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Remove on Second and Further Pages</label>
+                    <source_model>Manadev\Seo\Enums\CanonicalOnSecondAndFurtherPage</source_model>
+                </field>
+                <field id="add_rel_prev_rel_next" translate="label" type="select" sortOrder="400" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Add rel=prev and rel=next Paging Hint Links</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="toolbar_page" translate="label" type="text" sortOrder="700" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Product List Toolbar 'Page' Parameter</label>
+                <field id="url_key" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>URL Key</label>
+                    <frontend_class>required-entry</frontend_class>
+                </field>
+                <field id="url_part" translate="label" type="select" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>URL Part</label>
+                    <source_model>Manadev\Seo\Enums\QueryPart</source_model>
+                </field>
+                <field id="position" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Position in URL</label>
+                    <frontend_class>required-entry validate-number</frontend_class>
+                </field>
+                <field id="include_in_canonical_url" translate="label" type="select" sortOrder="400" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Include in Canonical URL</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="force_no_index" translate="label" type="select" sortOrder="500" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Force NOINDEX If Parameter is Present</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="force_no_follow" translate="label" type="select" sortOrder="600" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Force NOFOLLOW If Parameter is Present</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="include_in_meta_title" translate="label" type="select" sortOrder="700" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Include in Meta Title</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="include_in_meta_description" translate="label" type="select" sortOrder="800" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Include in Meta Description</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="include_in_meta_keywords" translate="label" type="select" sortOrder="900" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Include in Meta Keywords</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="toolbar_order" translate="label" type="text" sortOrder="710" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Product List Toolbar 'Sort By' Parameter</label>
+                <field id="url_key" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>URL Key</label>
+                    <frontend_class>required-entry</frontend_class>
+                </field>
+                <field id="url_part" translate="label" type="select" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>URL Part</label>
+                    <source_model>Manadev\Seo\Enums\QueryPart</source_model>
+                </field>
+                <field id="position" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Position in URL</label>
+                    <frontend_class>required-entry validate-number</frontend_class>
+                </field>
+                <field id="allow_only_known_options" translate="label" type="select" sortOrder="310" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Allow Only Known Options</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="additional_known_options" translate="label" type="text" sortOrder="320" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Additionally Allowed Options</label>
+                    <comment>Comma-separated list</comment>
+                </field>
+                <field id="include_in_canonical_url" translate="label" type="select" sortOrder="400" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Include in Canonical URL</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="force_no_index" translate="label" type="select" sortOrder="500" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Force NOINDEX If Parameter is Present</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="force_no_follow" translate="label" type="select" sortOrder="600" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Force NOFOLLOW If Parameter is Present</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="include_in_meta_title" translate="label" type="select" sortOrder="700" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Include in Meta Title</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="include_in_meta_description" translate="label" type="select" sortOrder="800" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Include in Meta Description</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="include_in_meta_keywords" translate="label" type="select" sortOrder="900" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Include in Meta Keywords</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="toolbar_dir" translate="label" type="text" sortOrder="720" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Product List Toolbar 'Sort Direction' Parameter</label>
+                <field id="url_key" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>URL Key</label>
+                    <frontend_class>required-entry</frontend_class>
+                </field>
+                <field id="url_part" translate="label" type="select" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>URL Part</label>
+                    <source_model>Manadev\Seo\Enums\QueryPart</source_model>
+                </field>
+                <field id="position" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Position in URL</label>
+                    <frontend_class>required-entry validate-number</frontend_class>
+                </field>
+                <field id="include_in_canonical_url" translate="label" type="select" sortOrder="400" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Include in Canonical URL</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="force_no_index" translate="label" type="select" sortOrder="500" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Force NOINDEX If Parameter is Present</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="force_no_follow" translate="label" type="select" sortOrder="600" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Force NOFOLLOW If Parameter is Present</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="include_in_meta_title" translate="label" type="select" sortOrder="700" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Include in Meta Title</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="include_in_meta_description" translate="label" type="select" sortOrder="800" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Include in Meta Description</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="include_in_meta_keywords" translate="label" type="select" sortOrder="900" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Include in Meta Keywords</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="toolbar_mode" translate="label" type="text" sortOrder="730" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Product List Toolbar 'Mode' Parameter</label>
+                <field id="url_key" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>URL Key</label>
+                    <frontend_class>required-entry</frontend_class>
+                </field>
+                <field id="url_part" translate="label" type="select" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>URL Part</label>
+                    <source_model>Manadev\Seo\Enums\QueryPart</source_model>
+                </field>
+                <field id="position" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Position in URL</label>
+                    <frontend_class>required-entry validate-number</frontend_class>
+                </field>
+                <!--<field id="allow_only_known_options" translate="label" type="select" sortOrder="310" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Allow Only Known Options</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>-->
+                <field id="additional_known_options" translate="label" type="text" sortOrder="320" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Additionally Allowed Options</label>
+                    <comment>Comma-separated list</comment>
+                </field>
+                <field id="include_in_canonical_url" translate="label" type="select" sortOrder="400" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Include in Canonical URL</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="force_no_index" translate="label" type="select" sortOrder="500" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Force NOINDEX If Parameter is Present</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="force_no_follow" translate="label" type="select" sortOrder="600" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Force NOFOLLOW If Parameter is Present</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="include_in_meta_title" translate="label" type="select" sortOrder="700" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Include in Meta Title</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="include_in_meta_description" translate="label" type="select" sortOrder="800" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Include in Meta Description</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="include_in_meta_keywords" translate="label" type="select" sortOrder="900" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Include in Meta Keywords</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="toolbar_show" translate="label" type="text" sortOrder="740" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Product List Toolbar 'Products per Page' Parameter</label>
+                <field id="url_key" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>URL Key</label>
+                    <frontend_class>required-entry</frontend_class>
+                </field>
+                <field id="url_part" translate="label" type="select" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>URL Part</label>
+                    <source_model>Manadev\Seo\Enums\QueryPart</source_model>
+                </field>
+                <field id="position" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Position in URL</label>
+                    <frontend_class>required-entry validate-number</frontend_class>
+                </field>
+                <field id="include_in_canonical_url" translate="label" type="select" sortOrder="400" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Include in Canonical URL</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="force_no_index" translate="label" type="select" sortOrder="500" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Force NOINDEX If Parameter is Present</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="force_no_follow" translate="label" type="select" sortOrder="600" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Force NOFOLLOW If Parameter is Present</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="include_in_meta_title" translate="label" type="select" sortOrder="700" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Include in Meta Title</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="include_in_meta_description" translate="label" type="select" sortOrder="800" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Include in Meta Description</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="include_in_meta_keywords" translate="label" type="select" sortOrder="900" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Include in Meta Keywords</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="search_keyword" translate="label" type="text" sortOrder="750" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Search Keyword Parameter</label>
+                <field id="url_key" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>URL Key</label>
+                    <frontend_class>required-entry</frontend_class>
+                </field>
+                <field id="use_parameter_url_key" translate="label comment" type="select" sortOrder="150" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Use Parameter URL Key</label>
+                    <comment>If disabled, search keyword appears first in its URL part</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="url_part" translate="label" type="select" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>URL Part</label>
+                    <source_model>Manadev\Seo\Enums\QueryPart</source_model>
+                </field>
+                <field id="position" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Position in URL</label>
+                    <frontend_class>required-entry validate-number</frontend_class>
+                </field>
+                <field id="include_in_canonical_url" translate="label" type="select" sortOrder="400" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Include in Canonical URL</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="force_no_index" translate="label" type="select" sortOrder="500" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Force NOINDEX If Parameter is Present</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="force_no_follow" translate="label" type="select" sortOrder="600" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Force NOFOLLOW If Parameter is Present</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="include_in_meta_title" translate="label" type="select" sortOrder="700" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Include in Meta Title</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="include_in_meta_description" translate="label" type="select" sortOrder="800" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Include in Meta Description</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="include_in_meta_keywords" translate="label" type="select" sortOrder="900" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Include in Meta Keywords</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <!--<field id="sitemap_keywords" translate="label comment" type="textarea" sortOrder="1000" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Keywords to Include in Sitemap</label>
+                    <comment>Start each keyword from new line</comment>
+                </field>-->
+            </group>
+            <!-- filter defaults -->
+            <!-- filter specific content -->
+            <group id="other" translate="label" type="text" sortOrder="1000" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Other</label>
+                <!--<field id="number_of_applied_filters_for_sitemap" translate="label comment" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Add Filtered Links to Sitemap If Number of Applied Filters Is Equal or More Than</label>
+                    <comment>Leave empty to disable this setting</comment>
+                    <frontend_class>validate-number</frontend_class>
+                </field>-->
+                <field id="excluded_query_parameters" translate="label comment" type="text" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Excluded Query Parameters</label>
+                    <comment>These comma-separated query parameters are excluded from all layered navigation links. Useful for marketing campaign tracking parameters like utm_campaign.</comment>
+                </field>
+            </group>
+        </section>
+        <section id="catalog">
+            <group id="seo">
+                <field id="category_url_suffix">
+                    <frontend_model>Manadev\Seo\Blocks\Adminhtml\FieldWithCreateRedirectCheckbox</frontend_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

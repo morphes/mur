@@ -1,0 +1,21 @@
+<div class="wrap_select_main">
+    <form name="jumpy">
+        <?php $collection = $this->getProducts(); ?>
+        <select name="datasheet" size="1" id="product_dropdown"">
+            <option value="">Download a Data Sheet (PDF)</option>
+            <option value="">---------</option>
+            <option value="/application-notes.html">View APPLICATION NOTES</option>
+            <option value="">---------</option>
+            <option value="/products/discontinued-and-not-recommended.html">View NOT RECOMMENDED</option>
+            <option value="/products/discontinued-and-not-recommended.html">View OBSOLETE</option>
+            <option value="">---------</option>
+            <?php foreach($collection as $product) { ?>
+                <?php if((strpos($product->getAttributeText('series_status'), 'Recommended') !== false) && $product->getSeriesDatasheet() != '' && ($product->getSeriesPrimary() == 'Yes' || $product->getSeriesPrimary() == 'yes')) {?>
+	                <option value="/datasheet?<?php echo $product->getSeriesDatasheet() ?>">
+	                    <?php echo $product->getName() ?>
+	                </option>
+                <?php } ?>
+            <?php } ?>
+        </select>
+    </form>
+</div>

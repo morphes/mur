@@ -1,0 +1,18 @@
+<?php $product = $this->getProduct(); ?>
+<?php if ($product->getAttributeText('rfm_product_status') == "to be discontinued") { ?>
+    <img src="/pub/images/to_be_discontinued.jpg" alt="To Be Discontinued" title="Status To Be Discontinued"/>
+<?php } ?>
+<?php if ($product->getAttributeText('rfm_product_status') == "discontinued") { ?>
+    <img src="/pub/images/discontinued.jpg" alt="Discontinued" title="Status Discontinued"/>
+<?php }  ?>
+<?php if ($product->getAttributeText('rfm_product_status') == "in production") { ?>
+    <img src="/pub/images/inproduction.jpg" alt="In Production" title="Status In Production"/>
+<?php } ?>
+<?php if ($product->getAttributeText('rfm_product_status') == "under development recommended") { ?>
+    <img src="/pub/images/under_development.jpg" alt="Under Development" title="Status Under Development"/>
+    <br><img src="/pub/images/recommended.jpg" alt="Recommended" title="Status Recommended"/>
+<?php } ?>
+<?php if ($product->getAttributeText('rfm_product_status') == "recommended in production") { ?>
+    <img src="/pub/images/recommended.jpg" alt="Recommended" title="Status Recommended"/>
+    <br><img src="/pub/images/inproduction.jpg" alt="In Production" title="Status In Production"/>
+<?php } ?>

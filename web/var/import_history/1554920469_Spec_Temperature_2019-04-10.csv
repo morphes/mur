@@ -1,0 +1,546 @@
+sku,store_view_code,attribute_set_code,product_websites,name,rfm_spec_temp_range,rfm_spec_temp_max,rfm_spec_temp_min
+SF2211E,,RFM - SAW Filter,"wireless,base",SF2211E, -55 to +85,85,-55
+SF2229A,,RFM - SAW Filter,"wireless,base",SF2229A, -55 to +95,95,-55
+SF2251E,,RFM - SAW Filter,"wireless,base",SF2251E, -55 to +85,85,-55
+SF2252E,,RFM - SAW Filter,"wireless,base",SF2252E, -55 to +85,85,-55
+SF2257A,,RFM - SAW Filter,"wireless,base",SF2257A, -55 to +90,90,-55
+SF2230A,,RFM - SAW Filter,"wireless,base",SF2230A, -45 to +85,85,-45
+RF1172C,,RFM - SAW Filter,"wireless,base",RF1172C, -40 to +85,85,-40
+RF1172D,,RFM - SAW Filter,"wireless,base",RF1172D, -40 to +85,85,-40
+RF1211C,,RFM - SAW Filter,"wireless,base",RF1211C, -40 to +85,85,-40
+RF1211D,,RFM - SAW Filter,"wireless,base",RF1211D, -40 to +85,85,-40
+RF1295C,,RFM - SAW Filter,"wireless,base",RF1295C, -40 to +85,85,-40
+RF1353C,,RFM - SAW Filter,"wireless,base",RF1353C, -40 to +85,85,-40
+RF1353D,,RFM - SAW Filter,"wireless,base",RF1353D, -40 to +85,85,-40
+RF1391C,,RFM - SAW Filter,"wireless,base",RF1391C, -40 to +85,85,-40
+RF1396C,,RFM - SAW Filter,"wireless,base",RF1396C, -40 to +85,85,-40
+RF1400D,,RFM - SAW Filter,"wireless,base",RF1400D, -40 to +125,125,-40
+RF1401D,,RFM - SAW Filter,"wireless,base",RF1401D, -40 to +85,85,-40
+RF1402D,,RFM - SAW Filter,"wireless,base",RF1402D, -40 to +85,85,-40
+RF1404C,,RFM - SAW Filter,"wireless,base",RF1404C, -40 to +85,85,-40
+RF1407D,,RFM - SAW Filter,"wireless,base",RF1407D, -40 to +85,85,-40
+RF1408D,,RFM - SAW Filter,"wireless,base",RF1408D, -40 to +125,125,-40
+RF1411D,,RFM - SAW Filter,"wireless,base",RF1411D, -40 to +85,85,-40
+RF1414D,,RFM - SAW Filter,"wireless,base",RF1414D, -40 to +125,125,-40
+RF1417D,,RFM - SAW Filter,"wireless,base",RF1417D, -40 to +125,125,-40
+RF1419D,,RFM - SAW Filter,"wireless,base",RF1419D, -40 to +85,85,-40
+RF1432C,,RFM - SAW Filter,"wireless,base",RF1432C, -40 to +85,85,-40
+RF2040E,,RFM - SAW Filter,"wireless,base",RF2040E, -40 to +85,85,-40
+RF3171D,,RFM - SAW Filter,"wireless,base",RF3171D, -40 to +85,85,-40
+RF3181,,RFM - SAW Filter,"wireless,base",RF3181, -40 to +85,85,-40
+RF3181D,,RFM - SAW Filter,"wireless,base",RF3181D, -40 to +125,125,-40
+RF3181E,,RFM - SAW Filter,"wireless,base",RF3181E, -40 to +125,125,-40
+RF3210,,RFM - SAW Filter,"wireless,base",RF3210, -40 to +85,85,-40
+RF3210D,,RFM - SAW Filter,"wireless,base",RF3210D, -40 to +125,125,-40
+RF3319D,,RFM - SAW Filter,"wireless,base",RF3319D, -40 to +125,125,-40
+RF3319E,,RFM - SAW Filter,"wireless,base",RF3319E, -40 to +125,125,-40
+RF3336,,RFM - SAW Filter,"wireless,base",RF3336, -40 to +85,85,-40
+RF3336C,,RFM - SAW Filter,"wireless,base",RF3336C, -40 to +85,85,-40
+RF3336D,,RFM - SAW Filter,"wireless,base",RF3336D, -40 to +125,125,-40
+RF3336E,,RFM - SAW Filter,"wireless,base",RF3336E, -40 to +125,125,-40
+RF3391D,,RFM - SAW Filter,"wireless,base",RF3391D, -40 to +125,125,-40
+RF3404,,RFM - SAW Filter,"wireless,base",RF3404, -40 to +85,85,-40
+RF3404D,,RFM - SAW Filter,"wireless,base",RF3404D, -40 to +90,90,-40
+RF3404E,,RFM - SAW Filter,"wireless,base",RF3404E, -40 to +105,105,-40
+RF3414E,,RFM - SAW Filter,"wireless,base",RF3414E, -40 to +125,125,-40
+RF3417,,RFM - SAW Filter,"wireless,base",RF3417, -40 to +85,85,-40
+RF3417D,,RFM - SAW Filter,"wireless,base",RF3417D, -40 to +125,125,-40
+RF3417E,,RFM - SAW Filter,"wireless,base",RF3417E, -40 to +125,125,-40
+RF3446E,,RFM - SAW Filter,"wireless,base",RF3446E, -40 to +105,105,-40
+RF3501E,,RFM - SAW Filter,"wireless,base",RF3501E, -40 to +85,85,-40
+RF3600E,,RFM - SAW Filter,"wireless,base",RF3600E, -40 to +125,125,-40
+RF3601E,,RFM - SAW Filter,"wireless,base",RF3601E, -40 to +85,85,-40
+RF3602D,,RFM - SAW Filter,"wireless,base",RF3602D, -40 to +85,85,-40
+RF3603D,,RFM - SAW Filter,"wireless,base",RF3603D, -40 to +85,85,-40
+RF3604D,,RFM - SAW Filter,"wireless,base",RF3604D, -40 to +85,85,-40
+RF3605D,,RFM - SAW Filter,"wireless,base",RF3605D, -40 to +85,85,-40
+RF3606D,,RFM - SAW Filter,"wireless,base",RF3606D, -40 to +85,85,-40
+RF3607D,,RFM - SAW Filter,"wireless,base",RF3607D, -40 to +85,85,-40
+RF3608D,,RFM - SAW Filter,"wireless,base",RF3608D, -40 to +85,85,-40
+RF3609D,,RFM - SAW Filter,"wireless,base",RF3609D, -40 to +85,85,-40
+RF3613E,,RFM - SAW Filter,"wireless,base",RF3613E, -40 to +85,85,-40
+RF3620E,,RFM - SAW Filter,"wireless,base",RF3620E, -40 to +85,85,-40
+RF3624D,,RFM - SAW Filter,"wireless,base",RF3624D, -40 to +105,105,-40
+RF3624E,,RFM - SAW Filter,"wireless,base",RF3624E, -40 to +105,105,-40
+RF3631D ,,RFM - SAW Filter,"wireless,base",RF3631D , -40 to +80,80,-40
+RF3700D,,RFM - SAW Filter,"wireless,base",RF3700D, -40 to +85,85,-40
+RF3701E,,RFM - SAW Filter,"wireless,base",RF3701E, -40 to +85,85,-40
+RF3709D,,RFM - SAW Filter,"wireless,base",RF3709D, -40 to +105,105,-40
+RF3709E,,RFM - SAW Filter,"wireless,base",RF3709E, -40 to +105,105,-40
+RO2043,,RFM - Resonators,"wireless,base",RO2043, -40 to +85,85,-40
+RO2044,,RFM - Resonators,"wireless,base",RO2044, -40 to +85,85,-40
+RO2100,,RFM - Resonators,"wireless,base",RO2100, -40 to +85,85,-40
+RO2131D,,RFM - Resonators,"wireless,base",RO2131D, -40 to +85,85,-40
+RO3023,,RFM - Resonators,"wireless,base",RO3023, -40 to +85,85,-40
+RO3030A-1,,RFM - Resonators,"wireless,base",RO3030A-1, -40 to +85,85,-40
+RO3053A-1,,RFM - Resonators,"wireless,base",RO3053A-1, -40 to +85,85,-40
+RO3073,,RFM - Resonators,"wireless,base",RO3073, -40 to +85,85,-40
+RO3073A,,RFM - Resonators,"wireless,base",RO3073A, -40 to +85,85,-40
+RO3073A-1,,RFM - Resonators,"wireless,base",RO3073A-1, -40 to +85,85,-40
+RO3073A-11,,RFM - Resonators,"wireless,base",RO3073A-11, -40 to +85,85,-40
+RO3073A-21,,RFM - Resonators,"wireless,base",RO3073A-21, -40 to +85,85,-40
+RO3073A-5,,RFM - Resonators,"wireless,base",RO3073A-5, -40 to +85,85,-40
+RO3073A-6,,RFM - Resonators,"wireless,base",RO3073A-6, -40 to +85,85,-40
+RO3073C,,RFM - Resonators,"wireless,base",RO3073C, -40 to +85,85,-40
+RO3073D,,RFM - Resonators,"wireless,base",RO3073D, -40 to +85,85,-40
+RO3073E,,RFM - Resonators,"wireless,base",RO3073E, -40 to +105,105,-40
+RO3073E-1,,RFM - Resonators,"wireless,base",RO3073E-1, -40 to +105,105,-40
+RO3073E-11,,RFM - Resonators,"wireless,base",RO3073E-11, -40 to +105,105,-40
+RO3075,,RFM - Resonators,"wireless,base",RO3075, -40 to +85,85,-40
+RO3075A,,RFM - Resonators,"wireless,base",RO3075A, -40 to +85,85,-40
+RO3075E,,RFM - Resonators,"wireless,base",RO3075E, -40 to +105,105,-40
+RO3101,,RFM - Resonators,"wireless,base",RO3101, -40 to +85,85,-40
+RO3101A,,RFM - Resonators,"wireless,base",RO3101A, -40 to +85,85,-40
+RO3101A-1,,RFM - Resonators,"wireless,base",RO3101A-1, -40 to +85,85,-40
+RO3101A-11,,RFM - Resonators,"wireless,base",RO3101A-11, -40 to +85,85,-40
+RO3101A-21,,RFM - Resonators,"wireless,base",RO3101A-21, -40 to +85,85,-40
+RO3101C,,RFM - Resonators,"wireless,base",RO3101C, -40 to +85,85,-40
+RO3101C-11,,RFM - Resonators,"wireless,base",RO3101C-11, -40 to +85,85,-40
+RO3101D,,RFM - Resonators,"wireless,base",RO3101D, -40 to +85,85,-40
+RO3101E,,RFM - Resonators,"wireless,base",RO3101E, -40 to +105,105,-40
+RO3101E-1,,RFM - Resonators,"wireless,base",RO3101E-1, -40 to +105,105,-40
+RO3101E-11,,RFM - Resonators,"wireless,base",RO3101E-11, -40 to +85,85,-40
+RO3102,,RFM - Resonators,"wireless,base",RO3102, -40 to +85,85,-40
+RO3102A,,RFM - Resonators,"wireless,base",RO3102A, -40 to +85,85,-40
+RO3102A-1,,RFM - Resonators,"wireless,base",RO3102A-1, -40 to +85,85,-40
+RO3103,,RFM - Resonators,"wireless,base",RO3103, -40 to +85,85,-40
+RO3103A,,RFM - Resonators,"wireless,base",RO3103A, -40 to +125,125,-40
+RO3103D,,RFM - Resonators,"wireless,base",RO3103D, -40 to +85,85,-40
+RO3103E,,RFM - Resonators,"wireless,base",RO3103E, -40 to +85,85,-40
+RO3104,,RFM - Resonators,"wireless,base",RO3104, -40 to +85,85,-40
+RO3104A,,RFM - Resonators,"wireless,base",RO3104A, -40 to +85,85,-40
+RO3104C,,RFM - Resonators,"wireless,base",RO3104C, -40 to +85,85,-40
+RO3104D,,RFM - Resonators,"wireless,base",RO3104D, -40 to +85,85,-40
+RO3104E,,RFM - Resonators,"wireless,base",RO3104E, -40 to +85,85,-40
+RO3112,,RFM - Resonators,"wireless,base",RO3112, -40 to +85,85,-40
+RO3112A,,RFM - Resonators,"wireless,base",RO3112A, -40 to +85,85,-40
+RO3112C,,RFM - Resonators,"wireless,base",RO3112C, -40 to +85,85,-40
+RO3112D,,RFM - Resonators,"wireless,base",RO3112D, -40 to +85,85,-40
+RO3112E,,RFM - Resonators,"wireless,base",RO3112E, -40 to +85,85,-40
+RO3113,,RFM - Resonators,"wireless,base",RO3113, -40 to +85,85,-40
+RO3113A,,RFM - Resonators,"wireless,base",RO3113A, -40 to +85,85,-40
+RO3115,,RFM - Resonators,"wireless,base",RO3115, -40 to +85,85,-40
+RO3115A,,RFM - Resonators,"wireless,base",RO3115A, -40 to +125,125,-40
+RO3116,,RFM - Resonators,"wireless,base",RO3116, -40 to +85,85,-40
+RO3116A,,RFM - Resonators,"wireless,base",RO3116A, -40 to +85,85,-40
+RO3118,,RFM - Resonators,"wireless,base",RO3118, -40 to +85,85,-40
+RO3118A,,RFM - Resonators,"wireless,base",RO3118A, -40 to +105,105,-40
+RO3118A-1,,RFM - Resonators,"wireless,base",RO3118A-1, -40 to +85,85,-40
+RO3118D,,RFM - Resonators,"wireless,base",RO3118D, -40 to +85,85,-40
+RO3118E,,RFM - Resonators,"wireless,base",RO3118E, -40 to +85,85,-40
+RO3119A,,RFM - Resonators,"wireless,base",RO3119A, -40 to +85,85,-40
+RO3120A,,RFM - Resonators,"wireless,base",RO3120A, -40 to +85,85,-40
+RO3120C,,RFM - Resonators,"wireless,base",RO3120C, -40 to +85,85,-40
+RO3122A,,RFM - Resonators,"wireless,base",RO3122A, -40 to +85,85,-40
+RO3123A,,RFM - Resonators,"wireless,base",RO3123A, -40 to +85,85,-40
+RO3125A,,RFM - Resonators,"wireless,base",RO3125A, -40 to +85,85,-40
+RO3125A-2,,RFM - Resonators,"wireless,base",RO3125A-2, -40 to +85,85,-40
+RO3131A,,RFM - Resonators,"wireless,base",RO3131A, -40 to +85,85,-40
+RO3132A,,RFM - Resonators,"wireless,base",RO3132A, -40 to +85,85,-40
+RO3134A,,RFM - Resonators,"wireless,base",RO3134A, -40 to +85,85,-40
+RO3135A,,RFM - Resonators,"wireless,base",RO3135A, -40 to +85,85,-40
+RO3138A,,RFM - Resonators,"wireless,base",RO3138A, -40 to +85,85,-40
+RO3143A,,RFM - Resonators,"wireless,base",RO3143A, -40 to +85,85,-40
+RO3144,,RFM - Resonators,"wireless,base",RO3144, -40 to +85,85,-40
+RO3144A,,RFM - Resonators,"wireless,base",RO3144A, -40 to +85,85,-40
+RO3144A-1,,RFM - Resonators,"wireless,base",RO3144A-1, -40 to +85,85,-40
+RO3144A-2,,RFM - Resonators,"wireless,base",RO3144A-2, -40 to +85,85,-40
+RO3144C,,RFM - Resonators,"wireless,base",RO3144C, -40 to +85,85,-40
+RO3144C-1,,RFM - Resonators,"wireless,base",RO3144C-1, -40 to +85,85,-40
+RO3144C-2,,RFM - Resonators,"wireless,base",RO3144C-2, -40 to +85,85,-40
+RO3144D,,RFM - Resonators,"wireless,base",RO3144D, -40 to +85,85,-40
+RO3144D-1,,RFM - Resonators,"wireless,base",RO3144D-1, -40 to +85,85,-40
+RO3144D-2,,RFM - Resonators,"wireless,base",RO3144D-2, -40 to +85,85,-40
+RO3144E,,RFM - Resonators,"wireless,base",RO3144E, -40 to +125,125,-40
+RO3144E-1,,RFM - Resonators,"wireless,base",RO3144E-1, -40 to +125,125,-40
+RO3144E-2,,RFM - Resonators,"wireless,base",RO3144E-2, -40 to +125,125,-40
+RO3150A,,RFM - Resonators,"wireless,base",RO3150A, -40 to +85,85,-40
+RO3150E,,RFM - Resonators,"wireless,base",RO3150E, -40 to +85,85,-40
+RO3156A,,RFM - Resonators,"wireless,base",RO3156A, -40 to +85,85,-40
+RO3156A-1,,RFM - Resonators,"wireless,base",RO3156A-1, -40 to +85,85,-40
+RO3156A-2,,RFM - Resonators,"wireless,base",RO3156A-2, -40 to +85,85,-40
+RO3156A-3,,RFM - Resonators,"wireless,base",RO3156A-3, -40 to +85,85,-40
+RO3156D,,RFM - Resonators,"wireless,base",RO3156D, -40 to +85,85,-40
+RO3156D-1,,RFM - Resonators,"wireless,base",RO3156D-1, -40 to +85,85,-40
+RO3156D-2,,RFM - Resonators,"wireless,base",RO3156D-2, -40 to +85,85,-40
+RO3156E,,RFM - Resonators,"wireless,base",RO3156E, -40 to +125,125,-40
+RO3156E-1,,RFM - Resonators,"wireless,base",RO3156E-1, -40 to +125,125,-40
+RO3156E-2,,RFM - Resonators,"wireless,base",RO3156E-2, -40 to +125,125,-40
+RO3156E-3,,RFM - Resonators,"wireless,base",RO3156E-3, -40 to +85,85,-40
+RO3164,,RFM - Resonators,"wireless,base",RO3164, -40 to +85,85,-40
+RO3164A,,RFM - Resonators,"wireless,base",RO3164A, -40 to +85,85,-40
+RO3164A-1,,RFM - Resonators,"wireless,base",RO3164A-1, -40 to +85,85,-40
+RO3164A-2,,RFM - Resonators,"wireless,base",RO3164A-2, -40 to +85,85,-40
+RO3164A-3,,RFM - Resonators,"wireless,base",RO3164A-3, -40 to +85,85,-40
+RO3164D,,RFM - Resonators,"wireless,base",RO3164D, -40 to +85,85,-40
+RO3164D-1,,RFM - Resonators,"wireless,base",RO3164D-1, -40 to +85,85,-40
+RO3164D-2,,RFM - Resonators,"wireless,base",RO3164D-2, -40 to +85,85,-40
+RO3164D-3,,RFM - Resonators,"wireless,base",RO3164D-3, -40 to +85,85,-40
+RO3164E,,RFM - Resonators,"wireless,base",RO3164E, -40 to +125,125,-40
+RO3164E-1,,RFM - Resonators,"wireless,base",RO3164E-1, -40 to +125,125,-40
+RO3164E-2,,RFM - Resonators,"wireless,base",RO3164E-2, -40 to +125,125,-40
+RO3164E-3,,RFM - Resonators,"wireless,base",RO3164E-3, -40 to +85,85,-40
+RO3188A,,RFM - Resonators,"wireless,base",RO3188A, -40 to +85,85,-40
+RO3193A,,RFM - Resonators,"wireless,base",RO3193A, -40 to +85,85,-40
+RO3300E,,RFM - Resonators,"wireless,base",RO3300E, -40 to +125,125,-40
+RO3302A,,RFM - Resonators,"wireless,base",RO3302A, -40 to +85,85,-40
+RO3316E,,RFM - Resonators,"wireless,base",RO3316E, -40 to +85,85,-40
+RP1053-2,,RFM - Resonators,"wireless,base",RP1053-2, -40 to +85,85,-40
+RP1104,,RFM - Resonators,"wireless,base",RP1104, -40 to +85,85,-40
+RP1105,,RFM - Resonators,"wireless,base",RP1105, -40 to +85,85,-40
+RP1236-1,,RFM - Resonators,"wireless,base",RP1236-1, -40 to +85,85,-40
+RP1298,,RFM - Resonators,"wireless,base",RP1298, -40 to +85,85,-40
+RP1298-2,,RFM - Resonators,"wireless,base",RP1298-2, -40 to +85,85,-40
+RP1308,,RFM - Resonators,"wireless,base",RP1308, -40 to +85,85,-40
+SAFBC315MSP0T00,,RFM - SAW Filter,"wireless,base",SAFBC315MSP0T00, -40 to +125,125,-40
+SAFBC433MPB0X00,,RFM - SAW Filter,"wireless,base",SAFBC433MPB0X00, -40 to +125,125,-40
+SAFBC433MSP0T00,,RFM - SAW Filter,"wireless,base",SAFBC433MSP0T00, -40 to +125,125,-40
+SF1056B,,RFM - SAW Filter,"wireless,base",SF1056B, -40 to +80,80,-40
+SF1081A-1,,RFM - SAW Filter,"wireless,base",SF1081A-1, -40 to +85,85,-40
+SF1097A-1,,RFM - SAW Filter,"wireless,base",SF1097A-1, -40 to +85,85,-40
+SF1140B,,RFM - SAW Filter,"wireless,base",SF1140B, -40 to +85,85,-40
+SF1140B-2,,RFM - SAW Filter,"wireless,base",SF1140B-2, -40 to +105,105,-40
+SF1141B,,RFM - SAW Filter,"wireless,base",SF1141B, -40 to +85,85,-40
+SF1141B-2,,RFM - SAW Filter,"wireless,base",SF1141B-2, -40 to +105,105,-40
+SF1141B-4,,RFM - SAW Filter,"wireless,base",SF1141B-4, -40 to +85,85,-40
+SF1142B,,RFM - SAW Filter,"wireless,base",SF1142B, -40 to +85,85,-40
+SF1143B,,RFM - SAW Filter,"wireless,base",SF1143B, -40 to +85,85,-40
+SF1143B-1,,RFM - SAW Filter,"wireless,base",SF1143B-1, -40 to +85,85,-40
+SF1143B-2,,RFM - SAW Filter,"wireless,base",SF1143B-2, -40 to +105,105,-40
+SF1143B-4,,RFM - SAW Filter,"wireless,base",SF1143B-4, -40 to +85,85,-40
+SF1145B,,RFM - SAW Filter,"wireless,base",SF1145B, -40 to +85,85,-40
+SF1146B,,RFM - SAW Filter,"wireless,base",SF1146B, -40 to +85,85,-40
+SF1186B-2,,RFM - SAW Filter,"wireless,base",SF1186B-2, -40 to +85,85,-40
+SF1186B-3,,RFM - SAW Filter,"wireless,base",SF1186B-3, -40 to +85,85,-40
+SF1186B-4,,RFM - SAW Filter,"wireless,base",SF1186B-4, -40 to +85,85,-40
+SF1186E-1,,RFM - SAW Filter,"wireless,base",SF1186E-1, -40 to +85,85,-40
+SF1186E-2,,RFM - SAW Filter,"wireless,base",SF1186E-2, -40 to +95,95,-40
+SF1186G,,RFM - SAW Filter,"wireless,base",SF1186G, -40 to +85,85,-40
+SF1186G-2,,RFM - SAW Filter,"wireless,base",SF1186G-2, -40 to +85,85,-40
+SF1186G-6,,RFM - SAW Filter,"wireless,base",SF1186G-6, -40 to +85,85,-40
+SF1186H-2,,RFM - SAW Filter,"wireless,base",SF1186H-2, -40 to +85,85,-40
+SF1186H-3,,RFM - SAW Filter,"wireless,base",SF1186H-3, -40 to +105,105,-40
+SF1200B,,RFM - SAW Filter,"wireless,base",SF1200B, -40 to +85,85,-40
+SF1218D,,RFM - SAW Filter,"wireless,base",SF1218D, -40 to +85,85,-40
+SF1219E,,RFM - SAW Filter,"wireless,base",SF1219E, -40 to +105,105,-40
+SF1219E-1,,RFM - SAW Filter,"wireless,base",SF1219E-1, -40 to +105,105,-40
+SF1220G,,RFM - SAW Filter,"wireless,base",SF1220G, -40 to +85,85,-40
+SF1224E-1,,RFM - SAW Filter,"wireless,base",SF1224E-1, -40 to +105,105,-40
+SF1224E-3,,RFM - SAW Filter,"wireless,base",SF1224E-3, -40 to +85,85,-40
+SF2017D,,RFM - SAW Filter,"wireless,base",SF2017D, -40 to +85,85,-40
+SF2017E,,RFM - SAW Filter,"wireless,base",SF2017E, -40 to +85,85,-40
+SF2021B,,RFM - SAW Filter,"wireless,base",SF2021B, -40 to +85,85,-40
+SF2024B,,RFM - SAW Filter,"wireless,base",SF2024B, -40 to +85,85,-40
+SF2024D,,RFM - SAW Filter,"wireless,base",SF2024D, -40 to +85,85,-40
+SF2024D-1,,RFM - SAW Filter,"wireless,base",SF2024D-1, -40 to +85,85,-40
+SF2024E-1,,RFM - SAW Filter,"wireless,base",SF2024E-1, -40 to +85,85,-40
+SF2024E-2,,RFM - SAW Filter,"wireless,base",SF2024E-2, -40 to +85,85,-40
+SF2025B,,RFM - SAW Filter,"wireless,base",SF2025B, -40 to +85,85,-40
+SF2025D,,RFM - SAW Filter,"wireless,base",SF2025D, -40 to +85,85,-40
+SF2026B,,RFM - SAW Filter,"wireless,base",SF2026B, -40 to +85,85,-40
+SF2033A,,RFM - SAW Filter,"wireless,base",SF2033A, -40 to +85,85,-40
+SF2037B,,RFM - SAW Filter,"wireless,base",SF2037B, -40 to +85,85,-40
+SF2037B-2,,RFM - SAW Filter,"wireless,base",SF2037B-2, -40 to +105,105,-40
+SF2037B-3,,RFM - SAW Filter,"wireless,base",SF2037B-3, -40 to +85,85,-40
+SF2037C,,RFM - SAW Filter,"wireless,base",SF2037C, -40 to +85,85,-40
+SF2038B,,RFM - SAW Filter,"wireless,base",SF2038B, -40 to +85,85,-40
+SF2038B-2,,RFM - SAW Filter,"wireless,base",SF2038B-2, -40 to +105,105,-40
+SF2038B-3,,RFM - SAW Filter,"wireless,base",SF2038B-3, -40 to +85,85,-40
+SF2038C,,RFM - SAW Filter,"wireless,base",SF2038C, -40 to +85,85,-40
+SF2039B,,RFM - SAW Filter,"wireless,base",SF2039B, -40 to +85,85,-40
+SF2039B-2,,RFM - SAW Filter,"wireless,base",SF2039B-2, -40 to +105,105,-40
+SF2039B-3,,RFM - SAW Filter,"wireless,base",SF2039B-3, -40 to +85,85,-40
+SF2040B,,RFM - SAW Filter,"wireless,base",SF2040B, -40 to +85,85,-40
+SF2040B-2,,RFM - SAW Filter,"wireless,base",SF2040B-2, -40 to +105,105,-40
+SF2040B-3,,RFM - SAW Filter,"wireless,base",SF2040B-3, -40 to +85,85,-40
+SF2042B,,RFM - SAW Filter,"wireless,base",SF2042B, -40 to +85,85,-40
+SF2042C,,RFM - SAW Filter,"wireless,base",SF2042C, -40 to +85,85,-40
+SF2045A,,RFM - SAW Filter,"wireless,base",SF2045A, -40 to +85,85,-40
+SF2046B,,RFM - SAW Filter,"wireless,base",SF2046B, -40 to +85,85,-40
+SF2049E,,RFM - SAW Filter,"wireless,base",SF2049E, -40 to +85,85,-40
+SF2049E-1,,RFM - SAW Filter,"wireless,base",SF2049E-1, -40 to +85,85,-40
+SF2059B-1,,RFM - SAW Filter,"wireless,base",SF2059B-1, -40 to +85,85,-40
+SF2060B,,RFM - SAW Filter,"wireless,base",SF2060B, -40 to +85,85,-40
+SF2060B-1,,RFM - SAW Filter,"wireless,base",SF2060B-1, -40 to +85,85,-40
+SF2063A,,RFM - SAW Filter,"wireless,base",SF2063A, -40 to +85,85,-40
+SF2064A,,RFM - SAW Filter,"wireless,base",SF2064A, -40 to +85,85,-40
+SF2069A-1,,RFM - SAW Filter,"wireless,base",SF2069A-1, -40 to +85,85,-40
+SF2069A-2,,RFM - SAW Filter,"wireless,base",SF2069A-2, -40 to +85,85,-40
+SF2072C,,RFM - SAW Filter,"wireless,base",SF2072C, -40 to +85,85,-40
+SF2073B,,RFM - SAW Filter,"wireless,base",SF2073B, -40 to +85,85,-40
+SF2076B,,RFM - SAW Filter,"wireless,base",SF2076B, -40 to +85,85,-40
+SF2079D,,RFM - SAW Filter,"wireless,base",SF2079D, -40 to +85,85,-40
+SF2079D-1,,RFM - SAW Filter,"wireless,base",SF2079D-1, -40 to +85,85,-40
+SF2079E,,RFM - SAW Filter,"wireless,base",SF2079E, -40 to +85,85,-40
+SF2085A,,RFM - SAW Filter,"wireless,base",SF2085A, -40 to +85,85,-40
+SF2086C,,RFM - SAW Filter,"wireless,base",SF2086C, -40 to +85,85,-40
+SF2087C,,RFM - SAW Filter,"wireless,base",SF2087C, -40 to +85,85,-40
+SF2088C,,RFM - SAW Filter,"wireless,base",SF2088C, -40 to +85,85,-40
+SF2089C,,RFM - SAW Filter,"wireless,base",SF2089C, -40 to +85,85,-40
+SF2090C,,RFM - SAW Filter,"wireless,base",SF2090C, -40 to +85,85,-40
+SF2091C,,RFM - SAW Filter,"wireless,base",SF2091C, -40 to +85,85,-40
+SF2094B,,RFM - SAW Filter,"wireless,base",SF2094B, -40 to +85,85,-40
+SF2097B,,RFM - SAW Filter,"wireless,base",SF2097B, -40 to +80,80,-40
+SF2098E,,RFM - SAW Filter,"wireless,base",SF2098E, -40 to +125,125,-40
+SF2098H,,RFM - SAW Filter,"wireless,base",SF2098H, -40 to +100,100,-40
+SF2109D,,RFM - SAW Filter,"wireless,base",SF2109D, -40 to +85,85,-40
+SF2110D,,RFM - SAW Filter,"wireless,base",SF2110D, -40 to +85,85,-40
+SF2111A,,RFM - SAW Filter,"wireless,base",SF2111A, -40 to +85,85,-40
+SF2120C,,RFM - SAW Filter,"wireless,base",SF2120C, -40 to +85,85,-40
+SF2124E,,RFM - SAW Filter,"wireless,base",SF2124E, -40 to +100,100,-40
+SF2125D,,RFM - SAW Filter,"wireless,base",SF2125D, -40 to +85,85,-40
+SF2126E,,RFM - SAW Filter,"wireless,base",SF2126E, -40 to + 105,105,-40
+SF2131B,,RFM - SAW Filter,"wireless,base",SF2131B, -40 to +85,85,-40
+SF2133E-3,,RFM - SAW Filter,"wireless,base",SF2133E-3, -40 to + 105,105,-40
+SF2134E,,RFM - SAW Filter,"wireless,base",SF2134E, -40 to + 105,105,-40
+SF2136E,,RFM - SAW Filter,"wireless,base",SF2136E, -40 to +85,85,-40
+SF2137E,,RFM - SAW Filter,"wireless,base",SF2137E, -40 to +85,85,-40
+SF2137E-2,,RFM - SAW Filter,"wireless,base",SF2137E-2, -40 to +85,85,-40
+SF2138B,,RFM - SAW Filter,"wireless,base",SF2138B, -40 to +105,105,-40
+SF2138B-1,,RFM - SAW Filter,"wireless,base",SF2138B-1, -40 to +105,105,-40
+SF2139D,,RFM - SAW Filter,"wireless,base",SF2139D, -40 to +85,85,-40
+SF2140A,,RFM - SAW Filter,"wireless,base",SF2140A, -40 to +85,85,-40
+SF2143A,,RFM - SAW Filter,"wireless,base",SF2143A, -40 to +105,105,-40
+SF2143B,,RFM - SAW Filter,"wireless,base",SF2143B, -40 to +105,105,-40
+SF2147D,,RFM - SAW Filter,"wireless,base",SF2147D, -40 to +85,85,-40
+SF2148B,,RFM - SAW Filter,"wireless,base",SF2148B, -40 to +85,85,-40
+SF2149A,,RFM - SAW Filter,"wireless,base",SF2149A, -40 to +60,60,-40
+SF2150E,,RFM - SAW Filter,"wireless,base",SF2150E, -40 to +85,85,-40
+SF2151B,,RFM - SAW Filter,"wireless,base",SF2151B, -40 to +85,85,-40
+SF2155B,,RFM - SAW Filter,"wireless,base",SF2155B, -40 to +85,85,-40
+SF2157A,,RFM - SAW Filter,"wireless,base",SF2157A, -40 to +85,85,-40
+SF2158E,,RFM - SAW Filter,"wireless,base",SF2158E, -40 to +85,85,-40
+SF2159E,,RFM - SAW Filter,"wireless,base",SF2159E, -40 to +85,85,-40
+SF2160E,,RFM - SAW Filter,"wireless,base",SF2160E, -40 to +85,85,-40
+SF2162E,,RFM - SAW Filter,"wireless,base",SF2162E, -40 to +85,85,-40
+SF2163E,,RFM - SAW Filter,"wireless,base",SF2163E, -40 to +85,85,-40
+SF2164E,,RFM - SAW Filter,"wireless,base",SF2164E, -40 to +85,85,-40
+SF2165E,,RFM - SAW Filter,"wireless,base",SF2165E, -40 to +85,85,-40
+SF2166E,,RFM - SAW Filter,"wireless,base",SF2166E, -40 to +85,85,-40
+SF2167E,,RFM - SAW Filter,"wireless,base",SF2167E, -40 to +85,85,-40
+SF2168E,,RFM - SAW Filter,"wireless,base",SF2168E, -40 to +85,85,-40
+SF2169E,,RFM - SAW Filter,"wireless,base",SF2169E, -40 to +85,85,-40
+SF2170D,,RFM - SAW Filter,"wireless,base",SF2170D, -40 to +85,85,-40
+SF2172C,,RFM - SAW Filter,"wireless,base",SF2172C, -40 to +85,85,-40
+SF2173E,,RFM - SAW Filter,"wireless,base",SF2173E, -40 to +85,85,-40
+SF2176E,,RFM - SAW Filter,"wireless,base",SF2176E, -40 to +105,105,-40
+SF2177E,,RFM - SAW Filter,"wireless,base",SF2177E, -40 to +85,85,-40
+SF2178A,,RFM - SAW Filter,"wireless,base",SF2178A, -40 to +85,85,-40
+SF2181D,,RFM - SAW Filter,"wireless,base",SF2181D, -40 to +85,85,-40
+SF2182D,,RFM - SAW Filter,"wireless,base",SF2182D, -40 to +85,85,-40
+SF2183E,,RFM - SAW Filter,"wireless,base",SF2183E, -40 to +85,85,-40
+SF2185A,,RFM - SAW Filter,"wireless,base",SF2185A, -40 to +85,85,-40
+SF2185A-1,,RFM - SAW Filter,"wireless,base",SF2185A-1, -40 to +85,85,-40
+SF2186E,,RFM - SAW Filter,"wireless,base",SF2186E, -40 to +85,85,-40
+SF2188C,,RFM - SAW Filter,"wireless,base",SF2188C, -40 to +85,85,-40
+SF2188D,,RFM - SAW Filter,"wireless,base",SF2188D, -40 to +85,85,-40
+SF2190B,,RFM - SAW Filter,"wireless,base",SF2190B, -40 to +85,85,-40
+SF2197E,,RFM - SAW Filter,"wireless,base",SF2197E, -40 to + 105,105,-40
+SF2198E,,RFM - SAW Filter,"wireless,base",SF2198E, -40 to +85,85,-40
+SF2199E,,RFM - SAW Filter,"wireless,base",SF2199E, -40 to +85,85,-40
+SF2200E,,RFM - SAW Filter,"wireless,base",SF2200E, -40 to +85,85,-40
+SF2202E-1,,RFM - SAW Filter,"wireless,base",SF2202E-1, -40 to +95,95,-40
+SF2204E-1,,RFM - SAW Filter,"wireless,base",SF2204E-1, -40 to +85,85,-40
+SF2206E,,RFM - SAW Filter,"wireless,base",SF2206E, -40 to +85,85,-40
+SF2222C,,RFM - SAW Filter,"wireless,base",SF2222C, -40 to +85,85,-40
+SF2223D,,RFM - SAW Filter,"wireless,base",SF2223D, -40 to +85,85,-40
+SF2224E,,RFM - SAW Filter,"wireless,base",SF2224E, -40 to +105,105,-40
+SF2228A,,RFM - SAW Filter,"wireless,base",SF2228A, -40 to +80,80,-40
+SF2234E,,RFM - SAW Filter,"wireless,base",SF2234E, -40 to +85,85,-40
+SF2234E-1,,RFM - SAW Filter,"wireless,base",SF2234E-1, -40 to +85,85,-40
+SF2235E,,RFM - SAW Filter,"wireless,base",SF2235E, -40 to +105,105,-40
+SF2237C,,RFM - SAW Filter,"wireless,base",SF2237C, -40 to +85,85,-40
+SF2242B,,RFM - SAW Filter,"wireless,base",SF2242B, -40 to +85,85,-40
+SF2247E,,RFM - SAW Filter,"wireless,base",SF2247E, -40 to +85,85,-40
+SF2248E,,RFM - SAW Filter,"wireless,base",SF2248E, -40 to +85,85,-40
+SF2248E-1 ,,RFM - SAW Filter,"wireless,base",SF2248E-1, -40 to +85,85,-40
+SF2249E,,RFM - SAW Filter,"wireless,base",SF2249E, -40 to +85,85,-40
+SF2253E,,RFM - SAW Filter,"wireless,base",SF2253E, -40 to +85,85,-40
+SF2256E,,RFM - SAW Filter,"wireless,base",SF2256E, -40 to +85,85,-40
+SF2258E,,RFM - SAW Filter,"wireless,base",SF2258E, -40 to +85,85,-40
+SF2259H,,RFM - SAW Filter,"wireless,base",SF2259H, -40 to +85,85,-40
+SF2261E,,RFM - SAW Filter,"wireless,base",SF2261E, -40 to +85,85,-40
+SF2271C,,RFM - SAW Filter,"wireless,base",SF2271C, -40 to +85,85,-40
+SF2275E-1,,RFM - SAW Filter,"wireless,base",SF2275E-1, -40 to +105,105,-40
+SF2281D,,RFM - SAW Filter,"wireless,base",SF2281D, -40 to +85,85,-40
+SF2283D,,RFM - SAW Filter,"wireless,base",SF2283D, -40 to +85,85,-40
+SF2287E,,RFM - SAW Filter,"wireless,base",SF2287E, -40 to +85,85,-40
+SF2289C,,RFM - SAW Filter,"wireless,base",SF2289C, -40 to +85,85,-40
+SF2293E,,RFM - SAW Filter,"wireless,base",SF2293E, -40 to +85,85,-40
+SF2304B,,RFM - SAW Filter,"wireless,base",SF2304B, -40 to +85,85,-40
+SF2314E,,RFM - SAW Filter,"wireless,base",SF2314E, -40 to +85,85,-40
+SF2315E,,RFM - SAW Filter,"wireless,base",SF2315E, -40 to +85,85,-40
+SF2315E-1,,RFM - SAW Filter,"wireless,base",SF2315E-1, -40 to +85,85,-40
+SF2316E,,RFM - SAW Filter,"wireless,base",SF2316E, -40 to +85,85,-40
+SF2316E-1,,RFM - SAW Filter,"wireless,base",SF2316E-1, -40 to +85,85,-40
+SF2316H,,RFM - SAW Filter,"wireless,base",SF2316H, -40 to +105,105,-40
+SF2316H-1,,RFM - SAW Filter,"wireless,base",SF2316H-1, -40 to +105,105,-40
+SF2321D,,RFM - SAW Filter,"wireless,base",SF2321D, -40 to +85,85,-40
+SF2327E,,RFM - SAW Filter,"wireless,base",SF2327E, -40 to +85,85,-40
+SF2353E,,RFM - SAW Filter,"wireless,base",SF2353E, -40 to +85,85,-40
+SF2367B,,RFM - SAW Filter,"wireless,base",SF2367B, -40 to +85,85,-40
+SF2370H,,RFM - SAW Filter,"wireless,base",SF2370H, -40 to +85,85,-40
+SF2375E,,RFM - SAW Filter,"wireless,base",SF2375E, -40 to +85,85,-40
+SF2381E,,RFM - SAW Filter,"wireless,base",SF2381E, -40 to +85,85,-40
+SF2385H,,RFM - SAW Filter,"wireless,base",SF2385H, -40 to +105,105,-40
+SF2388E,,RFM - SAW Filter,"wireless,base",SF2388E, -40 to +105,105,-40
+SF2393E,,RFM - SAW Filter,"wireless,base",SF2393E, -40 to +85,85,-40
+SF2395E,,RFM - SAW Filter,"wireless,base",SF2395E, -40 to +85,85,-40
+SF2395H,,RFM - SAW Filter,"wireless,base",SF2395H, -40 to +105,105,-40
+SF2412E,,RFM - SAW Filter,"wireless,base",SF2412E, -40 to +85,85,-40
+SF2413E,,RFM - SAW Filter,"wireless,base",SF2413E, -40 to +85,85,-40
+SF2415E,,RFM - SAW Filter,"wireless,base",SF2415E, -40 to +85,85,-40
+SF2415E-1,,RFM - SAW Filter,"wireless,base",SF2415E-1, -40 to +80,80,-40
+SF2416D,,RFM - SAW Filter,"wireless,base",SF2416D, -40 to +85,85,-40
+SF2419E,,RFM - SAW Filter,"wireless,base",SF2419E, -40 to +85,85,-40
+SF2421D,,RFM - SAW Filter,"wireless,base",SF2421D, -40 to +85,85,-40
+SF2423D,,RFM - SAW Filter,"wireless,base",SF2423D, -40 to +85,85,-40
+SF2424D,,RFM - SAW Filter,"wireless,base",SF2424D, -40 to +85,85,-40
+SF2425E,,RFM - SAW Filter,"wireless,base",SF2425E, -40 to +85,85,-40
+SF2431D,,RFM - SAW Filter,"wireless,base",SF2431D, -40 to +85,85,-40
+SF2433D,,RFM - SAW Filter,wireless,SF2433D, -30 to +85,85,-40
+SF2434E,,RFM - SAW Filter,"wireless,base",SF2434E, -40 to +105,105,-40
+SF2434E-1,,RFM - SAW Filter,"wireless,base",SF2434E-1, -40 to +105,105,-40
+SF2437D,,RFM - SAW Filter,"wireless,base",SF2437D, -40 to +85,85,-40
+SF2438D,,RFM - SAW Filter,"wireless,base",SF2438D, -40 to +85,85,-40
+SF2442E-1,,RFM - SAW Filter,"wireless,base",SF2442E-1, -40 to +105,105,-40
+SF2446E,,RFM - SAW Filter,"wireless,base",SF2446E, -40 to +85,85,-40
+SF2463H,,RFM - SAW Filter,"wireless,base",SF2463H, -40 to +125,125,-40
+SF2467H,,RFM - SAW Filter,"wireless,base",SF2467H, -40 to +85,85,-40
+RF1171,,RFM - SAW Filter,"wireless,base",RF1171, -35 to +85,85,-35
+RF1199,,RFM - SAW Filter,"wireless,base",RF1199, -35 to +85,85,-35
+RF1211,,RFM - SAW Filter,"wireless,base",RF1211, -35 to +85,85,-35
+RF1238,,RFM - SAW Filter,"wireless,base",RF1238, -35 to +85,85,-35
+RF1284,,RFM - SAW Filter,"wireless,base",RF1284, -35 to +85,85,-35
+RF3171,,RFM - SAW Filter,"wireless,base",RF3171, -35 to +85,85,-35
+RF3355C,,RFM - SAW Filter,"wireless,base",RF3355C, -35 to +85,85,-35
+SF1115A,,RFM - SAW Filter,"wireless,base",SF1115A, -35 to +85,85,-35
+SF1131B,,RFM - SAW Filter,"wireless,base",SF1131B, -30 to +85,85,-30
+SF1182B,,RFM - SAW Filter,"wireless,base",SF1182B, -30 to +85,85,-30
+SF1183B,,RFM - SAW Filter,"wireless,base",SF1183B, -30 to +85,85,-30
+SF1184B-1,,RFM - SAW Filter,"wireless,base",SF1184B-1, -30 to +85,85,-30
+SF1186H,,RFM - SAW Filter,"wireless,base",SF1186H, -30 to +85,85,-30
+SF1192B,,RFM - SAW Filter,"wireless,base",SF1192B, -30 to +85,85,-30
+SF1201D,,RFM - SAW Filter,"wireless,base",SF1201D, -30 to +85,85,-30
+SF1202D,,RFM - SAW Filter,"wireless,base",SF1202D, -30 to +85,85,-30
+SF1207D,,RFM - SAW Filter,"wireless,base",SF1207D, -30 to +85,85,-30
+SF1212D,,RFM - SAW Filter,"wireless,base",SF1212D, -30 to +85,85,-30
+SF1213D,,RFM - SAW Filter,"wireless,base",SF1213D, -30 to +80,80,-30
+SF1214D,,RFM - SAW Filter,"wireless,base",SF1214D, -30 to +80,80,-30
+SF1215D,,RFM - SAW Filter,"wireless,base",SF1215D, -30 to +80,80,-30
+SF1216D,,RFM - SAW Filter,"wireless,base",SF1216D, -30 to +80,80,-30
+SF1217D,,RFM - SAW Filter,"wireless,base",SF1217D, -30 to +80,80,-30
+SF1222D,,RFM - SAW Filter,"wireless,base",SF1222D, -30 to +85,85,-30
+SF1223D,,RFM - SAW Filter,"wireless,base",SF1223D, -30 to +85,85,-30
+SF2001E,,RFM - SAW Filter,"wireless,base",SF2001E, -30 to +80,80,-30
+SF2002B-2,,RFM - SAW Filter,"wireless,base",SF2002B-2, -30 to +80,80,-30
+SF2002E,,RFM - SAW Filter,"wireless,base",SF2002E, -30 to +85,85,-30
+SF2006C,,RFM - SAW Filter,"wireless,base",SF2006C, -30 to +70,70,-30
+SF2032E,,RFM - SAW Filter,"wireless,base",SF2032E, -30 to +85,85,-30
+SF2036E,,RFM - SAW Filter,"wireless,base",SF2036E, -30 to +85,85,-30
+SF2081D,,RFM - SAW Filter,"wireless,base",SF2081D, -30 to +85,85,-30
+SF2081E,,RFM - SAW Filter,"wireless,base",SF2081E, -30 to +85,85,-30
+SF2092E,,RFM - SAW Filter,"wireless,base",SF2092E, -30 to +85,85,-30
+SF2093E,,RFM - SAW Filter,"wireless,base",SF2093E, -30 to +85,85,-30
+SF2135A,,RFM - SAW Filter,"wireless,base",SF2135A, -30 to +85,85,-30
+SF2137E-1,,RFM - SAW Filter,"wireless,base",SF2137E-1, -30 to +65,65,-30
+SF2140A-1,,RFM - SAW Filter,"wireless,base",SF2140A-1, -30 to +80,80,-30
+SF2142G,,RFM - SAW Filter,"wireless,base",SF2142G, -30 to +85,85,-30
+SF2146D,,RFM - SAW Filter,"wireless,base",SF2146D, -30 to +85,85,-30
+SF2171E,,RFM - SAW Filter,"wireless,base",SF2171E, -30 to +85,85,-30
+SF2171H,,RFM - SAW Filter,"wireless,base",SF2171H, -30 to +85,85,-30
+SF2184E,,RFM - SAW Filter,"wireless,base",SF2184E, -30 to +85,85,-30
+SF2193E,,RFM - SAW Filter,"wireless,base",SF2193E, -30 to +85,85,-30
+SF2194E,,RFM - SAW Filter,"wireless,base",SF2194E, -30 to +85,85,-30
+SF2195E,,RFM - SAW Filter,"wireless,base",SF2195E, -30 to +70,70,-30
+SF2201E,,RFM - SAW Filter,"wireless,base",SF2201E, -30 to +85,85,-30
+SF2202E,,RFM - SAW Filter,"wireless,base",SF2202E, -30 to +85,85,-30
+SF2203E,,RFM - SAW Filter,"wireless,base",SF2203E, -30 to +85,85,-30
+SF2207E,,RFM - SAW Filter,"wireless,base",SF2207E, -30 to +85,85,-30
+SF2209H,,RFM - SAW Filter,"wireless,base",SF2209H, -30 to +85,85,-30
+SF2214E,,RFM - SAW Filter,"wireless,base",SF2214E, -30 to +80,80,-30
+SF2225E,,RFM - SAW Filter,"wireless,base",SF2225E, -30 to +85,85,-30
+SF2226E,,RFM - SAW Filter,"wireless,base",SF2226E, -30 to +85,85,-30
+SF2227A,,RFM - SAW Filter,"wireless,base",SF2227A, -30 to +80,80,-30
+SF2238E,,RFM - SAW Filter,"wireless,base",SF2238E, -30 to +85,85,-30
+SF2239E,,RFM - SAW Filter,"wireless,base",SF2239E, -30 to +85,85,-30
+SF2240E,,RFM - SAW Filter,"wireless,base",SF2240E, -30 to +85,85,-30
+SF2241E,,RFM - SAW Filter,"wireless,base",SF2241E, -30 to +85,85,-30
+SF2254E,,RFM - SAW Filter,"wireless,base",SF2254E, -30 to +85,85,-30
+SF2255E,,RFM - SAW Filter,"wireless,base",SF2255E, -30 to +85,85,-30
+SF2307D,,RFM - SAW Filter,"wireless,base",SF2307D, -30 to +80,80,-30
+SF2310A,,RFM - SAW Filter,"wireless,base",SF2310A, -30 to +80,80,-30
+SF2332B,,RFM - SAW Filter,"wireless,base",SF2332B, -30 to +85,85,-30
+SF2345E-1,,RFM - SAW Filter,"wireless,base",SF2345E-1, -30 to +100,100,-30
+SF2368E,,RFM - SAW Filter,"wireless,base",SF2368E, -30 to +85,85,-30
+SF2369E,,RFM - SAW Filter,"wireless,base",SF2369E, -30 to +85,85,-30
+SF2378E,,RFM - SAW Filter,"wireless,base",SF2378E, -30 to +85,85,-30
+SF2380E,,RFM - SAW Filter,"wireless,base",SF2380E, -30 to +85,85,-30
+SF2391E,,RFM - SAW Filter,"wireless,base",SF2391E, -30 to +105,105,-30
+SF1080A,,RFM - SAW Filter,"wireless,base",SF1080A, -25 to +75,75,-25
+SF1177A,,RFM - SAW Filter,"wireless,base",SF1177A, -25 to +85,85,-25
+SF1183G,,RFM - SAW Filter,"wireless,base",SF1183G, -25 to +85,85,-25
+SF2141B,,RFM - SAW Filter,"wireless,base",SF2141B, -25 to +85,85,-25
+SF2205E,,RFM - SAW Filter,"wireless,base",SF2205E, -25 to +75,75,-25
+PX1002,,RFM - SAW Filter,"wireless,base",PX1002, -20 to +70,70,-20
+PX1004,,RFM - SAW Filter,"wireless,base",PX1004, -20 to +70,70,-20
+PX1004-1,,RFM - SAW Filter,"wireless,base",PX1004-1, -20 to +70,70,-20
+RF3702D,,RFM - SAW Filter,"wireless,base",RF3702D, -20 to +70,70,-20
+SF1059A,,RFM - SAW Filter,"wireless,base",SF1059A, -20 to +70,70,-20
+SF1111A,,RFM - SAW Filter,"wireless,base",SF1111A, -20 to +70,70,-20
+SF1120B,,RFM - SAW Filter,"wireless,base",SF1120B, -20 to +75,75,-20
+SF1174D,,RFM - SAW Filter,"wireless,base",SF1174D, -20 to +70,70,-20
+SF1183E,,RFM - SAW Filter,"wireless,base",SF1183E, -20 to +85,85,-20
+SF1197B,,RFM - SAW Filter,"wireless,base",SF1197B, -20 to +80,80,-20
+SF2008D,,RFM - SAW Filter,"wireless,base",SF2008D, -20 to +70,70,-20
+SF2053E,,RFM - SAW Filter,"wireless,base",SF2053E, -20 to +60,60,-20
+SF2062A,,RFM - SAW Filter,"wireless,base",SF2062A, -20 to +80,80,-20
+SF2133E,,RFM - SAW Filter,"wireless,base",SF2133E, -20 to +70,70,-20
+SF2137D,,RFM - SAW Filter,"wireless,base",SF2137D, -20 to +70,70,-20
+SF2145B,,RFM - SAW Filter,"wireless,base",SF2145B, -20 to +70,70,-20
+SF2156B,,RFM - SAW Filter,"wireless,base",SF2156B, -20 to +70,70,-20
+SF2161E,,RFM - SAW Filter,"wireless,base",SF2161E, -20 to +70,70,-20
+SF2177E-1,,RFM - SAW Filter,"wireless,base",SF2177E-1, -20 to +50,50,-20
+SF2189A,,RFM - SAW Filter,"wireless,base",SF2189A, -20 to +85,85,-20
+SF2191E,,RFM - SAW Filter,"wireless,base",SF2191E, -20 to +75,75,-20
+SF2204E,,RFM - SAW Filter,"wireless,base",SF2204E, -20 to +70,70,-20
+SF2208E,,RFM - SAW Filter,"wireless,base",SF2208E, -20 to +70,70,-20
+SF2215E,,RFM - SAW Filter,"wireless,base",SF2215E, -20 to +75,75,-20
+SF2218D,,RFM - SAW Filter,"wireless,base",SF2218D, -20 to +70,70,-20
+SF2233E,,RFM - SAW Filter,"wireless,base",SF2233E, -20 to +85,85,-20
+SF2236E,,RFM - SAW Filter,"wireless,base",SF2236E, -20 to +75,75,-20
+SF2236G,,RFM - SAW Filter,"wireless,base",SF2236G, -20 to +75,75,-20
+SF2243A,,RFM - SAW Filter,"wireless,base",SF2243A, -20 to +70,70,-20
+SF2244A,,RFM - SAW Filter,"wireless,base",SF2244A, -20 to +70,70,-20
+SF2250E,,RFM - SAW Filter,"wireless,base",SF2250E,,70,-20
+SF2250E-1,,RFM - SAW Filter,"wireless,base",SF2250E-1, -20 to +70,70,-20
+SF2275E,,RFM - SAW Filter,"wireless,base",SF2275E, -20 to +75,75,-20
+SF2276D-2,,RFM - SAW Filter,"wireless,base",SF2276D-2, -20 to +80,80,-20
+SF2294E,,RFM - SAW Filter,"wireless,base",SF2294E, -20 to +75,75,-20
+SF2331B,,RFM - SAW Filter,"wireless,base",SF2331B, -20 to +70,70,-20
+SF2349D,,RFM - SAW Filter,"wireless,base",SF2349D, -20 to +65,65,-20
+RF3619D,,RFM - SAW Filter,"wireless,base",RF3619D, -10 to +60,60,-10
+SF1056A,,RFM - SAW Filter,"wireless,base",SF1056A, -10 to +60,60,-10
+SF1088A,,RFM - SAW Filter,"wireless,base",SF1088A, -10 to +85,85,-10
+SF1091A,,RFM - SAW Filter,"wireless,base",SF1091A, -10 to +85,85,-10
+SF1092A,,RFM - SAW Filter,"wireless,base",SF1092A, -10 to +85,85,-10
+SF1174B,,RFM - SAW Filter,"wireless,base",SF1174B, -10 to +85,85,-10
+SF1188C,,RFM - SAW Filter,"wireless,base",SF1188C, -10 to +50,50,-10
+SF1189B,,RFM - SAW Filter,"wireless,base",SF1189B, -10 to +85,85,-10
+SF1189B-1,,RFM - SAW Filter,"wireless,base",SF1189B-1, -10 to +85,85,-10
+SF2065C,,RFM - SAW Filter,"wireless,base",SF2065C, -10 to +60,60,-10
+SF2235G,,RFM - SAW Filter,"wireless,base",SF2235G, -10 to +75,75,-10
+SF2270A,,RFM - SAW Filter,"wireless,base",SF2270A, -10 to +70,70,-10
+SF2280E,,RFM - SAW Filter,"wireless,base",SF2280E, -10 to +55,55,-10
+SF2296C,,RFM - SAW Filter,"wireless,base",SF2296C, -10 to +55,55,-10
+SF2320C,,RFM - SAW Filter,"wireless,base",SF2320C, -10 to +50,50,-10
+SF2344D,,RFM - SAW Filter,"wireless,base",SF2344D, -10 to +85,85,-10
+SF1081A,,RFM - SAW Filter,"wireless,base",SF1081A, -5 to +70,70,-5
+SF1194A,,RFM - SAW Filter,"wireless,base",SF1194A, -5 to +85,85,-5
+SF2259H-1,,RFM - SAW Filter,"wireless,base",SF2259H-1, 0 to +50,50,0
+SF2210D,,RFM - SAW Filter,"wireless,base",SF2210D,15 to +35,35,15
+SF2055A,,RFM - SAW Filter,"wireless,base",SF2055A,0 to +60,60,0
+SF2219A,,RFM - SAW Filter,"wireless,base",SF2219A,0 to +70,70,0
+SF2220C,,RFM - SAW Filter,"wireless,base",SF2220C,0 to +70,70,0
+SF2221A,,RFM - SAW Filter,"wireless,base",SF2221A,0 to +70,70,0
+SF2352H,,RFM - SAW Filter,"wireless,base",SF2352H,0 to +55,55,0

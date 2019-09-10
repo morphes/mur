@@ -1,0 +1,68 @@
+<?php $product = $this->getProduct(); ?>
+<div class="descr_content">
+    <?php if ($block->escapeHtml($product->getData('p_tran_turn_ratio_pri'))) { ?>
+        <div class="data">
+            <div class="top">Turns Ratio</div>
+            <div class="bottom">
+                <?php echo $block->escapeHtml($product->getData('p_tran_turn_ratio_pri')) ?>
+                :<?php echo $block->escapeHtml($product->getData('p_tran_turn_ratio_sec')) ?><? if ($block->escapeHtml($product->getData('p_tran_turn_ratio_sec2'))): ?>:<?php echo $block->escapeHtml($product->getData('p_tran_turn_ratio_sec2')) ?><? endif ?>
+            </div>
+        </div>
+    <?php } ?>
+    <?php if ($block->escapeHtml($product->getData('p_tran_pri_inductance_min_muh'))) { ?>
+        <div class="data">
+            <div class="top">Primary Inductance Min. (&micro;H)</div>
+            <div class="bottom">
+                <?php echo rtrim(rtrim($block->escapeHtml($product->getData('p_tran_pri_inductance_min_muh')), '0'), '.') ?>
+            </div>
+        </div>
+    <?php } ?>
+    <?php if ($block->escapeHtml($product->getData('p_tran_pri_cons_et_min_vmus'))) { ?>
+        <div class="data">
+            <div class="top">Primary Constant, ET Min (V&micro;s)</div>
+            <div class="bottom">
+                <?php echo rtrim(rtrim($block->escapeHtml($product->getData('p_tran_pri_cons_et_min_vmus')), '0'), '.') ?>
+            </div>
+        </div>
+    <?php } ?>
+    <?php if ($block->escapeHtml($product->getData('p_tran_pri_dc_resist_max_om'))) { ?>
+        <div class="data">
+            <div class="top">Primary DC Resistance Max. (&Omega;)</div>
+            <div class="bottom">
+                <?php echo rtrim(rtrim($block->escapeHtml($product->getData('p_tran_pri_dc_resist_max_om')), '0'), '.') ?>
+            </div>
+        </div>
+    <?php } ?>
+    <?php if ($block->escapeHtml($product->getData('p_tran_isolation_voltage_vrms'))) { ?>
+        <div class="data">
+            <div class="top">Isolation Voltage (Vrms)</div>
+            <div class="bottom">
+                <?php echo rtrim(rtrim($block->escapeHtml($product->getData('p_tran_isolation_voltage_vrms')), '0'), '.') ?>
+            </div>
+        </div>
+    <?php } ?>
+    <?php if ($block->escapeHtml($product->getData('p_tran_height_mm'))) { ?>
+        <div class="data">
+            <div class="top">Dimensions H x W x D (mm)</div>
+            <div class="bottom">
+                <?php echo rtrim(rtrim($block->escapeHtml($product->getData('p_tran_height_mm')), '0'), '.') ?>
+                x <?php echo rtrim(rtrim($block->escapeHtml($product->getData('p_tran_width_mm')), '0'), '.') ?>
+                x <?php echo rtrim(rtrim($block->escapeHtml($product->getData('p_tran_depth_mm')), '0'), '.') ?>
+            </div>
+        </div>
+    <?php } ?>
+    <?php if ($product->getAttributeText('p_tran_package_style')) { ?>
+        <div class="data">
+            <div class="top">Package Style</div>
+            <div class="bottom">
+                <?php echo $product->getAttributeText('p_tran_package_style') ?>
+            </div>
+        </div>
+    <?php } ?>
+    <?php if ($product->getAttributeText('product_status') || $product->getAttributeText('rfm_product_status')) { ?>
+        <div class="data">
+            <div class="top">Status</div>
+            <div class="bottom"><?php echo $block->statuses($product); ?></div>
+        </div>
+    <?php } ?>
+</div>

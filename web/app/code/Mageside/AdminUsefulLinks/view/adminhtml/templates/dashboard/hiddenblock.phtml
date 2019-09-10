@@ -1,0 +1,30 @@
+<?php
+/**
+ * Copyright © Mageside. All rights reserved.
+ * See MS-LICENSE.txt for license details.
+ */
+// @codingStandardsIgnoreFile
+/**
+ * @var \Magento\Backend\Block\Template $block
+ */
+$arraycms = parse_url($block->getUrl('cms/page/edit'), PHP_URL_PATH);
+$explodecms = explode('key',$arraycms);
+$endcms = end($explodecms);
+$replacecms = str_replace('/','',$endcms);
+
+$arraycategory = parse_url($block->getUrl('catalog/category/edit'), PHP_URL_PATH);
+$explodecategory = explode('key',$arraycategory);
+$endcategory = end($explodecategory);
+$replacecategory = str_replace('/','',$endcategory);
+
+$arrayproduct = parse_url($block->getUrl('catalog/product/edit'), PHP_URL_PATH);
+$explodeproduct = explode('key',$arrayproduct);
+$endproduct = end($explodeproduct);
+$replaceproduct = str_replace('/','',$endproduct);
+?>
+
+<div class="dashboard-hidden-block">
+    <div id="dashboard-cms"><?= $block->escapeHtml($replacecms) ?></div>
+    <div id="dashboard-category"><?= $block->escapeHtml($replacecategory) ?></div>
+    <div id="dashboard-product"><?= $block->escapeHtml($replaceproduct) ?></div>
+</div>

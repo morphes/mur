@@ -1,0 +1,54 @@
+.mana-redirects {
+    margin-top: 10px;
+    display: none;
+}
+
+.mana-redirects th {
+    text-align: left;
+}
+
+.mana-redirects th, .mana-redirects td {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    vertical-align: middle !important;
+}
+
+.mana-redirects thead tr, .mana-redirects tbody tr:nth-child(2n) {
+    background: #f8f8f8;
+}
+
+.mana-redirects .col-scope, .mana-redirects .col-action {
+    text-align: center;
+}
+
+#mana_urlkey_grid_table .col-url_key {
+    width: 150px;
+}
+
+#mana_urlkey_grid_table .col-status {
+    width: 100px;
+}
+
+#mana_urlkey_grid_table .col-position {
+    width: 80px;
+}
+
+#mana_urlkey_grid_table .col-store_id {
+    width: 200px;
+}
+
+#mana_urlkey_grid_table .col-type {
+    width: 100px;
+}
+
+#mana_urlkey_grid_table .col-sub_type {
+    width: 150px;
+}
+
+#mana_urlkey_grid_table .col-reference {
+    width: 150px;
+}
+
+.control-value {
+    line-height: 3.2rem;
+}

@@ -1,0 +1,122 @@
+<?php $post = $block->getPost(); ?>
+<?php $block->setPageView(); ?>
+<div class="post-view post article-item">
+    <div class="post-entry full essbis-hover-container">
+        <?php if (!empty($post->getSourceEdition())): ?>
+            <p>
+                <span class="cat">
+                    <?php echo $post->getSourceEdition() ?>
+                </span>
+            </p>
+        <?php endif; ?>
+        <h1>
+            <?php echo $post->getTitle() ?>
+        </h1>
+        <div class="post-entry-text">
+            <?php if (
+                $post->getDisplayShare() == 1 &&
+                $post->getShareAbove() == 1
+            ): ?>
+                <?php echo $this->getChildHtml('news.post.share') ?>
+            <?php endif; ?>
+            <div class="news-post-item-content">
+                <?php echo $block->getDescription(); ?>
+            </div>
+            <?php if (
+                $post->getDisplayShare() == 1 &&
+                $post->getShareBelow() == 1
+            ): ?>
+                <?php echo $this->getChildHtml('news.post.share') ?>
+            <?php endif; ?>
+            <div>
+                <?php
+                    $categories = $block->getCategories($post);
+                    $okami = $block->isOkami($categories);
+                    $french	= $block->isFrench($categories);
+                    $german	= $block->isGerman($categories);
+                    $italian	= $block->isItalian($categories);
+                    $chinese	= $block->isChinese($categories);
+                    $japanese	= $block->isJapanese($categories);
+                    $npi	= $block->isNpi($categories);
+                    $nr		= $block->isNr($categories);
+                ?>
+                <?php
+                if($npi || $nr) { ?>
+                <p><strong>Further editorial information from:</strong><br>
+                    Amy Collins<br>
+                    Marketing Communications Manager <br>
+                    Murata Power Solutions<br>
+                    Tel: +1-508-964-5270</p>
+                <p><strong>Contact details for publication:</strong><BR>
+                    Murata Power Solutions, Inc.,<BR>
+                    129 Flanders Road<BR>
+                    Westborough, MA 01581, USA<BR>
+                    Tel: +1-508-339-3000</p>
+                <p><b>About Murata Power Solutions</b><br><a href="https://www.murata-ps.com/">Murata Power Solutions (www.murata-ps.com)</a> is headquartered in Westborough, Massachusetts, with over 1,300 employees worldwide. Murata Power Solutions designs, manufactures and distributes <a href="https://www.murata-ps.com/en/products/dc-dc-converters.html">DC-DC Converter</a>, <a href="https://www.murata-ps.com/en/products/ac-dc-power-supplies.html">AC-DC Power Supply</a>, <a href="https://www.murata-ps.com/en/products/magnetics.html">Magnetic</a> and <a href="https://www.murata-ps.com/en/products/digital-panel-meters.html">Digital Panel Meter</a> product lines, and offers these products in custom, standard and modified-standard variations. Murata Power Solutions. products are typically used within electronic applications serving major global market sectors including telecommunications, computing and industrial controls. </p>
+                <p>Murata Power Solutions is a division of Murata Manufacturing Co., Ltd., a worldwide leader in the design, manufacture and sale of electronic components and power supply modules. Murata's devices are found in a wide range of applications including consumer and automotive electronics, and wireless devices. The company has employees and manufacturing facilities throughout the world.</p>
+                <p><a href="http://twitter.com/murataps" target="_blank">Follow Murata Power Solutions on Twitter: @murataps</a></p>
+                <?php } ?>
+                <?php if($japanese) { ?>
+                <p><b>&#12512;&#12521;&#12479;&#12497;&#12527;&#12540;&#12477;&#12522;&#12517;&#12540;&#12471;&#12531;&#12474;&#12398;&#27010;&#35201;</b><br>
+                    &#12512;&#12521;&#12479;&#12497;&#12527;&#12540;&#12477;&#12522;&#12517;&#12540;&#12471;&#12519;&#12531;&#12474;(<a href="https://www.murata-ps.com/">www.murata-ps.com</a>)&#12399;&#12289;&#31859;&#22269;&#12510;&#12469;&#12481;&#12517;&#12540;&#12475;&#12483;&#12484;&#24030;&#12510;&#12531;&#12473;&#12501;&#12451;&#12540;&#12523;&#12489;&#12395;&#26412;&#25312;&#12434;&#27083;&#12360;&#12289;&#31859;&#22269;&#20869;&#12289;&#12459;&#12490;&#12480;&#12289;&#26085;&#26412;&#12289;&#20013;&#22269;&#12395;&#35373;&#35336;&#12289;&#29983;&#29987;&#25312;&#28857;&#12434;&#12418;&#12387;&#12390;&#12356;&#12414;&#12377;.&nbsp; &#12512;&#12521;&#12479;&#12497;&#12527;&#12540;&#12477;&#12522;&#12517;&#12540;&#12471;&#12519;&#12531;&#12474;&#12399;DC-DC&#12467;&#12531;&#12496;&#12540;&#12479;&#12289;AC-DC&#38651;&#28304;&#12289;&#12510;&#12464;&#12493;&#12486;&#12451;&#12463;&#12473;&#12289;&#12487;&#12540;&#12479;&#21454;&#38598;&#12467;&#12531;&#12509;&#12540;&#12493;&#12531;&#12488;&#12289;&#12497;&#12493;&#12523;&#12513;&#12540;&#12479;&#12398;&#35373;&#35336;&#12289;&#35069;&#36896;&#12289;&#36009;&#22770;&#12434;&#26989;&#21209;&#12392;&#12375;&#12289;&#12371;&#12428;&#12425;&#35069;&#21697;&#12434;&#12459;&#12473;&#12479;&#12512;&#12289;&#27161;&#28310;&#21697;&#12414;&#12383;&#12399;&#20181;&#27096;&#22793;&#26356;&#21697;&#12392;&#27096;&#12293;&#12394;&#24418;&#24907;&#12391;&#25552;&#20379;&#12375;&#12390;&#12356;&#12414;&#12377;.&nbsp; &#12512;&#12521;&#12479;&#12497;&#12527;&#12540;&#12477;&#12522;&#12517;&#12540;&#12471;&#12519;&#12531;&#12474;&#12398;&#35069;&#21697;&#12399;&#20840;&#19990;&#30028;&#12398;&#36890;&#20449;&#27231;&#22120;&#12289;&#12467;&#12531;&#12500;&#12517;&#12540;&#12479;&#12289;&#29987;&#26989;&#27231;&#22120;&#12394;&#12393;&#12398;&#38651;&#23376;&#37096;&#38272;&#12391;&#24195;&#12367;&#20351;&#29992;&#12373;&#12428;&#12390;&#12356;&#12414;&#12377;.</p>
+                <p>&#12512;&#12521;&#12479;&#12497;&#12527;&#12540;&#12477;&#12522;&#12517;&#12540;&#12471;&#12519;&#12531;&#12474;&#12399;&#12289;&#26449;&#30000;&#35069;&#20316;&#25152;&#12398;&#38306;&#36899;&#20250;&#31038;&#12391;&#38651;&#23376;&#37096;&#21697;&#12420;&#38651;&#28304;&#12514;&#12472;&#12517;&#12540;&#12523;&#12398;&#35373;&#35336;&#12289;&#35069;&#36896;&#12289;&#36009;&#22770;&#12395;&#12362;&#12356;&#12390;&#19990;&#30028;&#12391;&#12488;&#12483;&#12503;&#12524;&#12505;&#12523;&#12398;&#20250;&#31038;&#12391;&#12377;. &#12512;&#12521;&#12479;&#35069;&#21697;&#12399;&#12289;&#27665;&#29983;&#29992;&#12289;&#36554;&#36617;&#29992;&#12289;&#28961;&#32218;&#36890;&#20449;&#27231;&#22120;&#12394;&#12393;&#12398;&#24195;&#31684;&#22258;&#12394;&#12450;&#12503;&#12522;&#12465;&#12540;&#12471;&#12519;&#12531;&#12395;&#29992;&#12356;&#12425;&#12428;&#12289;&#12512;&#12521;&#12479;&#12464;&#12523;&#12540;&#12503;&#12399;&#20840;&#19990;&#30028;&#12395;&#24467;&#26989;&#21729;&#12289;&#29983;&#29987;&#25312;&#28857;&#12434;&#26377;&#12375;&#12390;&#12356;&#12414;&#12377;.</p>
+                <p>Contacts:  Amy Collins, Marketing Communications Manager<BR>
+                    Telephone:   +1-508-964-5270</p>
+                <?php } ?>
+            </div>
+            <div>
+                <?php $cateogiresHtml = []; ?>
+                <?php foreach($categories as $categoryId) { ?>
+                    <?php $category = $this->getCategory($categoryId); ?>
+                    <?php if($category) { ?>
+                        <?php $cateogiresHtml[] = '<a href="/news/category/'.$category->getCatUrlKey().'">'.$category->getCatName().'</a>'; ?>
+                    <?php } ?>
+                <?php } ?>
+                <?php if(count($cateogiresHtml)) { ?>
+                    Categories: <?php echo implode(', ', $cateogiresHtml); ?>
+                <?php } ?>
+            </div>
+            <div class="date-author">
+                <?php echo __('Published at:') ?>
+                <span class="date">
+                    <?php echo $post->getCreatedDate(); ?>
+                </span>
+                <?php if ($post->getDisplayViews() == 1): ?>
+                    <?php echo __(' / ') ?>
+                    <span class="views">
+                        <?php echo $post->getViews(); ?>
+                        <?php echo __('Views') ?>
+                    </span>
+                <?php endif; ?>
+            </div>
+        </div>
+    </div>
+    <div class="post-line-bottom">
+        <?php if ($post->getTagonpost() == 1 && !empty($post->getTags())): ?>
+            <div class="post-tags">
+                <?php $tags = explode(',', $post->getTags()) ?>
+                <em>
+                    <?php echo __('Tags') ?>
+                </em> |
+                <?php foreach ($tags as $tag): ?>
+                    <a>
+                        <?php echo $tag ?>
+                    </a>
+                <?php endforeach; ?>
+            </div>
+        <?php endif; ?>
+        <?php if (!empty($post->getSourceEdition())): ?>
+            <div class="news-source-edition">
+                <em>
+                    <?php echo __('Source edition') ?>
+                </em> |
+                <?php echo $post->getSourceEdition() ?>
+            </div>
+        <?php endif; ?>
+    </div>
+</div>
+<script>
+    require(['jquery'], function ($) {
+        }
+    );
+</script>

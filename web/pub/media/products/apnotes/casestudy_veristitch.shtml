@@ -1,0 +1,152 @@
+<html>
+
+<head>
+
+<link href="../../css/rfm.css" rel="stylesheet" type="text/css">
+
+<title>RFM Case study - RFM offers a full set of custom embedded wireless networking solutions like Zigbee wireless mesh sensor networks, RF modules,  IC transceiver,  IC transmitters and  IC receivers. RFM, Inc. manufactures low power wireless and RF radio modules, wireless mesh nodes for distributed sensing on distributed sensor networks. Low Power radio, n../arrowband and short range devices, front end saw filters, active RFID, RFIC, coupled resonator filters, single silicon chips in the 70MHZ and 300-1000Mhz range.</title>
+
+<!--[if gte IE 5.5]>
+<script type="text/JavaScript">
+
+navHover = function() {
+	var lis = document.getElementById("navmenu").getElementsByTagName("LI");
+	for (var i=0; i<lis.length; i++) {
+		lis[i].onmouseover=function() {
+			this.className+=" iehover";
+		}
+		lis[i].onmouseout=function() {
+			this.className=this.className.replace(new RegExp(" iehover\\b"), "");
+		}
+	}
+}
+if (window.attachEvent) window.attachEvent("onload", navHover);
+
+</script>
+<![endif]-->
+</head>
+
+<body bgcolor="ffffff" topmargin=10 marginheight="10">
+
+<link rel="stylesheet" type="text/css" href="../../navmenu.css" />
+
+<center>
+<table align="left" valign="top" border="0" width="986" cellspacing="5" cellpadding="0" bgcolor="ffffff">
+
+<tr>
+<td align="center" colspan="4">
+
+	<!--#INCLUDE VIRTUAL="../../rfm_header.html"-->
+
+</td></tr>
+
+
+<tr>
+
+<td valign="top" align="left" rowspan="3" width="100">
+
+
+      <div class="lhsidemenu">
+      <a href="../index.shtml" class="bodyLink3"> HOME</a></div>
+      <div class="lhsidemenu">
+      <a href="../products/wirelessdevices.shtml" class="bodylink3"> Wireless Devices Overview</a></div>
+      <div class="lhsidemenu">
+      <a href="../products/wirelesscomponents.php" class="bodylink3"> RF Components</div></a>
+      <div class="lhsidemenu">
+      <a href="../products/srradios.php" class="bodylink3"> Subsystem RF Products</a></div>
+      <div class="lhsidemenu">
+      <a href="../products/oem_standalone.php" class="bodylink3">Ready Made <br>RF Modules & Standalone</a></div>
+      <div class="lhsidemenu">
+      <a href="../products/dkits.shtml" class="bodylink3"> Developer Kits</a></div>
+</td>
+
+
+
+
+
+
+<td valign="top">
+<table cellpadding="10" cellspacing="10" border="0">
+<tr>
+
+
+<td>
+
+
+
+
+<p align="right"> <a href="apnotes_cirronet.shtml" class="bodylink5"><b>back to case studies</b></a></font>
+
+
+
+
+<p align="left">
+
+<font face="arial" size="2">
+
+
+
+
+<p  class="body">
+<b>Case Study:  VeriStitch   </b>
+
+
+<p>Ever wonder how the lettering, logos and other designs on your shirts, hats and accessories are made? The commercial embroidery machines that produce such intricate designs in large volumes are controlled by software programs designed by highly skilled third party developers like VeriStitch, Inc. of Hutchinson, Kansas. VeriStitch control systems handle the decorative embroidery for many of the top companies in the world. As you can imagine, commercial sewing machines are used on many different types of materials and move from job to job as soon as a particular order has been filled. Depending on the type of order being filled and the volume of individual pieces being produced, the number of machines needed to complete the project on time varies greatly. Managing a large number of machines and configuring them for the most efficient work flow presents a significant challenge.
+
+<p>VeriStitch President, Jerome Kahn, when faced with this problem decided that developing a wireless control system could vastly improve connectivity. So he created a wireless network for large deployments of decorative sewing machinery. “We wanted a flexible IP implementation and a wireless network that would do real-time data collection.
+
+<p>VeriStitch was the first company to implement and leverage the technology of wireless IP networks which are not the norm for industrial sewing machinery. Commercial sewing machines use serial ports for control data, so an Ethernet-to-serial port solution was needed. RFM Inc. of Atlanta, Georgia, a leading manufacturer of industrial strength, wireless communication products was called in to provide radios for the project.
+
+<p>“We wanted to work with a company that would allow us close access to the development staff with the intent of influencing firmware design”, said Kahn.   “But we also wanted a company that produced highly reliable, robust radios that would work in our commercial/industrial environment where data integrity is paramount.”
+
+<p>VeriStitch investigated 802.11x technologies but found them wholly unsuitable. Not only was it difficult finding serial-to-Ethernet devices, but the 802.11x products were not up to the task. A major obstacle to overcome was the range which was affected by multi-path fading due to the high ceilings and movement of machinery such as the material handling conveyor systems and forklifts. RFM’s frequency hopping technology was instrumental in overcoming the multipath fade phenomenon. VeriStitch’s testing demonstrated that RFM’s radios could operate reliably in this environment.
+
+<p>Large embroidery and monogram facilities require unique production tracking and pattern feed capabilities. As such, industrial monogram and embroidery machines are connected to an interface unit which provides interaction with a network server for the purpose of production data collection and machine pattern feeds. Connections to the dedicated server are handled via TCP/IP using serial-to-Ethernet or serial-to-wireless devices. In a typical installation, 30 to 100 machines are co-located and networked together. The legacy serial machines are assigned individual IP addresses in RFM’s SNAP Access Point which are used to direct Ethernet data to the non-Ethernet legacy devices. Communications between the Application Server and the devices is handled transparently via the SNAP which removes the Ethernet formatting and sends just the application data to the serial machine. The serial devices could also share the same IP address as the SNAP with communications handled via port assignment. This is becoming increasingly important with the fast growing dominance of Ethernet on the factory floor where IP addresses are becoming a premium.
+
+<p>In embroidery machine environments, prior to using the wireless network, a ‘sneaker-net’ was used such that industrial engineers would walk around carrying clipboards and stop watches. Pattern feeds were accomplished using paper tape readers and floppy disks which required the physical inventory and distribution of pattern media. Production tracking was left to the operators of the machinery to log each machine production related event. In monogram machine environments, extensive training was required to teach operators the intricacies of machine operation to hand-enter each lettering design. The wireless machine networks pioneered by VeriStitch have automated all of these manual processes thus providing their customers with improved productivity without increasing machine or personnel count.
+
+<p>Each machine has a terminal unit attached to it that provides the electronic interface and consists of a keyboard and display for operator interfacing. The terminal unit is connected to a dedicated server using serial wireless devices mounted on or located near the machine. Mounted overhead in the facility are access points that use vertically polarized rubber whip antennas. Each access point handles communications between a group of 16 machines and the physical Ethernet connected to the dedicated server. The SNAP receives non-Ethernet data from the serial wireless devices and encapsulates it in an Ethernet datagram making the non-Ethernet terminal units appear as nodes on the Ethernet network.
+
+<p>“VeriStitch designs, develops, integrates, sells and implements all of its industrial networking products”, said Kahn. “We work very closely with the team at RFM; they have been an invaluable resource when successfully integrating the wireless hardware in difficult and challenging customer sites.”
+
+<p>VeriStitch provides the customer with a pre-installation checklist to accomplish before equipment arrives. This usually involves working out infrastructure issues like cabling, power, machine locations, access point locations, etc. The VeriStitch team then comes in and installs the access points, machine interface units, server/client software and begins training the operators. RFM designed RF monitoring software tools for site surveys prior to installation which are an integral part of the pre/post installation process especially when adding or rearranging machines. These tools coupled with the robustness of the RFM radios have removed the ‘black magic’ usually associated with radio/antenna placement. A typical installation takes about a week with larger installations only adding a few additional days to the process.
+
+<p>VeriStitch utilizes the synchronization function of the SNAP Access point allowing for co-location of multiple units without interfering with each other. In addition, because of Ethernet connectivity, maintenance personnel can monitor the health of the network without going on to the production floor. This capability also allows VeriStitch to remotely monitor the system for maintenance and reduce the expense of sending engineers on site. After installation, VeriStitch customers generally see productivity improvements in the 10% to 20% range and a 90% or more reduction of shrinkage/rejects due to errors at the machine.
+
+<p>Finally, because of the productivity gains, when the end-user customer re-configures machine layout on the production floor, wireless connectivity makes the task much easier. VeriStitch has been told by its customers that the Delta MCS/RFM wireless system typically pays for itself in 3 to 12 months.
+
+<p>Commercial monogramming and embroidery technology is a highly competitive field that demands better quality products from higher production runs. Marketplace demands are driving highly innovative companies like VeriStitch to develop new and better human-machine interfaces. At the foundation of such creative innovation are flexible and reliable communications like the serial-to-Ethernet wireless solution from RFM.
+
+
+
+
+</td></tr>
+
+
+
+
+</table>
+</td>
+
+
+
+
+
+
+<td valign="top" align="left" rowspan="3">&nbsp;
+
+
+
+</td></tr>
+</table>
+</body>
+
+</html>
+
+
+
+
+
+
+
+

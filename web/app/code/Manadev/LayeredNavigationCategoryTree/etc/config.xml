@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!--
+ @category    Mana
+ @package     Manadev_LayeredNavigation
+ @copyright   Copyright (c) http://www.manadev.com
+ @license     http://www.manadev.com/license  Proprietary License
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <manadev_features>
+            <Manadev_LayeredNavigationCategoryTree>
+                <version>18.09.0817</version>
+                <code>category-tree-for-layered-navigation-magento2</code>
+                <title>Category Tree for Magento Layered Navigation</title>
+                <sort_order>320</sort_order>
+            </Manadev_LayeredNavigationCategoryTree>
+            <Manadev_LayeredNavigation>
+                <removed_by_Manadev_LayeredNavigationCategoryTree />
+            </Manadev_LayeredNavigation>
+        </manadev_features>
+        <mana_layered_navigation>
+            <default_templates>
+                <category>category_parent_children</category>
+            </default_templates>
+            <category_tree>
+                <expand_all_on_initial_load>0</expand_all_on_initial_load>
+                <expand_selected>1</expand_selected>
+            </category_tree>
+            <category_tree_parents_children>
+                <show_sibling_if_no_child>1</show_sibling_if_no_child>
+            </category_tree_parents_children>
+        </mana_layered_navigation>
+    </default>
+</config>

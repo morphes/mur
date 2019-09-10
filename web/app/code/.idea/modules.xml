@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../../ShirteeApiAutoTests/.idea/ShirteeApiAutoTests.iml" filepath="$PROJECT_DIR$/../../../ShirteeApiAutoTests/.idea/ShirteeApiAutoTests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../backupmps2/var/www/docs/live-httpd/app/.idea/app.iml" filepath="$PROJECT_DIR$/../../../backupmps2/var/www/docs/live-httpd/app/.idea/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../backupmps2/.idea/backupmps2.iml" filepath="$PROJECT_DIR$/../../../backupmps2/.idea/backupmps2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../backuppower2/.idea/backuppower2.iml" filepath="$PROJECT_DIR$/../../../backuppower2/.idea/backuppower2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/code.iml" filepath="$PROJECT_DIR$/.idea/code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../backupmps2/var/www/docs/live-httpd/.idea/live-httpd.iml" filepath="$PROJECT_DIR$/../../../backupmps2/var/www/docs/live-httpd/.idea/live-httpd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../lpnew/.idea/lpnew.iml" filepath="$PROJECT_DIR$/../../../lpnew/.idea/lpnew.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../.idea/m2.iml" filepath="$PROJECT_DIR$/../../.idea/m2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../shirtee/.idea/shirtee.iml" filepath="$PROJECT_DIR$/../../../shirtee/.idea/shirtee.iml" />
+    </modules>
+  </component>
+</project>

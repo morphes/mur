@@ -1,0 +1,102 @@
+<?php $_productCollection = $this->getProductCollection(); ?>
+<div class="category-products-mobile">
+    <?php foreach($_productCollection as $product) { ?>
+        <div class="category-product-item">
+            <div class="category-product-item-option">
+                <a href="<?php echo $product->getProductUrl() ?>" title="<?php echo $this->stripTags($product->getName(), null, true) ?>" class="tablelink_rfm main-link">
+                    <?php echo $product->getName(); ?>
+                </a>
+            </div>
+            <?php if($freq = $product->getRfmFreq()) { ?>
+                <div class="product-option">
+                    <span>Frequency:</span>
+                    <span class="product-option-value"><?php echo $freq; ?></span>
+                </div>
+            <?php } ?>
+            <?php if($lid = $product->getRfmLidSymbol()) { ?>
+                <div class="product-option">
+                    <span>Lid Symbol:</span>
+                    <span class="product-option-value"><?php echo $lid; ?></span>
+                </div>
+            <?php } ?>
+            <div class="product-option">
+                <span>Bandwidth:</span>
+                <span class="product-option-value">
+                    <?php if ($product->getRfmBandwidthMin() != "") { ?>
+                        <?php echo $product->getRfmBandwidthMin(); ?> MHz (min)
+                    <?php } else { ?>
+                        <?php echo $product->getRfmBandwidthTypical(); ?> MHz (typ)
+                    <?php } ?>
+                </span>
+            </div>
+            <?php if($dimension = $product->getRfmDimension()) { ?>
+                <div class="product-option">
+                    <span>Dimension:</span>
+                    <span class="product-option-value"><?php echo $dimension; ?></span>
+                </div>
+            <?php } ?>
+            <?php if($status = $block->wirelessStatuses($product)) { ?>
+                <div class="product-option">
+                    <?= $status ?>
+                </div>
+            <?php } ?>
+            <?php if ($product->getAttributeText('product_status') != "Obsolete"): ?>
+                <div class="product-option">
+                    <input title="Add <?php echo $product->getName(); ?> to Compare List" value="<?php echo $product->getId(); ?>" type="checkbox" class="input-checkbox compare-add add"/>
+                    <input type="hidden"/>
+                </div>
+            <?php endif; ?>
+        </div>
+    <?php } ?>
+</div>
+<div class="category-products">
+    <div id="freezehead" name="freezehead">
+        <table width="690px" cellpadding="10px" border="5" class="listtable">
+            <tr class="listtr">
+                <td width="100px" class=listtdtop>Part</td>
+                <td width="97px" class=listtdtop>Frequency</td>
+                <td width="120px" class=listtdtop>Bandwidth</td>
+                <td width="80px" class=listtdtop>Lid</br>Symbol</td>
+                <td width="120px" class=listtdtop>Dimension</td>
+                <td width="72px" class=listtdtop>Status</td>
+                <td width="65px" class=listtdtop>Compare</td>
+            </tr>
+        </table>
+    </div>
+    <table id="test" width="690px" cellpadding="10px" border="5" class="listtable" style="margin-left:0px;table-layout: fixed;">
+        <tr class="listtr">
+            <td width="100px" class=listtdtop>Part</td>
+            <td width="97px" class=listtdtop>Frequency</td>
+            <td width="120px" class=listtdtop>Bandwidth</td>
+            <td width="80px" class=listtdtop>Lid</br>Symbol</td>
+            <td width="120px" class=listtdtop>Dimension</td>
+            <td width="72px" class=listtdtop>Status</td>
+            <td width="65px" class=listtdtop>Compare</td>
+        </tr>
+        <?php $_productCollection = $this->getProductCollection(); ?>
+        <?php foreach($_productCollection as $product) { ?>
+            <tr class="listtr">
+                <td width="100px" class=listtd>
+                    <a href="<?php echo $product->getProductUrl() ?>" title="<?php echo $block->stripTags($product->getName(), null, true) ?>"
+                        class="tablelink_rfm"><?php echo $product->getName(); ?>
+                    </a>
+                </td>
+                <td class=listtd><?php echo $product->getRfmFreq(); ?></td>
+                <?php if ($product->getRfmBandwidthMin() != "") { ?>
+                    <td class=listtd><?php echo $product->getRfmBandwidthMin(); ?> MHz (min)</td>
+                <?php } else { ?>
+                    <td class=listtd><?php echo $product->getRfmBandwidthTypical(); ?> MHz (typ)</td>
+                <?php } ?>
+                <td class=listtd><?php echo $product->getRfmLidSymbol(); ?></td>
+                <td class=listtd><?php echo $product->getRfmDimension(); ?></td>
+                <td><?php echo $block->wirelessStatuses($product); ?></td>
+                <td class=listtd>
+                    <?php if ($product->getAttributeText('product_status') != "Obsolete"): ?>
+                        <input title="Add <?php echo $product->getName(); ?> to Compare List" value="<?php echo $product->getId(); ?>" type="checkbox" class="input-checkbox compare-add add"/>
+                        <input type="hidden"/>
+                    <?php endif; ?>
+                </td>
+            </tr>
+        <?php }; ?>
+    </table>
+</div>

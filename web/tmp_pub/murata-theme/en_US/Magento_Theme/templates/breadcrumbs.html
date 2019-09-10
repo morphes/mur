@@ -1,0 +1,28 @@
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<ul class="items">
+    <% _.each(breadcrumbs, function(crumb) { %>
+        <% if(crumb.name == 'home') { crumb.target = '_blank';} %>
+        <li class="item <%- crumb.name %>">
+            <% if (crumb.link) { %>
+            <a href="<%= crumb.link %>" target="<%= crumb.target %>" title="<%- crumb.title %>"><%- crumb.label %><span><img src="/pub/images/icomoon.jpg" alt=""> </span></a>
+            <% } else if (crumb.last) { %>
+            <%- crumb.label %>
+            <% } else { %>
+            <%- crumb.label %>
+            <% } %>
+        </li>
+    <% }); %>
+</ul>
+<div class="crumb_icons">
+    <a class="addthis_button_compact at300m" href="#">
+        <img src="/pub/images/share.jpg" alt="Share" title="Share">
+    </a>
+    <script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js#pubid=murataps"></script>
+    <a href="/products/contact.html"> <img src="/pub/images/contact.jpg" alt="Contact"></a>
+    <a href="javascript:window.print()"><img src="/pub/images/print.jpg" alt="Print"></a>
+</div>

@@ -1,0 +1,16 @@
+<?php
+/**
+ * Copyright © Mageside. All rights reserved.
+ * See MS-LICENSE.txt for license details.
+ */
+
+/** @var $block \Mageside\AdminUsefulLinks\Block\Links\Preview */
+?>
+<?php if ($block->isEnabled()) : ?>
+    <?php $link = $block->getEditLink(); ?>
+    <!--div class="wrapper-edit-button" >
+        <a class="edit-button" target="_blank" href="<?=$link['url']?>">
+            <?= $block->escapeHtml(__($link['name']))?>
+        </a>
+    </div-->
+<?php endif; ?>

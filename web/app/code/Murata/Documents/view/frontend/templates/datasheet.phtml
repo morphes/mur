@@ -1,0 +1,91 @@
+<?php
+$querystringds = $_SERVER['QUERY_STRING'];
+if ($querystringds) {
+
+if($querystringds[0] == '/') {
+    $querystringds = substr($querystringds, 1);
+}
+}
+$basename = str_replace(".pdf", "", basename($querystringds));
+$basename = preg_replace('/\?.*/', '', $basename);
+$basename = strtoupper($basename);
+?>
+    <script type="text/javascript">
+        document.title = "<?=$basename; ?> | " + document.title;
+    </script>
+    <table width="100%" class=datasheetlinetable>
+        <tr>
+            <td width="100" align="center" style="BACKGROUND-COLOR: #002e58;">&nbsp;&nbsp;<a
+                        href="javascript:history.back();" style="color:white">&laquo; go back</a></td>
+            <td align="center" style="BACKGROUND-COLOR: #CCCCCC;text-align:center;">
+                <?php
+                if (preg_match('/data|products|ul|3d/', $querystringds)) {
+                    echo "<a href=\"/pub/$querystringds\"  target=_blank style=\"color:blue\">Click Here to download this file: $querystringds</a>";
+                } else {
+                    echo "&nbsp;";
+                }
+                ?>
+                <script src="/js/mps/mps_pdf.js" type="text/javascript"></script>
+            </td>
+        </tr>
+    </table>
+<?php
+if (!$querystringds) {
+    echo "<h2 class=\"datasheetno\">Please select a datasheet to view.</h2>";
+} else {
+    if (preg_match('/data|3d|obsnotice|tnnotice|products|ul/', $querystringds)) {
+        ?>
+        <div style="overflow:auto;-webkit-overflow-scrolling:touch">
+        <iframe style="id=" ifrm" width="99%" height="1350" src="/pub/<?php echo $querystringds; ?>#toolbar=1&navpanes=0"><p>
+            &nbsp;</p><p align="center">It appears your Web browser is not configured to display PDF files<br>No
+            worries, just <a href="/pub/<?php echo $querystringds; ?>" target=_blank class="cdblue">Click Here to
+                download: <?php echo $querystringds; ?></a> file.</p><p align="center">or <a target="_blank"
+                                                                                             class="cdblue"
+                                                                                             href="http://get.adobe.com/reader/">Get
+                    the Latest Adobe PDF Reader</a></p><p>&nbsp;</p></iframe></div>
+
+
+        <script type="text/javascript">
+            function setIframeHeight(iframeName) {
+                //var iframeWin = window.frames[iframeName];
+                var iframeEl = document.getElementById ? document.getElementById(iframeName) : document.all ? document.all[iframeName] : null;
+                if (iframeEl) {
+                    iframeEl.style.height = "auto"; // helps resize (for some) if new doc shorter than previous
+                    //var docHt = getDocHeight(iframeWin.document);
+                    // need to add to height to be sure it will all show
+                    var h = alertSize();
+                    var new_h = (h - 200);
+                    iframeEl.style.height = new_h + "px";
+                    //alertSize();
+                }
+            }
+
+            function alertSize() {
+                var myHeight = 0;
+                if (typeof( window.innerWidth ) == 'number') {
+                    //Non-IE
+                    myHeight = window.innerHeight;
+                } else if (document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight )) {
+                    //IE 6+ in 'standards compliant mode'
+                    myHeight = document.documentElement.clientHeight;
+                } else if (document.body && ( document.body.clientWidth || document.body.clientHeight )) {
+                    //IE 4 compatible
+                    myHeight = document.body.clientHeight;
+                }
+                //window.alert( 'Height = ' + myHeight );
+                return myHeight;
+            }
+            setIframeHeight('ifrm');
+            // set page title, add PDF URL
+            //		document.title = "<?=$basename; ?> | " + document.title;
+
+        </script>
+        <?php
+    } else {
+        if (preg_match('/release|\.htm|\.asp|okami/', $querystringds)) {
+            echo "<p style='text-align:center;'><META HTTP-EQUIV=\"REFRESH\" CONTENT=\"0; URL=$querystringds\">Redirecting to: <a href=\"$querystringds\" class=blue>$querystringds</a></p>";
+        } else {
+            echo "<p style='text-align:center; color:red; font-size:larger;'>\"$querystringds\" - File Not Found, please check the link</p>";
+        }
+    }
+}

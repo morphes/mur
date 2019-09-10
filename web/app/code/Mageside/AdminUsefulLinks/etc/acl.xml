@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Mageside. All rights reserved.
+ * See MS-LICENSE.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Magento_Catalog::catalog" title="Products" sortOrder="30">
+                    <resource id="Magento_Catalog::catalog_inventory" title="Inventory" sortOrder="10">
+                        <resource id="Magento_Catalog::categories" title="Categories" sortOrder="20" >
+                            <resource id="Mageside_AdminUsefulLinks::previewCategory" title="Preview Category" sortOrder="10" />
+                        </resource>
+                        <resource id="Magento_Catalog::products" title="Products" translate="title" sortOrder="10" >
+                            <resource id="Mageside_AdminUsefulLinks::previewProducts" title="Preview Products" sortOrder="10" />
+                        </resource>
+                    </resource>
+                </resource>
+                <resource id="Magento_Backend::content">
+                    <resource id="Magento_Backend::content_elements">
+                        <resource id="Magento_Cms::page" title="Pages" translate="title" sortOrder="10">
+                            <resource id="Mageside_AdminUsefulLinks::previewPage" title="Preview Page" sortOrder="10" />
+                        </resource>
+                    </resource>
+                </resource>
+                <resource id="Magento_Backend::stores">
+                    <resource id="Magento_Backend::stores_settings">
+                        <resource id="Magento_Config::config">
+                            <resource id="Mageside_AdminUsefulLinks::config_mageside_admin_useful_links" title="Mageside Admin Useful Links Section" />
+                        </resource>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

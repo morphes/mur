@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ @category    Mana
+ @package     Manadev_LayeredNavigationSeo
+ @copyright   Copyright (c) http://www.manadev.com
+ @license     http://www.manadev.com/license  Proprietary License
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Indexer/etc/indexer.xsd">
+    <indexer id="mana_url_attribute" view_id="mana_url_attribute" class="Manadev\LayeredNavigationSeo\Indexers\AttributeIndexer" shared_index="mana_url_key">
+        <title translate="true">SEO URL Keys (Attributes)</title>
+        <description translate="true">(Manadev) Based on product attribute changes, recalculates SEO URL Keys</description>
+    </indexer>
+    <indexer id="mana_url_filter" view_id="mana_url_filter" class="Manadev\LayeredNavigationSeo\Indexers\FilterIndexer" shared_index="mana_url_key">
+        <title translate="true">SEO URL Keys (Filters)</title>
+        <description translate="true">(Manadev) Based on changes in layered navigation filter settings, recalculates SEO URL Keys</description>
+    </indexer>
+    <indexer id="mana_url_option" view_id="mana_url_option" class="Manadev\LayeredNavigationSeo\Indexers\OptionIndexer" shared_index="mana_url_key">
+        <title translate="true">SEO URL Keys (Options)</title>
+        <description translate="true">(Manadev) Based on product attribute option changes, recalculates SEO URL Keys</description>
+    </indexer>
+</config>

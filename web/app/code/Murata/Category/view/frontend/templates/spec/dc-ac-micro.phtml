@@ -1,0 +1,81 @@
+<?php $product = $this->getProduct(); ?>
+<div class="descr_content">
+    <?php if ($product->getAttributeText('total_output_power_w')) { ?>
+        <div class="data">
+            <div class="top">Output Power (W)</div>
+            <div class="bottom"><?php echo $product->getAttributeText('total_output_power_w') ?></div>
+        </div>
+    <?php } ?>
+    <?php if ($product->getAttributeText('form_factor')) { ?>
+        <div class="data">
+            <div class="top">Form Factor</div>
+            <div class="bottom"><?php echo $product->getAttributeText('form_factor') ?></div>
+        </div>
+    <?php } ?>
+    <?php if ($product->getAttributeText('vin_range')) { ?>
+        <div class="data">
+            <div class="top">Input Range (V)</div>
+            <div class="bottom"><?php echo $product->getAttributeText('vin_range') ?></div>
+        </div>
+    <?php } ?>
+    <?php if ($product->getAttributeText('v1out_vdc')) { ?>
+        <div class="data">
+            <div class="top">Output Voltage 1 (V)</div>
+            <div class="bottom"><?php echo $product->getAttributeText('v1out_vdc') ?></div>
+        </div>
+    <?php } ?>
+    <?php if ($product->getAttributeText('v1out_range_vdc')) { ?>
+        <div class="data">
+            <div class="top">Output Voltage 1 (V) Programmable / Range</div>
+            <div class="bottom"><?php echo $product->getAttributeText('v1out_range_vdc') ?></div>
+        </div>
+    <?php } ?>
+    <?php if ($product->getAttributeText('i1out')) { ?>
+        <div class="data">
+            <div class="top">Output Current 1 (A)</div>
+            <div class="bottom"><?php echo $product->getAttributeText('i1out') ?></div>
+        </div>
+    <?php } ?>
+    <?php if ($product->getAttributeText('v2out_vdc')) { ?>
+        <div class="data">
+            <div class="top">Output Voltage 2 (V)</div>
+            <div class="bottom"><?php echo $product->getAttributeText('v2out_vdc') ?></div>
+        </div>
+    <?php } ?>
+    <?php if ($product->getAttributeText('i2out')) { ?>
+        <div class="data">
+            <div class="top">Output Current 2 (A)</div>
+            <div class="bottom"><?php echo $product->getAttributeText('i2out') ?></div>
+        </div>
+    <?php } ?>
+    <?php if ($product->getAttributeText('v3out_vdc')) { ?>
+        <div class="data">
+            <div class="top">Output Voltage 3 (V)</div>
+            <div class="bottom"><?php echo $product->getAttributeText('v3out_vdc') ?></div>
+        </div>
+    <?php } ?>
+    <?php if ($product->getAttributeText('i3out')) { ?>
+        <div class="data">
+            <div class="top">Output Current 3 (A)</div>
+            <div class="bottom"><?php echo $product->getAttributeText('i3out') ?></div>
+        </div>
+    <?php } ?>
+    <?php if ($product->getAttributeText('efficiency')) { ?>
+        <div class="data">
+            <div class="top">Efficiency (%)</div>
+            <div class="bottom"><?php echo $product->getAttributeText('efficiency') ?></div>
+        </div>
+    <?php } ?>
+    <?php if ($product->getAttributeText('operating_temperature_range')) { ?>
+        <div class="data">
+            <div class="top">Operating Temp. Range (C)</div>
+            <div class="bottom"><?php echo $product->getAttributeText('operating_temperature_range') ?></div>
+        </div>
+    <?php } ?>
+    <?php if ($product->getAttributeText('product_status')) { ?>
+        <div class="data">
+            <div class="top">Status</div>
+            <div class="bottom"><?php echo $block->statuses($product); ?></div>
+        </div>
+    <?php } ?>
+</div>

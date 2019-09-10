@@ -1,0 +1,33 @@
+.manadev-expandable-filter.outer-container {
+  overflow:hidden;
+  transition-property: height;
+}
+
+.manadev-show-more {
+  text-align: right;
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+.manadev-expandable-filter.outer-container.scrollbar {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  //padding: 2px 0 2px 5px !important;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.mana-filter-block.mana-filter-block-above-menu .manadev-expandable-filter.outer-container.scrollbar {
+  border: 0;
+}
+.mana-filter-block.mana-mobile .manadev-expandable-filter.outer-container.scrollbar {
+  border-bottom: 0;
+}
+
+.manadev-option-search {
+  margin: 5px 0 0;
+}
+
+.mana-no-match {
+  display: none;
+}

@@ -1,0 +1,148 @@
+<html>
+
+<head>
+
+<link href="../../css/rfm.css" rel="stylesheet" type="text/css">
+
+<title>RFM Case study - RFM offers a full set of custom embedded wireless networking solutions like Zigbee wireless mesh sensor networks, RF modules,  IC transceiver,  IC transmitters and  IC receivers. RFM, Inc. manufactures low power wireless and RF radio modules, wireless mesh nodes for distributed sensing on distributed sensor networks. Low Power radio, n../arrowband and short range devices, front end saw filters, active RFID, RFIC, coupled resonator filters, single silicon chips in the 70MHZ and 300-1000Mhz range.</title>
+
+<!--[if gte IE 5.5]>
+<script type="text/JavaScript">
+
+navHover = function() {
+	var lis = document.getElementById("navmenu").getElementsByTagName("LI");
+	for (var i=0; i<lis.length; i++) {
+		lis[i].onmouseover=function() {
+			this.className+=" iehover";
+		}
+		lis[i].onmouseout=function() {
+			this.className=this.className.replace(new RegExp(" iehover\\b"), "");
+		}
+	}
+}
+if (window.attachEvent) window.attachEvent("onload", navHover);
+
+</script>
+<![endif]-->
+</head>
+
+<body bgcolor="ffffff" topmargin=10 marginheight="10">
+
+<link rel="stylesheet" type="text/css" href="../../navmenu.css" />
+
+<center>
+<table align="left" valign="top" border="0" width="986" cellspacing="5" cellpadding="0" bgcolor="ffffff">
+
+<tr>
+<td align="center" colspan="4">
+
+	<!--#INCLUDE VIRTUAL="../../rfm_header.html"-->
+
+</td></tr>
+
+
+<tr>
+
+<td valign="top" align="left" rowspan="3" width="100">
+
+
+      <div class="lhsidemenu">
+      <a href="../index.shtml" class="bodyLink3"> HOME</a></div>
+      <div class="lhsidemenu">
+      <a href="../products/wirelessdevices.shtml" class="bodylink3"> Wireless Devices Overview</a></div>
+      <div class="lhsidemenu">
+      <a href="../products/wirelesscomponents.php" class="bodylink3"> RF Components</div></a>
+      <div class="lhsidemenu">
+      <a href="../products/srradios.php" class="bodylink3"> Subsystem RF Products</a></div>
+      <div class="lhsidemenu">
+      <a href="../products/oem_standalone.php" class="bodylink3">Ready Made <br>RF Modules & Standalone</a></div>
+      <div class="lhsidemenu">
+      <a href="../products/dkits.shtml" class="bodylink3"> Developer Kits</a></div>
+</td>
+
+
+
+
+
+
+<td valign="top">
+<table cellpadding="10" cellspacing="10" border="0">
+<tr>
+
+
+<td>
+
+
+
+
+<p align="right"> <a href="apnotes_cirronet.shtml" class="bodylink5"><b>back to case studies</b></a></font>
+
+
+
+
+<p align="left">
+
+<font face="arial" size="2">
+
+
+
+
+<p  class="body">
+<b>Case Study:  How RFM Helped the Navy Implement a Real-time Vehicle Tracking System</b>
+
+
+<p>When the Naval Air Weapons Division was asked to develop a new DARPA-funded vehicle tracking system, the requirements posed an interesting challenge. The project called for the tracking of a remote-controlled dune buggy traveling through the desert at 30 mph. It had to be tracked continuously, with accuracy to within one meter. The dune buggy’s position had to be displayed real-time at a range control center up to nine miles away. The system was to use off-the-shelf equipment wherever possible, as system testing called for the dune buggy to be intentionally blown up by a Maverick missile. And the system was to be ready for testing within six weeks.
+
+<p>The solution, delivered on time by the Weapons Division, called for engineering innovations related to tracking accuracy, as GPS service is accurate to only about 25 meters. A set of innovative carrier correction techniques improved that accuracy to what validation testing revealed to be within about one foot.
+
+<p>The remaining challenge was to get the tracking information from the dune buggy to a range control center several miles away. In addition to the distance and environmental challenges, transmission required translating what began as a raw GPS serial data stream to Ethernet packets before the data arrived at the range control center – all in real-time. This portion of the challenge was solved entirely with three off-the-shelf RFM components, working in harmony to deliver the mission-critical data.
+
+<p><center><img src="vehicle_tracking.jpg"></center>
+
+<p>RFM wireless products deliver real-time data from moving targets to range control center. 
+
+<p>In the system, which proved highly successful, the target dune buggy was outfitted with a HopNet HN1010 serial data wireless modem interfacing with the GPS equipment. The HN1010 transmitted the raw the GPS signal to a stationary HN2010 repeater positioned within two miles of the dune buggy’s programmed path. The HN2010 repeater forwarded the signals to a SNAP 2410 seven miles away, where the SNAP unit converted the data to Ethernet data packets before forwarding it via fiber-optic cable to the command center.
+
+<p>Now that the initial problem had been solved successfully, the Weapons Division had a second request. Could the tracking system be used to track six vehicles in a convoy, individually and simultaneously? As the convoy would involve vehicles in very close proximity, this would mean having six radios each transmit similar data to a single repeater for forwarding to the Ethernet access point.
+
+<p>Originally assumed by the Weapons Division to be a major technical challenge, the requested capability was actually inherent in the original solution. The TDMA and frequency hopping spread spectrum (FHSS) techniques employed by RFM’s HopNet products allowed all six vehicles to communicate in the same narrow ISM frequency band. Because these radios are cleared by the FCC for unlicensed use, they don’t require special frequency clearances.
+
+<p>Several key factors made RFM’s products a successful part of this application:
+
+<ol><li>The required one-meter accuracy meant that data had to move point-to-point as nearly instantaneously as possible; there was simply no tolerance for latency. RFM’s proprietary FHSS has been honed over many years for extremely fast, dependable delivery. 
+<li>The system had to get data wirelessly from the transceiver in its targets to the SNAP unit nearly 10 miles away. HopNet products support point-to-multipoint topologies over long distances using repeaters, in this case the HN2010. 
+<li>What began as serial GPS data needed to be transmitted as Ethernet packets to the Range Control Center. SNAP access points provide seamless serial to Ethernet connectivity. 
+<li>RFM’s component products are all designed for deployment under harsh conditions when necessary. The hot, dusty desert did not prove to be an issue. 
+<li>All RFM products operate in license-fee ISM bands, simplifying deployment by eliminating the need for frequency clearances. 
+
+
+</td></tr>
+
+
+
+
+</table>
+</td>
+
+
+
+
+
+
+<td valign="top" align="left" rowspan="3">&nbsp;
+
+
+
+</td></tr>
+</table>
+</body>
+
+</html>
+
+
+
+
+
+
+
+

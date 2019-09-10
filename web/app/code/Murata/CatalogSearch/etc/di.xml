@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Created by wilson.sun330@gmail.com
+ * Date: 13/05/2015
+* Time: 5:02 PM
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <preference for="Magento\CatalogSearch\Block\SearchResult\ListProduct" type="Murata\CatalogSearch\Block\SearchResult\ListProduct" />
+    <preference for="Magento\CatalogSearch\Block\Result" type="Murata\CatalogSearch\Block\Result" />
+    <preference for="Magento\Framework\Search\Adapter\Mysql\Query\Builder\Match" type="Murata\CatalogSearch\Adapter\Mysql\Query\Match" />
+    <preference for="Magento\Framework\View\Page\Config\Renderer" type="Murata\CatalogSearch\View\Page\Config\Renderer" />
+    <preference for="Magento\CatalogSearch\Model\Autocomplete\DataProvider" type="Murata\CatalogSearch\Model\Autocomplete\DataProvider" />
+</config>

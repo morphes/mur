@@ -1,0 +1,21 @@
+<!--
+ @category    Mana
+ @package     Manadev_Seo
+ @copyright   Copyright (c) http://www.manadev.com
+ @license     http://www.manadev.com/license  Proprietary License
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../app/code/Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="Manadev_Seo::seo" title="SEO Settings" module="Manadev_Seo" sortOrder="300"
+            parent="Manadev_Core::manadev" dependsOnModule="Manadev_Seo"
+            resource="Manadev_Seo::url_keys"/>
+
+        <add id="Manadev_Seo::global_configuration" title="Global Configuration" module="Manadev_Seo"
+            sortOrder="100" resource="Manadev_Seo::global_configuration" parent="Manadev_Seo::seo"
+            action="adminhtml/system_config/edit/section/mana_seo"/>
+
+        <add id="Manadev_Seo::url_keys" title="URL Keys" module="Manadev_Seo"
+            sortOrder="200" resource="Manadev_Seo::url_keys" parent="Manadev_Seo::seo"
+            action="mana_seo/urlKey/"/>
+    </menu>
+</config>

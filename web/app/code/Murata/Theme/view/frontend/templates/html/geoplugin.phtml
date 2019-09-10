@@ -1,0 +1,18 @@
+<?php
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$_assetRepo = $objectManager->create('Magento\Framework\View\Asset\Repository');;
+$modalScript = $_assetRepo->createAsset('js/gdprModalAsync.js');
+?>
+<script language="JavaScript" src="https://ssl.geoplugin.net/javascript.gp?k=dd1ea80512f58bfd" type="text/javascript"></script>
+
+<script language="Javascript">
+    var geo_country = (geoplugin_countryName());
+    var geo_continent = (geoplugin_continentCode());
+    var script = document.createElement('script');
+    if ( geo_continent == "EU")
+    {
+        script.src = '<?php echo $modalScript->getUrl(); ?>';
+    } else {
+    }
+    document.body.appendChild(script);
+</script>

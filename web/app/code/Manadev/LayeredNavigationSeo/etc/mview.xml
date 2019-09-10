@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+ @category    Mana
+ @package     Manadev_LayeredNavigationSeo
+ @copyright   Copyright (c) http://www.manadev.com
+ @license     http://www.manadev.com/license  Proprietary License
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Mview/etc/mview.xsd">
+    <view id="mana_url_attribute" class="Manadev\LayeredNavigationSeo\Indexers\AttributeIndexer" group="indexer">
+        <subscriptions>
+            <table name="eav_attribute" entity_column="attribute_id" />
+            <table name="eav_attribute_label" entity_column="attribute_id" />
+        </subscriptions>
+    </view>
+    <view id="mana_url_filter" class="Manadev\LayeredNavigationSeo\Indexers\FilterIndexer" group="indexer">
+        <subscriptions>
+            <table name="mana_filter" entity_column="filter_id" />
+        </subscriptions>
+    </view>
+
+    <view id="mana_url_option" class="Manadev\LayeredNavigationSeo\Indexers\OptionIndexer" group="indexer">
+        <subscriptions>
+            <table name="eav_attribute_option" entity_column="option_id" />
+            <table name="eav_attribute_option_value" entity_column="option_id" />
+        </subscriptions>
+    </view>
+</config>

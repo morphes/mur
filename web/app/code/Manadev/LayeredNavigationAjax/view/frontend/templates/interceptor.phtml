@@ -1,0 +1,10 @@
+<script>
+    require(['Manadev_LayeredNavigationAjax/js/vars/interceptor'], function(interceptor) {
+        interceptor.start(<?php echo $block->getJson() ?>);
+    });
+</script>
+<script type="text/x-magento-init">
+{
+	".pages": { "Manadev_LayeredNavigationAjax/js/PagerView": {} }
+}
+</script>

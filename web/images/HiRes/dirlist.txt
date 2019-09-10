@@ -1,0 +1,61 @@
+ Volume in drive F is Data
+ Volume Serial Number is AC1F-C0D5
+
+ Directory of F:\DEPTS\ADVERTIS\COMMON\WEBSITE\murata-psHTML\images\HiRes
+
+02/27/2008  09:27 AM    <DIR>          .
+02/27/2008  09:27 AM    <DIR>          ..
+07/26/2002  12:00 AM           311,175 20pcblue_hires.jpg
+03/27/2007  12:00 AM           387,692 2900_hires.jpg
+02/12/2007  12:00 AM           363,450 5000_hires.jpg
+02/26/2008  12:13 PM           822,253 53_54_5500_hires.jpg
+10/24/2007  02:05 PM           430,657 782485_hires.jpg
+10/01/2007  04:39 PM           385,771 78sr-2a_hires.jpg
+05/19/2005  12:00 AM           365,809 78sr_hires.jpg
+09/19/2006  12:00 AM           675,417 8200c_hires.jpg
+03/28/2003  12:00 AM           243,820 adcds1405-hires.jpg
+06/21/2005  12:00 AM           312,884 adcds1410_hires.jpg
+10/10/2006  12:00 AM           475,838 adcds1603_hires.jpg
+04/13/2004  12:00 AM           713,417 ads-953_hi-res.jpg
+08/20/2007  12:00 AM           485,249 ads939_hires.jpg
+09/19/2003  12:00 AM            96,363 adsd1402mc-hires.jpg
+07/10/2006  12:00 AM           460,395 adsd1410s_hires.jpg
+02/26/2007  12:00 AM           328,243 adsd1420s_hires.jpg
+01/08/2007  12:00 AM           402,033 cd214a_s1u-3x_hires.jpg
+01/30/2007  12:00 AM         1,503,716 cd227_fpgaguide_hires.jpg
+02/22/2006  12:00 AM           605,620 d1u-1200_pr.jpg
+11/27/2006  12:00 AM           617,291 d1u-w_hires.jpg
+11/12/2002  12:00 AM           354,374 dca20pc_hires.jpg
+04/28/2003  12:00 AM           189,339 dca520pc_hires.jpg
+09/13/2002  12:00 AM           367,186 dcdc-catalog_hires.jpg
+02/28/2008  12:56 PM                28 dirlist.txt
+03/05/2007  12:00 AM           322,149 dms30dr_hires.jpg
+10/17/2003  12:00 AM           332,901 dtl-hs100d12_hires.jpg
+07/05/2007  12:00 AM           395,354 inductors_hires.jpg
+08/20/2003  12:00 AM         1,186,347 len_hires.jpg
+06/26/2003  12:00 AM         5,410,988 len_hires.tif
+05/21/2004  12:00 AM           175,209 lsm-10aseries_hires.jpg
+08/19/2004  12:00 AM           301,002 lsn16a_hires.jpg
+05/23/2006  12:00 AM         1,208,345 lsn2t30_hires.jpg
+07/26/2002  12:00 AM           398,067 lsnd12_hires.jpg
+05/01/2002  12:00 AM           471,543 lsnd3-hires.jpg
+01/14/2003  12:00 AM           398,757 lsnd5-hires.jpg
+06/27/2006  12:00 AM           452,254 ndtdndts_hires.jpg
+04/30/2007  12:00 AM           696,615 nmj_hires.jpg
+02/26/2008  02:03 PM           525,295 nmk_hires.jpg
+05/02/2006  12:00 AM           465,345 nmpd01_hires.jpg
+05/28/2002  12:00 AM         2,081,547 pci417l_cmyk.jpg
+04/10/2006  12:00 AM           644,250 shm50_hires.jpg
+08/02/2006  12:00 AM           799,065 ucqseries_hires.jpg
+01/14/2003  12:00 AM           318,135 uheseries-hires.jpg
+06/04/2003  12:00 AM           543,158 ulq-hires.jpg
+06/15/2007  12:00 AM           759,338 uqq_hires.jpg
+05/17/2002  12:00 AM           403,255 uwr26-40w_cmyk.jpg
+04/19/2006  12:00 AM           483,879 uwrseries_hires.jpg
+02/25/2008  10:19 AM         1,806,437 vcn60vcn70_hires.jpg
+11/16/2006  12:00 AM           611,675 vrm11x_hires.jpg
+              51 File(s)     33,603,177 bytes
+
+     Total Files Listed:
+              51 File(s)     33,603,177 bytes
+               2 Dir(s)  52,569,473,024 bytes free

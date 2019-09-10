@@ -1,0 +1,103 @@
+<?php /** * BSS Commerce Co. * * NOTICE OF LICENSE * * This source file is subject to the EULA * that is bundled with this package in the file LICENSE.txt. * It is also available through the world-wide-web at this URL: * http://bsscommerce.com/Bss-Commerce-License.txt * * @category BSS * @package Bss_MegaMenu * @author Extension Team * @copyright Copyright (c) 2016-2017 BSS Commerce Co. ( http://bsscommerce.com ) * @license http://bsscommerce.com/Bss-Commerce-License.txt */ ?> <?php /** * Top menu for store * * @var $block Bss\Megamenu\Block\Html\Menu */ ?> <?php $columnsLimit = $block->getColumnsLimit() ?: 0; ?> <?php $_menu = $block->getHtml('level-top', 'submenu', $columnsLimit) ?> <?php $helper = $block->getHelperData(); ?> <?php if ($helper->getConfig('enable') == 1) : ?> <nav id="menu"><div id="panel-menu"><ul><?php if($helper->getConfig('enable_home') == 1) : ?> <li> <a class="level-top ui-corner-all" href="<?php echo $block->escapeUrl($block->getBaseUrl()) ?>" ><span><?php echo $block->escapeHtml(__("Home")) ?></span></a></li> <?php endif ?> <?php /* @escapeNotVerified */ echo $_menu; ?></ul><?php /* @escapeNotVerified */ echo $block->getChildHtml(); ?></ul></div><div id="panel-account"><ul><li><a href="https://www.murata.com/" target="_blank">Global Website</a></li> <li><a href="/news/category/news-releases">News</a></li> <li><a href="/about/careers.html" target="_blank">Careers</a></li> <li><a href="https://www.murata.com/support/locations" target="_blank">Contact Us</a></li></ul></div></nav><?php endif; ?> <script>
+    require([
+        'jquery',
+        'mmenu'
+    ], function($, mmenu){
+        $(function() {
+            $('nav#menu').mmenu({
+                extensions	: [ 'theme-dark' ],
+                setSelected	: true,
+                counters	: false,
+                searchfield : {
+                    placeholder		: 'Part Number Search'
+                },
+                navbars		: [
+                    {
+                        "position": "bottom",
+                        "content": [
+                            "<a class=\"addthis_button_compact at300m\" href=\"#\"><img src=\"/pub/images/share.jpg\" alt=\"Share\" title=\"Share\"></a>",
+                            "<a class='fa fa-envelope' href='/products/contact.html'></a>",
+                            "<a class='fa fa-print' href=\"javascript:window.print()\"></a>"
+                        ]
+                    },
+                    {
+                        content		: [ 'searchfield' ]
+                    }, {
+                        type		: 'tabs',
+                        content		: [
+                            '<a href="#panel-menu"><span>Menu</span></a>',
+                            '<a href="#panel-account"><span>Global</span></a>',
+                        ]
+                    }, {
+                        content		: [ 'prev', 'breadcrumbs', 'close' ]
+                    },
+                ]
+            }, {
+                searchfield : {
+                    clear 		: true
+                },
+                navbars		: {
+                    breadcrumbs	: {
+                        removeFirst	: true
+                    }
+                }
+            }).on('init', function(){
+                $('.mm-searchfield__input').html(
+                    '<form action="/catalogsearch/result/" method="GET"><input placeholder="Part Number Search" type="text" name="q" autocomplete="off"><div class="input-group-append"><button class="append-button" type="submit"><img src="/pub/images/icon_search.png" width="30" height="30" class="ui-icon"></button></div></form>'
+                );
+                $.getScript("//s7.addthis.com/js/250/addthis_widget.js#pubid=murataps");
+                if(typeof addthis !== 'undefined') {
+                    addthis.init();
+                    addthis.toolbox();
+                }
+            }).trigger( "init" );
+            $('.block-title').click(function(){
+                $('.block-content').toggle(100);
+                $('.filter-options').toggle(20);
+                return false;
+            });
+
+            window.onscroll = function() {
+                tablesHeaders()
+            };
+            var freezehead = $('#freezehead');
+            var sticky = false;
+            if(freezehead.length) {
+                sticky = freezehead.offset().top;
+            }
+
+            function tablesHeaders() {
+                var freezehead = $('#freezehead');
+                var freezehead2 = $('#freezehead2');
+                var table = $('#products-list');
+                if(freezehead || freezehead2) {
+                    if (document.documentElement.scrollTop >= 600 || (sticky > 0 && window.pageYOffset >= sticky)) {
+                        freezehead.attr('id', 'freezehead2').css('width', table.width() + 'px');
+                    } else {
+                        freezehead2.attr('id', 'freezehead').css('width', '100%');
+                    }
+                }
+            }
+            $(".show-more a").on("click", function() {
+                var $this = $(this);
+                var $content = $this.parent().prev("div.content");
+                var linkText = $this.text().toUpperCase();
+
+                if(linkText === "SHOW MORE"){
+                    linkText = "Show less";
+                    $content.switchClass("hideContent", "showContent", 400);
+                } else {
+                    linkText = "Show more";
+                    $content.switchClass("showContent", "hideContent", 400);
+                };
+
+                $this.text(linkText);
+            });
+            $('#product_dropdown').change(function(){
+                location = $(this).val();
+            });
+            $('#product_dropdown_mobile').change(function(){
+                location = $(this).val();
+            });
+        });
+    });</script>

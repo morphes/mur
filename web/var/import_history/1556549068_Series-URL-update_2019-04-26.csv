@@ -1,0 +1,852 @@
+sku,name,url_key
+series_1100R,1100R ,series-1100r
+series_766,766,series-766
+series_772,772,series-772
+series_786,786,series-786
+series_803,803,series-803
+series_1000,1000,series-1000
+series_1400,1400,series-1400
+series_1500,1500,series-1500
+series_1600,1600,series-1600
+series_1605,1605,series-1605
+series_1700,1700,series-1700
+series_1800,1800,series-1800
+series_2300,2300,series-2300
+series_2400,2400,series-2400
+series_2600,2600,series-2600
+series_2700,2700,series-2700
+series_2800,2800,series-2800
+series_2900,2900,series-2900
+series_3200,3200,series-3200
+series_3300,3300,series-3300
+series_3400,3400,series-3400
+series_3500,3500,series-3500
+series_3600,3600,series-3600
+series_3700,3700,series-3700
+series_3800,3800,series-3800
+series_3900,3900,series-3900
+series_4000,4000,series-4000
+series_4100,4100,series-4100
+series_4200,4200,series-4200
+series_4300,4300,series-4300
+series_4500,4500,series-4500
+series_4600,4600,series-4600
+series_4700,4700,series-4700
+series_4800,4800,series-4800
+series_4900,4900,series-4900
+series_5000,5000,series-5000
+series_5300,5300,series-5300
+series_5400,5400,series-5400
+series_5500,5500,series-5500
+series_5600,5600,series-5600
+series_8300,8300,series-8300
+series_78250,78250,series-78250
+series_78253,78253,series-78253
+series_782482,782482,series-782482
+series_782485,782485,series-782485
+series_1000_2,1000,series-1000-2
+series_1200LRS,1200LRS ,series-1200lrs
+series_1200RS,1200RS ,series-1200rs
+series_1300R,1300R ,series-1300r
+series_1400_3,1400,series-1400-3
+series_1400_2,1400,series-1400-4
+series_1638-1639,1638/1639,series-1638-1639
+series_1800R,1800R,series-1800r
+series_1900R,1900R,series-1900r
+series_2200R-,2200R ,series-2200r
+series_2200RM,2200RM ,series-2200rm
+series_2600S ,2600S ,series-2600s
+series_2700T,2700T ,series-2700t
+series_2900L,2900L,series-2900l
+series_3000A,3000A,series-3000a
+series_3000B,3000B,series-3000b
+series_3400L,3400L,series-3400l
+series_3700_2,3700,series-3700-2
+series_4700S,4700S ,series-4700s
+series_4800S,4800S ,series-4800s
+series_4900S,4900S,series-4900s
+series_5200_2,5200,series-5200-2
+series_5200_3,5200,series-5200-3
+series_5200_4,5200,series-5200-4
+series_5600_2,5600,series-5600-2
+series_6000A,6000A,series-6000a
+series_6000B,6000B,series-6000b
+series_6-PAK,6-PAK,series-6-pak
+series_76250EN-76253EN,76250EN/76253EN,series-76250en-76253en
+series_76250ENC ,76250ENC ,series-76250enc-1
+series_76253/XXENC ,76253/XXENC ,series-76253-xxenc
+series_766_2,766,series-766-2
+series_78250_2,78250,series-78250-2
+series_78250J,78250J ,series-78250j
+series_78253_2,78253,series-78253-2
+series_78253J,78253J ,series-78253j
+series_786_2,786,series-786-2
+series_786J,786J,series-786j
+series_78SR-X/2,78SR-X/2,series-78sr-x-2
+series_78xxSR,78xxSR,series-78xxsr
+series_ACA-20PC,ACA-20PC,series-aca-20pc
+series_ACA-20PC_2,ACA-20PC,series-aca-20pc-1
+series_ACA-20PC-4,ACA-20PC-4,series-aca-20pc-4
+series_ACA-20PC-4-XXX-L,ACA-20PC-4-XXX-L,series-aca-20pc-4-xxx-l
+series_ACA-20RM,ACA-20RM,series-aca-20rm
+series_ACA-20RM-2,ACA-20RM-2,series-aca-20rm-2
+series_ACA-20RM-4,ACA-20RM-4,series-aca-20rm-4
+series_ACA-20RM-5,ACA-20RM-5,series-aca-20rm-5
+series_ACA-20RM-ALM,ACA-20RM-ALM,series-aca-20rm-alm
+series_ACA-20RM-ALM_2,ACA-20RM-ALM,series-aca-20rm-alm-1
+series_ACA-20RM Bezel,ACA-20RM Bezel,series-aca-20rm-bezel
+series_ACA5-20PC,ACA5-20PC,series-aca5-20pc
+series_ACA5-20RM,ACA5-20RM,series-aca5-20rm
+series_ACM20,ACM20,series-acm20
+series_ACM3P,ACM3P,series-acm3p
+series_BCP-3-3-2-5-50W,"BCP-3.3/2.5, 50W",series-bcp-3-3-2-5-50w
+series_BCP-5-3-3-75W,"BCP-5/3.3, 75W",series-bcp-5-3-3-75w
+series_BEI15,BEI15,series-bei15
+series_BHE,BHE,series-bhe
+series_BMP-25-40W,"BMP,  25-40W",series-bmp-25-40w
+series_BMP-5-3-3-35W,"BMP-5/3.3, 35W",series-bmp-5-3-3-35w
+series_BPB,BPB,series-bpb
+series_BPM15,BPM15,series-bpm15
+series_BST-3W,"BST, 3W",series-bst-3w
+series_BWP-3W,"BWP, 3W",series-bwp-3w
+series_BWR,BWR,series-bwr
+series_BWR-15-17WDualOutput,BWR-15-17W Dual Output,series-bwr-15-17w-dual-output
+series_BWR-15-20W-ASeries,"BWR, 15-20W, A",series-bwr-15-20w-a-series
+series_BWR-3W,"BWR, 3W",series-bwr-3w
+series_BWR-5-3-3-33W,"BWR-5/3.3, 33W",series-bwr-5-3-3-33w
+series_BWR-5-3P3,BWR-5-3P3,series-bwr-5-3p3
+series_BWR-5W,"BWR, 5W",series-bwr-5w
+series_BWR-7-10W-ASeries,"BWR, 7-10W, A",series-bwr-7-10w-a-series
+series_C1U-W-1200-12-Tx,C1U-W-1200-12-Tx,series-c1u-w-1200-12-tx
+series_C1U-W-1200-48-Tx,C1U-W-1200-48-Tx,series-c1u-w-1200-48-tx
+series_CEF400-112C,CEF400-112C,series-cef400-112c-1
+series_CF200-A12C,CF200-A12C,series-cf200-a12c-1
+series_CF350-A12C,CF350-A12C,series-cf350-a12c-1
+series_CF350-A24C,CF350-A24C,series-cf350-a24c-1
+series_CF350-A48C,CF350-A48C,series-cf350-a48c-1
+series_CHE,CHE,series-che
+series_CME_3,CME,series-cme
+series_CME_2,CME,series-cme-1
+series_CME,CME,series-cme-2
+series_CMR_2,CMR,series-cmr
+series_CMR_3,CMR,series-cmr-1
+series_CMR,CMR,series-cmr-2
+series_CPC,CPC,series-cpc
+series_cPCI200A-1C,cPCI200A-1C,series-cpci200a-1c-1
+series_cPCI200D,cPCI200D,series-cpci200d-1
+series_cPCI325D,cPCI325D,series-cpci325d
+series_cPCI325D-10xC,cPCI325D-10xC,series-cpci325d-10xc-1
+series_cPCI350,cPCI350,series-cpci350
+series_cPCI420,cPCI420,series-cpci420
+series_cPCI500DC,cPCI500DC,series-cpci500dc-1
+series_cPCI-A-3U-200C,cPCI-A-3U-200C,series-cpci-a-3u-200c-1
+series_cPCI-A-3U-300C,cPCI-A-3U-300C,series-cpci-a-3u-300c-1
+series_cPCI-D-3U-300C,cPCI-D-3U-300C,series-cpci-d-3u-300c-1
+series_CRE1_2,CRE1,series-cre1
+series_CRE1,CRE1,series-cre1-2
+series_CRL2,CRL2,series-crl2
+series_CRR1,CRR1,series-crr1
+series_CRV1,CRV1,series-crv1
+series_CRV2,CRV2,series-crv2
+series_D1U2-D-400-12-HA4C,D1U2-D-400-12-HA2C,series-d1u2-d-400-12-ha2c
+series_D1U2-W-400-12-HA4C,D1U2-W-400-12-HA4C,series-d1u2-w-400-12-ha4c
+series_D1U3CS-D-1600-12-HC4EC,D1U3CS-D-1600-12-HC4EC,series-d1u3cs-d-1600-12-hc4ec-1
+series_D1U3CS-D-850-12-HxxC,D1U3CS-D-850-12-HxxC,series-d1u3cs-d-850-12-hxxc
+series_D1U3CS-W-1300F-Hx4EC,D1U3CS-W-1300F-Hx4EC,series-d1u3cs-w-1300f-hx4ec
+series_D1U3CS-W-850-12-HxxC,D1U3CS-W-850-12-HxxC,series-d1u3cs-w-850-12-hxxc
+series_D1U4CS-D-2100-54-HxxDC,D1U4CS-D-2100-54-HxxDC,series-d1u4cs-d-2100-54-hxxdc
+series_D1U4CS-W-2200-12-HxxC,D1U4CS-W-2200-12-HxxC,series-d1u4cs-w-2200-12-hxxc
+series_D1U4-W-1200-12-Hx,D1U4-W-1200-12-Hx,series-d1u4-w-1200-12-hx
+series_D1U4-W-1600-12-Hx,D1U4-W-1600-12-Hx,series-d1u4-w-1600-12-hx
+series_D1U4-W-1600-54-HBxC,D1U4-W-1600-54-HBxC,series-d1u4-w-1600-54-hbxc
+series_D1U54-D-1200-12-HxxPC,D1U54-D-1200-12-HxxPC,series-d1u54-d-1200-12-hxxpc
+series_D1U54-HD-1200-12-HA4C,D1U54-HD-1200-12-HA4C,series-d1u54-hd-1200-12-ha4c-1
+series_D1U54P-W-1200-12-HxxC,D1U54P-W-1200-12-HxxC,series-d1u54p-w-1200-12-hxxc
+series_D1U5CS-H-2825-12-HA4C,D1U5CS-H-2825-12-HA4C,series-d1u5cs-h-2825-12-ha4c-1
+series_D1U86-D-1600-12-HxxDC,D1U86-D-1600-12-HxxDC,series-d1u86-d-1600-12-hxxdc
+series_D1U86G-W-460-12-HxxDC,D1U86G-W-460-12-HxxDC,series-d1u86g-w-460-12-hxxdc
+series_D1U86P-W-2200-12-HBxDC ,D1U86P-W-2200-12-HBxDC ,series-d1u86p-w-2200-12-hbxdc
+series_D1U-H-2800-52,D1U-H-2800-52,series-d1u-h-2800-52
+series_D1U-W-1200-12-Hx,D1U-W-1200-12-Hx,series-d1u-w-1200-12-hx
+series_D1U-W-1200-48-Hx,D1U-W-1200-48-Hx,series-d1u-w-1200-48-hx
+series_D1U-W-1600-12-Hx,D1U-W-1600-12-Hx,series-d1u-w-1600-12-hx
+series_D1U-W-1600-48-Hx,D1U-W-1600-48-Hx,series-d1u-w-1600-48-hx
+series_D1U-W-2000-48-Hx,D1U-W-2000-48-Hx,series-d1u-w-2000-48-hx
+series_D2U5T-H3-5000-380-HU3C,D2U5T-H3-5000-380-HU3C,series-d2u5t-h3-5000-380-hu3c-1
+series_DA100,DA100,series-da100
+series_DA100 _2,DA100 ,series-da100-2
+series_DA100J,DA100J,series-da100j
+series_DBE125W,DBE-125W,series-dbe-125w
+series_DBE-125W_2,DBE-125W,series-dbe-125w-1
+series_DBE240W,DBE-240W,series-dbe-240w
+series_DBE-240W_2,DBE-240W,series-dbe-240w-1
+series_DBE-DVE,DBE-DVE,series-dbe-dve
+series_DBM-20,DBM-20,series-dbm-20
+series_DBQ0135_2,DBQ0135,series-dbq0135
+series_DBQ0135,DBQ0135,series-dbq0135-1
+series_DBQ-DVQ,DBQ-DVQ,series-dbq-dvq
+series_DCA-20PC,DCA-20PC,series-dca-20pc
+series_DCA5-20PC,DCA5-20PC,series-dca5-20pc
+series_DDR,DDR,series-ddr
+series_DLV,DLV,series-dlv
+series_DM-2000,DM-2000,series-dm-2000
+series_DM-2100,DM-2100,series-dm-2100
+series_DM-2115,DM-2115,series-dm-2115
+series_DM-3000,DM-3000,series-dm-3000
+series_DM-31,DM-31,series-dm-31
+series_DM-3100B,DM-3100B,series-dm-3100b
+series_DM-3100L,DM-3100L,series-dm-3100l
+series_DM-3100N,DM-3100N,series-dm-3100n
+series_DM-3100U1,DM-3100U1,series-dm-3100u1
+series_DM-3100U2-U3,DM-3100U2/U3,series-dm-3100u2-u3
+series_DM-3100X,DM-3100X,series-dm-3100x
+series_DM-3102A-DM-3102B,"DM-3102A, DM-3102B",series-dm-3102a-dm-3102b
+series_DM-3104,DM-3104,series-dm-3104
+series_DM-350,DM-350,series-dm-350
+series_DM-4000-DM-4300,"DM-4000, DM-4300",series-dm-4000-dm-4300
+series_DM-4100D,DM-4100D,series-dm-4100d
+series_DM-4101D,DM-4101D,series-dm-4101d
+series_DM-4101L,DM-4101L,series-dm-4101l
+series_DM-4101N,DM-4101N,series-dm-4101n
+series_DM-4105,DM-4105,series-dm-4105
+series_DM-4200,DM-4200,series-dm-4200
+series_DM-500,DM-500,series-dm-500
+series_DM-9000,DM-9000,series-dm-9000
+series_DMH-30,DMH-30,series-dmh-30
+series_DM-LX3,DM-LX3,series-dm-lx3
+series_DMR20,DMR20,series-dmr20
+Series_DMR20-0-5,DMR20-0/5,series-dmr20-0-5
+series_DMR20_2,DMR20,series-dmr20-1
+series_DMR20-10-DCM,DMR20-10-DCM,series-dmr20-10-dcm
+series_DMR20-1-ACV,DMR20-1-ACV,series-dmr20-1-acv-1
+series_DMR20-1-FM,DMR20-1-FM,series-dmr20-1-fm-1
+series_DMR20-1-TMP,DMR20-1-TMP,series-dmr20-1-tmp
+Series_DMR20-4-20,DMR20-4/20,series-dmr20-4-20
+series_DMS-20ACV,DMS-20ACV,series-dms-20acv
+series_DMS-20-CP-Panel-Punch,DMS-20-CP Panel Punch,series-dms-20-cp-panel-punch
+series_DMS-20LCD,DMS-20LCD,series-dms-20lcd
+series_DMS-20LCD-0-1-DCM,DMS-20LCD-0/1-DCM,series-dms-20lcd-0-1-dcm
+series_DMS-20LCD-2-3-DCM,DMS-20LCD-2/3-DCM,series-dms-20lcd-2-3-dcm
+series_DMS-20LCD-4-20,DMS-20LCD-4/20,series-dms-20lcd-4-20
+series_DMS-20PC,DMS-20PC,series-dms-20pc
+series_DMS-20PC-0-1-2-8-DCM,DMS-20PC-0-1-2-8-DCM,series-dms-20pc-0-1-2-8-dcm
+series_DMS-20PC-0-5,DMS-20PC-0/5,series-dms-20pc-0-5
+series_DMS-20PC-1-LM,DMS-20PC-1-LM,series-dms-20pc-1-lm-1
+series_DMS-20PC-1-LM-F,DMS-20PC-1-LM-F,series-dms-20pc-1-lm-f-1
+series_DMS-20PC-2-LM,DMS-20PC-2-LM,series-dms-20pc-2-lm-1
+series_DMS-20PC-3-DCM,DMS-20PC-3-DCM,series-dms-20pc-3-dcm-1
+series_DMS-20PC-3-LM,DMS-20PC-3-LM,series-dms-20pc-3-lm-1
+series_DMS-20PC-4-20,DMS-20PC-4/20,series-dms-20pc-4-20
+series_DMS-20PC-4-5-6-DCM,DMS-20PC-4-5-6-DCM,series-dms-20pc-4-5-6-dcm
+series_DMS-20PC-7-DCM,DMS-20PC-7-DCM,series-dms-20pc-7-dcm-1
+series_DMS-20PC-9-DCM,DMS-20PC-9-DCM,series-dms-20pc-9-dcm
+series_DMS-20PC-FM,DMS-20PC-FM,series-dms-20pc-fm
+series_DMS-20RM,DMS-20RM,series-dms-20rm
+series_DMS-3019X,DMS-3019X,series-dms-3019x
+series_DMS-30798-C,DMS-30798-C,series-dms-30798-c
+series_DMS-30-CP-Panel-Punch,DMS-30-CP Panel Punch,series-dms-30-cp-panel-punch
+series_DMS-30DR,DMS-30DR,series-dms-30dr
+series_DMS-30LCD,DMS-30LCD,series-dms-30lcd
+series_DMS-30LCD_2,DMS-30LCD,series-dms-30lcd-1
+series_DMS-30LCD-4-20,DMS-30LCD-4/20,series-dms-30lcd-4-20
+series_DMS-30PC,DMS-30PC,series-dms-30pc
+series_DMS-30PC-4-20,DMS-30PC-4/20,series-dms-30pc-4-20
+series_DMS-40LCD,DMS-40LCD,series-dms-40lcd
+series_DMS-40LCD_2,DMS-40LCD,series-dms-40lcd-1
+series_DMS-40LCD-4-20,DMS-40LCD-4/20,series-dms-40lcd-4-20
+series_DMS-40PC,DMS-40PC,series-dms-40pc
+series_DMS-40PC_2,DMS-40PC,series-dms-40pc-1
+series_DMS-40PC-4-20,DMS-40PC-4/20,series-dms-40pc-4-20
+series_DMS-Bezels,DMS-Bezels,series-dms-bezels
+series_DMS-Bezels_2,DMS-Bezels,series-dms-bezels-2
+series_DMS-Bezels_3,DMS-Bezels,series-dms-bezels-3
+series_DMS-Bezels_4,DMS-Bezels,series-dms-bezels-4
+series_DMS-Connectors_2,DMS-Connectors,series-dms-connectors-2
+series_DMS-Connectors_3,DMS-Connectors,series-dms-connectors-3
+series_DMS-Accessories,DMS-Accessories,series-dms-connectors-4
+series_DMS-Accessories_2,DMS-Accessories,series-dms-connectors-5
+series_DMS-Accessories_3,DMS-Accessories,series-dms-connectors-6
+series_DMS-DC-DCConverter,DMS-DC-DC Converter,series-dms-dc-dc-converter
+series_DMS-DC Shunt,DMS-DC Shunt,series-dms-dc-shunt
+series_DMS-DC Shunt_2,DMS-DC Shunt,series-dms-dc-shunt-1
+series_DMS-DC-Shunts,DMS-DC Shunts,series-dms-dc-shunts
+series_DMS-EB,DMS-EB,series-dms-eb-1
+series_DMS-EB2,DMS-EB2,series-dms-eb2-1
+series_DMS-EB-AC-DC,DMS-EB-AC/DC,series-dms-eb-ac-dc
+series_DMS-EB-DC-DC,DMS-EB-DC/DC,series-dms-eb-dc-dc-1
+series_DMS-EB-HTB,DMS-EB-HTB,series-dms-eb-htb
+series_DMS-EB-LP,DMS-EB-LP,series-dms-eb-lp-1
+series_DMS-EB-RMS,DMS-EB-RMS,series-dms-eb-rms-1
+series_DMS-EB-TCJ-TCK,DMS-EB-TCJ/TCK,series-dms-eb-tcj-tck
+series_DMS-Mounting-Hardware,DMS-Mounting Hardware,series-dms-mounting-hardware
+series_DMS-PowerSupplies-Linear,DMS-Power Supplies-Linear,series-dms-power-supplies-linear
+series_DMS-PS-CM,DMS-PS-CM,series-dms-ps-cm
+series_DMU-30ACV,DMU-30ACV,series-dmu-30acv
+series_DMU-30DCV,DMU-30DCV,series-dmu-30dcv
+series_DNX301,DNX301,series-dnx301-1
+series_DNX350,DNX350,series-dnx350-1
+series_DRE,DRE,series-dre
+series_DRQ,DRQ,series-drq
+series_DRQ-12/42-D48_2,DRQ-12/42-D48,series-drq-12-42-d48
+series_DRQ-12/42-D48,DRQ-12/42-D48,series-drq-12-42-d48-1
+series_DRQ-8/100-L48NBxxxx-C,DRQ-8/100,series-drq-8-100-l48nbxxxx-c
+series_DRQ-8/100-L48NBxxxx-C_2,DRQ-8/100,series-drq-8-100-l48nbxxxx-c-2
+series_DSD-40BCD,DSD-40BCD,series-dsd-40bcd
+series_DSM-DWR-15W,"DSM/DWR, 15W",series-dsm-dwr-15w
+series_DTL22A,DTL22A,series-dtl22a
+series_DTL22A-LC,DTL22A-LC,series-dtl22a-lc
+series_DTL23A,DTL23A,series-dtl23a
+series_DTL24A,DTL24A,series-dtl24a
+series_DTL25A-LC,DTL25A-LC,series-dtl25a-lc
+series_DTL2A,DTL2A,series-dtl2a
+series_DTL-2A-LC,DTL-2A-LC,series-dtl-2a-lc
+series_DTL-32A-LC,DTL-32A-LC,series-dtl-32a-lc
+series_DTL35A-LC,DTL35A-LC,series-dtl35a-lc
+series_DTL3ALoads,DTL3ALoads,series-dtl3aloads
+series_DTL4A,DTL4A,series-dtl4a
+series_DTL5A-LC,DTL5A-LC,series-dtl5a-lc
+series_DTL-HS100D12,DTL-HS100D12,series-dtl-hs100d12
+series_DTL-IFB-485,DTL-IFB-485,series-dtl-ifb-485
+series_DVE125W,DVE-125W,series-dve-125w
+series_DVE-125W_2,DVE-125W,series-dve-125w-1
+series_DVE240W,DVE-240W,series-dve-240w
+series_DVE-240W_2,DVE-240W,series-dve-240w-1
+series_DVQ-DBQ,"DVQ, DBQ",series-dvq-dbq
+series_DWR-DSM-15W,"DWR/DSM, 15W",series-dwr-dsm-15w
+series_EBC,EBC,series-ebc
+series_EHS10-050,EHS10-050,series-ehs10-050
+series_EHS15-033,EHS15-033,series-ehs15-033
+series_EHS20-012,EHS20-012,series-ehs20-012
+series_EHS20-015,EHS20-015,series-ehs20-015
+series_EHS20-018,EHS20-018,series-ehs20-018
+series_EHS20-025,EHS20-025,series-ehs20-025
+series_EMH-54/3-Q48_2,EMH-54/3-Q48,series-emh-54-3-q48
+series_EMH-54/3-Q48,EMH-54/3-Q48,series-emh-54-3-q48-1
+series_FLT,FLT,series-flt
+series_HB01U,HB01U,series-hb01u
+series_HB01UYC,HB01UYC,series-hb01uyc
+series_HB01UZC,HB01UZC,series-hb01uzc
+series_HB04U,HB04U,series-hb04u
+series_HB04UC,HB04UC,series-hb04uc
+series_HEN,HEN,series-hen
+series_HHS04,HHS04,series-hhs04
+series_HL01R,HL01R,series-hl01r
+series_HL01RYC,HL01RYC,series-hl01ryc
+series_HL01RZC,HL01RZC,series-hl01rzc
+series_HL01U,HL01U,series-hl01u
+series_HL02RYC,HL02RYC,series-hl02ryc
+series_HL02RZC,HL02RZC,series-hl02rzc
+series_HL02U,HL02U,series-hl02u
+series_HPH,HPH,series-hph
+series_HPH-12-30-D48,HPH-12/30-D48,series-hph-12-30-d48
+series_HPQ,HPQ,series-hpq
+series_HPQ-12,HPQ-12,series-hpq-12
+series_HPQ-3.3,HPQ-3.3,series-hpq-3-3
+series_HPQ-8.3,HPQ-8.3,series-hpq-8-3
+series_HPQ-8.3/22-D48,HPQ-8.3/22-D48,series-hpq-8-3-22-d48
+series_HPR10XX,HPR10XX,series-hpr10xx
+series_HPR10XXC,HPR10XXC,series-hpr10xxc
+series_HPR117VC,HPR117VC,series-hpr117vc-1
+series_HPR1XXC,HPR1XXC,series-hpr1xxc
+series_HPR1XXVC,HPR1XXVC,series-hpr1xxvc
+series_HPR1XXWC,HPR1XXWC,series-hpr1xxwc
+series_HPR2XX,HPR2XX,series-hpr2xx
+series_HPR2XXC,HPR2XXC,series-hpr2xxc
+series_HPR4XXC,HPR4XXC,series-hpr4xxc
+series_HPR7XX,HPR7XX,series-hpr7xx
+series_HPR7XXC,HPR7XXC,series-hpr7xxc
+series_ICF,ICF,series-icf
+series_ICH,ICH,series-ich
+series_ICH-360W,ICH-360W,series-ich-360w
+series_ICH-500W,ICH-500W,series-ich-500w
+series_ICQ,ICQ,series-icq
+series_ICQ250W,ICQ250W,series-icq250w
+series_IHB100SC,IHB100SC,series-ihb100sc
+series_IHB100TC,IHB100TC,series-ihb100tc
+series_IHB60SC,IHB60SC,series-ihb60sc
+series_IHB60TC,IHB60TC,series-ihb60tc
+series_IRH,IRH,series-irh
+series_IRH_2,IRH,series-irh-2
+series_IRQ,IRQ,series-irq
+series_IRS,IRS,series-irs
+series_IRS_2,IRS,series-irs-1
+series_IRS_3,IRS,series-irs-2
+series_IRS_4,IRS,series-irs-3
+series_JZY7010L,JZY7010L,series-jzy7010l
+series_JZY7015L,JZY7015L,series-jzy7015l
+series_JZY7115L,JZY7115L,series-jzy7115l
+series_JZY7120L,JZY7120L,series-jzy7120l
+series_KX500,KX500,series-kx500-1
+series_KX750,KX750,series-kx750
+series_LEN,LEN,series-len
+series_LME_2,LME,series-lme
+series_LME0305SC,LME0305SC ,series-lme0305sc-1
+series_LME,LME,series-lme-1
+series_LP02U,LP02U,series-lp02u
+series_LQN,LQN,series-lqn
+series_LSM,LSM,series-lsm
+series_LSM-10A-D12,"LSM-10A, D12",series-lsm-10a-d12
+series_LSM-10A-D3,"LSM-10A, D3",series-lsm-10a-d3
+series_LSM-10A-D5,"LSM-10A, D5",series-lsm-10a-d5
+series_LSM-16A-D12,"LSM-16A, D12",series-lsm-16a-d12
+series_LSM-16A-W3,"LSM-16A, W3",series-lsm-16a-w3
+series_LSM2,LSM2,series-lsm2
+series_LSM2-T/30-D12,LSM2-T/30-D12,series-lsm2-t-30-d12
+series_LSN,LSN,series-lsn
+series_LSN-10A-D12,"LSN-10A, D12",series-lsn-10a-d12
+series_LSN-10A-D3,"LSN-10A, D3",series-lsn-10a-d3
+series_LSN-10A-D5,"LSN-10A, D5",series-lsn-10a-d5
+series_LSN-16A-D12,"LSN-16A, D12",series-lsn-16a-d12
+series_LSN-16A-W3,"LSN-16A, W3",series-lsn-16a-w3
+series_LSN2,LSN2,series-lsn2
+series_LSN2-T-22-D12,LSN2-T/22-D12,series-lsn2-t-22-d12
+series_LSN2-T-30-D12,LSN2-T/30-D12,series-lsn2-t-30-d12
+series_LSN-T10-D12,LSN-T10-D12,series-lsn-t10-d12
+series_LSS-T-10-W12,LSS-T/10-W12,series-lss-t-10-w12
+series_LWE,LWE,series-lwe
+series_MAPC-104,MAPC-104,series-mapc-104
+series_MEA_2,MEA,series-mea
+series_MEA_3,MEA,series-mea-1
+series_MEA,MEA,series-mea-2
+series_MEE1_2,MEE1,series-mee1
+series_MEE1,MEE1,series-mee1-1
+series_MEE3,MEE3,series-mee3
+series_MEF1_2,MEF1,series-mef1
+series_MEF1,MEF1,series-mef1-1
+series_MEJ2_2,MEJ2,series-mej2
+series_MEJ2,MEJ2,series-mej2-1
+series_MER1,MER1,series-mer1
+series_MEU1,MEU1,series-meu1
+series_MEV1_2,MEV1,series-mev1
+series_MEV1_3,MEV1,series-mev1-1
+series_MEV1_4,MEV1,series-mev1-2
+series_MEV1_5,MEV1,series-mev1-3
+series_MEV1_6,MEV1,series-mev1-4
+series_MEV1,MEV1,series-mev1-5
+series_MEV3,MEV3,series-mev3
+series_MGJ1,MGJ1,series-mgj1
+series_MGJ2,MGJ2,series-mgj2
+series_MGJ3,MGJ3,series-mgj3
+series_MGJ3T,MGJ3T,series-mgj3t
+series_MGJ6_2,MGJ6,series-mgj6
+series_MGJ6_3,MGJ6,series-mgj6-1
+series_MGJ6-14mm,MGJ6-14mm,series-mgj6-14mm
+series_MGJ6_4,MGJ6,series-mgj6-2
+series_MGJ6,MGJ6,series-mgj6-3
+series_MGJ6-3P,MGJ6-3P,series-mgj6-3p
+series_MGJ6-FB,MGJ6-FB,series-mgj6-fb
+series_MGJ6-HB,MGJ6-HB,series-mgj6-hb
+series_MGJ6-Low-Profile,MGJ6 Low Profile,series-mgj6-low-profile
+series_MGJ6-SIP-DIP,MGJ6 SIP/DIP,series-mgj6-sip-dip
+series_MGJ6T,MGJ6T,series-mgj6t
+series_MMV,MMV,series-mmv
+series_MPS,MPS,series-mps
+series_MPS8103,MPS8103,series-mps8103
+series_MPS8106,MPS8106,series-mps8106
+series_MPS8140,MPS8140,series-mps8140
+series_MPS8142,MPS8142,series-mps8142
+series_MTC1,MTC1,series-mtc1
+series_MTC2,MTC2,series-mtc2
+series_MTE1,MTE1,series-mte1
+series_MTU,MTU,series-mtu
+series_MTU2,MTU2,series-mtu2
+series_MVAB120_2,MVAB120,series-mvab120
+series_MVAB120,MVAB120,series-mvab120-1
+series_MVAB150,MVAB150,series-mvab150
+series_MVAC250_2,MVAC250,series-mvac250
+series_MVAC250,MVAC250,series-mvac250-1
+series_MVAC400_2,MVAC400,series-mvac400
+series_MVAC400,MVAC400,series-mvac400-1
+series_MVACCover,MVACCover,series-mvaccover
+series_MVAD040,MVAD040,series-mvad040
+series_MVAD040-12,MVAD040-12,series-mvad040-13
+series_MVAD040-24_48,MVAD040-24_48,series-mvad040-24-48
+series_MVAD065-12,MVAD065-12,series-mvad065-13
+series_MVAD065-24,MVAD065-24,series-mvad065-25
+series_MVAD065-48,MVAD065-48,series-mvad065-49
+series_MVAD100,MVAD100,series-mvad100
+series_MYBSP,MYBSP,series-mybsp
+series_MYLG,MYLG,series-mylg
+series_MYSGK,MYSGK,series-mysgk
+series_MYSGK1R830,MYSGK1R830,series-mysgk1r830-1
+series_NBE,NBE,series-nbe
+series_NCA005,NCA005,series-nca005
+series_NCA015,NCA015,series-nca015
+series_NCF010,NCF010,series-ncf010
+series_NCM6_2,NCM6,series-ncm6
+series_NCM6,NCM6,series-ncm6-1
+series_NCS1,NCS1,series-ncs1
+series_NCS12_2,NCS12,series-ncs12
+series_NCS12,NCS12,series-ncs12-1
+series_NCS3,NCS3,series-ncs3
+series_NCS6_2,NCS6,series-ncs6
+series_NCS6,NCS6,series-ncs6-1
+series_NCX,NCX,series-ncx
+series_NDH,NDH,series-ndh
+series_NDL,NDL,series-ndl
+series_NDS6_2,NDS6,series-nds6
+series_NDS6_3,NDS6,series-nds6-1
+series_NDS6_4,NDS6,series-nds6-2
+series_NDS6,NDS6,series-nds6-3
+series_NDTD,NDTD,series-ndtd
+series_NDTS,NDTS,series-ndts
+series_NDW3,NDW3,series-ndw3
+series_NDX,NDX,series-ndx
+series_NDY,NDY,series-ndy
+series_NEA005,NEA005,series-nea005
+series_NEA016,NEA016,series-nea016
+series_NEA-NEF010SIP,NEA-NEF010SIP,series-nea-nef010sip
+series_NEA-NEF010SMT,NEA-NEF010SMT,series-nea-nef010smt
+series_NFA010,NFA010,series-nfa010
+series_NFA016,NFA016,series-nfa016
+series_NFA020,NFA020,series-nfa020
+series_NGA,NGA,series-nga
+series_NKA_2,NKA,series-nka
+series_NKA,NKA,series-nka-1
+series_NKE_2,NKE,series-nke
+series_NKE,NKE,series-nke-1
+series_NM232DD,NM232DD,series-nm232dd
+series_NM485,NM485,series-nm485
+series_NM485SLC,NM485SLC,series-nm485slc-1
+series_NMA_2,NMA,series-nma
+series_NMA,NMA,series-nma-1
+series_NMA2,NMA2,series-nma2
+series_NMD_2,NMD,series-nmd
+series_NMD,NMD,series-nmd-1
+series_NME_2,NME,series-nme
+series_NME,NME,series-nme-1
+series_NME1515SC,NME1515SC,series-nme1515sc-1
+series_NME2,NME2,series-nme2
+series_NMF_2,NMF,series-nmf
+series_NMF_3,NMF,series-nmf-1
+series_NMF_4,NMF,series-nmf-2
+series_NMF,NMF,series-nmf-3
+series_NMG,NMG,series-nmg
+series_NMH_2,NMH,series-nmh
+series_NMH0524DC1,NMH0524DC1,series-nmh0524dc1
+series_NMH,NMH,series-nmh-1
+series_NMJ_2,NMJ,series-nmj
+series_NMJ,NMJ,series-nmj-1
+series_NMK_2,NMK,series-nmk
+series_NMK,NMK,series-nmk-1
+series_NML,NML,series-nml
+series_NMPD01,NMPD01,series-nmpd01
+series_NMR,NMR,series-nmr
+series_NMS,NMS,series-nms
+series_NMT,NMT,series-nmt
+series_NMTTL,NMTTL,series-nmttl
+series_NMUSB2022PMC,NMUSB2022PMC,series-nmusb2022pmc-series
+series_NMUSBEVAL,NMUSBEVAL,series-nmusbeval
+series_NMV_2,NMV,series-nmv
+series_NMV_3,NMV,series-nmv-1
+series_NMV2,NMV2,series-nmv2
+series_NMV_4,NMV,series-nmv-2
+series_NMV,NMV,series-nmv-3
+series_NMXSO,NMXSO,series-nmxso
+series_NMXU,NMXU,series-nmxu
+series_NNL,NNL,series-nnl
+series_NNL05,NNL05,series-nnl05
+series_NNL10,NNL10,series-nnl10
+series_NPH10S_2,NPH10S,series-nph10s
+series_NPH10S,NPH10S,series-nph10s-1
+series_NPH15S_2,NPH15S,series-nph15s
+series_NPH15S,NPH15S,series-nph15s-1
+series_NPH25S,NPH25S,series-nph25s
+series_NPX,NPX,series-npx
+series_NPX20S,NPX20S,series-npx20s
+series_NTA,NTA,series-nta
+series_NTE,NTE,series-nte
+series_NTF,NTF,series-ntf
+series_NTH,NTH,series-nth
+series_NTV,NTV,series-ntv
+series_NX301,NX301,series-nx301-1
+series_NX350,NX350,series-nx350-1
+series_NXE1,NXE1,series-nxe1
+series_NXE2,NXE2,series-nxe2
+series_NXF1,NXF1,series-nxf1
+series_NXJ1,NXJ1,series-nxj1
+series_OKDx-T/12,OKDH-T/12,series-okdh-t-12
+series_OKDH-T/120,OKDH-T/120,series-okdh-t-120
+"series_OKDH-T/20, T/25","OKDH-T/20, T/25",series-okdh-t-20-t-25
+series_OKDH-T/40 T/50,OKDH-T/40 T/50,series-okdh-t-40-t-50
+series_OKDH-T/90,OKDH-T/90,series-okdh-t-90
+series_OKDL-T-12-W12-xxx-C,OKDL-T/12-W12-xxx-C,series-okdl-t-12-w12-xxx-c
+series_OKDL-T-18-W12-xxx-C,OKDL-T/18-W12-xxx-C,series-okdl-t-18-w12-xxx-c
+series_OKDL-T/60,OKDL-T/60,series-okdl-t-60
+series_OKDL-T-60-W12-xxx-C,OKDL-T/60-W12-xxx-C,series-okdl-t-60-w12-xxx-c
+"series_OKDL-T/6, T/12, T/18","OKDL-T/6, T/12, T/18",series-okdl-t-6-t-12-t-18
+series_OKDL-T-6-W12-xxx-C,OKDL-T/6-W12-xxx-C,series-okdl-t-6-w12-xxx-c
+series_OKDx-T/12_2,OKDX-T/12,series-okdx-t-12
+series_OKDX-T/120,OKDX-T/120,series-okdx-t-120
+series_OKDx-T/12-W12-001-C,OKDx-T/12-W12-001-C,series-okdx-t-12-w12-001-c-1
+"series_OKDX-T/20, T/25","OKDX-T/20, T/25",series-okdx-t-20-t-25
+series_OKDx-T-20-W12,OKDx-T/20-W12,series-okdx-t-20-w12
+series_OKDx-T-25-W12,OKDx-T/25-W12,series-okdx-t-25-w12
+series_OKDX-T/40 T/50,OKDX-T/40 T/50,series-okdx-t-40-t-50
+series_OKDx-T-40-W12,OKDx-T/40-W12,series-okdx-t-40-w12
+series_OKDx-T-50-W12,OKDx-T/50-W12,series-okdx-t-50-w12
+series_OKDX-T/90,OKDX-T/90,series-okdx-t-90
+series_OKDx-T/12_2_3,OKDY-T/12,series-okdy-t-12
+series_OKDY-T/120,OKDY-T/120,series-okdy-t-120
+"series_OKDY-T/20, T/25","OKDY-T/20, T/25",series-okdy-t-20-t-25
+series_OKDY-T/40 T/50,OKDY-T/40 T/50,series-okdy-t-40-t-50
+series_OKDY-T/90,OKDY-T/90,series-okdy-t-90
+series_OKI-78SR_2,OKI-78SR,series-oki-78sr
+series_OKI-78SR,OKI-78SR,series-oki-78sr-1
+series_OKI-78SR-E,OKI-78SR-E,series-oki-78sr-e
+series_OKI-78SR-E_2,OKI-78SR-E,series-oki-78sr-e-2
+series_OKI-T/36W-W40,OKI-T/36W-W40,series-oki-t-36w-w40
+series_OKI-T/3-W32,OKI-T/3-W32,series-oki-t-3-w32
+series_OKI-T/3-W40,OKI-T/3-W40,series-oki-t-3-w40
+series_OKL2-T12-W12,OKL2-T12-W12,series-okl2-t12-w12
+series_OKL2-T12-W5,OKL2-T12-W5,series-okl2-t12-w5
+series_OKL2-T20-W12,OKL2-T20-W12,series-okl2-t20-w12
+series_OKL2-T20-W5,OKL2-T20-W5,series-okl2-t20-w5
+series_OKLF-T25-W12,OKLF-T25-W12,series-oklf-t25-w12
+series_OKLP-X25-W12-C,OKLP-X25-W12-C,series-oklp-x25-w12-c
+series_OKLP-X35-W12-C,OKLP-X35-W12-C,series-oklp-x35-w12-c
+series_OKLP-X60-W12A,OKLP-X60-W12A,series-oklp-x60-w12a
+series_OKLP-X60-W12A-C,OKLP-X60-W12A-C,series-oklp-x60-w12a-c
+series_OKL-T/1-W12,OKL-T/1-W12,series-okl-t-1-w12
+series_OKL-T/3-W12,OKL-T/3-W12,series-okl-t-3-w12
+series_OKL-T/3-W5,OKL-T/3-W5,series-okl-t-3-w5
+series_OKL-T/6-W12,OKL-T/6-W12,series-okl-t-6-w12
+series_OKL-T/6-W5,OKL-T/6-W5,series-okl-t-6-w5
+series_OKR,OKR,series-okr
+series_OKR-T/10-W12,OKR-T/10-W12,series-okr-t-10-w12
+series_OKR-T/1.5-W12,OKR-T/1.5-W12,series-okr-t-1-5-w12
+series_OKR-T/20-W12,OKR-T/20-W12,series-okr-t-20-w12
+series_OKR-T/30-W12,OKR-T/30-W12,series-okr-t-30-w12
+series_OKR-T/3-W12,OKR-T/3-W12,series-okr-t-3-w12
+series_OKR-T/50-W12,OKR-T/50-W12,series-okr-t-50-w12
+series_OKR-T/6-W12,OKR-T/6-W12,series-okr-t-6-w12
+series_OKS,OKS,series-oks
+series_OKX,OKX,series-okx
+"series_OKX-T/10,T/16-D12","OKX-T/10,T/16-D12",series-okx-t-10-t-16-d12
+"series_OKX-T/10,T/16-W5","OKX-T/10,T/16-W5",series-okx-t-10-t-16-w5
+series_OKX-T/3-D12,OKX-T/3-D12,series-okx-t-3-d12
+series_OKX-T/3-W5,OKX-T/3-W5,series-okx-t-3-w5
+series_OKX-T/5-D12,OKX-T/5-D12,series-okx-t-5-d12
+series_OKX-T/5-W5,OKX-T/5-W5,series-okx-t-5-w5
+series_OKY,OKY,series-oky
+series_OKY2-T-60,OKY2-T/60,series-oky2-t-60
+"series_OKY-T/10,T/16-D12","OKY-T/10,T/16-D12",series-oky-t-10-t-16-d12
+"series_OKY-T/10,T/16-W5","OKY-T/10,T/16-W5",series-oky-t-10-t-16-w5
+"series_OKY-T/3,T/5-D12","OKY-T/3,T/5-D12",series-oky-t-3-t-5-d12
+"series_OKY-T/3,T/5-W5","OKY-T/3,T/5-W5",series-oky-t-3-t-5-w5
+series_PAE_2,PAE,series-pae
+series_PAE_3,PAE,series-pae-1
+series_PAE,PAE,series-pae-2
+series_PAH,PAH,series-pah
+series_PAH-28Vout350W,PAH-28Vout350W,series-pah-28vout350w
+series_PAH-28Vout450W,PAH-28Vout450W,series-pah-28vout450w
+series_PAH-48Vout450W,PAH-48Vout450W,series-pah-48vout450w
+series_PAH-53Vout450W,PAH-53Vout450W,series-pah-53vout450w
+series_PAQ,PAQ,series-paq
+series_PAQ_2,PAQ,series-paq_2
+series_PCI500-4A,PCI500-4A,series-pci500-4a
+series_PCI500-4D,PCI500-4D,series-pci500-4d
+series_PF600,PF600,series-pf600
+series_PQC250,PQC250,series-pqc250
+series_PWR11XXC,PWR11XXC,series-pwr11xxc
+series_PWR12XXC,PWR12XXC,series-pwr12xxc
+series_PWR13xxC,PWR13xxC,series-pwr13xxc
+series_PWR1546AC,PWR1546AC,series-pwr1546ac-1
+series_PWR1726A,PWR1726A,series-pwr1726a-1
+series_PWR40xxC,PWR40xxC,series-pwr40xxc
+series_PWR5105C,PWR5105C,series-pwr5105c-1
+series_PWR59XXC,PWR59XXC,series-pwr59xxc
+series_PWR60XX,PWR60XX,series-pwr60xx
+series_PWR70,PWR70,series-pwr70-1
+series_PWR70C,PWR70C,series-pwr70c-2
+series_PWR70XXaC,PWR70XXaC,series-pwr70xxac
+series_PWR72,PWR72,series-pwr72-1
+series_PX400-402,PX400/402,series-px400-403
+series_PX401-403,PX401/403,series-px401-404
+series_PX500,PX500,series-px500
+series_QHS12-120,QHS12-120,series-qhs12-120
+series_QHS35-033,QHS35-033,series-qhs35-033
+series_QHS40-025,QHS40-025,series-qhs40-025
+series_QHS50-015,QHS50-015,series-qhs50-015
+series_QHS50-018,QHS50-018,series-qhs50-018
+series_QHS55-012,QHS55-012,series-qhs55-012
+series_RangeChangeKit,Range Change Kit,series-range-change-kit
+series_RBC,RBC,series-rbc
+series_RBC-12/17-D48,RBC-12/17-D48,series-rbc-12-17-d48
+series_RBE,RBE,series-rbe
+series_RBE-12/20-D48_2,RBE-12/20-D48,series-rbe-12-20-d48
+series_RBE-12/20-D48,RBE-12/20-D48,series-rbe-12-20-d48-1
+series_RBQ,RBQ,series-rbq
+series_RBQ-12/33-D48_2,RBQ-12/33-D48,series-rbq-12-33-d48
+series_RBQ-12/33-D48,RBQ-12/33-D48,series-rbq-12-33-d48-1
+series_RBQ-12-33-D48NB-C,RBQ-12/33-D48NB-C,series-rbq-12-33-d48nb-c-1
+series_RBS,RBS,series-rbs
+series_RM24150,RM24150,series-rm24150
+series_RM4830,RM4830,series-rm4830
+series_RM4850,RM4850,series-rm4850
+series_RM487-5,RM487.5,series-rm487-5
+series_RUW15,RUW15,series-ruw15
+series_RUW15HC,RUW15HC,series-ruw15hc
+series_S016-12,S016-12,series-s016-12
+series_S020-12,S020-12,series-s020-12
+series_S101,S101,series-s101
+series_S111,S111,series-s111
+series_S151,S151,series-s151
+series_S1U-3X,S1U-3X,series-s1u-3x
+series_SBST,SBST,series-sbst
+series_SBST-03200500-0B,SBST-03200500-0B,series-sbst-03200500-0b-1
+series_SLC100,SLC100,series-slc100
+series_SPC,SPC,series-spc
+series_SPM,SPM,series-spm
+series_SPM15,SPM15,series-spm15
+series_SPM25,SPM25,series-spm25
+series_SuperSIP,SuperSIP,series-supersip
+series_SX400,SX400,series-sx400-1
+series_SX500,SX500,series-sx500-1
+series_TMP-25-40W,"TMP, 25-40W",series-tmp-25-40w
+series_TPB-25-40W,"TPB, 25-40W",series-tpb-25-40w
+series_TWR,TWR,series-twr
+series_TWR-12-15W,"TWR, 12-15W",series-twr-12-15w
+series_TWR-20W,"TWR, 20W",series-twr-20w
+series_TWR-22W,"TWR, 22W",series-twr-22w
+series_TWR-30W,"TWR, 30W",series-twr-30w
+series_TWR-8-11W,"TWR, 8-11W",series-twr-8-11w
+series_TX1000,TX1000,series-tx1000
+series_TXD2000,TXD2000,series-txd2000
+series_UBQ,UBQ,series-ubq
+series_UCE,UCE,series-uce
+series_UCH,UCH,series-uch
+series_UCP-40-75W,"UCP, 40-75W",series-ucp-40-75w
+series_UCQ,UCQ,series-ucq
+series_UCR,UCR,series-ucr
+series_UCR100,UCR100,series-ucr100
+series_UDQ_2,UDQ,series-udq
+series_UDQ,UDQ,series-udq-1
+series_UDQ2204-001,UDQ2204/001,series-udq2204-2
+series_UEE,UEE,series-uee
+series_UEE-12/12.5(150W)_2,UEE-12/12.5(150W),series-uee-12-12-5-150w
+series_UEE-12/12.5(150W)_3,UEE-12/12.5(150W),series-uee-12-12-5-150w-1
+series_UEE-12/12.5(150W),UEE-12/12.5(150W),series-uee-12-12-5-150w-2
+series_UEE150W,UEE150W,series-uee150w
+series_UEE3.3/30(100W)_2,UEE3.3/30(100W),series-uee3-3-30-100w
+series_UEE3.3/30(100W),UEE3.3/30(100W),series-uee3-3-30-100w-1
+series_UEE-5/30(150W)_2,UEE-5/30(150W),series-uee-5-30-150w
+series_UEE-5/30(150W),UEE-5/30(150W),series-uee-5-30-150w-1
+series_UEE-5/30(150W)_3,UEE-5/30(150W),series-uee-5-30-150w-2
+series_UEI,UEI,series-uei
+series_UEI15_2,UEI15,series-uei15
+series_UEI15,UEI15,series-uei15-1
+series_UEI25_2,UEI25,series-uei25
+series_UEI25,UEI25,series-uei25-1
+series_UEI30,UEI30,series-uei30
+series_UEI50-60W,UEI50-60W,series-uei50-60w
+series_UEP,UEP,series-uep
+series_UHE,UHE,series-uhe
+series_UHP,UHP,series-uhp
+series_UHP-12-21-D48,UHP-12/21-D48,series-uhp-12-21-d48
+series_UHP-28-2-12-D48,UHP-28.2/12-D48,series-uhp-28-2-12-d48
+series_UHR16-20W,UHR16-20W,series-uhr16-20w
+series_ULE,ULE,series-ule
+series_ULE-53/1.1-D48,ULE-53/1.1-D48,series-ule-53-1-1-d48
+series_ULQ,ULQ,series-ulq
+series_ULS,ULS,series-uls
+series_ULS-100W_2,ULS-100W,series-uls-100w
+series_ULS-100W,ULS-100W,series-uls-100w-1
+series_ULS-30W_2,ULS-30W,series-uls-30w
+series_ULS-30W,ULS-30W,series-uls-30w-1
+series_ULS-3.3/8-D48xx_2,ULS-3.3/8-D48xx,series-uls-3-3-8-d48xx
+series_ULS-3.3/8-D48xx,ULS-3.3/8-D48xx,series-uls-3-3-8-d48xx-1
+series_ULS-60W_2,ULS-60W,series-uls-60w
+series_ULS-60W,ULS-60W,series-uls-60w-1
+series_ULT_2,ULT,series-ult
+series_ULT,ULT,series-ult-1
+series_UMP-25-40W,"UMP, 25-40W",series-ump-25-40w
+series_UNR-15-25W,"UNR, 15-25W",series-unr-15-25w
+series_UNR-18-33W,"UNR, 18-33W",series-unr-18-33w
+series_UNR-25-50W,"UNR, 25-50W",series-unr-25-50w
+series_UNR-30-40W,"UNR, 30-40W",series-unr-30-40w
+series_UNR-30-66W,"UNR, 30-66W",series-unr-30-66w
+series_UNR-3-6-10W,"UNR, 3.6-10W",series-unr-3-6-10w
+series_UNR-8-40W,"UNR, 8-40W",series-unr-8-40w
+series_UNS-10-15W,"UNS, 10/15W",series-uns-10-15w
+series_UPB-25-40W,"UPB, 25-40W",series-upb-25-40w
+series_USND5,USND5,series-usnd5
+series_USQ-20A,"USQ, 20A",series-usq-20a
+series_USQ-30A,"USQ, 30A",series-usq-30a
+series_USQ-40A,"USQ, 40A",series-usq-40a
+series_UST,UST,series-ust
+series_UST-3W,"UST, 3W",series-ust-3w
+series_UVQ_2,UVQ,series-uvq
+series_UVQ,UVQ,series-uvq-1
+series_UVQ-48/2.5-D24_2,UVQ-48/2.5-D24,series-uvq-48-2-5-d24
+series_UVQ-48/2.5-D24,UVQ-48/2.5-D24,series-uvq-48-2-5-d24-1
+series_UWE,UWE,series-uwe
+series_UWE-100-120W,UWE-100-120W,series-uwe-100-120w
+series_UWE-100W_2,UWE-100W,series-uwe-100w
+series_UWE-100W,UWE-100W,series-uwe-100w-1
+series_UWE-120W_2,UWE-120W,series-uwe-120w
+series_UWE-120W,UWE-120W,series-uwe-120w-1
+series_UWE-75W_2,UWE-75W,series-uwe-75w
+series_UWE-75W,UWE-75W,series-uwe-75w-1
+series_UWP-3W,"UWP, 3W",series-uwp-3w
+series_UWQ,UWQ,series-uwq
+series_UWQ-12/17-Q48_2,UWQ-12/17-Q48,series-uwq-12-17-q48
+series_UWQ-12/17-Q48,UWQ-12/17-Q48,series-uwq-12-17-q48-1
+series_UWQ-12/17-Q48T_2,UWQ-12/17-Q48T,series-uwq-12-17-q48t
+series_UWQ-12/17-Q48T,UWQ-12/17-Q48T,series-uwq-12-17-q48t-1
+series_UWQ-12/20-T48_2,UWQ-12/20-T48,series-uwq-12-20-t48
+series_UWQ-12/20-T48,UWQ-12/20-T48,series-uwq-12-20-t48-1
+series_UWQ-12/20-T48(trimandsense)_2,UWQ-12/20-T48(trimandsense),series-uwq-12-20-t48-trimandsense
+series_UWQ-12/20-T48(trimandsense),UWQ-12/20-T48(trimandsense),series-uwq-12-20-t48-trimandsense-1
+series_UWR,UWR,series-uwr
+series_UWR-14-20W,"UWR, 14-20W",series-uwr-14-20w
+series_UWR26-40W,UWR26-40W,series-uwr26-40w
+series_UWR-3W,"UWR, 3W",series-uwr-3w
+series_UWR-5W,"UWR, 5W",series-uwr-5w
+series_UWR-6-10W,"UWR, 6-10W",series-uwr-6-10w
+series_UWR-7-15W,"UWR, 7-15W",series-uwr-7-15w
+series_UWR-96-100-D48A-C,UWR-96/100-D48A-C,series-uwr-96-100-d48a-c-1
+series_UWS_2,UWS,series-uws
+series_UWS,UWS,series-uws-1
+series_VCN55-025V,VCN55-025V,series-vcn55-025v
+series_VCN60-025,VCN60-025,series-vcn60-025
+series_VCN60-70,VCN60/70,series-vcn60-70
+series_VCN75-018V,VCN75-018V,series-vcn75-018v
+series_VKA100,VKA100,series-vka100
+series_VKA150MS24-205C,VKA150MS24-205C,series-vka150ms24-205c
+series_VKA50xSC,VKA50xSC,series-vka50xsc
+series_VKA60xSC,VKA60xSC,series-vka60xsc
+series_VKA75xSC,VKA75xSC,series-vka75xsc
+series_VKP100MTC,VKP100MTC,series-vkp100mtc
+series_VKP100xT,VKP100xT,series-vkp100xt
+series_VKP60xT,VKP60xT,series-vkp60xt
+series_VR090B068CS,VR090B068CS,series-vr090b068cs
+series_VR091B080CL,VR091B080CL,series-vr091b080cl
+series_VR091B080CS-1C,VR091B080CS-1C,series-vr091b080cs-1c-1
+series_VR091B080TU,VR091B080TU,series-vr091b080tu
+series_VR100B080CU-2C,VR100B080CU-2C,series-vr100b080cu-2c-1
+series_VR102B120CS-2C,VR102B120CS-2C,series-vr102b120cs-2c
+series_VR102B150CS-2C,VR102B150CS-2C,series-vr102b150cs-2c-1
+series_VR102B150CU-3C,VR102B150CU-3C,series-vr102b150cu-3c-1
+series_VR110Series,VR110,series-vr110-series
+series_VR11Cand11ESeries,VR11C & 11E,series-vr11c-11e-series
+series_VRK81B080CS,VRK81B080CS,series-vrk81b080cs
+series_VRK81B100CS,VRK81B100CS,series-vrk81b100cs
+series_VRK81B100TH,VRK81B100TH,series-vrk81b100th
+series_VSX40MD23C,VSX40MD23C,series-vsx40md23c-1
+series_VSX60,VSX60,series-vsx60
+series_VSX75MD35C,VSX75MD35C,series-vsx75md35c-1
+series_WFC02RC,WFC02RC,series-wfc02rc
+series_WP06R,WP06R,series-wp06r
+series_WP06RC,WP06RC,series-wp06rc
+series_WPA50,WPA50,series-wpa50
+series_WPA50R,WPA50R,series-wpa50r
+series_WPA60,WPA60,series-wpa60
+series_WPA60R48DC,WPA60R48DC,series-wpa60r48dc
+series_WPC03R,WPC03R,series-wpc03r
+series_WPC03RC,WPC03RC,series-wpc03rc
+series_WPC10R,WPC10R,series-wpc10r
+series_WPC10RC,WPC10RC,series-wpc10rc
+series_WPN20R,WPN20R,series-wpn20r
+series_WPN20RC,WPN20RC,series-wpn20rc
+series_WPN30R,WPN30R,series-wpn30r

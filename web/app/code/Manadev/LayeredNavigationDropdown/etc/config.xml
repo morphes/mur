@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+ @category    Mana
+ @package     Manadev_LayeredNavigationDropdown
+ @copyright   Copyright (c) http://www.manadev.com
+ @license     http://www.manadev.com/license  Proprietary License
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <manadev_features>
+            <Manadev_LayeredNavigationDropdown>
+                <version>17.08.2611</version>
+                <code>dropdown-for-layered-navigation-magento2</code>
+                <title>Dropdown for Magento Layered Navigation</title>
+                <sort_order>330</sort_order>
+            </Manadev_LayeredNavigationDropdown>
+            <Manadev_LayeredNavigation>
+                <removed_by_Manadev_LayeredNavigationDropdown />
+            </Manadev_LayeredNavigation>
+        </manadev_features>
+    </default>
+</config>

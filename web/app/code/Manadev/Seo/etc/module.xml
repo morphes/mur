@@ -1,0 +1,19 @@
+<!--
+ @category    Mana
+ @package     Manadev_Seo
+ @copyright   Copyright (c) http://www.manadev.com
+ @license     http://www.manadev.com/license  Proprietary License
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Manadev_Seo" setup_version="3">
+        <sequence>
+            <module name="Manadev_Core"/>
+            <module name="Magento_Backend"/>
+            <module name="Magento_Catalog"/>
+            <module name="Magento_CatalogUrlRewrite"/>
+            <module name="Magento_Cms"/>
+            <module name="Magento_CmsUrlRewrite"/>
+            <module name="Magento_Eav"/>
+        </sequence>
+    </module>
+</config>

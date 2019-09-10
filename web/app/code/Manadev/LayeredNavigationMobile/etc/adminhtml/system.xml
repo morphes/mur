@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!--
+ @category    Mana
+ @package     Manadev_LayeredNavigationMobile
+ @copyright   Copyright (c) http://www.manadev.com
+ @license     http://www.manadev.com/license  Proprietary License
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="mana_layered_navigation">
+            <group id="default_positions" translate="label" type="text" sortOrder="200" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>By Default Show Filters</label>
+                <field id="on_mobile" translate="label" type="select" sortOrder="400" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>On Mobile Devices</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="show_applied_filter">
+                <field id="show_on_mobile" translate="label" type="select" sortOrder="500" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>On Mobile Devices</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="mobile" translate="label" type="text" sortOrder="500" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Mobile Layered Navigation</label>
+                <field id="max_width" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Mobile Layered Navigation On Body Width</label>
+                    <comment>in pixels. Leave empty to disable mobile layout feature. Note that mobile layout may require theme-related CSS changes.</comment>
+                </field>
+                <field id="behavior" translate="label" type="select" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Behavior</label>
+                    <source_model>Manadev\LayeredNavigationMobile\Sources\MobileBehaviorSource</source_model>
+                </field>
+                <field id="whole_block_initial_state" translate="label" type="select" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Whole Block Is</label>
+                    <source_model>Manadev\LayeredNavigationMobile\Sources\WholeBlockBehaviorSource</source_model>
+                </field>
+                <field id="effect_duration" translate="label comment" type="text" sortOrder="400" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Animation Duration</label>
+                    <comment>Speed of sliding effect in milliseconds.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

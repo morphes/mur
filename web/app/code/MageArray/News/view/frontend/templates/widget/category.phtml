@@ -1,0 +1,26 @@
+<?php $categoryPosts = $this->getCollection(); ?>
+<?php $category = $this->getWidgetCategory(); ?>
+<div class="mmain_wrap">
+    <div class="main_new_product">
+        <div class="grey_fon">
+            <a class="new_product_grey"
+               href="/news/category/<?php echo $category->getCarUrl(); ?>"><?php echo $category->getCatName(); ?></a>
+            <a href="/news/rss/feed">
+                <img class="rss_main" src="/pub/wysiwyg/murataps/feed.png" alt="">
+            </a>
+        </div>
+        <div class="wrap_fortable_main">
+            <ul class="item_main">
+                <?php foreach ($categoryPosts as $post): ?>
+                    <li class="bottom_main_line">
+                        <?php $date = new DateTime($post->getPublishDate()); ?>
+                        <span><?php echo date("M j, Y", $date->getTimestamp()); ?></span>
+                        <a href="<?php echo $post->getPostUrl() ?>">
+                            <?php echo $post->getTitle() ?>
+                        </a>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+    </div>
+</div>

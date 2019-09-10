@@ -1,0 +1,56 @@
+<?php $product = $this->getProduct(); ?>
+<div class="descr_content">
+    <?php if ($product->getAttributeText('as_tran_application')) { ?>
+        <div class="data">
+            <div class="top">Application</div>
+            <div class="bottom"><?php echo $product->getAttributeText('as_tran_application') ?></div>
+        </div>
+    <?php } ?>
+    <?php if ($product->getAttributeText('as_tran_type')) { ?>
+        <div class="data">
+            <div class="top">Type</div>
+            <div class="bottom"><?php echo $product->getAttributeText('as_tran_type') ?></div>
+        </div>
+    <?php } ?>
+    <?php if ($block->escapeHtml($product->getData('as_tran_turn_ratio_pri'))) { ?>
+        <div class="data">
+            <div class="top">Turns Ratio</div>
+            <div class="bottom">
+                <?php echo $block->escapeHtml($product->getData('as_tran_turn_ratio_pri')) ?>
+                :<?php echo $block->escapeHtml($product->getData('as_tran_turn_ratio_sec')) ?><? if ($block->escapeHtml($product->getData('as_tran_turn_ratio_sec2'))): ?>:<?php echo $block->escapeHtml($product->getData('as_tran_turn_ratio_sec2')) ?><? endif ?>
+            </div>
+        </div>
+    <?php } ?>
+    <?php if ($block->escapeHtml($product->getData('as_tran_isolation_voltage_vrms'))) { ?>
+        <div class="data">
+            <div class="top">Isolation Voltage (Vrms)</div>
+            <div class="bottom"><?php echo rtrim(rtrim($block->escapeHtml($product->getData('as_tran_isolation_voltage_vrms')), '0'), '.') ?></div>
+        </div>
+    <?php } ?>
+    <?php if ($product->getAttributeText('as_tran_mounting_option')) { ?>
+        <div class="data">
+            <div class="top">Mounting Option</div>
+            <div class="bottom"><?php echo $product->getAttributeText('as_tran_mounting_option') ?></div>
+        </div>
+    <?php } ?>
+    <?php if ($product->getAttributeText('as_tran_height_mm')) { ?>
+        <div class="data">
+            <div class="top">Dimensions H x W x D (mm)</div>
+            <div class="bottom"><?php echo rtrim(rtrim($block->escapeHtml($product->getData('as_tran_height_mm')), '0'), '.') ?>
+                x <?php echo rtrim(rtrim($block->escapeHtml($product->getData('as_tran_width_mm')), '0'), '.') ?>
+                x <?php echo rtrim(rtrim($block->escapeHtml($product->getData('as_tran_depth_mm')), '0'), '.') ?></div>
+        </div>
+    <?php } ?>
+    <?php if ($product->getAttributeText('as_tran_package_style')) { ?>
+        <div class="data">
+            <div class="top">Application</div>
+            <div class="bottom"><?php echo $product->getAttributeText('as_tran_package_style') ?></div>
+        </div>
+    <?php } ?>
+    <?php if ($product->getAttributeText('product_status') || $product->getAttributeText('rfm_product_status')) { ?>
+        <div class="data">
+            <div class="top">Status</div>
+            <div class="bottom"><?php echo $block->statuses($product); ?></div>
+        </div>
+    <?php } ?>
+</div>

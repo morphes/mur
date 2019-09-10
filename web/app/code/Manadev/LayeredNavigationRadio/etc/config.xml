@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+ @category    Mana
+ @package     Manadev_LayeredNavigationRadio
+ @copyright   Copyright (c) http://www.manadev.com
+ @license     http://www.manadev.com/license  Proprietary License
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <manadev_features>
+            <Manadev_LayeredNavigationRadio>
+                <version>17.08.2311</version>
+                <code>radio-buttons-for-layered-navigation-magento2</code>
+                <title>Radio Buttons for Magento Layered Navigation</title>
+                <sort_order>340</sort_order>
+            </Manadev_LayeredNavigationRadio>
+            <Manadev_LayeredNavigation>
+                <removed_by_Manadev_LayeredNavigationRadio />
+            </Manadev_LayeredNavigation>
+        </manadev_features>
+    </default>
+</config>
